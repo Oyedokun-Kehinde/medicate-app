@@ -33,7 +33,236 @@
    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
-<body>
+<body>-- Users Table
+CREATE TABLE users (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    user_type ENUM('patient', 'doctor', 'admin') NOT NULL,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    password_hash VARCHAR(255) NOT NULL,
+    full_name VARCHAR(255) NOT NULL,
+    phone VARCHAR(20) NOT NULL,
+    date_of_birth DATE NOT NULL,
+    gender ENUM('male', 'female', 'other') NOT NULL,
+    address TEXT,
+    profile_image VARCHAR(255),
+    status ENUM('active', 'inactive', 'suspended') DEFAULT 'active',
+    email_verified BOOLEAN DEFAULT FALSE,
+    verification_token VARCHAR(64),
+    failed_login_attempts INT DEFAULT 0,
+    lockout_until DATETIME,
+    last_login DATETIME,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    INDEX idx_email (email),
+    INDEX idx_user_type (user_type),
+    INDEX idx_status (status)
+);
+
+-- Doctors Table
+CREATE TABLE doctors (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    user_id INT NOT NULL,
+    medical_license VARCHAR(100) UNIQUE NOT NULL,
+    specialization VARCHAR(255) NOT NULL,
+    years_of_experience INT NOT NULL,
+    bio TEXT,
+    consultation_fee DECIMAL(10, 2) DEFAULT 0.00,
+    rating DECIMAL(3, 2) DEFAULT 0.00,
+    total_consultations INT DEFAULT 0,
+    approval_status ENUM('pending', 'approved', 'rejected') DEFAULT 'pending',
+    approved_by INT,
+    approved_at DATETIME,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
+    FOREIGN KEY (approved_by) REFERENCES users(id),
+    INDEX idx_approval_status (approval_status)
+);
+
+-- Services Table
+CREATE TABLE services (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    service_name VARCHAR(255) NOT NULL,
+    slug VARCHAR(255) UNIQUE NOT NULL,
+    description TEXT,
+    base_fee DECIMAL(10, 2) DEFAULT 0.00,
+    average_duration INT DEFAULT 30,
+    status ENUM('active', 'inactive') DEFAULT 'active',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Seed Services
+INSERT INTO services (service_name, slug, description) VALUES
+('Angioplasty Services', 'angioplasty-services', 'Specialized cardiac care for artery blockages.'),
+('Cardiology Services', 'cardiology-services', 'Comprehensive heart health diagnostics and treatment.'),
+('Dental Services', 'dental-services', 'Oral health services from routine cleanings to advanced procedures.'),
+('Endocrinology Services', 'endocrinology-services', 'Hormone and metabolic disorder management.'),
+('Eye Care Services', 'eye-care-services', 'Vision care including exams, surgeries, and treatments.'),
+('Neurology Services', 'neurology-services', 'Diagnosis and treatment of nervous system disorders.'),
+('Orthopaedics Services', 'orthopaedics-services', 'Bone, joint, and muscle care including surgery.'),
+('RMI Services', 'rmi-services', 'Advanced radiology and medical imaging services.');
+
+-- Doctor-Services Link
+CREATE TABLE doctor_services (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    doctor_id INT NOT NULL,
+    service_id INT NOT NULL,
+    FOREIGN KEY (doctor_id) REFERENCES doctors(id) ON DELETE CASCADE,
+    FOREIGN KEY (service_id) REFERENCES services(id) ON DELETE CASCADE,
+    UNIQUE KEY unique_doctor_service (doctor_id, service_id)
+);
+
+-- Doctor Availability
+CREATE TABLE doctor_availability (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    doctor_id INT NOT NULL,
+    day_of_week ENUM('monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday') NOT NULL,
+    start_time TIME NOT NULL,
+    end_time TIME NOT NULL,
+    FOREIGN KEY (doctor_id) REFERENCES doctors(id) ON DELETE CASCADE,
+    INDEX idx_doctor_day (doctor_id, day_of_week)
+);
+
+-- Consultations
+CREATE TABLE consultations (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    patient_id INT NOT NULL,
+    doctor_id INT,
+    service_id INT NOT NULL,
+    consultation_date DATE NOT NULL,
+    consultation_time TIME NOT NULL,
+    status ENUM('pending', 'confirmed', 'in_progress', 'completed', 'cancelled') DEFAULT 'pending',
+    urgency ENUM('normal', 'urgent') DEFAULT 'normal',
+    reason TEXT NOT NULL,
+    notes TEXT,
+    cancellation_reason TEXT,
+    cancelled_by INT,
+    confirmed_at DATETIME,
+    completed_at DATETIME,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (patient_id) REFERENCES users(id) ON DELETE CASCADE,
+    FOREIGN KEY (doctor_id) REFERENCES doctors(id) ON DELETE SET NULL,
+    FOREIGN KEY (service_id) REFERENCES services(id),
+    FOREIGN KEY (cancelled_by) REFERENCES users(id),
+    INDEX idx_status (status),
+    INDEX idx_patient (patient_id),
+    INDEX idx_doctor (doctor_id),
+    INDEX idx_date (consultation_date)
+);
+
+-- Blog Categories
+CREATE TABLE blog_categories (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    category_name VARCHAR(100) NOT NULL,
+    slug VARCHAR(100) UNIQUE NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Seed Blog Categories
+INSERT INTO blog_categories (category_name, slug) VALUES
+('Health Tips', 'health-tips'),
+('Medical News', 'medical-news'),
+('Success Stories', 'success-stories'),
+('General', 'general');
+
+-- Blogs
+CREATE TABLE blogs (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    author_id INT NOT NULL,
+    title VARCHAR(255) NOT NULL,
+    slug VARCHAR(255) UNIQUE NOT NULL,
+    featured_image VARCHAR(255),
+    excerpt TEXT,
+    content TEXT NOT NULL,
+    category_id INT,
+    status ENUM('draft', 'published', 'deleted') DEFAULT 'draft',
+    views INT DEFAULT 0,
+    published_at DATETIME,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (author_id) REFERENCES users(id),
+    FOREIGN KEY (category_id) REFERENCES blog_categories(id),
+    INDEX idx_status (status),
+    INDEX idx_slug (slug),
+    INDEX idx_published_at (published_at)
+);
+
+-- Blog Comments
+CREATE TABLE blog_comments (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    blog_id INT NOT NULL,
+    user_id INT NOT NULL,
+    parent_comment_id INT NULL,
+    comment_text TEXT NOT NULL,
+    status ENUM('pending', 'approved', 'spam', 'deleted') DEFAULT 'approved',
+    is_edited BOOLEAN DEFAULT FALSE,
+    edited_at DATETIME,
+    flagged_count INT DEFAULT 0,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (blog_id) REFERENCES blogs(id) ON DELETE CASCADE,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
+    FOREIGN KEY (parent_comment_id) REFERENCES blog_comments(id) ON DELETE CASCADE,
+    INDEX idx_blog_id (blog_id),
+    INDEX idx_status (status),
+    INDEX idx_created_at (created_at)
+);
+
+-- Comment Flags
+CREATE TABLE comment_flags (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    comment_id INT NOT NULL,
+    flagged_by INT NOT NULL,
+    reason ENUM('spam', 'offensive', 'inappropriate', 'other') NOT NULL,
+    details TEXT,
+    status ENUM('pending', 'reviewed', 'dismissed') DEFAULT 'pending',
+    reviewed_by INT,
+    reviewed_at DATETIME,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (comment_id) REFERENCES blog_comments(id) ON DELETE CASCADE,
+    FOREIGN KEY (flagged_by) REFERENCES users(id) ON DELETE CASCADE,
+    FOREIGN KEY (reviewed_by) REFERENCES users(id),
+    UNIQUE KEY unique_flag (comment_id, flagged_by),
+    INDEX idx_status (status)
+);
+
+-- Comment Restrictions
+CREATE TABLE comment_restrictions (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    user_id INT NOT NULL,
+    banned_by INT NOT NULL,
+    reason TEXT NOT NULL,
+    banned_until DATETIME,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
+    FOREIGN KEY (banned_by) REFERENCES users(id),
+    INDEX idx_user_id (user_id)
+);
+
+-- Password Resets
+CREATE TABLE password_resets (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    user_id INT NOT NULL,
+    token VARCHAR(64) UNIQUE NOT NULL,
+    expires_at DATETIME NOT NULL,
+    used BOOLEAN DEFAULT FALSE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
+    INDEX idx_token (token)
+);
+
+-- Activity Logs
+CREATE TABLE activity_logs (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    user_id INT,
+    action VARCHAR(255) NOT NULL,
+    description TEXT,
+    ip_address VARCHAR(45),
+    user_agent TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE SET NULL,
+    INDEX idx_user_id (user_id),
+    INDEX idx_created_at (created_at)
+);
    <!--loading start-->
    <div id="pq-loading">
       <div id="pq-loading-center">
