@@ -1,8 +1,10 @@
 <?php
+// config/database.php
+
 $host = 'localhost';
-$db   = 'medicate_db';
-$user = 'root';      // Update for your env
-$pass = '';          // Update for your env
+$db   = 'medicate_db';   // Database name
+$user = 'root';          // XAMPP User 
+$pass = '';              // Default for XAMPP (empty)
 $charset = 'utf8mb4';
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
@@ -14,7 +16,8 @@ $options = [
 
 try {
     $pdo = new PDO($dsn, $user, $pass, $options);
-} catch (\PDOException $e) {
-    throw new \PDOException($e->getMessage(), (int)$e->getCode());
+} catch (PDOException $e) {
+    error_log("Database connection failed: " . $e->getMessage());
+    die("Database connection failed. Check config/database.php");
 }
 ?>
