@@ -1,0 +1,16 @@
+{
+    "name": "oyedokunken/medicate-app",
+    "description": "A hospital management system with PHP",
+    "type": "composer-plugin",
+    "require": {
+        "composer": "^2.8",
+        "phpmailer/phpmailer": "^6.11"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "y"
+        }
+    ],
+    "minimum-stability": "stable"
+}
