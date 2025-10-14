@@ -70,7 +70,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="mailto:info@peacefulthemes.com"><i
+                                    <a href="mailto:info@medicate.com"><i
                                             class="fas fa-envelope"></i><span>info@medicate.com</span></a>
                                 </li>
                             </ul>
@@ -90,7 +90,7 @@
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <div id="pq-menu-contain" class="pq-menu-contain">
                                     <ul id="pq-main-menu" class="navbar-nav ml-auto">
-                                        <li class="menu-item current-menu-item">
+                                        <li class="menu-item">
                                             <a href="index.php">Home</a>
                                         </li>
                                         <li class="menu-item ">
@@ -100,28 +100,28 @@
                                             <a href="services.php">Services</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
                                             <ul class="sub-menu">
                                                 <li class="menu-item ">
-                                                    <a href="public/services/angioplasty.php">Angioplasty </a>
+                                                    <a href="../public/services/angioplasty.php">Angioplasty </a>
                                                 </li>
                                                 <li class="menu-item ">
-                                                    <a href="/services/cardiology">Cardiology</a>
+                                                    <a href="..public/services/cardiology">Cardiology</a>
                                                 </li>
                                                 <li class="menu-item ">
-                                                    <a href="/services/dental.php">Dental </a>
+                                                    <a href="../public/services/dental.php">Dental </a>
                                                 </li>
                                                 <li class="menu-item">
-                                                    <a href="/services/endocrinology.php">Endocrinology</a>
+                                                    <a href="../public/services/endocrinology.php">Endocrinology</a>
                                                 </li>
                                                 <li class="menu-item ">
-                                                    <a href="/services/eye-care.php">Eye Care </a>
+                                                    <a href="../public/services/eye-care.php">Eye Care </a>
                                                 </li>
                                                 <li class="menu-item ">
-                                                    <a href="/services/neurology.php">Neurology </a>
+                                                    <a href="../public/services/neurology.php">Neurology </a>
                                                 </li>
                                                 <li class="menu-item ">
-                                                    <a href="/services/orthopaedics.php">Orthopaedics </a>
+                                                    <a href="../public/services/orthopaedics.php">Orthopaedics </a>
                                                 </li>
                                                 <li class="menu-item">
-                                                    <a href="/services/rmi.php">RMI </a>
+                                                    <a href="../public/services/rmi.php">RMI </a>
                                                 </li>
                                             </ul>
                                         </li>

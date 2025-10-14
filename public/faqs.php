@@ -65,12 +65,12 @@
                             <ul>
                                 <li>
                                     <a href="tel:+1800001658"><i class="fas fa-phone"></i>
-                                        <span> +1800-001-658</span>
+                                        <span> +234 8028134942</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="mailto:info@peacefulthemes.com"><i
-                                            class="fas fa-envelope"></i><span>info@peacefulthemes.com</span></a>
+                                            class="fas fa-envelope"></i><span>info@medicate.com</span></a>
                                 </li>
                             </ul>
                         </div>
@@ -83,207 +83,58 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <nav class="navbar navbar-expand-lg navbar-light">
-                            <a class="navbar-brand" href="index-2.html">
+                            <a class="navbar-brand" href="index.php">
                                 <img class="img-fluid logo" src="assets/images/logo.png" alt="medicate">
                             </a>
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <div id="pq-menu-contain" class="pq-menu-contain">
                                     <ul id="pq-main-menu" class="navbar-nav ml-auto">
+                                        <li class="menu-item">
+                                            <a href="index.php">Home</a>
+                                        </li>
+                                        <li class="menu-item ">
+                                            <a href="about.php">About Us </a>
+                                        </li>
+                                        <li class="menu-item ">
+                                            <a href="services.php">Services</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item ">
+                                                    <a href="../public/services/angioplasty.php">Angioplasty </a>
+                                                </li>
+                                                <li class="menu-item ">
+                                                    <a href="../public/services/cardiology">Cardiology</a>
+                                                </li>
+                                                <li class="menu-item ">
+                                                    <a href="../public/services/dental.php">Dental </a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="../public/services/endocrinology.php">Endocrinology</a>
+                                                </li>
+                                                <li class="menu-item ">
+                                                    <a href="../public/services/eye-care.php">Eye Care </a>
+                                                </li>
+                                                <li class="menu-item ">
+                                                    <a href="../public/services/neurology.php">Neurology </a>
+                                                </li>
+                                                <li class="menu-item ">
+                                                    <a href="../public/services/orthopaedics.php">Orthopaedics </a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="../public/services/rmi.php">RMI </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item ">
+                                            <a href="specialists.php">Specialists  </a>
+                                        </li>
+                                        <li class="menu-item ">
+                                            <a href="blog.php">Blog</a>
+                                        </li>
                                         <li class="menu-item current-menu-item">
-                                            <a href="#">Home</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
-                                            <ul class="sub-menu">
-                                                <li class="menu-item current-menu-item">
-                                                    <a href="index-2.html">Home 1</a>
-                                                </li>
-                                                <li class="menu-item ">
-                                                    <a href="index-3.html">Home 2</a>
-                                                </li>
-                                                <li class="menu-item ">
-                                                    <a href="index-4.html">Home 3</a>
-                                                </li>
-                                                <li class="menu-item">
-                                                    <a href="index-5.html" aria-current="page">Home 4</a>
-                                                </li>
-                                                <li class="menu-item">
-                                                    <a href="index-6.html">Home 5</a>
-                                                </li>
-                                                <li class="menu-item">
-                                                    <a href="index-7.html">Home 6</a>
-                                                </li>
-                                                <li class="menu-item">
-                                                    <a href="index-8.html">Home 7</a>
-                                                </li>
-                                                <li class="menu-item">
-                                                    <a href="index-9.html">Home 8</a>
-                                                </li>
-                                                <li class="menu-item">
-                                                    <a href="index-10.html">Home 9</a>
-                                                </li>
-                                            </ul>
+                                            <a href="faqs.php">FAQs </a>
                                         </li>
                                         <li class="menu-item ">
-                                            <a href="#">Pages</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
-                                            <ul class="sub-menu">
-                                                <li class="menu-item ">
-                                                    <a href="about-us.html">About Us</a>
-                                                </li>
-                                                <li class="menu-item ">
-                                                    <a href="our-services.html">Our Services</a>
-                                                </li>
-                                                <li class="menu-item ">
-                                                    <a href="our-process.html">Our Process</a>
-                                                </li>
-                                                <li class="menu-item ">
-                                                    <a href="our-plan.html">Our Plans</a>
-                                                </li>
-                                                <li class="menu-item-has-children">
-                                                    <a href="#">Our Doctors</a><i
-                                                        class="fa fa-chevron-down pq-submenu-icon"></i>
-                                                    <ul class="sub-menu">
-                                                        <li class="menu-item ">
-                                                            <a href="doctor-1.html">Doctors 1</a>
-                                                        </li>
-                                                        <li class="menu-item ">
-                                                            <a href="our-doctor.html">Our Doctor Details</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="menu-item ">
-                                                    <a href="make-appoinment.html">Make Appointments</a>
-                                                </li>
-                                                <li class="menu-item ">
-                                                    <a href="faq.html">FAQ</a>
-                                                </li>
-                                                <li class="menu-item ">
-                                                    <a href="404.html">404</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-item ">
-                                            <a href="#">Services</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
-                                            <ul class="sub-menu">
-                                                <li class="menu-item ">
-                                                    <a href="angioplasty-services.html">Angioplasty Services</a>
-                                                </li>
-                                                <li class="menu-item ">
-                                                    <a href="cardiology-services.html">Cardiology Services</a>
-                                                </li>
-                                                <li class="menu-item ">
-                                                    <a href="dental-services.html">Dental Services</a>
-                                                </li>
-                                                <li class="menu-item">
-                                                    <a href="endocrinology-services.html">Endocrinology Services</a>
-                                                </li>
-                                                <li class="menu-item ">
-                                                    <a href="eye-care-services.html">Eye Care Services</a>
-                                                </li>
-                                                <li class="menu-item ">
-                                                    <a href="nurology-service.html">Neurology Services</a>
-                                                </li>
-                                                <li class="menu-item ">
-                                                    <a href="orthopaedics-services.html">Orthopaedics Services</a>
-                                                </li>
-                                                <li class="menu-item">
-                                                    <a href="rmi-services.html">RMI Services</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-item ">
-                                            <a href="#">Projects</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
-                                            <ul class="sub-menu">
-                                                <li class="menu-item-has-children">
-                                                    <a href="#">Types</a><i
-                                                        class="fa fa-chevron-down pq-submenu-icon"></i>
-                                                    <ul class="sub-menu">
-                                                        <li class="menu-item ">
-                                                            <a href="standard.html">Standard</a>
-                                                        </li>
-                                                        <li class="menu-item ">
-                                                            <a href="masonry.html">Masonry</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="menu-item-has-children">
-                                                    <a href="#">Columns</a><i
-                                                        class="fa fa-chevron-down pq-submenu-icon"></i>
-                                                    <ul class="sub-menu">
-                                                        <li class="menu-item ">
-                                                            <a href="2-column.html">2 Column</a>
-                                                        </li>
-                                                        <li class="menu-item">
-                                                            <a href="3-column.html">3 Column</a>
-                                                        </li>
-                                                        <li class="menu-item ">
-                                                            <a href="3-column-wide.html">3 Column Wide</a>
-                                                        </li>
-                                                        <li class="menu-item ">
-                                                            <a href="4-column-wide.html">4 Column Wide</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="menu-item-has-children">
-                                                    <a href="#">Slider</a><i
-                                                        class="fa fa-chevron-down pq-submenu-icon"></i>
-                                                    <ul class="sub-menu">
-                                                        <li class="menu-item ">
-                                                            <a href="2-column-slider.html">2 Column Slider</a>
-                                                        </li>
-                                                        <li class="menu-item ">
-                                                            <a href="3-column-slider.html">3 Column Slider</a>
-                                                        </li>
-                                                        <li class="menu-item ">
-                                                            <a href="3-column-slider-wide.html">3 Column Slider Wide</a>
-                                                        </li>
-                                                        <li class="menu-item ">
-                                                            <a href="4-column-slider.html">4 Column Slider</a>
-                                                        </li>
-                                                        <li class="menu-item ">
-                                                            <a href="4-column-slider-wide.html">4 Column Slider Wide</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="menu-item">
-                                                    <a href="home-visit.html">Projects Details</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-item ">
-                                            <a href="#">Blog</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
-                                            <ul class="sub-menu">
-                                                <li class="menu-item-has-children ">
-                                                    <a href="#">Grid Style</a><i
-                                                        class="fa fa-chevron-down pq-submenu-icon"></i>
-                                                    <ul class="sub-menu">
-                                                        <li class="menu-item ">
-                                                            <a href="1-column-blog.html">1 Column Blog</a>
-                                                        </li>
-                                                        <li class="menu-item ">
-                                                            <a href="2-column-blog.html">2 Column Blog</a>
-                                                        </li>
-                                                        <li class="menu-item ">
-                                                            <a href="3-column-blog.html">3 Column Blog</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="menu-item-has-children">
-                                                    <a href="#">Blog Sidebar</a><i
-                                                        class="fa fa-chevron-down pq-submenu-icon"></i>
-                                                    <ul class="sub-menu">
-                                                        <li class="menu-item ">
-                                                            <a href="left-sidebar.html">Left Sidebar</a>
-                                                        </li>
-                                                        <li class="menu-item ">
-                                                            <a href="right-sidebar.html">Right Sidebar</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="menu-item ">
-                                                    <a href="get-the-exercise-limited-mobility.html">Blog Single</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-item ">
-                                            <a href="contact-us.html">Contact Us</a>
+                                            <a href="contact.php">Contact Us</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -292,10 +143,10 @@
                                 <a href="javascript:void(0)" id="pq-seacrh-btn"><i class="ti-search"></i></a>
                                 <div class="pq-search-form">
                                     <form role="search" method="get" class="search-form"
-                                        action="https://peacefulqode.co.in/themes/medicate/html/.html">
+                                        action="">
                                         <label>
-                                            <span class="screen-reader-text">Search for:</span>
-                                            <input type="search" class="search-field" placeholder="Search …" value=""
+                                            <span class="screen-reader-text"> Search for:</span>
+                                            <input type="search" class="search-field" placeholder="Enter a search term" value=""
                                                 name="s">
                                         </label>
                                         <button type="submit" class="search-submit"><span
@@ -305,7 +156,7 @@
                             </div>
                             <a href="make-appoinment.html" class="pq-button">
                                 <div class="pq-button-block">
-                                    <span class="pq-button-text">Appointments</span>
+                                    <span class="pq-button-text">Consultation </span>
                                     <i class="ion ion-plus-round"></i>
                                 </div>
                             </a>
@@ -321,8 +172,6 @@
         </div>
     </header>
     <!--Header End -->
-   <!--=================================
-         header end-->
 
 
            <!--=================================

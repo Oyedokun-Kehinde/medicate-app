@@ -7,7 +7,7 @@
     <title> RMI Service – Medicate </title>
 
         <!-- Main Style CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
     <!-- Favicon Icon -->
     <link rel="shortcut icon" href="assets/images/favicon.ico">
     <!-- Bootstrap CSS -->

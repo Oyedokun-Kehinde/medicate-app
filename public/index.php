@@ -99,28 +99,28 @@
                                             <a href="services.php">Services</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
                                             <ul class="sub-menu">
                                                 <li class="menu-item ">
-                                                    <a href="public/services/angioplasty.php">Angioplasty </a>
+                                                    <a href="../public/services/angioplasty.php">Angioplasty </a>
                                                 </li>
                                                 <li class="menu-item ">
-                                                    <a href="/services/cardiology">Cardiology</a>
+                                                    <a href="../public/services/cardiology">Cardiology</a>
                                                 </li>
                                                 <li class="menu-item ">
-                                                    <a href="/services/dental.php">Dental </a>
+                                                    <a href="../public/services/dental.php">Dental </a>
                                                 </li>
                                                 <li class="menu-item">
-                                                    <a href="/services/endocrinology.php">Endocrinology</a>
+                                                    <a href="../public/services/endocrinology.php">Endocrinology</a>
                                                 </li>
                                                 <li class="menu-item ">
-                                                    <a href="/services/eye-care.php">Eye Care </a>
+                                                    <a href="../public/services/eye-care.php">Eye Care </a>
                                                 </li>
                                                 <li class="menu-item ">
-                                                    <a href="/services/neurology.php">Neurology </a>
+                                                    <a href="../public/services/neurology.php">Neurology </a>
                                                 </li>
                                                 <li class="menu-item ">
-                                                    <a href="/services/orthopaedics.php">Orthopaedics </a>
+                                                    <a href="../public/services/orthopaedics.php">Orthopaedics </a>
                                                 </li>
                                                 <li class="menu-item">
-                                                    <a href="/services/rmi.php">RMI </a>
+                                                    <a href="../public/services/rmi.php">RMI </a>
                                                 </li>
                                             </ul>
                                         </li>
