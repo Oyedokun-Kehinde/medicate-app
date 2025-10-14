@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> Medicate – Hospital Management System </title>
+    <title> Services – Medicate </title>
 
     <!-- Main Style CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -323,7 +323,7 @@
     <!--Header End -->
     <!--=================================
          Banner start-->
-    <div class="pq-breadcrumb" style="background-image:url('images/breadcrumb.jpg');">
+    <div class="pq-breadcrumb" style="background-image:url('assets/images/breadcrumb.jpg');">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-12">
@@ -362,7 +362,7 @@
                 <div class="col-xl-4 col-md-6">
                     <div class="pq-service-box pq-style-1">
                         <div class="pq-service-block">
-                            <div class="pq-service-img"><img src="images/services/1.jpg" class="img-fluid"
+                            <div class="pq-service-img"><img src="assets/images/services/1.jpg" class="img-fluid"
                                     alt="servicebox"></div>
                             <div class="pq-service-box-info">
                                 <div class="pq-info-text"> <span class="pq-service-sub-title">Medical Surgery </span>
@@ -378,7 +378,7 @@
                 <div class="col-xl-4 col-md-6 pt-xl-0 pt-md-0 pt-4">
                     <div class="pq-service-box pq-style-1">
                         <div class="pq-service-block">
-                            <div class="pq-service-img"><img src="images/services/2.jpg" class="img-fluid"
+                            <div class="pq-service-img"><img src="assets/images/services/2.jpg" class="img-fluid"
                                     alt="servicebox"></div>
                             <div class="pq-service-box-info">
                                 <div class="pq-info-text"> <span class="pq-service-sub-title">Medical Therapy </span>
@@ -394,7 +394,7 @@
                 <div class="col-xl-4 col-md-10 col-lg-6 pt-xl-0  pt-4">
                     <div class="pq-service-box pq-style-1">
                         <div class="pq-service-block">
-                            <div class="pq-service-img"><img src="images/services/3.jpg" class="img-fluid"
+                            <div class="pq-service-img"><img src="assets/images/services/3.jpg" class="img-fluid"
                                     alt="servicebox"></div>
                             <div class="pq-service-box-info">
                                 <div class="pq-info-text"> <span class="pq-service-sub-title">Medical Pediatrics</span>
@@ -427,7 +427,7 @@
                 </div>
                 <div class="col-xl-4 col-md-6">
                     <div class="pq-fancy-box pq-style-3">
-                        <div class="pq-fancy-box-hoverbg"> <img src="images/services/1.jpg" class="img-fluid"
+                        <div class="pq-fancy-box-hoverbg"> <img src="assets/images/services/1.jpg" class="img-fluid"
                                 alt="Images"> </div>
                         <div class="pq-fancy-box-icon"> <i class=" flaticon-heartbeat"></i> </div>
                         <div class="pq-fancy-box-info left">
@@ -443,7 +443,7 @@
                 </div>
                 <div class="col-xl-4 col-md-6 mt-4 mt-lg-0 mt-md-0">
                     <div class="pq-fancy-box pq-style-3">
-                        <div class="pq-fancy-box-hoverbg"> <img src="images/services/2.jpg" class="img-fluid"
+                        <div class="pq-fancy-box-hoverbg"> <img src="assets/images/services/2.jpg" class="img-fluid"
                                 alt="Images"> </div>
                         <div class="pq-fancy-box-icon"><i class=" flaticon-first-aid-box"></i></div>
                         <div class="pq-fancy-box-info left">
@@ -459,7 +459,7 @@
                 </div>
                 <div class="col-xl-4 col-md-12 mt-4 mt-xl-0">
                     <div class="pq-fancy-box pq-style-3">
-                        <div class="pq-fancy-box-hoverbg"> <img src="images/services/3.jpg" class="img-fluid"
+                        <div class="pq-fancy-box-hoverbg"> <img src="assets/images/services/3.jpg" class="img-fluid"
                                 alt="Images"> </div>
                         <div class="pq-fancy-box-icon"> <i class="flaticon-healthcare"></i> </div>
                         <div class="pq-fancy-box-info left">
@@ -475,7 +475,7 @@
                 </div>
                 <div class="col-xl-4 col-md-6  mt-4">
                     <div class="pq-fancy-box pq-style-3">
-                        <div class="pq-fancy-box-hoverbg"> <img src="images/services/2.jpg" class="img-fluid"
+                        <div class="pq-fancy-box-hoverbg"> <img src="assets/images/services/2.jpg" class="img-fluid"
                                 alt="Images"> </div>
                         <div class="pq-fancy-box-icon"> <i class="  flaticon-ct-scan"></i> </div>
                         <div class="pq-fancy-box-info left">
@@ -491,7 +491,7 @@
                 </div>
                 <div class="col-xl-4 col-md-6 mt-4">
                     <div class="pq-fancy-box pq-style-3">
-                        <div class="pq-fancy-box-hoverbg"> <img src="images/services/3.jpg" class="img-fluid"
+                        <div class="pq-fancy-box-hoverbg"> <img src="assets/images/services/3.jpg" class="img-fluid"
                                 alt="Images"> </div>
                         <div class="pq-fancy-box-icon"> <i class=" flaticon-x-ray-1"></i> </div>
                         <div class="pq-fancy-box-info left">
@@ -507,7 +507,7 @@
                 </div>
                 <div class="col-xl-4 col-md-12 mt-4">
                     <div class="pq-fancy-box pq-style-3">
-                        <div class="pq-fancy-box-hoverbg"> <img src="images/services/1.jpg" class="img-fluid"
+                        <div class="pq-fancy-box-hoverbg"> <img src="assets/images/services/1.jpg" class="img-fluid"
                                 alt="Images"> </div>
                         <div class="pq-fancy-box-icon"> <i class=" flaticon-health-insurance"></i> </div>
                         <div class="pq-fancy-box-info left">

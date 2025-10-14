@@ -323,340 +323,197 @@
     <!--Header End -->
    <!--=================================
          header end-->
-   <!--=================================
-         Banner start-->
-   <div class="pq-breadcrumb" style="background-image:url('assets/images/breadcrumb.jpg');">
-      <div class="container">
-         <div class="row align-items-center">
-            <div class="col-lg-12">
-               <nav aria-label="breadcrumb">
-                  <div class="pq-breadcrumb-title">
-                     <h2>Contact Us</h2> </div>
-                  <div class="pq-breadcrumb-container mt-2">
-                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index-2.html"><i class="fas fa-home mr-2"></i>Home</a></li>
-                        <li class="breadcrumb-item active">Contact Us</li>
-                     </ol>
-                  </div>
-               </nav>
-            </div>
-            <div class="col-lg-4">
-               <div class="pq-breadcrumb-img text-right wow fadeInRight"></div>
-            </div>
-         </div>
-      </div>
-   </div>
-   <!--=================================
-         Banner end-->
-   <!--=================================
-         conatct-us start-->
-   <section class="pq-contact-us">
-      <div class="container">
-         <div class="row justify-content-center">
-            <div class="col-lg-4 col-md-6 col-sm-12">
-               <div class="pq-contact-box">
-                  <div class="pq-contact-box-icon">
-                     <div class="icon animation-grow"> <i aria-hidden="true" class="ion ion-location"></i> </div>
-                  </div>
-                  <div class="pq-contact-box-info">
-                     <h4 class="pq-contact-box-title">
-                              Our Location
-                           </h4>
-                     <p class="pq-contact-box-description"> The Queen's Walk, Bishop's, London SE1 7PB, United Kingdom. </p>
-                  </div>
-               </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 mt-lg-0 mt-md-0 mt-4">
-               <div class="pq-contact-box">
-                  <div class="pq-contact-box-icon">
-                     <div class="icon animation-grow"> <i aria-hidden="true" class="ion ion-ios-telephone"></i> </div>
-                  </div>
-                  <div class="pq-contact-box-info">
-                     <h4 class="pq-contact-box-title">
-                              Our Contact
-                           </h4>
-                     <p class="pq-contact-box-description"> + (567) 1234-567-8900
-                        <br>+ (567) 1234-567-8901 </p>
-                  </div>
-               </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 mt-lg-0 mt-4">
-               <div class="pq-contact-box">
-                  <div class="pq-contact-box-icon">
-                     <div class="icon animation-grow"> <i aria-hidden="true" class="ion ion-email-unread"></i> </div>
-                  </div>
-                  <div class="pq-contact-box-info">
-                     <h4 class="pq-contact-box-title">
-                              Mail Us
-                           </h4>
-                     <p class="pq-contact-box-description"> info@peacefulthemes.com
-                        <br>info2@peacefulthemes.com </p>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </section>
-   <!--=================================
-         contact-us end-->
-   <!--=================================
-         get-in-touch start-->
-   <section class="get-in-touch p-0">
-      <div class="container">
-         <div class="row">
-            <div class="col-lg-8 col-md-8  pq-form-box">
-               <div class="form-container">
-                  <div class="pq-section pq-style-1 text-center p-0"> <span class="pq-section-sub-title">contact us</span>
-                     <h5 class="pq-section-title">Get in touch with us</h5> </div>
-               </div>
-               <div class="pq-applyform-whitebg text-start">
-                  <form action="#" class="pq-applyform">
-                     <div class="row">
-                        <div class="col-lg-6 col-md-6"> 
-                           <input type="text" id="first-name" name="your-name" class="name-field" value="" size="40" aria-required="true" aria-invalid="false" placeholder="Enter Your Name"> 
-                        </div>
-                        <div class="col-lg-6 col-md-6">
-                           <input type="email" id="e-mail" name="your-email" class="e-mail-field" value="" size="40" aria-required="true" aria-invalid="false" placeholder="Enter Your Email"> 
-                        </div>
-                        <div class="col-lg-6 col-md-6">
-                           <input type="text" id="phone-number" name="phone-number" class="phone-number-field" value="" size="40" aria-required="true" aria-invalid="false" placeholder="Enter Your Phone Number"> 
-                        </div>
-                        <div class="col-lg-6 col-md-6">
-                           <input type="text" id="subject" name="your-Subject" class="subject-field" size="40" aria-required="true" aria-invalid="false" placeholder="Subject"> 
-                        </div>
-                        <div class="col-lg-12 col-md-12">
-                           <textarea name="your-message" id="message" cols="40" rows="10" aria-required="true" aria-invalid="false" placeholder="Write Your Message"></textarea>
-                        </div>
-                        <div class="col-lg-12 col-md-12">
-                           <a class="pq-button form-btn">
-                              <div class="pq-button-block">
-                                 <span class="pq-button-text me-0">send message</span>
-                              </div>
-                           </a>
-                        </div>
-                     </div>
-                  </form>
-               </div>
-            </div>
-         </div>
-      </div>
-   </section>
-   <!--=================================
-         get-in-touch end-->
-   <!--=================================
-         map start-->
-   <div class="map pt-0">
-      <div class="pq-bg-map">
-         <iframe src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d317893.19730324426!2d-0.1195537!3d51.5032973!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x487604b900d26973%3A0x4291f3172409ea92!2slastminute.com%20London%20Eye%20Riverside%20Building%2C%20County%20Hall%20London%20SE1%207PB%20United%20Kingdom!3m2!1d51.5032973!2d-0.1195537!5e0!3m2!1sen!2sin!4v1652772883319!5m2!1sen!2sin" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-   </div>
-   <!--=================================
-         map end-->
-   <!--=================================
-          Footer start
-   ============================== -->
-   <footer id="pq-footer">
-      <div class="pq-footer-style-1">
-         <div class="pq-subscribe align-items-center">
+      <!--=================================
+        breadcrumb start-->
+      <div class="pq-breadcrumb" style="background-image: url(images/breadcrumb.jpg);">
             <div class="container">
-               <div class="row align-items-center">
-                  <div class="col-lg-12">
-                     <div class="pq-subscribe-bg">
-                        <div class="row align-items-center">
-                           <div class="col-lg-5">
-                              <div class="pq-subscribe-block"> <img src="assets/images/Subscribe.png" class="pq-subscribe-img img-fluid" alt="medicate-subscribe-image">
-                                 <div class="pq-subscribe-details">
-                                    <h5>Latest Updates Subscribe To Our Newsletter</h5> </div>
-                              </div>
-                           </div>
-                           <div class="col-lg-7 align-self-center">
-                              <div class="pq-subscribe-from">
-                                 <form id="form" class="form">
-                                    <div class="form-fields">
-                                       <input class="w-100 pq-bg-transparent" type="email" name="EMAIL" placeholder="Enter Your Email" required="">
-                                       <input class="" type="submit" value="Sign up"> </div>
-                                 </form>
-                              </div>
-                           </div>
+                  <div class="row align-items-center">
+                        <div class="col-lg-12">
+                              <nav aria-label="breadcrumb">
+                                    <div class="pq-breadcrumb-title">
+                                          <h2> Error 404 </h2> </div>
+                                    <div class="pq-breadcrumb-container">
+                                          <ol class="breadcrumb">
+                                                <li class="breadcrumb-item"><a href="index-2.html"><i class="fas fa-home mr-2"></i>Home</a></li>
+                                                <li class="breadcrumb-item active">Error 404</li>
+                                          </ol>
+                                    </div>
+                              </nav>
                         </div>
-                     </div>
+                        <div class="col-lg-4">
+                              <div class="pq-breadcrumb-img text-right wow fadeInRight"></div>
+                        </div>
                   </div>
-               </div>
             </div>
-         </div>
-         <div class="pq-footer-top">
+      </div>
+      <!--=================================
+        breadcrumb end-->
+      <!--=================================
+        page-not-found start-->
+      <section class="page-not-found pq-pb-210">
             <div class="container">
-               <div class="row">
-                  <div class="col-xl-3 col-md-6">
-                     <div class="pq-footer-block"> <img src="assets/images/footer_logo.png" class="pq-footer-logo img-fluid" alt="medicate-footer-logo">
-                        <p>It helps designers plan out where the content will sit, the content to be written and approved.</p>
-                        <div class="pq-footer-social">
-                           <ul>
-                              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                              <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                              <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-                           </ul>
+                  <div class="row">
+                        <div class="col-lg-12">
+                              <div class="pq-error-block">
+                                    <div class="pq-errot-text">404</div>
+                                    <h2>404 Error</h2>
+                                    <p>Oops! This Page is Not Found.</p>
+                                    <div class="pq-btn-block">
+                                          <div class="pq-btn-container">
+                                                <a href="index-2.html" class="pq-button">
+                                                      <div class="pq-button-block"> <span class="pq-button-text">Back to Home</span> <i class="ion ion-plus-round"></i> </div>
+                                                </a>
+                                          </div>
+                                    </div>
+                              </div>
                         </div>
-                     </div>
                   </div>
-                  <div class="col-xl-3  col-md-6">
-                     <div class="pq-footer-block">
-                        <h4 class="footer-title">Our Courses</h4>
-                        <div class="menu-useful-links-container">
-                           <ul id="menu-useful-links" class="menu">
-                              <li><a href="about-us.html">About Us</a></li>
-                              <li><a href="contact-us.html">Contact Us</a></li>
-                              <li><a href="our-services.html">Our Services</a></li>
-                              <li><a href="our-process.html">Our Process</a></li>
-                              <li><a href="doctor-1.html">Doctors 1</a></li>
-                              <li><a href="faq.html">FAQ</a></li>
-                              <li><a href="our-doctor.html">Doctors 2</a></li>
-                              <li><a href="home-visit.html">Departments</a></li>
-                              <li><a href="make-appoinment.html">Events</a></li>
-                              <li><a href="our-plan.html">Member</a></li>
-                           </ul>
+            </div>
+      </section>
+      <!--=================================
+        page-not-found end-->
+      <!--=================================
+        Footer start
+      ============================== -->
+      <footer id="pq-footer">
+            <div class="pq-footer-style-1">
+                  <div class="pq-subscribe align-items-center">
+                        <div class="container">
+                              <div class="row align-items-center">
+                                    <div class="col-lg-12">
+                                          <div class="pq-subscribe-bg">
+                                                <div class="row align-items-center">
+                                                      <div class="col-lg-5">
+                                                            <div class="pq-subscribe-block"> <img src="images/Subscribe.png" class="pq-subscribe-img img-fluid" alt="medicate-subscribe-image">
+                                                                  <div class="pq-subscribe-details">
+                                                                        <h5>Latest Updates Subscribe To Our Newsletter</h5> </div>
+                                                            </div>
+                                                      </div>
+                                                      <div class="col-lg-7 align-self-center">
+                                                            <div class="pq-subscribe-from">
+                                                                  <form id="form" class="form">
+                                                                        <div class="form-fields">
+                                                                              <input class="w-100 pq-bg-transparent" type="email" name="EMAIL" placeholder="Enter Your Email" required="">
+                                                                              <input class="" type="submit" value="Sign up"> </div>
+                                                                  </form>
+                                                            </div>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
                         </div>
-                     </div>
                   </div>
-                  <div class="col-xl-3  col-md-6">
-                     <div class="pq-footer-block">
-                        <h4 class="footer-title">Recent Posts</h4>
-                        <div class="pq-footer-recent-post">
-                           <div class="pq-footer-recent-post-media">
-                              <a href="get-the-exercise-limited-mobility.html"> <img src="assets/images/footer-image/1.jpg" alt=""></a>
-                           </div>
-                           <div class="pq-footer-recent-post-info">
-                              <a href="get-the-exercise-limited-mobility.html" class="pq-post-date"> <i class="far fa-calendar-alt"></i>December <span>12</span>, 2021 </a>
-                              <h6><a href="get-the-exercise-limited-mobility.html">Get the Exercise Limited Mobility</a></h6> </div>
-                        </div>
-                        <div class="pq-footer-recent-post">
-                           <div class="pq-footer-recent-post-media">
-                              <a href="get-the-exercise-limited-mobility.html"> <img src="assets/images/footer-image/2.jpg" alt=""></a>
-                           </div>
-                           <div class="pq-footer-recent-post-info">
-                              <a href="get-the-exercise-limited-mobility.html" class="pq-post-date"> <i class="far fa-calendar-alt"></i>December <span>12</span>, 2021 </a>
-                              <h6><a href="get-the-exercise-limited-mobility.html">Transfusion strategy and heart surgery</a></h6> </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-xl-3  col-md-6">
-                     <div class="pq-footer-block">
-                        <h4 class="footer-title">Contact Us</h4>
-                        <div class="row">
-                           <div class="col-sm-12">
-                              <ul class="pq-contact">
-                                 <li> <a href="tel:+1800001658"><i class="fas fa-phone"></i>
+                  <div class="pq-footer-top">
+                        <div class="container">
+                              <div class="row">
+                                    <div class="col-xl-3 col-md-6">
+                                          <div class="pq-footer-block"> <img src="images/footer_logo.png" class="pq-footer-logo img-fluid" alt="medicate-footer-logo">
+                                                <p>It helps designers plan out where the content will sit, the content to be written and approved.</p>
+                                                <div class="pq-footer-social">
+                                                      <ul>
+                                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                                            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                                            <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                                                      </ul>
+                                                </div>
+                                          </div>
+                                    </div>
+                                    <div class="col-xl-3  col-md-6">
+                                          <div class="pq-footer-block">
+                                                <h4 class="footer-title">Our Courses</h4>
+                                                <div class="menu-useful-links-container">
+                                                      <ul id="menu-useful-links" class="menu">
+                                                            <li><a href="about-us.html">About Us</a></li>
+                                                            <li><a href="contact-us.html">Contact Us</a></li>
+                                                            <li><a href="our-services.html">Our Services</a></li>
+                                                            <li><a href="our-process.html">Our Process</a></li>
+                                                            <li><a href="doctor-1.html">Doctors 1</a></li>
+                                                            <li><a href="faq.html">FAQ</a></li>
+                                                            <li><a href="our-doctor.html">Doctors 2</a></li>
+                                                            <li><a href="home-visit.html">Departments</a></li>
+                                                            <li><a href="make-appoinment.html">Events</a></li>
+                                                            <li><a href="our-plan.html">Member</a></li>
+                                                      </ul>
+                                                </div>
+                                          </div>
+                                    </div>
+                                    <div class="col-xl-3  col-md-6">
+                                          <div class="pq-footer-block">
+                                                <h4 class="footer-title">Recent Posts</h4>
+                                                <div class="pq-footer-recent-post">
+                                                      <div class="pq-footer-recent-post-media">
+                                                            <a href="get-the-exercise-limited-mobility.html"> <img src="images/footer-image/1.jpg" alt=""></a>
+                                                      </div>
+                                                      <div class="pq-footer-recent-post-info">
+                                                            <a href="get-the-exercise-limited-mobility.html" class="pq-post-date"> <i class="far fa-calendar-alt"></i>December <span>12</span>, 2021 </a>
+                                                            <h6><a href="get-the-exercise-limited-mobility.html">Get the Exercise Limited Mobility</a></h6> </div>
+                                                </div>
+                                                <div class="pq-footer-recent-post">
+                                                      <div class="pq-footer-recent-post-media">
+                                                            <a href="get-the-exercise-limited-mobility.html"> <img src="images/footer-image/2.jpg" alt=""></a>
+                                                      </div>
+                                                      <div class="pq-footer-recent-post-info">
+                                                            <a href="get-the-exercise-limited-mobility.html" class="pq-post-date"> <i class="far fa-calendar-alt"></i>December <span>12</span>, 2021 </a>
+                                                            <h6><a href="get-the-exercise-limited-mobility.html">Transfusion strategy and heart surgery</a></h6> </div>
+                                                </div>
+                                          </div>
+                                    </div>
+                                    <div class="col-xl-3  col-md-6">
+                                          <div class="pq-footer-block">
+                                                <h4 class="footer-title">Contact Us</h4>
+                                                <div class="row">
+                                                      <div class="col-sm-12">
+                                                            <ul class="pq-contact">
+                                                                  <li> <a href="tel:+1800001658"><i class="fas fa-phone"></i>
                                     <span> +1800-001-658</span>
                                  </a> </li>
-                                 <li> <a href="mailto:info@peacefulthemes.com"><i class="fas fa-envelope"></i><span>info@peacefulthemes.com</span></a> </li>
-                                 <li> <i class="fas fa-map-marker"></i> <span>
+                                                                  <li> <a href="mailto:info@peacefulthemes.com"><i class="fas fa-envelope"></i><span>info@peacefulthemes.com</span></a> </li>
+                                                                  <li> <i class="fas fa-map-marker"></i> <span>
                                     Themeforest, Envato HQ 24 Fifth st., Los Angeles, USA                               </span> </li>
-                              </ul>
-                           </div>
+                                                            </ul>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
                         </div>
-                     </div>
                   </div>
-               </div>
+                  <div class="pq-copyright-footer">
+                        <div class="container">
+                              <div class="row">
+                                    <div class="col-md-12 text-center "> <span class="pq-copyright"> Copyright 2022 medicate All Rights Reserved</span> </div>
+                              </div>
+                        </div>
+                  </div>
             </div>
-         </div>
-         <div class="pq-copyright-footer">
-            <div class="container">
-               <div class="row">
-                  <div class="col-md-12 text-center "> <span class="pq-copyright"> Copyright 2022 medicate All Rights Reserved</span> </div>
-               </div>
-            </div>
-         </div>
+      </footer>
+      <!--Footer End-->
+      <!--Back To Top start-->
+      <div id="back-to-top">
+            <a class="topbtn" id="top" href="#top"> <i class="ion-ios-arrow-up"></i> </a>
       </div>
-   </footer>
-   <!--Footer End-->
-   <!--Back To Top start-->
-   <div id="back-to-top">
-      <a class="topbtn" id="top" href="#top"> <i class="ion-ios-arrow-up"></i> </a>
-   </div>
-   <!--Back To Top End-->
-
-   <!-- JS Files -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/progressbar.js"></script>
-    <script src="assets/js/isotope.pkgd.min.js"></script>
-    <script src="assets/js/jquery.countTo.min.js"></script>
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-    <script src="assets/js/wow.min.js"></script>
-    <script src="assets/rev/js/rbtools.min.js"></script>
-    <script src="assets/rev/js/rs6.min.js"></script>
-    <script src="assets/js/rev-custom.js"></script>
-    <script src="assets/js/custom.js"></script>
-
-    <script>
-        jQuery(window).on('load', function (e) {
-            jQuery(".pq-applyform .form-btn").click(function () {
-                var first_name = jQuery('#first-name').val();
-                var doctor_name = jQuery('#doctor-name').val();
-                var disease_name = jQuery('#disease-name').val();
-                var email = jQuery('#e-mail').val();
-
-                var result;
-
-                jQuery('.pq-applyform .pq-message').remove();
-                jQuery('.pq-applyform .pq-thank-you-message').remove();
-
-                if (first_name == '' || first_name == undefined) {
-                    jQuery("<span class='pq-name-error-message pq-message'>Please fill the field</span>").insertAfter('.pq-applyform .name-field');
-                    result = false;
-                }
-                else {
-                    jQuery('.pq-name-error-message').remove();
-                    result = true;
-                }
-
-                if (email == '' || email == undefined) {
-                    jQuery("<span class='pq-email-error-message pq-message'>Please fill the field</span>").insertAfter('.pq-applyform .e-mail-field');
-                    result = false;
-                }
-                else {
-                    jQuery('.pq-email-error-message').remove();
-                    result = true;
-                }
-
-                if (doctor_name == '' || doctor_name == undefined) {
-                    jQuery("<span class='pq-doctor-name-error-message pq-message'>Please fill the field</span>").insertAfter('.pq-applyform .doctor-name-field');
-                    result = false;
-                }
-                else {
-                    jQuery('.pq-doctor-name-error-message').remove();
-                    result = true;
-                }
-
-                if (disease_name == '' || disease_name == undefined) {
-                    jQuery("<span class='pq-disease-name-error-message pq-message'>Please fill the field</span>").insertAfter('.pq-applyform #disease-name');
-                    result = false;
-                }
-                else {
-                    jQuery('.pq-disease-name-error-message').remove();
-                    result = true;
-                }
-
-                if (result == true) {
-                    var email = jQuery("#email").text();
-                    event.preventDefault();
-                    jQuery.ajax({
-                        type: "POST",
-                        url: "mail.php",
-                        data: { 'email': email },
-                        success: function () {
-                            jQuery("<span class='pq-thank-you-message pq-text-white ms-5'> Thank You For Filling The form</span>").insertAfter('.pq-applyform .pq-button');
-                        }
-                    });
-                }
-            });
-        });
-    </script>
+      <!--Back To Top End-->
+      <!--jquery js-->
+      <script src="js/jquery.min.js"></script>
+      <!--bootstrap js-->
+      <script src="js/bootstrap.min.js"></script>
+      <!--owl-carousal-->
+      <script src="js/owl.carousel.min.js"></script>
+      <!--progress-bar js-->
+      <script src="js/progressbar.js"></script>
+      <!--isotope js-->
+      <script src="js/isotope.pkgd.min.js"></script>
+      <!--countTo js-->
+      <script src="js/jquery.countTo.min.js"></script>
+      <!--Maginfic-Popup js-->
+      <script src="js/jquery.magnific-popup.min.js"></script>
+      <!-- Animation JS -->
+      <script src="js/wow.min.js"></script>
+      <!--custom js-->
+      <script src="js/custom.js"></script>
 </body>
 
-<script>'undefined' === typeof _trfq || (window._trfq = []); 'undefined' === typeof _trfd && (window._trfd = []), _trfd.push({ 'tccl.baseHost': 'secureserver.net' }, { 'ap': 'cpbh-mt' }, { 'server': 'sg2plmcpnl492384' }, { 'dcenter': 'sg2' }, { 'cp_id': '9858662' }, { 'cp_cache': '' }, { 'cp_cl': '8' }) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script>
-<script src='../../../../img1.wsimg.com/signals/js/
-      
+<script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'},{'ap':'cpbh-mt'},{'server':'sg2plmcpnl492384'},{'dcenter':'sg2'},{'cp_id':'9858662'},{'cp_cache':''},{'cp_cl':'8'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='../../../../img1.wsimg.com/signals/js/clients/scc-c2/scc-c2.min.js'></script>
 </html>
