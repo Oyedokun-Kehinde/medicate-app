@@ -94,72 +94,72 @@
                                         </li>
                                         <li class="menu-item ">
                                             <a href="about.php">About Us </a>
-                                            <!-- <ul class="sub-menu">
-                                                <li class="menu-item ">
-                                                    <a href="about-us.html">About Us</a>
-                                                </li>
-                                                <li class="menu-item ">
-                                                    <a href="our-services.html">Our Services</a>
-                                                </li>
-                                                <li class="menu-item ">
-                                                    <a href="our-process.html">Our Process</a>
-                                                </li>
-                                                <li class="menu-item ">
-                                                    <a href="our-plan.html">Our Plans</a>
-                                                </li>
-                                                <li class="menu-item-has-children">
-                                                    <a href="#">Our Doctors</a><i
-                                                        class="fa fa-chevron-down pq-submenu-icon"></i>
-                                                    <ul class="sub-menu">
-                                                        <li class="menu-item ">
-                                                            <a href="doctor-1.html">Doctors 1</a>
-                                                        </li>
-                                                        <li class="menu-item ">
-                                                            <a href="our-doctor.html">Our Doctor Details</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="menu-item ">
-                                                    <a href="make-appoinment.html">Make Appointments</a>
-                                                </li>
-                                                <li class="menu-item ">
-                                                    <a href="faq.html">FAQ</a>
-                                                </li>
-                                                <li class="menu-item ">
-                                                    <a href="404.html">404</a>
-                                                </li>
-                                            </ul> -->
+                                        <li class="menu-item ">
+                                            <a href="about-us.html">About Us</a>
                                         </li>
                                         <li class="menu-item ">
-                                            <a href="services.php">Services</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
+                                            <a href="our-services.html">Our Services</a>
+                                        </li>
+                                        <li class="menu-item ">
+                                            <a href="our-process.html">Our Process</a>
+                                        </li>
+                                        <li class="menu-item ">
+                                            <a href="our-plan.html">Our Plans</a>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="#">Our Doctors</a><i
+                                                class="fa fa-chevron-down pq-submenu-icon"></i>
                                             <ul class="sub-menu">
                                                 <li class="menu-item ">
-                                                    <a href="/services/angioplasty.php">Angioplasty </a>
+                                                    <a href="doctor-1.html">Doctors 1</a>
                                                 </li>
                                                 <li class="menu-item ">
-                                                    <a href="/services/cardiology">Cardiology</a>
-                                                </li>
-                                                <li class="menu-item ">
-                                                    <a href="/services/dental.php">Dental </a>
-                                                </li>
-                                                <li class="menu-item">
-                                                    <a href="/services/endocrinology.php">Endocrinology</a>
-                                                </li>
-                                                <li class="menu-item ">
-                                                    <a href="/services/eye-care.php">Eye Care </a>
-                                                </li>
-                                                <li class="menu-item ">
-                                                    <a href="/services/neurology.php">Neurology </a>
-                                                </li>
-                                                <li class="menu-item ">
-                                                    <a href="/services/orthopaedics.php">Orthopaedics </a>
-                                                </li>
-                                                <li class="menu-item">
-                                                    <a href="/services/rmi.php">RMI </a>
+                                                    <a href="our-doctor.html">Our Doctor Details</a>
                                                 </li>
                                             </ul>
                                         </li>
-                                        <!-- <li class="menu-item ">
+                                        <li class="menu-item ">
+                                            <a href="make-appoinment.html">Make Appointments</a>
+                                        </li>
+                                        <li class="menu-item ">
+                                            <a href="faq.html">FAQ</a>
+                                        </li>
+                                        <li class="menu-item ">
+                                            <a href="404.html">404</a>
+                                        </li>
+                                    </ul> -->
+                                    </li>
+                                    <li class="menu-item ">
+                                        <a href="services.php">Services</a><i
+                                            class="fa fa-chevron-down pq-submenu-icon"></i>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item ">
+                                                <a href="/services/angioplasty.php">Angioplasty </a>
+                                            </li>
+                                            <li class="menu-item ">
+                                                <a href="/services/cardiology">Cardiology</a>
+                                            </li>
+                                            <li class="menu-item ">
+                                                <a href="/services/dental.php">Dental </a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="/services/endocrinology.php">Endocrinology</a>
+                                            </li>
+                                            <li class="menu-item ">
+                                                <a href="/services/eye-care.php">Eye Care </a>
+                                            </li>
+                                            <li class="menu-item ">
+                                                <a href="/services/neurology.php">Neurology </a>
+                                            </li>
+                                            <li class="menu-item ">
+                                                <a href="/services/orthopaedics.php">Orthopaedics </a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="/services/rmi.php">RMI </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- <li class="menu-item ">
                                             <a href="gallery.php">Gallery</a> 
                                             <ul class="sub-menu">
                                                 <li class="menu-item-has-children">
@@ -218,13 +218,13 @@
                                                 </li>
                                             </ul>
                                         </li> -->
-                                        <li class="menu-item ">
-                                            <a href="blog.php">Blog</a>
+                                    <li class="menu-item ">
+                                        <a href="blog.php">Blog</a>
 
-                                        </li>
-                                        <li class="menu-item ">
-                                            <a href="contact-us.html">Contact Us</a>
-                                        </li>
+                                    </li>
+                                    <li class="menu-item ">
+                                        <a href="contact-us.html">Contact Us</a>
+                                    </li>
                                     </ul>
                                 </div>
                             </div>
@@ -274,8 +274,10 @@
         <rs-module id="rev_slider_24_1" data-version="6.5.19">
             <rs-slides>
                 <rs-slide style="position: absolute;" data-key="rs-84" data-title="Slide"
-                    data-thumb="assets/rev/assets/1-51-50x100.jpg" data-anim="ms:600;" data-in="o:0;" data-out="a:false;">
-                    <img src="assets/rev/assets/1-51.jpg" alt="" title="1-51.jpg" class="rev-slidebg tp-rs-img" data-no-retina>
+                    data-thumb="assets/rev/assets/1-51-50x100.jpg" data-anim="ms:600;" data-in="o:0;"
+                    data-out="a:false;">
+                    <img src="assets/rev/assets/1-51.jpg" alt="" title="1-51.jpg" class="rev-slidebg tp-rs-img"
+                        data-no-retina>
                     <!--
                   -->
                     <rs-layer id="slider-24-slide-84-layer-0" data-type="text" data-color="#666666" data-rsp_ch="on"
@@ -390,7 +392,8 @@
                 </rs-slide>
                 <rs-slide style="position: absolute;" data-key="rs-86" data-title="Slide"
                     data-thumb="assets/rev/assets/3-2-50x100.jpg" data-in="o:0;" data-out="a:false;">
-                    <img src="assets/rev/assets/3-2.jpg" alt="" title="3-2" class="rev-slidebg tp-rs-img" data-no-retina>
+                    <img src="assets/rev/assets/3-2.jpg" alt="" title="3-2" class="rev-slidebg tp-rs-img"
+                        data-no-retina>
                     <!--
                   -->
                     <rs-layer id="slider-24-slide-86-layer-0" data-type="text" data-color="#666666" data-rsp_ch="on"
@@ -1072,7 +1075,7 @@
     </section>
     <!--Section process-step End-->
 
-    
+
     <!--Section team start-->
     <section class="team pq-bg-grey pq-team-pb">
         <div class="container">
@@ -1457,7 +1460,7 @@
         </div>
     </div>
     <!--Section client End-->
-    
+
     <!--Section blog Start-->
     <section class="pq-blog pq-bg-grey pq-pb-210">
         <div class="container">
@@ -1473,7 +1476,8 @@
                         data-loop="true" data-margin="30">
                         <div class="item">
                             <div class="pq-blog-post pq-style-1">
-                                <div class="pq-post-media"> <img src="assets/images/blog/1.jpg" class="img-fluid" alt="images">
+                                <div class="pq-post-media"> <img src="assets/images/blog/1.jpg" class="img-fluid"
+                                        alt="images">
                                     <div class="pq-post-date">
                                         <a href="get-the-exercise-limited-mobility.html"> <span>December 5,
                                                 2021</span></a>
@@ -1506,7 +1510,8 @@
                         </div>
                         <div class="item">
                             <div class="pq-blog-post pq-style-1">
-                                <div class="pq-post-media"> <img src="assets/images/blog/2.jpg" class="img-fluid" alt="images">
+                                <div class="pq-post-media"> <img src="assets/images/blog/2.jpg" class="img-fluid"
+                                        alt="images">
                                     <div class="pq-post-date">
                                         <a href="get-the-exercise-limited-mobility.html"> <span>December 5,
                                                 2021</span></a>
@@ -1539,7 +1544,8 @@
                         </div>
                         <div class="item">
                             <div class="pq-blog-post pq-style-1">
-                                <div class="pq-post-media"> <img src="assets/images/blog/3.jpg" class="img-fluid" alt="images">
+                                <div class="pq-post-media"> <img src="assets/images/blog/3.jpg" class="img-fluid"
+                                        alt="images">
                                     <div class="pq-post-date">
                                         <a href="get-the-exercise-limited-mobility.html"> <span>December 5,
                                                 2021</span></a>
@@ -1572,7 +1578,8 @@
                         </div>
                         <div class="item">
                             <div class="pq-blog-post pq-style-1">
-                                <div class="pq-post-media"> <img src="assets/images/blog/4.jpg" class="img-fluid" alt="images">
+                                <div class="pq-post-media"> <img src="assets/images/blog/4.jpg" class="img-fluid"
+                                        alt="images">
                                     <div class="pq-post-date">
                                         <a href="get-the-exercise-limited-mobility.html"> <span>December 5,
                                                 2021</span></a>
@@ -1605,7 +1612,8 @@
                         </div>
                         <div class="item">
                             <div class="pq-blog-post pq-style-1">
-                                <div class="pq-post-media"> <img src="assets/images/blog/5.jpg" class="img-fluid" alt="images">
+                                <div class="pq-post-media"> <img src="assets/images/blog/5.jpg" class="img-fluid"
+                                        alt="images">
                                     <div class="pq-post-date">
                                         <a href="get-the-exercise-limited-mobility.html"> <span>December 5,
                                                 2021</span></a>
@@ -1638,7 +1646,8 @@
                         </div>
                         <div class="item">
                             <div class="pq-blog-post pq-style-1">
-                                <div class="pq-post-media"> <img src="assets/images/blog/6.jpg" class="img-fluid" alt="images">
+                                <div class="pq-post-media"> <img src="assets/images/blog/6.jpg" class="img-fluid"
+                                        alt="images">
                                     <div class="pq-post-date">
                                         <a href="get-the-exercise-limited-mobility.html"> <span>December 5,
                                                 2021</span></a>
@@ -1671,7 +1680,8 @@
                         </div>
                         <div class="item">
                             <div class="pq-blog-post pq-style-1">
-                                <div class="pq-post-media"> <img src="assets/images/blog/7.jpg" class="img-fluid" alt="images">
+                                <div class="pq-post-media"> <img src="assets/images/blog/7.jpg" class="img-fluid"
+                                        alt="images">
                                     <div class="pq-post-date">
                                         <a href="get-the-exercise-limited-mobility.html"> <span>December 5,
                                                 2021</span></a>
@@ -1704,7 +1714,8 @@
                         </div>
                         <div class="item">
                             <div class="pq-blog-post pq-style-1">
-                                <div class="pq-post-media"> <img src="assets/images/blog/8.jpg" class="img-fluid" alt="images">
+                                <div class="pq-post-media"> <img src="assets/images/blog/8.jpg" class="img-fluid"
+                                        alt="images">
                                     <div class="pq-post-date">
                                         <a href="get-the-exercise-limited-mobility.html"> <span>December 5,
                                                 2021</span></a>
@@ -1737,7 +1748,8 @@
                         </div>
                         <div class="item">
                             <div class="pq-blog-post pq-style-1">
-                                <div class="pq-post-media"> <img src="assets/images/blog/9.jpg" class="img-fluid" alt="images">
+                                <div class="pq-post-media"> <img src="assets/images/blog/9.jpg" class="img-fluid"
+                                        alt="images">
                                     <div class="pq-post-date">
                                         <a href="get-the-exercise-limited-mobility.html"> <span>December 5,
                                                 2021</span></a>
@@ -1788,7 +1800,7 @@
                             <div class="pq-subscribe-bg">
                                 <div class="row align-items-center">
                                     <div class="col-lg-5">
-                                        <div class="pq-subscribe-block"> <img src="images/Subscribe.png"
+                                        <div class="pq-subscribe-block"> <img src="assets/images/Subscribe.png"
                                                 class="pq-subscribe-img img-fluid" alt="medicate-subscribe-image">
                                             <div class="pq-subscribe-details">
                                                 <h5>Latest Updates Subscribe To Our Newsletter</h5>
