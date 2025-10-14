@@ -69,7 +69,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="mailto:info@peacefulthemes.com"><i
+                                    <a href="mailto:info@medicate.com"><i
                                             class="fas fa-envelope"></i><span>info@medicate.com</span></a>
                                 </li>
                             </ul>
@@ -126,6 +126,9 @@
                                         </li>
                                         <li class="menu-item ">
                                             <a href="specialists.php">Specialists  </a>
+                                        </li>
+                                        <li class="menu-item ">
+                                            <a href="case-study.php">Case Studies  </a>
                                         </li>
                                         <li class="menu-item ">
                                             <a href="blog.php">Blog</a>
@@ -225,7 +228,7 @@
                         data-frame_999="o:0;st:w;sR:7400;" style="z-index:8;background-color:#d3e9fb;">
                     </rs-layer>
                     <!--
-                  --><a id="slider-24-slide-84-layer-6" class="rs-layer pq-button rev-btn" href="about-us.html"
+                  --><a id="slider-24-slide-84-layer-6" class="rs-layer pq-button rev-btn" href="about.php"
                         target="_self" data-type="button" data-rsp_ch="on"
                         data-xy="xo:27px,30px,30px,30px;y:m;yo:93px,97px,104px,37px;"
                         data-text="w:normal;s:14,16,16,12;l:22,24,30,20;fw:600;a:left,left,center,center;"
@@ -235,7 +238,7 @@
                         data-frame_1="st:1300;sp:1000;sR:1300;" data-frame_999="o:0;st:w;sR:6700;"
                         data-frame_hover="bgc:#14457b;bor:3px,3px,3px,3px;bos:solid;sp:100;bri:120%;"
                         style="z-index:12;background-color:#2490eb;font-family:'Quicksand';text-transform:uppercase;"><span
-                            class="text">Read More</span><i class="ion ion-plus-round"></i>
+                            class="text">About Us </span><i class="ion ion-plus-round"></i>
                     </a>
                     <!--
                   -->
@@ -269,7 +272,7 @@
                         data-text="w:normal;s:64,48,42,22;l:72,56,50,30;fw:600;"
                         data-border="boc:#14457b;bow:1px,1px,1px,1px;" data-frame_0="x:50,39,29,17;"
                         data-frame_1="st:1400;sp:1000;sR:1400;" data-frame_999="o:0;st:w;sR:6600;"
-                        style="z-index:10;font-family:'Quicksand';text-transform:capitalize;">Orthopedic Treatment
+                        style="z-index:10;font-family:'Quicksand';text-transform:capitalize;">Orthopaedic Treatment
                         <br>
                         Accute Pain
                     </rs-layer>
@@ -282,7 +285,7 @@
                         style="z-index:8;background-color:#d3e9fb;">
                     </rs-layer>
                     <!--
-                  --><a id="slider-24-slide-85-layer-6" class="rs-layer pq-button rev-btn" href="about-us.html"
+                  --><a id="slider-24-slide-85-layer-6" class="rs-layer pq-button rev-btn" href="services.php"
                         target="_self" data-type="button" data-rsp_ch="on"
                         data-xy="xo:27px,30px,30px,30px;y:m;yo:93px,97px,104px,37px;"
                         data-text="w:normal;s:14,16,16,12;l:22,24,30,20;fw:600;a:left,left,center,center;"
@@ -292,7 +295,7 @@
                         data-frame_1="st:1900;sp:1000;sR:1800;" data-frame_999="o:0;st:w;sR:6200;"
                         data-frame_hover="bgc:#14457b;bor:3px,3px,3px,3px;bos:solid;sp:100;bri:120%;"
                         style="z-index:12;background-color:#2490eb;font-family:'Quicksand';text-transform:uppercase;"><span
-                            class="text">Read More</span><i class="ion ion-plus-round"></i>
+                            class="text">Our Services </span><i class="ion ion-plus-round"></i>
                     </a>
                     <!--
                   -->
@@ -338,7 +341,7 @@
                         style="z-index:8;background-color:#d3e9fb;">
                     </rs-layer>
                     <!--
-                  --><a id="slider-24-slide-86-layer-6" class="rs-layer pq-button rev-btn" href="about-us.html"
+                  --><a id="slider-24-slide-86-layer-6" class="rs-layer pq-button rev-btn" href="specialists.php"
                         target="_self" data-type="button" data-rsp_ch="on"
                         data-xy="xo:27px,30px,30px,30px;y:m;yo:93px,97px,104px,37px;"
                         data-text="w:normal;s:14,16,16,12;l:22,24,30,20;fw:600;a:left,left,center,center;"
@@ -363,7 +366,7 @@
 
     <!--=================================
          END REVOLUTION SLIDER
-         ================================= -->
+        ================================= -->
 
     <section class="servicebox p-lg-0 pb-0 pq-bg-grey ">
         <div class="container pq-mt-60">
@@ -385,11 +388,11 @@
                     <div class="pq-info-box pq-style-2">
                         <div class="pq-info-box-right-icon"> <i class=" flaticon-doctor"></i> </div>
                         <div class="pq-info-box-icon"><i class=" flaticon-doctor"></i></div>
-                        <h5 class="pq-info-title">Doctors Timetable</h5>
+                        <h5 class="pq-info-title">Book An Appointment </h5>
                         <p class="pq-infobox-description">There are many variations of passages of Lorem Ipsum
                             available, but
                             the majority have suffered alteration in some form </p>
-                        <a class="pq-button pq-button-flat" href="make-appoinment.html">
+                        <a class="pq-button pq-button-flat" href="consultation.php">
                             <div class="pq-button-block"> <span class="pq-button-text">Timetable</span> <i
                                     class="ion ion-plus-round"></i> </div>
                         </a>
@@ -459,7 +462,7 @@
                         <li><i aria-hidden="true" class="ion ion-checkmark-round"></i><span>Instant Operation &
                                 Appointment</span></li>
                     </ul>
-                    <a class="pq-button pq-button-flat mt-3" href="about-us.html">
+                    <a class="pq-button pq-button-flat mt-3" href="about.php">
                         <div class="pq-button-block"> <span class="pq-button-text">Read More</span> <i
                                 class="ion ion-plus-round"></i> </div>
                     </a>
@@ -486,7 +489,7 @@
                             </div>
                             <div class="pq-service-box-info">
                                 <div class="pq-info-text"> <span class="pq-service-sub-title">Medical Surgery </span>
-                                    <a href="eye-care-services.html">
+                                    <a href="/services/eye-care.php">
                                         <h5 class="pq-service-title">Eye Care Services</h5>
                                     </a>
                                 </div>
@@ -503,7 +506,7 @@
                             </div>
                             <div class="pq-service-box-info">
                                 <div class="pq-info-text"> <span class="pq-service-sub-title">Medical Therapy </span>
-                                    <a href="cardiology-services.html">
+                                    <a href="/services/cardiology.php">
                                         <h5 class="pq-service-title">Cardiology Services</h5>
                                     </a>
                                 </div>
@@ -520,7 +523,7 @@
                             </div>
                             <div class="pq-service-box-info">
                                 <div class="pq-info-text"> <span class="pq-service-sub-title">Medical Pediatrics</span>
-                                    <a href="dental-services.html">
+                                    <a href="/services/dental.php">
                                         <h5 class="pq-service-title">Dental Services</h5>
                                     </a>
                                 </div>
@@ -554,7 +557,7 @@
                             <p>There are many variations of passages of LoremIpsum available majority.</p>
                         </div>
                     </div>
-                    <a class="pq-button pq-button-flat mt-4" href="about-us.html">
+                    <a class="pq-button pq-button-flat mt-4" href="about.php">
                         <div class="pq-button-block"> <span class="pq-button-text">Read More</span> <i
                                 class="ion ion-plus-round"></i> </div>
                     </a>
@@ -631,7 +634,7 @@
                             <h5 class="pq-fancy-box-title">Angioplasty</h5>
                             <p class="pq-fancybox-description">There are many variations of pas of Lorem Ipsum availab.
                             </p>
-                            <a class="pq-button pq-button-link" href="angioplasty-services.html">
+                            <a class="pq-button pq-button-link" href="../public/services/angioplasty.php">
                                 <div class="pq-button-block"> <span class="pq-button-text">Read More</span> <i
                                         class="ion ion-plus-round"></i> </div>
                             </a>
@@ -645,7 +648,7 @@
                             <h5 class="pq-fancy-box-title">Cardiology</h5>
                             <p class="pq-fancybox-description">There are many variations of pas of Lorem Ipsum availab.
                             </p>
-                            <a class="pq-button pq-button-link" href="cardiology-services.html">
+                            <a class="pq-button pq-button-link" href="../public/services/cardiology.php">
                                 <div class="pq-button-block"> <span class="pq-button-text">Read More</span> <i
                                         class="ion ion-plus-round"></i> </div>
                             </a>
@@ -659,7 +662,7 @@
                             <h5 class="pq-fancy-box-title">Dental</h5>
                             <p class="pq-fancybox-description">There are many variations of pas of Lorem Ipsum availab.
                             </p>
-                            <a class="pq-button pq-button-link" href="dental-services.html">
+                            <a class="pq-button pq-button-link" href="../public/services/dental.php">
                                 <div class="pq-button-block"> <span class="pq-button-text">Read More</span> <i
                                         class="ion ion-plus-round"></i> </div>
                             </a>
@@ -673,7 +676,7 @@
                             <h5 class="pq-fancy-box-title">Endocrinology</h5>
                             <p class="pq-fancybox-description">There are many variations of pas of Lorem Ipsum availab.
                             </p>
-                            <a class="pq-button pq-button-link" href="endocrinology-services.html">
+                            <a class="pq-button pq-button-link" href="../public/services/endocrinology.php">
                                 <div class="pq-button-block"> <span class="pq-button-text">Read More</span> <i
                                         class="ion ion-plus-round"></i> </div>
                             </a>
@@ -687,7 +690,7 @@
                             <h5 class="pq-fancy-box-title">Eye Care</h5>
                             <p class="pq-fancybox-description">There are many variations of pas of Lorem Ipsum availab.
                             </p>
-                            <a class="pq-button pq-button-link" href="eye-care-services.html">
+                            <a class="pq-button pq-button-link" href="../public/services/eye-care.php">
                                 <div class="pq-button-block"> <span class="pq-button-text">Read More</span> <i
                                         class="ion ion-plus-round"></i> </div>
                             </a>
@@ -701,7 +704,7 @@
                             <h5 class="pq-fancy-box-title">Neurology</h5>
                             <p class="pq-fancybox-description">There are many variations of pas of Lorem Ipsum availab.
                             </p>
-                            <a class="pq-button pq-button-link" href="nurology-service.html">
+                            <a class="pq-button pq-button-link" href="../public/services/neurology.php">
                                 <div class="pq-button-block"> <span class="pq-button-text">Read More</span> <i
                                         class="ion ion-plus-round"></i> </div>
                             </a>
@@ -715,7 +718,7 @@
                             <h5 class="pq-fancy-box-title">Orthopaedics</h5>
                             <p class="pq-fancybox-description">There are many variations of pas of Lorem Ipsum availab.
                             </p>
-                            <a class="pq-button pq-button-link" href="orthopaedics-services.html">
+                            <a class="pq-button pq-button-link" href="../public/services/orthopaedics.php">
                                 <div class="pq-button-block"> <span class="pq-button-text">Read More</span> <i
                                         class="ion ion-plus-round"></i> </div>
                             </a>
@@ -763,13 +766,13 @@
                             <div class="pq-portfoliobox pq-style-1">
                                 <div class="pq-portfolio-img"> <img src="assets/images/portfolio/slider/1.jpg"
                                         class="img-fluid" alt="portfolio-slider">
-                                    <a href="home-visit.html">
+                                    <a href="case-study.php">
                                         <div class="pq-portfolio-icon"><i class="ion ion-plus-round"></i></div>
                                     </a>
                                 </div>
                                 <div class="pq-portfolio-info">
-                                    <span><a href="home-visit.html">Clinic</a></span>
-                                    <h5><a href="home-visit.html">Home Visit</a></h5>
+                                    <span><a href="case-study.php">Clinic</a></span>
+                                    <h5><a href="case-study.php">Home Visit</a></h5>
                                 </div>
                             </div>
                         </div>
@@ -777,13 +780,13 @@
                             <div class="pq-portfoliobox pq-style-1">
                                 <div class="pq-portfolio-img"> <img src="assets/images/portfolio/slider/2.jpg"
                                         class="img-fluid" alt="portfolio-slider">
-                                    <a href="home-visit.html">
+                                    <a href="case-study.php">
                                         <div class="pq-portfolio-icon"><i class="ion ion-plus-round"></i></div>
                                     </a>
                                 </div>
                                 <div class="pq-portfolio-info"> <span>
-                                        <a href="home-visit.html">Family</a> </span>
-                                    <h5><a href="home-visit.html">Investigations</a></h5>
+                                        <a href="case-study.php">Family</a> </span>
+                                    <h5><a href="case-study.php">Investigations</a></h5>
                                 </div>
                             </div>
                         </div>
@@ -791,13 +794,13 @@
                             <div class="pq-portfoliobox pq-style-1">
                                 <div class="pq-portfolio-img"> <img src="assets/images/portfolio/slider/3.jpg"
                                         class="img-fluid" alt="portfolio-slider">
-                                    <a href="home-visit.html">
+                                    <a href="case-study.php">
                                         <div class="pq-portfolio-icon"><i class="ion ion-plus-round"></i></div>
                                     </a>
                                 </div>
                                 <div class="pq-portfolio-info"> <span>
-                                        <a href="home-visit.html">Pediatrics</a> </span>
-                                    <h5><a href="home-visit.html">Surgical</a></h5>
+                                        <a href="case-study.php">Pediatrics</a> </span>
+                                    <h5><a href="case-study.php">Surgical</a></h5>
                                 </div>
                             </div>
                         </div>
@@ -805,13 +808,13 @@
                             <div class="pq-portfoliobox pq-style-1">
                                 <div class="pq-portfolio-img"> <img src="assets/images/portfolio/slider/4.jpg"
                                         class="img-fluid" alt="portfolio-slider">
-                                    <a href="home-visit.html">
+                                    <a href="case-study.php">
                                         <div class="pq-portfolio-icon"><i class="ion ion-plus-round"></i></div>
                                     </a>
                                 </div>
                                 <div class="pq-portfolio-info"> <span>
-                                        <a href="home-visit.html">Clinic</a> </span>
-                                    <h5><a href="home-visit.html">Pediatrics Care</a></h5>
+                                        <a href="case-study.php">Clinic</a> </span>
+                                    <h5><a href="case-study.php">Pediatrics Care</a></h5>
                                 </div>
                             </div>
                         </div>
@@ -819,13 +822,13 @@
                             <div class="pq-portfoliobox pq-style-1">
                                 <div class="pq-portfolio-img"> <img src="assets/images/portfolio/slider/5.jpg"
                                         class="img-fluid" alt="portfolio-slider">
-                                    <a href="home-visit.html">
+                                    <a href="case-study.php">
                                         <div class="pq-portfolio-icon"><i class="ion ion-plus-round"></i></div>
                                     </a>
                                 </div>
                                 <div class="pq-portfolio-info"> <span>
-                                        <a href="home-visit.html">Clinic</a> </span>
-                                    <h5><a href="home-visit.html">Cardiology</a></h5>
+                                        <a href="case-study.php">Clinic</a> </span>
+                                    <h5><a href="case-study.php">Cardiology</a></h5>
                                 </div>
                             </div>
                         </div>
@@ -833,13 +836,13 @@
                             <div class="pq-portfoliobox pq-style-1">
                                 <div class="pq-portfolio-img"> <img src="assets/images/portfolio/slider/6.jpg"
                                         class="img-fluid" alt="portfolio-slider">
-                                    <a href="home-visit.html">
+                                    <a href="case-study.php">
                                         <div class="pq-portfolio-icon"><i class="ion ion-plus-round"></i></div>
                                     </a>
                                 </div>
                                 <div class="pq-portfolio-info"> <span>
-                                        <a href="home-visit.html">Pediatrics</a> </span>
-                                    <h5><a href="home-visit.html">Treatments</a></h5>
+                                        <a href="case-study.php">Pediatrics</a> </span>
+                                    <h5><a href="case-study.php">Treatments</a></h5>
                                 </div>
                             </div>
                         </div>
@@ -847,13 +850,13 @@
                             <div class="pq-portfoliobox pq-style-1">
                                 <div class="pq-portfolio-img"> <img src="assets/images/portfolio/slider/1.jpg"
                                         class="img-fluid" alt="portfolio-slider">
-                                    <a href="home-visit.html">
+                                    <a href="case-study.php">
                                         <div class="pq-portfolio-icon"><i class="ion ion-plus-round"></i></div>
                                     </a>
                                 </div>
                                 <div class="pq-portfolio-info"> <span>
-                                        <a href="home-visit.html">Family</a> </span>
-                                    <h5><a href="home-visit.html">Quality Therapy</a></h5>
+                                        <a href="case-study.php">Family</a> </span>
+                                    <h5><a href="case-study.php">Quality Therapy</a></h5>
                                 </div>
                             </div>
                         </div>
@@ -861,13 +864,13 @@
                             <div class="pq-portfoliobox pq-style-1">
                                 <div class="pq-portfolio-img"> <img src="assets/images/portfolio/slider/2.jpg"
                                         class="img-fluid" alt="portfolio-slider">
-                                    <a href="home-visit.html">
+                                    <a href="case-study.php">
                                         <div class="pq-portfolio-icon"><i class="ion ion-plus-round"></i></div>
                                     </a>
                                 </div>
                                 <div class="pq-portfolio-info">
-                                    <span><a href="home-visit.html">Laboratory</a></span>
-                                    <h5><a href="home-visit.html">Orthodontics</a></h5>
+                                    <span><a href="case-study.php">Laboratory</a></span>
+                                    <h5><a href="case-study.php">Orthodontics</a></h5>
                                 </div>
                             </div>
                         </div>
@@ -875,13 +878,13 @@
                             <div class="pq-portfoliobox pq-style-1">
                                 <div class="pq-portfolio-img"> <img src="assets/images/portfolio/slider/3.jpg"
                                         class="img-fluid" alt="portfolio-slider">
-                                    <a href="home-visit.html">
+                                    <a href="case-study.php">
                                         <div class="pq-portfolio-icon"><i class="ion ion-plus-round"></i></div>
                                     </a>
                                 </div>
                                 <div class="pq-portfolio-info"> <span>
-                                        <a href="home-visit.html">Clinic</a> </span>
-                                    <h5><a href="home-visit.html">Management</a></h5>
+                                        <a href="case-study.php">Clinic</a> </span>
+                                    <h5><a href="case-study.php">Management</a></h5>
                                 </div>
                             </div>
                         </div>
@@ -971,7 +974,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-12 text-center mt-4">
-                    <a class="pq-button pq-button-flat" href="make-appoinment.html">
+                    <a class="pq-button pq-button-flat" href="consultation.php">
                         <div class="pq-button-block"> <span class="pq-button-text">Get Appointment</span> <i
                                 class="ion ion-plus-round"></i> </div>
                     </a>
@@ -1021,7 +1024,7 @@
                                 </div>
                                 <div class="pq-team-info">
                                     <h5 class="pq-member-name">
-                                        <a href="doctor-1.html">
+                                        <a href="specialist-single.php">
                                             Naidan Smith </a>
                                     </h5> <span class="pq-team-designation">Outpatient Surgery</span>
                                 </div>
@@ -1053,7 +1056,7 @@
                                 </div>
                                 <div class="pq-team-info">
                                     <h5 class="pq-member-name">
-                                        <a href="doctor-1.html">
+                                        <a href="specialist-single.php">
                                             Danial Frankie </a>
                                     </h5> <span class="pq-team-designation">Outpatient Surgery</span>
                                 </div>
@@ -1085,7 +1088,7 @@
                                 </div>
                                 <div class="pq-team-info">
                                     <h5 class="pq-member-name">
-                                        <a href="doctor-1.html">
+                                        <a href="specialist-single.php">
                                             Alex Jhon </a>
                                     </h5> <span class="pq-team-designation">Outpatient Surgery</span>
                                 </div>
@@ -1117,7 +1120,7 @@
                                 </div>
                                 <div class="pq-team-info">
                                     <h5 class="pq-member-name">
-                                        <a href="doctor-1.html">
+                                        <a href="specialist-single.php">
                                             Rihana Roy </a>
                                     </h5> <span class="pq-team-designation">Outpatient Surgery</span>
                                 </div>
@@ -1149,7 +1152,7 @@
                                 </div>
                                 <div class="pq-team-info">
                                     <h5 class="pq-member-name">
-                                        <a href="doctor-1.html">
+                                        <a href="specialist-single.php">
                                             Jason Roy </a>
                                     </h5> <span class="pq-team-designation">Outpatient Surgery</span>
                                 </div>
@@ -1746,16 +1749,15 @@
                                 <h4 class="footer-title">Our Courses</h4>
                                 <div class="menu-useful-links-container">
                                     <ul id="menu-useful-links" class="menu">
-                                        <li><a href="about-us.html">About Us</a></li>
-                                        <li><a href="contact-us.html">Contact Us</a></li>
-                                        <li><a href="our-services.html">Our Services</a></li>
+                                        <li><a href="about.php">About Us</a></li>
+                                        <li><a href="contact.php">Contact Us</a></li>
+                                        <li><a href="services.php">Our Services</a></li>
                                         <li><a href="our-process.html">Our Process</a></li>
-                                        <li><a href="doctor-1.html">Doctors 1</a></li>
-                                        <li><a href="faq.html">FAQ</a></li>
+                                        <li><a href="specialists.php">Doctors 1</a></li>
+                                        <li><a href="faq.php">FAQ</a></li>
                                         <li><a href="our-doctor.html">Doctors 2</a></li>
-                                        <li><a href="home-visit.html">Departments</a></li>
-                                        <li><a href="make-appoinment.html">Events</a></li>
-                                        <li><a href="our-plan.html">Member</a></li>
+                                        <li><a href="case-study.php">Departments</a></li>
+                                        <li><a href="consultation.php">Appointment </a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -1798,13 +1800,13 @@
                                     <div class="col-sm-12">
                                         <ul class="pq-contact">
                                             <li> <a href="tel:+1800001658"><i class="fas fa-phone"></i>
-                                                    <span> +1800-001-658</span>
+                                                    <span> +234 8028134942</span>
                                                 </a> </li>
-                                            <li> <a href="mailto:info@peacefulthemes.com"><i
-                                                        class="fas fa-envelope"></i><span>info@peacefulthemes.com</span></a>
+                                            <li> <a href="mailto:info@medicate.com"><i
+                                                        class="fas fa-envelope"></i><span>info@medicate.com</span></a>
                                             </li>
                                             <li> <i class="fas fa-map-marker"></i> <span>
-                                                    Medicate, Envato HQ 24 Fifth st., Los Angeles, USA </span> </li>
+                                                    Medicate Lab, S5/808B, Oba Adesida Raod, Akure, Ondo State </span> </li>
                                         </ul>
                                     </div>
                                 </div>

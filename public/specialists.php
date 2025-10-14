@@ -185,7 +185,7 @@
                   <div class="pq-breadcrumb-container mt-2">
                      <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index-2.html"><i class="fas fa-home mr-2"></i>Home</a></li>
-                        <li class="breadcrumb-item active">Specialists  1</li>
+                        <li class="breadcrumb-item active">Specialists</li>
                      </ol>
                   </div>
                </nav>
@@ -204,7 +204,7 @@
       <div class="container">
          <div class="row">
             <div class="col-lg-12">
-               <div class="pq-section pq-style-1 text-center"> <span class="pq-section-sub-title">our Doctors</span>
+               <div class="pq-section pq-style-1 text-center"> <span class="pq-section-sub-title">Our Doctors</span>
                   <h5 class="pq-section-title">Meet Our Specialists</h5> </div>
             </div>
          </div>
@@ -380,28 +380,28 @@
                         <div class="pq-portfoliobox pq-style-1">
                            <div class="pq-portfolio-block">
                               <div class="pq-portfolio-img  "> <img src="assets/images/portfolio/slider/1.jpg" class="img-fluid" alt="">
-                                 <a href="home-visit.html">
+                                 <a href="case-study.php">
                                     <div class="pq-portfolio-icon"><i class="fas fa-plus"></i></div>
                                  </a>
                               </div>
                               <div class="pq-portfolio-info">
-                                 <div class="pq-portfolio-link"> <a href="home-visit.html">Clinic</a> </div>
-                                 <h5><a href="home-visit.html">Home Visit</a></h5> </div>
+                                 <div class="pq-portfolio-link"> <a href="case-study.php">Clinic</a> </div>
+                                 <h5><a href="case-studies.php">Home Visit</a></h5> </div>
                            </div>
                         </div>
                      </div>
                      <div class="item">
                         <div class="pq-portfoliobox pq-style-1">
                            <div class="pq-portfolio-block">
-                              <div class="pq-portfolio-img  "> <img src="images/portfolio/slider/2.jpg" class="img-fluid" alt="">
-                                 <a href="home-visit.html">
+                              <div class="pq-portfolio-img  "> <img src="assets/images/portfolio/slider/2.jpg" class="img-fluid" alt="">
+                                 <a href="case-study.php">
                                     <div class="pq-portfolio-icon"><i class="fas fa-plus"></i></div>
                                  </a>
                               </div>
                               <div class="pq-portfolio-info">
-                                 <div class="pq-portfolio-link"> <a href="home-visit.html">Family</a> </div>
+                                 <div class="pq-portfolio-link"> <a href="case-study.php">Family</a> </div>
                                  <h5><a
-                                       href="home-visit.html">Investigations</a>
+                                       href="case-study.php">Investigations</a>
                                     </h5> </div>
                            </div>
                         </div>
@@ -409,15 +409,15 @@
                      <div class="item">
                         <div class="pq-portfoliobox pq-style-1">
                            <div class="pq-portfolio-block">
-                              <div class="pq-portfolio-img  "> <img src="images/portfolio/slider/3.jpg" class="img-fluid" alt="">
-                                 <a href="home-visit.html">
+                              <div class="pq-portfolio-img  "> <img src="assets/images/portfolio/slider/3.jpg" class="img-fluid" alt="">
+                                 <a href="case-study.php">
                                     <div class="pq-portfolio-icon"><i class="fas fa-plus"></i></div>
                                  </a>
                               </div>
                               <div class="pq-portfolio-info">
-                                 <div class="pq-portfolio-link"> <a href="home-visit.html">Pediatrics</a> </div>
+                                 <div class="pq-portfolio-link"> <a href="case-study.php">Pediatrics</a> </div>
                                  <h5><a
-                                       href="home-visit.html">Surgical</a>
+                                       href="case-study.php">Surgical</a>
                                     </h5> </div>
                            </div>
                         </div>
@@ -425,13 +425,13 @@
                      <div class="item">
                         <div class="pq-portfoliobox pq-style-1">
                            <div class="pq-portfolio-block">
-                              <div class="pq-portfolio-img  "> <img src="images/portfolio/slider/4.jpg" class="img-fluid" alt="">
-                                 <a href="home-visit.html">
+                              <div class="pq-portfolio-img  "> <img src="assets/images/portfolio/slider/4.jpg" class="img-fluid" alt="">
+                                 <a href="case-study.php">
                                     <div class="pq-portfolio-icon"><i class="fas fa-plus"></i></div>
                                  </a>
                               </div>
                               <div class="pq-portfolio-info">
-                                 <div class="pq-portfolio-link"> <a href="home-visit.html">Clinic</a> </div>
+                                 <div class="pq-portfolio-link"> <a href="case-study.php">Clinic</a> </div>
                                  <h5><a href="home-visit.html">Pediatrics
                                        Care</a>
                                     </h5> </div>
@@ -441,15 +441,15 @@
                      <div class="item">
                         <div class="pq-portfoliobox pq-style-1">
                            <div class="pq-portfolio-block">
-                              <div class="pq-portfolio-img  "> <img src="images/portfolio/slider/5.jpg" class="img-fluid" alt="">
-                                 <a href="home-visit.html">
+                              <div class="pq-portfolio-img  "> <img src="assets/images/portfolio/slider/5.jpg" class="img-fluid" alt="">
+                                 <a href="case-study.php">
                                     <div class="pq-portfolio-icon"><i class="fas fa-plus"></i></div>
                                  </a>
                               </div>
                               <div class="pq-portfolio-info">
-                                 <div class="pq-portfolio-link"> <a href="home-visit.html">Clinic</a> </div>
+                                 <div class="pq-portfolio-link"> <a href="case-study.php">Clinic</a> </div>
                                  <h5><a
-                                       href="home-visit.html">Cardiology</a>
+                                       href="case-study.php">Cardiology</a>
                                     </h5> </div>
                            </div>
                         </div>
@@ -457,15 +457,15 @@
                      <div class="item">
                         <div class="pq-portfoliobox pq-style-1">
                            <div class="pq-portfolio-block">
-                              <div class="pq-portfolio-img  "> <img src="images/portfolio/slider/6.jpg" class="img-fluid" alt="">
-                                 <a href="home-visit.html">
+                              <div class="pq-portfolio-img  "> <img src="assets/images/portfolio/slider/6.jpg" class="img-fluid" alt="">
+                                 <a href="case-study.php">
                                     <div class="pq-portfolio-icon"><i class="fas fa-plus"></i></div>
                                  </a>
                               </div>
                               <div class="pq-portfolio-info">
-                                 <div class="pq-portfolio-link"> <a href="home-visit.html">Pediatrics</a> </div>
+                                 <div class="pq-portfolio-link"> <a href="case-study.php">Pediatrics</a> </div>
                                  <h5><a
-                                       href="home-visit.html">Treatments</a>
+                                       href="case-study.php">Treatments</a>
                                     </h5> </div>
                            </div>
                         </div>
@@ -473,14 +473,14 @@
                      <div class="item">
                         <div class="pq-portfoliobox pq-style-1">
                            <div class="pq-portfolio-block">
-                              <div class="pq-portfolio-img  "> <img src="images/portfolio/slider/7.jpg" class="img-fluid" alt="">
-                                 <a href="home-visit.html">
+                              <div class="pq-portfolio-img  "> <img src="assets/images/portfolio/slider/7.jpg" class="img-fluid" alt="">
+                                 <a href="case-study.php">
                                     <div class="pq-portfolio-icon"><i class="fas fa-plus"></i></div>
                                  </a>
                               </div>
                               <div class="pq-portfolio-info">
-                                 <div class="pq-portfolio-link"> <a href="home-visit.html">Family</a> </div>
-                                 <h5><a href="home-visit.html">Quality
+                                 <div class="pq-portfolio-link"> <a href="case-study.php">Family</a> </div>
+                                 <h5><a href="case-study.php">Quality
                                        Therapy</a>
                                     </h5> </div>
                            </div>
@@ -489,15 +489,15 @@
                      <div class="item">
                         <div class="pq-portfoliobox pq-style-1">
                            <div class="pq-portfolio-block">
-                              <div class="pq-portfolio-img  "> <img src="images/portfolio/slider/8.jpg" class="img-fluid" alt="">
-                                 <a href="home-visit.html">
+                              <div class="pq-portfolio-img  "> <img src="assets/images/portfolio/slider/8.jpg" class="img-fluid" alt="">
+                                 <a href="case-study.php">
                                     <div class="pq-portfolio-icon"><i class="fas fa-plus"></i></div>
                                  </a>
                               </div>
                               <div class="pq-portfolio-info">
-                                 <div class="pq-portfolio-link"> <a href="home-visit.html">Laboratory</a> </div>
+                                 <div class="pq-portfolio-link"> <a href="case-study.php">Laboratory</a> </div>
                                  <h5><a
-                                       href="home-visit.html">Orthodontics</a>
+                                       href="case-study.php">Orthodontics</a>
                                     </h5> </div>
                            </div>
                         </div>
@@ -505,15 +505,15 @@
                      <div class="item">
                         <div class="pq-portfoliobox pq-style-1">
                            <div class="pq-portfolio-block">
-                              <div class="pq-portfolio-img  "> <img src="images/portfolio/slider/9.jpg" class="img-fluid" alt="">
-                                 <a href="home-visit.html">
+                              <div class="pq-portfolio-img  "> <img src="assets/images/portfolio/slider/9.jpg" class="img-fluid" alt="">
+                                 <a href="case-study.php">
                                     <div class="pq-portfolio-icon"><i class="fas fa-plus"></i></div>
                                  </a>
                               </div>
                               <div class="pq-portfolio-info">
-                                 <div class="pq-portfolio-link"> <a href="home-visit.html">Clinic</a> </div>
+                                 <div class="pq-portfolio-link"> <a href="case-study.php">Clinic</a> </div>
                                  <h5><a
-                                       href="home-visit.html">Management</a>
+                                       href="case-study.php">Management</a>
                                     </h5> </div>
                            </div>
                         </div>
@@ -542,7 +542,7 @@
                <div class="tab-content text-" id="nav-tabContent">
                   <div class="tab-pane fade show  active" id="nav-0" role="tabpanel" aria-labelledby="nav-home-0">
                      <div class="row align-items-center">
-                        <div class="col-lg-6"> <img src="images/tab/1.jpg" class="pq-full-width img-fluid" alt="seo-image"> </div>
+                        <div class="col-lg-6"> <img src="assets/images/tab/1.jpg" class="pq-full-width img-fluid" alt="seo-image"> </div>
                         <div class="col-lg-6">
                            <div class="pq-tab-info">
                               <h2>Reason To Reject Folowing Drawbacks service</h2>
@@ -564,7 +564,7 @@
                   </div>
                   <div class="tab-pane fade show  " id="nav-1" role="tabpanel" aria-labelledby="nav-home-1">
                      <div class="row flex-row-reverse align-items-center">
-                        <div class="col-lg-6"> <img src="images/tab/2.jpg" class="pq-full-width img-fluid" alt="seo-image"> </div>
+                        <div class="col-lg-6"> <img src="assets/images/tab/2.jpg" class="pq-full-width img-fluid" alt="seo-image"> </div>
                         <div class="col-lg-6">
                            <div class="pq-tab-info">
                               <h2>Together we can Achieve more things  service</h2>
@@ -587,7 +587,7 @@
                   </div>
                   <div class="tab-pane fade show  " id="nav-2" role="tabpanel" aria-labelledby="nav-home-2">
                      <div class="row align-items-center">
-                        <div class="col-lg-6"> <img src="images/tab/3.jpg" class="pq-full-width img-fluid" alt="seo-image"> </div>
+                        <div class="col-lg-6"> <img src="assets/images/tab/3.jpg" class="pq-full-width img-fluid" alt="seo-image"> </div>
                         <div class="col-lg-6">
                            <div class="pq-tab-info">
                               <h2>Looking for professinal &amp; trusted Service</h2>
@@ -609,7 +609,7 @@
                   </div>
                   <div class="tab-pane fade show  " id="nav-3" role="tabpanel" aria-labelledby="nav-home-3">
                      <div class="row flex-row-reverse align-items-center">
-                        <div class="col-lg-6"> <img src="images/tab/4.jpg" class="pq-full-width img-fluid" alt="seo-image"> </div>
+                        <div class="col-lg-6"> <img src="assets/images/tab/4.jpg" class="pq-full-width img-fluid" alt="seo-image"> </div>
                         <div class="col-lg-6">
                            <div class="pq-tab-info">
                               <h2>We Take Care Of Your Healthy Health service</h2>
@@ -631,7 +631,7 @@
                   </div>
                   <div class="tab-pane fade show  " id="nav-4" role="tabpanel" aria-labelledby="nav-home-4">
                      <div class="row align-items-center">
-                        <div class="col-lg-6"> <img src="images/tab/5.jpg" class="pq-full-width img-fluid" alt="seo-image"> </div>
+                        <div class="col-lg-6"> <img src="assets/images/tab/5.jpg" class="pq-full-width img-fluid" alt="seo-image"> </div>
                         <div class="col-lg-6">
                            <div class="pq-tab-info">
                               <h2> Choose The Best For Your Health service</h2>
