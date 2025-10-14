@@ -321,321 +321,379 @@
         </div>
     </header>
     <!--Header End -->
-   <!--=================================
+    <!--=================================
          Banner start-->
-   <div class="pq-breadcrumb" style="background-image:url('images/breadcrumb.jpg');">
-      <div class="container">
-         <div class="row align-items-center">
-            <div class="col-lg-12">
-               <nav aria-label="breadcrumb">
-                  <div class="pq-breadcrumb-title">
-                     <h2>Our Services</h2> </div>
-                  <div class="pq-breadcrumb-container mt-2">
-                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index-2.html"><i class="fas fa-home mr-2"></i>Home</a></li>
-                        <li class="breadcrumb-item active">Our Services</li>
-                     </ol>
-                  </div>
-               </nav>
+    <div class="pq-breadcrumb" style="background-image:url('images/breadcrumb.jpg');">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <nav aria-label="breadcrumb">
+                        <div class="pq-breadcrumb-title">
+                            <h2>Our Services</h2>
+                        </div>
+                        <div class="pq-breadcrumb-container mt-2">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index-2.html"><i
+                                            class="fas fa-home mr-2"></i>Home</a></li>
+                                <li class="breadcrumb-item active">Our Services</li>
+                            </ol>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-lg-4">
+                    <div class="pq-breadcrumb-img text-right wow fadeInRight"></div>
+                </div>
             </div>
-            <div class="col-lg-4">
-               <div class="pq-breadcrumb-img text-right wow fadeInRight"></div>
-            </div>
-         </div>
-      </div>
-   </div>
-   <!--=================================
+        </div>
+    </div>
+    <!--=================================
          Banner end-->
-   <!--=================================
+    <!--=================================
          service start-->
-   <section class="service">
-      <div class="container">
-         <div class="row justify-content-center">
-            <div class="col-lg-12">
-               <div class="pq-section pq-style-1 text-center"> <span class="pq-section-sub-title">FACILITIES WE HAVE</span>
-                  <h5 class="pq-section-title">What Facilities We Provided</h5> </div>
-            </div>
-            <div class="col-xl-4 col-md-6">
-               <div class="pq-service-box pq-style-1">
-                  <div class="pq-service-block">
-                     <div class="pq-service-img"><img src="images/services/1.jpg" class="img-fluid" alt="servicebox"></div>
-                     <div class="pq-service-box-info">
-                        <div class="pq-info-text"> <span class="pq-service-sub-title">Medical Surgery </span>
-                           <a href="eye-care-services.html">
-                              <h5 class="pq-service-title">Eye Care Services</h5> </a>
+    <section class="service">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <div class="pq-section pq-style-1 text-center"> <span class="pq-section-sub-title">FACILITIES WE
+                            HAVE</span>
+                        <h5 class="pq-section-title">What Facilities We Provided</h5>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="pq-service-box pq-style-1">
+                        <div class="pq-service-block">
+                            <div class="pq-service-img"><img src="images/services/1.jpg" class="img-fluid"
+                                    alt="servicebox"></div>
+                            <div class="pq-service-box-info">
+                                <div class="pq-info-text"> <span class="pq-service-sub-title">Medical Surgery </span>
+                                    <a href="eye-care-services.html">
+                                        <h5 class="pq-service-title">Eye Care Services</h5>
+                                    </a>
+                                </div>
+                                <div class="pq-service-icon"> <i class=" flaticon-laboratory"></i> </div>
+                            </div>
                         </div>
-                        <div class="pq-service-icon"> <i class=" flaticon-laboratory"></i> </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="col-xl-4 col-md-6 pt-xl-0 pt-md-0 pt-4">
-               <div class="pq-service-box pq-style-1">
-                  <div class="pq-service-block">
-                     <div class="pq-service-img"><img src="images/services/2.jpg" class="img-fluid" alt="servicebox"></div>
-                     <div class="pq-service-box-info">
-                        <div class="pq-info-text"> <span class="pq-service-sub-title">Medical Therapy </span>
-                           <a href="cardiology-services.html">
-                              <h5 class="pq-service-title">Cardiology Services</h5> </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 pt-xl-0 pt-md-0 pt-4">
+                    <div class="pq-service-box pq-style-1">
+                        <div class="pq-service-block">
+                            <div class="pq-service-img"><img src="images/services/2.jpg" class="img-fluid"
+                                    alt="servicebox"></div>
+                            <div class="pq-service-box-info">
+                                <div class="pq-info-text"> <span class="pq-service-sub-title">Medical Therapy </span>
+                                    <a href="cardiology-services.html">
+                                        <h5 class="pq-service-title">Cardiology Services</h5>
+                                    </a>
+                                </div>
+                                <div class="pq-service-icon"><i class=" flaticon-doctor-1"></i> </div>
+                            </div>
                         </div>
-                        <div class="pq-service-icon"><i class=" flaticon-doctor-1"></i> </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="col-xl-4 col-md-10 col-lg-6 pt-xl-0  pt-4">
-               <div class="pq-service-box pq-style-1">
-                  <div class="pq-service-block">
-                     <div class="pq-service-img"><img src="images/services/3.jpg" class="img-fluid" alt="servicebox"></div>
-                     <div class="pq-service-box-info">
-                        <div class="pq-info-text"> <span class="pq-service-sub-title">Medical Pediatrics</span>
-                           <a href="dental-services.html">
-                              <h5 class="pq-service-title">Dental Services</h5> </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-10 col-lg-6 pt-xl-0  pt-4">
+                    <div class="pq-service-box pq-style-1">
+                        <div class="pq-service-block">
+                            <div class="pq-service-img"><img src="images/services/3.jpg" class="img-fluid"
+                                    alt="servicebox"></div>
+                            <div class="pq-service-box-info">
+                                <div class="pq-info-text"> <span class="pq-service-sub-title">Medical Pediatrics</span>
+                                    <a href="dental-services.html">
+                                        <h5 class="pq-service-title">Dental Services</h5>
+                                    </a>
+                                </div>
+                                <div class="pq-service-icon"><i class=" flaticon-medical-prescription"></i> </div>
+                            </div>
                         </div>
-                        <div class="pq-service-icon"><i class=" flaticon-medical-prescription"></i> </div>
-                     </div>
-                  </div>
-               </div>
+                    </div>
+                </div>
             </div>
-         </div>
-      </div>
-   </section>
-   <!--=================================
+        </div>
+    </section>
+    <!--=================================
          facilities end-->
-   <!--=================================
+    <!--=================================
          our-service start-->
-   <section class="service pq-bg-grey">
-      <div class="container">
-         <div class="row">
-            <div class="col-lg-12">
-               <div class="col-lg-12">
-                  <div class="pq-section pq-style-1 text-center"> <span class="pq-section-sub-title">OUR SERVICES</span>
-                     <h5 class="pq-section-title">Explore Our Main Service</h5> </div>
-               </div>
+    <section class="service pq-bg-grey">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="col-lg-12">
+                        <div class="pq-section pq-style-1 text-center"> <span class="pq-section-sub-title">OUR
+                                SERVICES</span>
+                            <h5 class="pq-section-title">Explore Our Main Service</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="pq-fancy-box pq-style-3">
+                        <div class="pq-fancy-box-hoverbg"> <img src="images/services/1.jpg" class="img-fluid"
+                                alt="Images"> </div>
+                        <div class="pq-fancy-box-icon"> <i class=" flaticon-heartbeat"></i> </div>
+                        <div class="pq-fancy-box-info left">
+                            <h5 class="pq-fancy-box-title">Cardiology</h5>
+                            <p class="pq-fancybox-description">There are many variations of pas of Lorem Ipsum
+                                availab.There are many variations of pas of Lorem Ipsum availab.</p>
+                            <a class="pq-button pq-button-link" href="cardiology-services.html">
+                                <div class="pq-button-block"> <span class="pq-button-text">Read More</span> <i
+                                        class="ion ion-plus-round"></i> </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 mt-4 mt-lg-0 mt-md-0">
+                    <div class="pq-fancy-box pq-style-3">
+                        <div class="pq-fancy-box-hoverbg"> <img src="images/services/2.jpg" class="img-fluid"
+                                alt="Images"> </div>
+                        <div class="pq-fancy-box-icon"><i class=" flaticon-first-aid-box"></i></div>
+                        <div class="pq-fancy-box-info left">
+                            <h5 class="pq-fancy-box-title">Endocrinology</h5>
+                            <p class="pq-fancybox-description">There are many variations of pas of Lorem Ipsum
+                                availab.There are many variations of pas of Lorem Ipsum availab.</p>
+                            <a class="pq-button pq-button-link" href="endocrinology-services.html">
+                                <div class="pq-button-block"> <span class="pq-button-text">Read More</span> <i
+                                        class="ion ion-plus-round"></i> </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-12 mt-4 mt-xl-0">
+                    <div class="pq-fancy-box pq-style-3">
+                        <div class="pq-fancy-box-hoverbg"> <img src="images/services/3.jpg" class="img-fluid"
+                                alt="Images"> </div>
+                        <div class="pq-fancy-box-icon"> <i class="flaticon-healthcare"></i> </div>
+                        <div class="pq-fancy-box-info left">
+                            <h5 class="pq-fancy-box-title">Angioplasty</h5>
+                            <p class="pq-fancybox-description">There are many variations of pas of Lorem Ipsum
+                                availab.There are many variations of pas of Lorem Ipsum availab.</p>
+                            <a class="pq-button pq-button-link" href="angioplasty-services.html">
+                                <div class="pq-button-block"> <span class="pq-button-text">Read More</span> <i
+                                        class="ion ion-plus-round"></i> </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6  mt-4">
+                    <div class="pq-fancy-box pq-style-3">
+                        <div class="pq-fancy-box-hoverbg"> <img src="images/services/2.jpg" class="img-fluid"
+                                alt="Images"> </div>
+                        <div class="pq-fancy-box-icon"> <i class="  flaticon-ct-scan"></i> </div>
+                        <div class="pq-fancy-box-info left">
+                            <h5 class="pq-fancy-box-title">Eye Care</h5>
+                            <p class="pq-fancybox-description">There are many variations of pas of Lorem Ipsum
+                                availab.There are many variations of pas of Lorem Ipsum availab.</p>
+                            <a class="pq-button pq-button-link" href="eye-care-services.html">
+                                <div class="pq-button-block"> <span class="pq-button-text">Read More</span> <i
+                                        class="ion ion-plus-round"></i> </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 mt-4">
+                    <div class="pq-fancy-box pq-style-3">
+                        <div class="pq-fancy-box-hoverbg"> <img src="images/services/3.jpg" class="img-fluid"
+                                alt="Images"> </div>
+                        <div class="pq-fancy-box-icon"> <i class=" flaticon-x-ray-1"></i> </div>
+                        <div class="pq-fancy-box-info left">
+                            <h5 class="pq-fancy-box-title">Neurology</h5>
+                            <p class="pq-fancybox-description">There are many variations of pas of Lorem Ipsum
+                                availab.There are many variations of pas of Lorem Ipsum availab.</p>
+                            <a class="pq-button pq-button-link" href="nurology-service.html">
+                                <div class="pq-button-block"> <span class="pq-button-text">Read More</span> <i
+                                        class="ion ion-plus-round"></i> </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-12 mt-4">
+                    <div class="pq-fancy-box pq-style-3">
+                        <div class="pq-fancy-box-hoverbg"> <img src="images/services/1.jpg" class="img-fluid"
+                                alt="Images"> </div>
+                        <div class="pq-fancy-box-icon"> <i class=" flaticon-health-insurance"></i> </div>
+                        <div class="pq-fancy-box-info left">
+                            <h5 class="pq-fancy-box-title">Orthopaedics</h5>
+                            <p class="pq-fancybox-description">There are many variations of pas of Lorem Ipsum
+                                availab.There are many variations of pas of Lorem Ipsum availab.</p>
+                            <a class="pq-button pq-button-link" href="orthopaedics-services.html">
+                                <div class="pq-button-block"> <span class="pq-button-text">Read More</span> <i
+                                        class="ion ion-plus-round"></i> </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-xl-4 col-md-6">
-               <div class="pq-fancy-box pq-style-3">
-                  <div class="pq-fancy-box-hoverbg"> <img src="images/services/1.jpg" class="img-fluid" alt="Images"> </div>
-                  <div class="pq-fancy-box-icon"> <i class=" flaticon-heartbeat"></i> </div>
-                  <div class="pq-fancy-box-info left">
-                     <h5 class="pq-fancy-box-title">Cardiology</h5>
-                     <p class="pq-fancybox-description">There are many variations of pas of Lorem Ipsum availab.There are many variations of pas of Lorem Ipsum availab.</p>
-                     <a class="pq-button pq-button-link" href="cardiology-services.html">
-                        <div class="pq-button-block"> <span class="pq-button-text">Read More</span> <i class="ion ion-plus-round"></i> </div>
-                     </a>
-                  </div>
-               </div>
-            </div>
-            <div class="col-xl-4 col-md-6 mt-4 mt-lg-0 mt-md-0">
-               <div class="pq-fancy-box pq-style-3">
-                  <div class="pq-fancy-box-hoverbg"> <img src="images/services/2.jpg" class="img-fluid" alt="Images"> </div>
-                  <div class="pq-fancy-box-icon"><i class=" flaticon-first-aid-box"></i></div>
-                  <div class="pq-fancy-box-info left">
-                     <h5 class="pq-fancy-box-title">Endocrinology</h5>
-                     <p class="pq-fancybox-description">There are many variations of pas of Lorem Ipsum availab.There are many variations of pas of Lorem Ipsum availab.</p>
-                     <a class="pq-button pq-button-link" href="endocrinology-services.html">
-                        <div class="pq-button-block"> <span class="pq-button-text">Read More</span> <i class="ion ion-plus-round"></i> </div>
-                     </a>
-                  </div>
-               </div>
-            </div>
-            <div class="col-xl-4 col-md-12 mt-4 mt-xl-0">
-               <div class="pq-fancy-box pq-style-3">
-                  <div class="pq-fancy-box-hoverbg"> <img src="images/services/3.jpg" class="img-fluid" alt="Images"> </div>
-                  <div class="pq-fancy-box-icon"> <i class="flaticon-healthcare"></i> </div>
-                  <div class="pq-fancy-box-info left">
-                     <h5 class="pq-fancy-box-title">Angioplasty</h5>
-                     <p class="pq-fancybox-description">There are many variations of pas of Lorem Ipsum availab.There are many variations of pas of Lorem Ipsum availab.</p>
-                     <a class="pq-button pq-button-link" href="angioplasty-services.html">
-                        <div class="pq-button-block"> <span class="pq-button-text">Read More</span> <i class="ion ion-plus-round"></i> </div>
-                     </a>
-                  </div>
-               </div>
-            </div>
-            <div class="col-xl-4 col-md-6  mt-4">
-               <div class="pq-fancy-box pq-style-3">
-                  <div class="pq-fancy-box-hoverbg"> <img src="images/services/2.jpg" class="img-fluid" alt="Images"> </div>
-                  <div class="pq-fancy-box-icon"> <i class="  flaticon-ct-scan"></i> </div>
-                  <div class="pq-fancy-box-info left">
-                     <h5 class="pq-fancy-box-title">Eye Care</h5>
-                     <p class="pq-fancybox-description">There are many variations of pas of Lorem Ipsum availab.There are many variations of pas of Lorem Ipsum availab.</p>
-                     <a class="pq-button pq-button-link" href="eye-care-services.html">
-                        <div class="pq-button-block"> <span class="pq-button-text">Read More</span> <i class="ion ion-plus-round"></i> </div>
-                     </a>
-                  </div>
-               </div>
-            </div>
-            <div class="col-xl-4 col-md-6 mt-4">
-               <div class="pq-fancy-box pq-style-3">
-                  <div class="pq-fancy-box-hoverbg"> <img src="images/services/3.jpg" class="img-fluid" alt="Images"> </div>
-                  <div class="pq-fancy-box-icon"> <i class=" flaticon-x-ray-1"></i> </div>
-                  <div class="pq-fancy-box-info left">
-                     <h5 class="pq-fancy-box-title">Neurology</h5>
-                     <p class="pq-fancybox-description">There are many variations of pas of Lorem Ipsum availab.There are many variations of pas of Lorem Ipsum availab.</p>
-                     <a class="pq-button pq-button-link" href="nurology-service.html">
-                        <div class="pq-button-block"> <span class="pq-button-text">Read More</span> <i class="ion ion-plus-round"></i> </div>
-                     </a>
-                  </div>
-               </div>
-            </div>
-            <div class="col-xl-4 col-md-12 mt-4">
-               <div class="pq-fancy-box pq-style-3">
-                  <div class="pq-fancy-box-hoverbg"> <img src="images/services/1.jpg" class="img-fluid" alt="Images"> </div>
-                  <div class="pq-fancy-box-icon"> <i class=" flaticon-health-insurance"></i> </div>
-                  <div class="pq-fancy-box-info left">
-                     <h5 class="pq-fancy-box-title">Orthopaedics</h5>
-                     <p class="pq-fancybox-description">There are many variations of pas of Lorem Ipsum availab.There are many variations of pas of Lorem Ipsum availab.</p>
-                     <a class="pq-button pq-button-link" href="orthopaedics-services.html">
-                        <div class="pq-button-block"> <span class="pq-button-text">Read More</span> <i class="ion ion-plus-round"></i> </div>
-                     </a>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </section>
-   <!--=================================
+        </div>
+    </section>
+    <!--=================================
          our-service end-->
-   <!--=================================
-         our-step start-->
-   <section class="process-step pq-bg-img-2 ">
-      <div class="container  ">
-         <div class="row ">
-            <div class="col-lg-12">
-               <div class="pq-section pq-style-1 text-center"> <span class="pq-section-sub-title">OUR STEP</span>
-                  <h5 class="pq-section-title">Our Workig Best Process</h5> </div>
+
+
+    <!--Section process-step start-->
+    <section class="process-step pq-bg-img-2 pq-process-pt-130 ">
+        <div class="container  ">
+            <div class="row ">
+                <div class="col-lg-12">
+                    <div class="pq-section pq-style-1 text-center"> <span class="pq-section-sub-title">OUR STEP</span>
+                        <h5 class="pq-section-title">Our Workig Best Process</h5>
+                    </div>
+                </div>
             </div>
-         </div>
-         <div class="row">
-            <div class="col-xl-3 col-md-6">
-               <div class="pq-process-step pq-process-style-2 ">
-                  <div class="pq-process-media">
-                     <div class="pq-process-img"><img src="images/process/1.png" class="img-fluid" alt="medicate"> </div>
-                     <div class="pq-process-number"> <span>01</span> </div>
-                  </div>
-                  <div class="pq-process-step-info">
-                     <h5 class="pq-process-title">Emergency Care</h5> <span class="pq-process-sub-title"></span>
-                     <div class="pq-process-description">
-                        <p>There are many variations of passages Lorem Ipsum available</p>
-                     </div>
-                  </div>
-               </div>
+            <div class="row">
+                <div class="col-xl-3 col-md-6">
+                    <div class="pq-process-step pq-process-style-2 ">
+                        <div class="pq-process-media">
+                            <div class="pq-process-img"><img src="assets/images/process/1.png" class="img-fluid"
+                                    alt="medicate">
+                            </div>
+                            <div class="pq-process-number"> <span>01</span> </div>
+                        </div>
+                        <div class="pq-process-step-info">
+                            <h5 class="pq-process-title">Emergency Care</h5> <span class="pq-process-sub-title"></span>
+                            <div class="pq-process-description">
+                                <p>There are many variations of passages Lorem Ipsum available</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <div class="pq-process-step pq-process-style-2 ">
+                        <div class="pq-process-media">
+                            <div class="pq-process-img"><img src="assets/images/process/2.png" class="img-fluid"
+                                    alt="medicate">
+                            </div>
+                            <div class="pq-process-number"> <span>02</span> </div>
+                        </div>
+                        <div class="pq-process-step-info">
+                            <h5 class="pq-process-title">Emergency Care</h5> <span class="pq-process-sub-title"></span>
+                            <div class="pq-process-description">
+                                <p>There are many variations of passages Lorem Ipsum available</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <div class="pq-process-step pq-process-style-2 ">
+                        <div class="pq-process-media">
+                            <div class="pq-process-img"><img src="assets/images/process/3.png" class="img-fluid"
+                                    alt="medicate">
+                            </div>
+                            <div class="pq-process-number"> <span>03</span> </div>
+                        </div>
+                        <div class="pq-process-step-info">
+                            <h5 class="pq-process-title">Emergency Care</h5> <span class="pq-process-sub-title"></span>
+                            <div class="pq-process-description">
+                                <p>There are many variations of passages Lorem Ipsum available</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <div class="pq-process-step pq-process-style-2 ">
+                        <div class="pq-process-media">
+                            <div class="pq-process-img"><img src="assets/images/process/4.png" class="img-fluid"
+                                    alt="medicate">
+                            </div>
+                            <div class="pq-process-number"> <span>04</span> </div>
+                        </div>
+                        <div class="pq-process-step-info">
+                            <h5 class="pq-process-title">Emergency Care</h5> <span class="pq-process-sub-title"></span>
+                            <div class="pq-process-description">
+                                <p>There are many variations of passages Lorem Ipsum available</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-xl-3 col-md-6">
-               <div class="pq-process-step pq-process-style-2 ">
-                  <div class="pq-process-media">
-                     <div class="pq-process-img"><img src="images/process/2.png" class="img-fluid" alt="medicate"> </div>
-                     <div class="pq-process-number"> <span>02</span> </div>
-                  </div>
-                  <div class="pq-process-step-info">
-                     <h5 class="pq-process-title">Emergency Care</h5> <span class="pq-process-sub-title"></span>
-                     <div class="pq-process-description">
-                        <p>There are many variations of passages Lorem Ipsum available</p>
-                     </div>
-                  </div>
-               </div>
+            <div class="row">
+                <div class="col-lg-12 text-center mt-4">
+                    <a class="pq-button pq-button-flat" href="make-appoinment.html">
+                        <div class="pq-button-block"> <span class="pq-button-text">Get Appointment</span> <i
+                                class="ion ion-plus-round"></i> </div>
+                    </a>
+                </div>
             </div>
-            <div class="col-xl-3 col-md-6">
-               <div class="pq-process-step pq-process-style-2 ">
-                  <div class="pq-process-media">
-                     <div class="pq-process-img"><img src="images/process/3.png" class="img-fluid" alt="medicate"> </div>
-                     <div class="pq-process-number"> <span>03</span> </div>
-                  </div>
-                  <div class="pq-process-step-info">
-                     <h5 class="pq-process-title">Emergency Care</h5> <span class="pq-process-sub-title"></span>
-                     <div class="pq-process-description">
-                        <p>There are many variations of passages Lorem Ipsum available</p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="col-xl-3 col-md-6">
-               <div class="pq-process-step pq-process-style-2 ">
-                  <div class="pq-process-media">
-                     <div class="pq-process-img"><img src="images/process/4.png" class="img-fluid" alt="medicate"> </div>
-                     <div class="pq-process-number"> <span>04</span> </div>
-                  </div>
-                  <div class="pq-process-step-info">
-                     <h5 class="pq-process-title">Emergency Care</h5> <span class="pq-process-sub-title"></span>
-                     <div class="pq-process-description">
-                        <p>There are many variations of passages Lorem Ipsum available</p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="row">
-            <div class="col-lg-12 text-center mt-4">
-               <a class="pq-button pq-button-flat" href="about-us.html">
-                  <div class="pq-button-block"> <span class="pq-button-text">Get Appointment</span> <i class="ion ion-plus-round"></i> </div>
-               </a>
-            </div>
-         </div>
-      </div>
-   </section>
-   <!--=================================
-         our-step end-->
-   <!--=================================
+        </div>
+    </section>
+    <!--Section process-step End-->
+
+
+    <!--=================================
          counter start-->
-   <section class=" pq-counter-60 pq-bg-primary-dark pq-py-2">
-      <div class="container">
-         <div class="row">
-            <div class="col-lg-3 col-md-6 counter-border-right">
-               <div class="pq-counter pq-style-2 text-center">
-                  <div class="pq-counter-contain">
-                     <div class="pq-counter-info">
-                        <div class="pq-counter-num-prefix">
-                           <h5 class="timer" data-to="100" data-speed="5000">100</h5> <span class="pq-counter-prefix">k</span> </div>
-                        <div class="pq-counter-num-prefix pq-prefix-top">
-                           <h5 class="timer" data-to="100" data-speed="5000">100</h5> <span class="pq-counter-prefix">k</span> </div>
-                        <p class="pq-counter-description">Saves Hearts</p>
-                     </div>
-                  </div>
-               </div>
+    <section class=" pq-counter-60 pq-bg-primary-dark pq-py-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 counter-border-right">
+                    <div class="pq-counter pq-style-2 text-center">
+                        <div class="pq-counter-contain">
+                            <div class="pq-counter-info">
+                                <div class="pq-counter-num-prefix">
+                                    <h5 class="timer" data-to="100" data-speed="5000">100</h5> <span
+                                        class="pq-counter-prefix">k</span>
+                                </div>
+                                <div class="pq-counter-num-prefix pq-prefix-top">
+                                    <h5 class="timer" data-to="100" data-speed="5000">100</h5> <span
+                                        class="pq-counter-prefix">k</span>
+                                </div>
+                                <p class="pq-counter-description">Saves Hearts</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-4 mt-md-0 counter-border-right">
+                    <div class="pq-counter pq-style-2 text-center">
+                        <div class="pq-counter-contain">
+                            <div class="pq-counter-info">
+                                <div class="pq-counter-num-prefix">
+                                    <h5 class="timer" data-to="125" data-speed="5000">125</h5> <span
+                                        class="pq-counter-prefix">k</span>
+                                </div>
+                                <div class="pq-counter-num-prefix pq-prefix-top">
+                                    <h5 class="timer" data-to="125" data-speed="5000">125</h5> <span
+                                        class="pq-counter-prefix">k</span>
+                                </div>
+                                <p class="pq-counter-description">Expert Doctors</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-lg-0 mt-4 counter-border-right">
+                    <div class="pq-counter pq-style-2 text-center">
+                        <div class="pq-counter-contain">
+                            <div class="pq-counter-info">
+                                <div class="pq-counter-num-prefix">
+                                    <h5 class="timer" data-to="250" data-speed="5000">250</h5> <span
+                                        class="pq-counter-prefix">k</span>
+                                </div>
+                                <div class="pq-counter-num-prefix pq-prefix-top">
+                                    <h5 class="timer" data-to="250" data-speed="5000">250</h5> <span
+                                        class="pq-counter-prefix">k</span>
+                                </div>
+                                <p class="pq-counter-description">saved tooth</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6  mt-lg-0 mt-4">
+                    <div class="pq-counter pq-style-2 text-center">
+                        <div class="pq-counter-contain border-0">
+                            <div class="pq-counter-info">
+                                <div class="pq-counter-num-prefix">
+                                    <h5 class="timer" data-to="554" data-speed="5000">554</h5> <span
+                                        class="pq-counter-prefix">k</span>
+                                </div>
+                                <div class="pq-counter-num-prefix pq-prefix-top">
+                                    <h5 class="timer" data-to="554" data-speed="5000">554</h5> <span
+                                        class="pq-counter-prefix">k</span>
+                                </div>
+                                <p class="pq-counter-description">Happy Patients</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-3 col-md-6 mt-4 mt-md-0 counter-border-right">
-               <div class="pq-counter pq-style-2 text-center">
-                  <div class="pq-counter-contain">
-                     <div class="pq-counter-info">
-                        <div class="pq-counter-num-prefix">
-                           <h5 class="timer" data-to="125" data-speed="5000">125</h5> <span class="pq-counter-prefix">k</span> </div>
-                        <div class="pq-counter-num-prefix pq-prefix-top">
-                           <h5 class="timer" data-to="125" data-speed="5000">125</h5> <span class="pq-counter-prefix">k</span> </div>
-                        <p class="pq-counter-description">Expert Doctors</p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mt-lg-0 mt-4 counter-border-right">
-               <div class="pq-counter pq-style-2 text-center">
-                  <div class="pq-counter-contain">
-                     <div class="pq-counter-info">
-                        <div class="pq-counter-num-prefix">
-                           <h5 class="timer" data-to="250" data-speed="5000">250</h5> <span class="pq-counter-prefix">k</span> </div>
-                        <div class="pq-counter-num-prefix pq-prefix-top">
-                           <h5 class="timer" data-to="250" data-speed="5000">250</h5> <span class="pq-counter-prefix">k</span> </div>
-                        <p class="pq-counter-description">saved tooth</p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="col-lg-3 col-md-6  mt-lg-0 mt-4">
-               <div class="pq-counter pq-style-2 text-center">
-                  <div class="pq-counter-contain border-0">
-                     <div class="pq-counter-info">
-                        <div class="pq-counter-num-prefix">
-                           <h5 class="timer" data-to="554" data-speed="5000">554</h5> <span class="pq-counter-prefix">k</span> </div>
-                        <div class="pq-counter-num-prefix pq-prefix-top">
-                           <h5 class="timer" data-to="554" data-speed="5000">554</h5> <span class="pq-counter-prefix">k</span> </div>
-                        <p class="pq-counter-description">Happy Patients</p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </section>
-   <!--=================================
+        </div>
+    </section>
+    <!--=================================
          counter end-->
     <!--Section blog Start-->
     <section class="pq-blog pq-bg-grey pq-pb-210">
@@ -652,7 +710,8 @@
                         data-loop="true" data-margin="30">
                         <div class="item">
                             <div class="pq-blog-post pq-style-1">
-                                <div class="pq-post-media"> <img src="assets/images/blog/1.jpg" class="img-fluid" alt="images">
+                                <div class="pq-post-media"> <img src="assets/images/blog/1.jpg" class="img-fluid"
+                                        alt="images">
                                     <div class="pq-post-date">
                                         <a href="get-the-exercise-limited-mobility.html"> <span>December 5,
                                                 2021</span></a>
@@ -685,7 +744,8 @@
                         </div>
                         <div class="item">
                             <div class="pq-blog-post pq-style-1">
-                                <div class="pq-post-media"> <img src="assets/images/blog/2.jpg" class="img-fluid" alt="images">
+                                <div class="pq-post-media"> <img src="assets/images/blog/2.jpg" class="img-fluid"
+                                        alt="images">
                                     <div class="pq-post-date">
                                         <a href="get-the-exercise-limited-mobility.html"> <span>December 5,
                                                 2021</span></a>
@@ -718,7 +778,8 @@
                         </div>
                         <div class="item">
                             <div class="pq-blog-post pq-style-1">
-                                <div class="pq-post-media"> <img src="assets/images/blog/3.jpg" class="img-fluid" alt="images">
+                                <div class="pq-post-media"> <img src="assets/images/blog/3.jpg" class="img-fluid"
+                                        alt="images">
                                     <div class="pq-post-date">
                                         <a href="get-the-exercise-limited-mobility.html"> <span>December 5,
                                                 2021</span></a>
@@ -751,7 +812,8 @@
                         </div>
                         <div class="item">
                             <div class="pq-blog-post pq-style-1">
-                                <div class="pq-post-media"> <img src="assets/images/blog/4.jpg" class="img-fluid" alt="images">
+                                <div class="pq-post-media"> <img src="assets/images/blog/4.jpg" class="img-fluid"
+                                        alt="images">
                                     <div class="pq-post-date">
                                         <a href="get-the-exercise-limited-mobility.html"> <span>December 5,
                                                 2021</span></a>
@@ -784,7 +846,8 @@
                         </div>
                         <div class="item">
                             <div class="pq-blog-post pq-style-1">
-                                <div class="pq-post-media"> <img src="assets/images/blog/5.jpg" class="img-fluid" alt="images">
+                                <div class="pq-post-media"> <img src="assets/images/blog/5.jpg" class="img-fluid"
+                                        alt="images">
                                     <div class="pq-post-date">
                                         <a href="get-the-exercise-limited-mobility.html"> <span>December 5,
                                                 2021</span></a>
@@ -817,7 +880,8 @@
                         </div>
                         <div class="item">
                             <div class="pq-blog-post pq-style-1">
-                                <div class="pq-post-media"> <img src="assets/images/blog/6.jpg" class="img-fluid" alt="images">
+                                <div class="pq-post-media"> <img src="assets/images/blog/6.jpg" class="img-fluid"
+                                        alt="images">
                                     <div class="pq-post-date">
                                         <a href="get-the-exercise-limited-mobility.html"> <span>December 5,
                                                 2021</span></a>
@@ -850,7 +914,8 @@
                         </div>
                         <div class="item">
                             <div class="pq-blog-post pq-style-1">
-                                <div class="pq-post-media"> <img src="assets/images/blog/7.jpg" class="img-fluid" alt="images">
+                                <div class="pq-post-media"> <img src="assets/images/blog/7.jpg" class="img-fluid"
+                                        alt="images">
                                     <div class="pq-post-date">
                                         <a href="get-the-exercise-limited-mobility.html"> <span>December 5,
                                                 2021</span></a>
@@ -883,7 +948,8 @@
                         </div>
                         <div class="item">
                             <div class="pq-blog-post pq-style-1">
-                                <div class="pq-post-media"> <img src="assets/images/blog/8.jpg" class="img-fluid" alt="images">
+                                <div class="pq-post-media"> <img src="assets/images/blog/8.jpg" class="img-fluid"
+                                        alt="images">
                                     <div class="pq-post-date">
                                         <a href="get-the-exercise-limited-mobility.html"> <span>December 5,
                                                 2021</span></a>
@@ -916,7 +982,8 @@
                         </div>
                         <div class="item">
                             <div class="pq-blog-post pq-style-1">
-                                <div class="pq-post-media"> <img src="assets/images/blog/9.jpg" class="img-fluid" alt="images">
+                                <div class="pq-post-media"> <img src="assets/images/blog/9.jpg" class="img-fluid"
+                                        alt="images">
                                     <div class="pq-post-date">
                                         <a href="get-the-exercise-limited-mobility.html"> <span>December 5,
                                                 2021</span></a>
@@ -956,128 +1023,145 @@
     <!--=================================
           Footer start
    ============================== -->
-   <footer id="pq-footer">
-      <div class="pq-footer-style-1">
-         <div class="pq-subscribe align-items-center">
-            <div class="container">
-               <div class="row align-items-center">
-                  <div class="col-lg-12">
-                     <div class="pq-subscribe-bg">
-                        <div class="row align-items-center">
-                           <div class="col-lg-5">
-                              <div class="pq-subscribe-block"> <img src="assets/images/Subscribe.png" class="pq-subscribe-img img-fluid" alt="medicate-subscribe-image">
-                                 <div class="pq-subscribe-details">
-                                    <h5>Latest Updates Subscribe To Our Newsletter</h5> </div>
-                              </div>
-                           </div>
-                           <div class="col-lg-7 align-self-center">
-                              <div class="pq-subscribe-from">
-                                 <form id="form" class="form">
-                                    <div class="form-fields">
-                                       <input class="w-100 pq-bg-transparent" type="email" name="EMAIL" placeholder="Enter Your Email" required="">
-                                       <input class="" type="submit" value="Sign up"> </div>
-                                 </form>
-                              </div>
-                           </div>
+    <footer id="pq-footer">
+        <div class="pq-footer-style-1">
+            <div class="pq-subscribe align-items-center">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-12">
+                            <div class="pq-subscribe-bg">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-5">
+                                        <div class="pq-subscribe-block"> <img src="assets/images/Subscribe.png"
+                                                class="pq-subscribe-img img-fluid" alt="medicate-subscribe-image">
+                                            <div class="pq-subscribe-details">
+                                                <h5>Latest Updates Subscribe To Our Newsletter</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7 align-self-center">
+                                        <div class="pq-subscribe-from">
+                                            <form id="form" class="form">
+                                                <div class="form-fields">
+                                                    <input class="w-100 pq-bg-transparent" type="email" name="EMAIL"
+                                                        placeholder="Enter Your Email" required="">
+                                                    <input class="" type="submit" value="Sign up">
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                     </div>
-                  </div>
-               </div>
+                    </div>
+                </div>
             </div>
-         </div>
-         <div class="pq-footer-top">
-            <div class="container">
-               <div class="row">
-                  <div class="col-xl-3 col-md-6">
-                     <div class="pq-footer-block"> <img src="assets/images/footer_logo.png" class="pq-footer-logo img-fluid" alt="medicate-footer-logo">
-                        <p>It helps designers plan out where the content will sit, the content to be written and approved.</p>
-                        <div class="pq-footer-social">
-                           <ul>
-                              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                              <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                              <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-                           </ul>
+            <div class="pq-footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-3 col-md-6">
+                            <div class="pq-footer-block"> <img src="assets/images/footer_logo.png"
+                                    class="pq-footer-logo img-fluid" alt="medicate-footer-logo">
+                                <p>It helps designers plan out where the content will sit, the content to be written and
+                                    approved.</p>
+                                <div class="pq-footer-social">
+                                    <ul>
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                     </div>
-                  </div>
-                  <div class="col-xl-3  col-md-6">
-                     <div class="pq-footer-block">
-                        <h4 class="footer-title">Our Courses</h4>
-                        <div class="menu-useful-links-container">
-                           <ul id="menu-useful-links" class="menu">
-                              <li><a href="about-us.html">About Us</a></li>
-                              <li><a href="contact-us.html">Contact Us</a></li>
-                              <li><a href="our-services.html">Our Services</a></li>
-                              <li><a href="our-process.html">Our Process</a></li>
-                              <li><a href="doctor-1.html">Doctors 1</a></li>
-                              <li><a href="faq.html">FAQ</a></li>
-                              <li><a href="our-doctor.html">Doctors 2</a></li>
-                              <li><a href="home-visit.html">Departments</a></li>
-                              <li><a href="make-appoinment.html">Events</a></li>
-                              <li><a href="our-plan.html">Member</a></li>
-                           </ul>
+                        <div class="col-xl-3  col-md-6">
+                            <div class="pq-footer-block">
+                                <h4 class="footer-title">Our Courses</h4>
+                                <div class="menu-useful-links-container">
+                                    <ul id="menu-useful-links" class="menu">
+                                        <li><a href="about-us.html">About Us</a></li>
+                                        <li><a href="contact-us.html">Contact Us</a></li>
+                                        <li><a href="our-services.html">Our Services</a></li>
+                                        <li><a href="our-process.html">Our Process</a></li>
+                                        <li><a href="doctor-1.html">Doctors 1</a></li>
+                                        <li><a href="faq.html">FAQ</a></li>
+                                        <li><a href="our-doctor.html">Doctors 2</a></li>
+                                        <li><a href="home-visit.html">Departments</a></li>
+                                        <li><a href="make-appoinment.html">Events</a></li>
+                                        <li><a href="our-plan.html">Member</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                     </div>
-                  </div>
-                  <div class="col-xl-3  col-md-6">
-                     <div class="pq-footer-block">
-                        <h4 class="footer-title">Recent Posts</h4>
-                        <div class="pq-footer-recent-post">
-                           <div class="pq-footer-recent-post-media">
-                              <a href="get-the-exercise-limited-mobility.html"> <img src="assets/images/footer-image/1.jpg" alt=""></a>
-                           </div>
-                           <div class="pq-footer-recent-post-info">
-                              <a href="get-the-exercise-limited-mobility.html" class="pq-post-date"> <i class="far fa-calendar-alt"></i>December <span>12</span>, 2021 </a>
-                              <h6><a href="get-the-exercise-limited-mobility.html">Get the Exercise Limited Mobility</a></h6> </div>
+                        <div class="col-xl-3  col-md-6">
+                            <div class="pq-footer-block">
+                                <h4 class="footer-title">Recent Posts</h4>
+                                <div class="pq-footer-recent-post">
+                                    <div class="pq-footer-recent-post-media">
+                                        <a href="get-the-exercise-limited-mobility.html"> <img
+                                                src="assets/images/footer-image/1.jpg" alt=""></a>
+                                    </div>
+                                    <div class="pq-footer-recent-post-info">
+                                        <a href="get-the-exercise-limited-mobility.html" class="pq-post-date"> <i
+                                                class="far fa-calendar-alt"></i>December <span>12</span>, 2021 </a>
+                                        <h6><a href="get-the-exercise-limited-mobility.html">Get the Exercise Limited
+                                                Mobility</a></h6>
+                                    </div>
+                                </div>
+                                <div class="pq-footer-recent-post">
+                                    <div class="pq-footer-recent-post-media">
+                                        <a href="get-the-exercise-limited-mobility.html"> <img
+                                                src="assets/images/footer-image/2.jpg" alt=""></a>
+                                    </div>
+                                    <div class="pq-footer-recent-post-info">
+                                        <a href="get-the-exercise-limited-mobility.html" class="pq-post-date"> <i
+                                                class="far fa-calendar-alt"></i>December <span>12</span>, 2021 </a>
+                                        <h6><a href="get-the-exercise-limited-mobility.html">Transfusion strategy and
+                                                heart surgery</a></h6>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="pq-footer-recent-post">
-                           <div class="pq-footer-recent-post-media">
-                              <a href="get-the-exercise-limited-mobility.html"> <img src="assets/images/footer-image/2.jpg" alt=""></a>
-                           </div>
-                           <div class="pq-footer-recent-post-info">
-                              <a href="get-the-exercise-limited-mobility.html" class="pq-post-date"> <i class="far fa-calendar-alt"></i>December <span>12</span>, 2021 </a>
-                              <h6><a href="get-the-exercise-limited-mobility.html">Transfusion strategy and heart surgery</a></h6> </div>
+                        <div class="col-xl-3  col-md-6">
+                            <div class="pq-footer-block">
+                                <h4 class="footer-title">Contact Us</h4>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <ul class="pq-contact">
+                                            <li> <a href="tel:+1800001658"><i class="fas fa-phone"></i>
+                                                    <span> +1800-001-658</span>
+                                                </a> </li>
+                                            <li> <a href="mailto:info@peacefulthemes.com"><i
+                                                        class="fas fa-envelope"></i><span>info@peacefulthemes.com</span></a>
+                                            </li>
+                                            <li> <i class="fas fa-map-marker"></i> <span>
+                                                    Themeforest, Envato HQ 24 Fifth st., Los Angeles, USA </span> </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                     </div>
-                  </div>
-                  <div class="col-xl-3  col-md-6">
-                     <div class="pq-footer-block">
-                        <h4 class="footer-title">Contact Us</h4>
-                        <div class="row">
-                           <div class="col-sm-12">
-                              <ul class="pq-contact">
-                                 <li> <a href="tel:+1800001658"><i class="fas fa-phone"></i>
-                                    <span> +1800-001-658</span>
-                                 </a> </li>
-                                 <li> <a href="mailto:info@peacefulthemes.com"><i class="fas fa-envelope"></i><span>info@peacefulthemes.com</span></a> </li>
-                                 <li> <i class="fas fa-map-marker"></i> <span>
-                                    Themeforest, Envato HQ 24 Fifth st., Los Angeles, USA                               </span> </li>
-                              </ul>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+                    </div>
+                </div>
             </div>
-         </div>
-         <div class="pq-copyright-footer">
-            <div class="container">
-               <div class="row">
-                  <div class="col-md-12 text-center "> <span class="pq-copyright"> Copyright 2022 medicate All Rights Reserved</span> </div>
-               </div>
+            <div class="pq-copyright-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center "> <span class="pq-copyright"> Copyright 2022 medicate All
+                                Rights Reserved</span> </div>
+                    </div>
+                </div>
             </div>
-         </div>
-      </div>
-   </footer>
-   <!--Footer End-->
-   <!--Back To Top start-->
-   <div id="back-to-top">
-      <a class="topbtn" id="top" href="#top"> <i class="ion-ios-arrow-up"></i> </a>
-   </div>
-   <!--Back To Top End-->
+        </div>
+    </footer>
+    <!--Footer End-->
+    <!--Back To Top start-->
+    <div id="back-to-top">
+        <a class="topbtn" id="top" href="#top"> <i class="ion-ios-arrow-up"></i> </a>
+    </div>
+    <!--Back To Top End-->
 
-   <!-- JS Files -->
+    <!-- JS Files -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
