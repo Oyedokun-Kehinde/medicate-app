@@ -175,17 +175,17 @@
     <!--Header End -->
    <!--=================================
          Banner start-->
-   <div class="pq-breadcrumb" style="background-image:url('images/breadcrumb.jpg');">
+   <div class="pq-breadcrumb" style="background-image:url('assets/images/breadcrumb.jpg');">
       <div class="container">
          <div class="row align-items-center">
             <div class="col-lg-12">
                <nav aria-label="breadcrumb">
                   <div class="pq-breadcrumb-title">
-                     <h2>Doctors 1</h2> </div>
+                     <h2> Our Specialists </h2> </div>
                   <div class="pq-breadcrumb-container mt-2">
                      <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index-2.html"><i class="fas fa-home mr-2"></i>Home</a></li>
-                        <li class="breadcrumb-item active">Doctors 1</li>
+                        <li class="breadcrumb-item active">Specialists  1</li>
                      </ol>
                   </div>
                </nav>
@@ -204,15 +204,15 @@
       <div class="container">
          <div class="row">
             <div class="col-lg-12">
-               <div class="pq-section pq-style-1 text-center"> <span class="pq-section-sub-title">our team</span>
-                  <h5 class="pq-section-title">Meet Our Specialist Doctors</h5> </div>
+               <div class="pq-section pq-style-1 text-center"> <span class="pq-section-sub-title">our Doctors</span>
+                  <h5 class="pq-section-title">Meet Our Specialists</h5> </div>
             </div>
          </div>
          <div class="row justify-content-center ">
             <div class="col-xl-4 col-md-6 col-sm-12">
                <div class="pq-team pq-team-style-1 pb-lg-5 ">
                   <div class="pq-team-box pq-style-1">
-                     <div class="pq-team-img"> <img src="images/team/2.jpg" class="img-fluid" alt="team-image">
+                     <div class="pq-team-img"> <img src="assets/images/team/2.jpg" class="img-fluid" alt="team-image">
                         <div class="pq-team-social">
                            <ul>
                               <li>
@@ -229,7 +229,7 @@
                      </div>
                      <div class="pq-team-info">
                         <h5 class="pq-member-name">
-                              <a href="our-doctor.html">
+                              <a href="specialist-single.php">
                               Naidan Smith </a>
                            </h5> <span class="pq-team-designation">Pediatric Clinic</span> </div>
                   </div>
@@ -237,7 +237,7 @@
             </div>
             <div class="col-xl-4 col-md-6  col-sm-12 mt-lg-0 mt-md-0 mt-4">
                <div class="pq-team-box pq-style-1">
-                  <div class="pq-team-img"> <img src="images/team/5.jpg" class="img-fluid" alt="team-image">
+                  <div class="pq-team-img"> <img src="assets/images/team/5.jpg" class="img-fluid" alt="team-image">
                      <div class="pq-team-social">
                         <ul>
                            <li>
@@ -254,14 +254,14 @@
                   </div>
                   <div class="pq-team-info">
                      <h5 class="pq-member-name">
-                           <a href="our-doctor.html">
+                           <a href="specialist-single.php">
                            Danial Frankie</a>
                         </h5> <span class="pq-team-designation"> Doctor</span> </div>
                </div>
             </div>
             <div class="col-xl-4 col-md-6 col-sm-12 mt-lg-0 mt-4">
                <div class="pq-team-box pq-style-1">
-                  <div class="pq-team-img"> <img src="images/team/4.jpg" class="img-fluid" alt="team-image">
+                  <div class="pq-team-img"> <img src="assets/images/team/4.jpg" class="img-fluid" alt="team-image">
                      <div class="pq-team-social">
                         <ul>
                            <li>
@@ -278,7 +278,7 @@
                   </div>
                   <div class="pq-team-info">
                      <h5 class="pq-member-name">
-                           <a href="our-doctor.html">
+                           <a href="specialist-single.php">
                            Jason Roy</a>
                         </h5> <span class="pq-team-designation"> Neurology</span> </div>
                </div>
@@ -287,7 +287,7 @@
          <div class="row justify-content-center">
             <div class="col-xl-4 col-md-6 col-sm-12 mt-lg-0 mt-md-0 mt-4">
                <div class="pq-team-box pq-style-1">
-                  <div class="pq-team-img"> <img src="images/team/4.jpg" class="img-fluid" alt="team-image">
+                  <div class="pq-team-img"> <img src="assets/images/team/4.jpg" class="img-fluid" alt="team-image">
                      <div class="pq-team-social">
                         <ul>
                            <li>
@@ -304,14 +304,14 @@
                   </div>
                   <div class="pq-team-info">
                      <h5 class="pq-member-name">
-                           <a href="our-doctor.html">
+                           <a href="specialist-single.php">
                            Jason Roy</a>
                         </h5> <span class="pq-team-designation"> Gynecology</span> </div>
                </div>
             </div>
             <div class="col-xl-4 col-md-6 col-sm-12  mt-lg-0 mt-md-0 mt-4">
                <div class="pq-team-box pq-style-1">
-                  <div class="pq-team-img"> <img src="images/team/1.jpg" class="img-fluid" alt="team-image">
+                  <div class="pq-team-img"> <img src="assets/images/team/1.jpg" class="img-fluid" alt="team-image">
                      <div class="pq-team-social">
                         <ul>
                            <li>
@@ -328,14 +328,14 @@
                   </div>
                   <div class="pq-team-info">
                      <h5 class="pq-member-name">
-                           <a href="our-doctor.html">
+                           <a href="specialist-single.php">
                            Naidan Smith</a>
                         </h5> <span class="pq-team-designation"> Gynecology</span> </div>
                </div>
             </div>
             <div class="col-xl-4 col-md-6 col-sm-12 mt-lg-0 mt-4">
                <div class="pq-team-box pq-style-1">
-                  <div class="pq-team-img"> <img src="images/team/5.jpg" class="img-fluid" alt="team-image">
+                  <div class="pq-team-img"> <img src="assets/images/team/5.jpg" class="img-fluid" alt="team-image">
                      <div class="pq-team-social">
                         <ul>
                            <li>
@@ -352,7 +352,7 @@
                   </div>
                   <div class="pq-team-info">
                      <h5 class="pq-member-name">
-                           <a href="our-doctor.html">
+                           <a href="specialist-single.php">
                            Rihana Roy</a>
                         </h5> <span class="pq-team-designation"> Gynecology</span> </div>
                </div>
@@ -379,7 +379,7 @@
                      <div class="item">
                         <div class="pq-portfoliobox pq-style-1">
                            <div class="pq-portfolio-block">
-                              <div class="pq-portfolio-img  "> <img src="images/portfolio/slider/1.jpg" class="img-fluid" alt="">
+                              <div class="pq-portfolio-img  "> <img src="assets/images/portfolio/slider/1.jpg" class="img-fluid" alt="">
                                  <a href="home-visit.html">
                                     <div class="pq-portfolio-icon"><i class="fas fa-plus"></i></div>
                                  </a>
@@ -658,8 +658,8 @@
    </section>
    <!--=================================
          tab end-->
-   <!-- =================================
-        Footer start
+   <!--=================================
+          Footer start
    ============================== -->
    <footer id="pq-footer">
       <div class="pq-footer-style-1">
@@ -670,7 +670,7 @@
                      <div class="pq-subscribe-bg">
                         <div class="row align-items-center">
                            <div class="col-lg-5">
-                              <div class="pq-subscribe-block"> <img src="images/Subscribe.png" class="pq-subscribe-img img-fluid" alt="medicate-subscribe-image">
+                              <div class="pq-subscribe-block"> <img src="assets/images/Subscribe.png" class="pq-subscribe-img img-fluid" alt="medicate-subscribe-image">
                                  <div class="pq-subscribe-details">
                                     <h5>Latest Updates Subscribe To Our Newsletter</h5> </div>
                               </div>
@@ -694,7 +694,7 @@
             <div class="container">
                <div class="row">
                   <div class="col-xl-3 col-md-6">
-                     <div class="pq-footer-block"> <img src="images/footer_logo.png" class="pq-footer-logo img-fluid" alt="medicate-footer-logo">
+                     <div class="pq-footer-block"> <img src="assets/images/footer_logo.png" class="pq-footer-logo img-fluid" alt="medicate-footer-logo">
                         <p>It helps designers plan out where the content will sit, the content to be written and approved.</p>
                         <div class="pq-footer-social">
                            <ul>
@@ -730,7 +730,7 @@
                         <h4 class="footer-title">Recent Posts</h4>
                         <div class="pq-footer-recent-post">
                            <div class="pq-footer-recent-post-media">
-                              <a href="get-the-exercise-limited-mobility.html"> <img src="images/footer-image/1.jpg" alt=""></a>
+                              <a href="get-the-exercise-limited-mobility.html"> <img src="assets/images/footer-image/1.jpg" alt=""></a>
                            </div>
                            <div class="pq-footer-recent-post-info">
                               <a href="get-the-exercise-limited-mobility.html" class="pq-post-date"> <i class="far fa-calendar-alt"></i>December <span>12</span>, 2021 </a>
@@ -738,7 +738,7 @@
                         </div>
                         <div class="pq-footer-recent-post">
                            <div class="pq-footer-recent-post-media">
-                              <a href="get-the-exercise-limited-mobility.html"> <img src="images/footer-image/2.jpg" alt=""></a>
+                              <a href="get-the-exercise-limited-mobility.html"> <img src="assets/images/footer-image/2.jpg" alt=""></a>
                            </div>
                            <div class="pq-footer-recent-post-info">
                               <a href="get-the-exercise-limited-mobility.html" class="pq-post-date"> <i class="far fa-calendar-alt"></i>December <span>12</span>, 2021 </a>
@@ -781,25 +781,88 @@
       <a class="topbtn" id="top" href="#top"> <i class="ion-ios-arrow-up"></i> </a>
    </div>
    <!--Back To Top End-->
-   <!--jquery js-->
-   <script src="js/jquery.min.js"></script>
-   <!--bootstrap js-->
-   <script src="js/bootstrap.min.js"></script>
-   <!--owl-carousal-->
-   <script src="js/owl.carousel.min.js"></script>
-   <!--progress-bar js-->
-   <script src="js/progressbar.js"></script>
-   <!--isotope js-->
-   <script src="js/isotope.pkgd.min.js"></script>
-   <!--countTo js-->
-   <script src="js/jquery.countTo.min.js"></script>
-   <!--Maginfic-Popup js-->
-   <script src="js/jquery.magnific-popup.min.js"></script>
-   <!-- Animation JS -->
-   <script src="js/wow.min.js"></script>
-   <!--custom js-->
-   <script src="js/custom.js"></script>
+
+   <!-- JS Files -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/progressbar.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/jquery.countTo.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/rev/js/rbtools.min.js"></script>
+    <script src="assets/rev/js/rs6.min.js"></script>
+    <script src="assets/js/rev-custom.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+    <script>
+        jQuery(window).on('load', function (e) {
+            jQuery(".pq-applyform .form-btn").click(function () {
+                var first_name = jQuery('#first-name').val();
+                var doctor_name = jQuery('#doctor-name').val();
+                var disease_name = jQuery('#disease-name').val();
+                var email = jQuery('#e-mail').val();
+
+                var result;
+
+                jQuery('.pq-applyform .pq-message').remove();
+                jQuery('.pq-applyform .pq-thank-you-message').remove();
+
+                if (first_name == '' || first_name == undefined) {
+                    jQuery("<span class='pq-name-error-message pq-message'>Please fill the field</span>").insertAfter('.pq-applyform .name-field');
+                    result = false;
+                }
+                else {
+                    jQuery('.pq-name-error-message').remove();
+                    result = true;
+                }
+
+                if (email == '' || email == undefined) {
+                    jQuery("<span class='pq-email-error-message pq-message'>Please fill the field</span>").insertAfter('.pq-applyform .e-mail-field');
+                    result = false;
+                }
+                else {
+                    jQuery('.pq-email-error-message').remove();
+                    result = true;
+                }
+
+                if (doctor_name == '' || doctor_name == undefined) {
+                    jQuery("<span class='pq-doctor-name-error-message pq-message'>Please fill the field</span>").insertAfter('.pq-applyform .doctor-name-field');
+                    result = false;
+                }
+                else {
+                    jQuery('.pq-doctor-name-error-message').remove();
+                    result = true;
+                }
+
+                if (disease_name == '' || disease_name == undefined) {
+                    jQuery("<span class='pq-disease-name-error-message pq-message'>Please fill the field</span>").insertAfter('.pq-applyform #disease-name');
+                    result = false;
+                }
+                else {
+                    jQuery('.pq-disease-name-error-message').remove();
+                    result = true;
+                }
+
+                if (result == true) {
+                    var email = jQuery("#email").text();
+                    event.preventDefault();
+                    jQuery.ajax({
+                        type: "POST",
+                        url: "mail.php",
+                        data: { 'email': email },
+                        success: function () {
+                            jQuery("<span class='pq-thank-you-message pq-text-white ms-5'> Thank You For Filling The form</span>").insertAfter('.pq-applyform .pq-button');
+                        }
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 
-<script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'},{'ap':'cpbh-mt'},{'server':'sg2plmcpnl492384'},{'dcenter':'sg2'},{'cp_id':'9858662'},{'cp_cache':''},{'cp_cl':'8'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='../../../../img1.wsimg.com/signals/js/clients/scc-c2/scc-c2.min.js'></script>
+<script>'undefined' === typeof _trfq || (window._trfq = []); 'undefined' === typeof _trfd && (window._trfd = []), _trfd.push({ 'tccl.baseHost': 'secureserver.net' }, { 'ap': 'cpbh-mt' }, { 'server': 'sg2plmcpnl492384' }, { 'dcenter': 'sg2' }, { 'cp_id': '9858662' }, { 'cp_cache': '' }, { 'cp_cl': '8' }) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script>
+<script src='../../../../img1.wsimg.com/signals/js/
+      
 </html>

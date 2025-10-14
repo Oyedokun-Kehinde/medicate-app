@@ -102,7 +102,7 @@
                                                     <a href="../public/services/angioplasty.php">Angioplasty </a>
                                                 </li>
                                                 <li class="menu-item ">
-                                                    <a href="../public/services/cardiology">Cardiology</a>
+                                                    <a href="../public/services/cardiology.php">Cardiology</a>
                                                 </li>
                                                 <li class="menu-item ">
                                                     <a href="../public/services/dental.php">Dental </a>
@@ -114,7 +114,7 @@
                                                     <a href="../public/services/eye-care.php">Eye Care </a>
                                                 </li>
                                                 <li class="menu-item ">
-                                                    <a href="../public/services/neurology.php">Neurology </a>
+                                                    <a href="../services/neurology.php">Neurology </a>
                                                 </li>
                                                 <li class="menu-item ">
                                                     <a href="../public/services/orthopaedics.php">Orthopaedics </a>
