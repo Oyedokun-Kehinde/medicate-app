@@ -245,7 +245,7 @@
                 </rs-slide>
                 <rs-slide style="position: absolute;" data-key="rs-85" data-title="Slide"
                     data-thumb="assets/rev/assets/2-51-50x100.jpg" data-in="o:0;" data-out="a:false;">
-                    <img src="rev/assets/2-51.jpg" alt="" title="2-51.jpg" class="rev-slidebg tp-rs-img" data-no-retina>
+                    <img src="assets/rev/assets/2-51.jpg" alt="" title="2-51.jpg" class="rev-slidebg tp-rs-img" data-no-retina>
                     <!--
                   -->
                     <rs-layer id="slider-24-slide-85-layer-0" data-type="text" data-color="#666666" data-rsp_ch="on"
@@ -1387,7 +1387,7 @@
                             <div class="pq-blog-post pq-style-1">
                                 <div class="pq-post-media"> <img src="assets/images/blog/1.jpg" class="img-fluid" alt="images">
                                     <div class="pq-post-date">
-                                        <a href="get-the-exercise-limited-mobility.html"> <span>December 5,
+                                        <a href="blog-single.php"> <span>December 5,
                                                 2021</span></a>
                                     </div>
                                 </div>
@@ -1396,12 +1396,12 @@
                                         <ul>
                                             <li class="pq-post-author"><i class="fa fa-user"></i>admin</li>
                                             <li class="pq-post-comment"> <a
-                                                    href="get-the-exercise-limited-mobility.html"><i
+                                                    href="blog-single.php"><i
                                                         class="fa fa-comments"></i>
                                                     0 Comments</a> </li>
                                         </ul>
                                     </div>
-                                    <h5 class="pq-blog-title"><a href="get-the-exercise-limited-mobility.html">Get the
+                                    <h5 class="pq-blog-title"><a href="blog-single.php">Get the
                                             Exercise
                                             Limited Mobility</a></h5>
                                     <div class="pq-blog-info">
@@ -1409,7 +1409,7 @@
                                             readable content
                                             of a page when looking at its layout.</p>
                                     </div>
-                                    <a href="get-the-exercise-limited-mobility.html" class="pq-button pq-button-link">
+                                    <a href="blog-single.php" class="pq-button pq-button-link">
                                         <div class="pq-button-block"> <span class="pq-button-text">Read More</span> <i
                                                 class="ion ion-plus-round"></i> </div>
                                     </a>
@@ -1420,7 +1420,7 @@
                             <div class="pq-blog-post pq-style-1">
                                 <div class="pq-post-media"> <img src="assets/images/blog/2.jpg" class="img-fluid" alt="images">
                                     <div class="pq-post-date">
-                                        <a href="get-the-exercise-limited-mobility.html"> <span>December 5,
+                                        <a href="blog-single.php"> <span>December 5,
                                                 2021</span></a>
                                     </div>
                                 </div>
@@ -1429,20 +1429,20 @@
                                         <ul>
                                             <li class="pq-post-author"><i class="fa fa-user"></i>admin</li>
                                             <li class="pq-post-comment"> <a
-                                                    href="get-the-exercise-limited-mobility.html"><i
+                                                    href="blog-single.php"><i
                                                         class="fa fa-comments"></i>
                                                     0 Comments</a> </li>
                                         </ul>
                                     </div>
                                     <h5 class="pq-blog-title"><a
-                                            href="get-the-exercise-limited-mobility.html">Transfusion
+                                            href="blog-single.php">Transfusion
                                             strategy and heart surgery</a></h5>
                                     <div class="pq-blog-info">
                                         <p>It is a long established fact that a reader will be distracted by the
                                             readable content
                                             of a page when looking at its layout.</p>
                                     </div>
-                                    <a href="get-the-exercise-limited-mobility.html" class="pq-button pq-button-link">
+                                    <a href="blog-single.php" class="pq-button pq-button-link">
                                         <div class="pq-button-block"> <span class="pq-button-text">Read More</span> <i
                                                 class="ion ion-plus-round"></i> </div>
                                     </a>
@@ -1453,7 +1453,7 @@
                             <div class="pq-blog-post pq-style-1">
                                 <div class="pq-post-media"> <img src="assets/images/blog/3.jpg" class="img-fluid" alt="images">
                                     <div class="pq-post-date">
-                                        <a href="get-the-exercise-limited-mobility.html"> <span>December 5,
+                                        <a href="blog-single.php"> <span>December 5,
                                                 2021</span></a>
                                     </div>
                                 </div>
@@ -1462,12 +1462,12 @@
                                         <ul>
                                             <li class="pq-post-author"><i class="fa fa-user"></i>admin</li>
                                             <li class="pq-post-comment"> <a
-                                                    href="get-the-exercise-limited-mobility.html"><i
+                                                    href="blog-single.php"><i
                                                         class="fa fa-comments"></i>
                                                     0 Comments</a> </li>
                                         </ul>
                                     </div>
-                                    <h5 class="pq-blog-title"><a href="get-the-exercise-limited-mobility.html">Latest
+                                    <h5 class="pq-blog-title"><a href="blog-single.php">Latest
                                             Equipment
                                             for the Heart Treatment</a></h5>
                                     <div class="pq-blog-info">
@@ -1475,7 +1475,7 @@
                                             readable content
                                             of a page when looking at its layout.</p>
                                     </div>
-                                    <a href="get-the-exercise-limited-mobility.html" class="pq-button pq-button-link">
+                                    <a href="blog-single.php" class="pq-button pq-button-link">
                                         <div class="pq-button-block"> <span class="pq-button-text">Read More</span> <i
                                                 class="ion ion-plus-round"></i> </div>
                                     </a>
@@ -1486,7 +1486,7 @@
                             <div class="pq-blog-post pq-style-1">
                                 <div class="pq-post-media"> <img src="assets/images/blog/4.jpg" class="img-fluid" alt="images">
                                     <div class="pq-post-date">
-                                        <a href="get-the-exercise-limited-mobility.html"> <span>December 5,
+                                        <a href="blog-single.php"> <span>December 5,
                                                 2021</span></a>
                                     </div>
                                 </div>
@@ -1495,12 +1495,12 @@
                                         <ul>
                                             <li class="pq-post-author"><i class="fa fa-user"></i>admin</li>
                                             <li class="pq-post-comment"> <a
-                                                    href="get-the-exercise-limited-mobility.html"><i
+                                                    href="blog-single.php"><i
                                                         class="fa fa-comments"></i>
                                                     0 Comments</a> </li>
                                         </ul>
                                     </div>
-                                    <h5 class="pq-blog-title"><a href="get-the-exercise-limited-mobility.html">What is
+                                    <h5 class="pq-blog-title"><a href="blog-single.php">What is
                                             Future of
                                             Blood Pressure Monitoring?</a></h5>
                                     <div class="pq-blog-info">
@@ -1508,7 +1508,7 @@
                                             readable content
                                             of a page when looking at its layout.</p>
                                     </div>
-                                    <a href="get-the-exercise-limited-mobility.html" class="pq-button pq-button-link">
+                                    <a href="blog-single.php" class="pq-button pq-button-link">
                                         <div class="pq-button-block"> <span class="pq-button-text">Read More</span> <i
                                                 class="ion ion-plus-round"></i> </div>
                                     </a>
@@ -1519,7 +1519,7 @@
                             <div class="pq-blog-post pq-style-1">
                                 <div class="pq-post-media"> <img src="assets/images/blog/5.jpg" class="img-fluid" alt="images">
                                     <div class="pq-post-date">
-                                        <a href="get-the-exercise-limited-mobility.html"> <span>December 5,
+                                        <a href="blog-single.php"> <span>December 5,
                                                 2021</span></a>
                                     </div>
                                 </div>
@@ -1528,12 +1528,12 @@
                                         <ul>
                                             <li class="pq-post-author"><i class="fa fa-user"></i>admin</li>
                                             <li class="pq-post-comment"> <a
-                                                    href="get-the-exercise-limited-mobility.html"><i
+                                                    href="blog-single.php"><i
                                                         class="fa fa-comments"></i>
                                                     0 Comments</a> </li>
                                         </ul>
                                     </div>
-                                    <h5 class="pq-blog-title"><a href="get-the-exercise-limited-mobility.html">Goals
+                                    <h5 class="pq-blog-title"><a href="blog-single.php">Goals
                                             Setting the
                                             people Heart is Healthy</a></h5>
                                     <div class="pq-blog-info">
@@ -1541,7 +1541,7 @@
                                             readable content
                                             of a page when looking at its layout.</p>
                                     </div>
-                                    <a href="get-the-exercise-limited-mobility.html" class="pq-button pq-button-link">
+                                    <a href="blog-single.php" class="pq-button pq-button-link">
                                         <div class="pq-button-block"> <span class="pq-button-text">Read More</span> <i
                                                 class="ion ion-plus-round"></i> </div>
                                     </a>
@@ -1552,7 +1552,7 @@
                             <div class="pq-blog-post pq-style-1">
                                 <div class="pq-post-media"> <img src="assets/images/blog/6.jpg" class="img-fluid" alt="images">
                                     <div class="pq-post-date">
-                                        <a href="get-the-exercise-limited-mobility.html"> <span>December 5,
+                                        <a href="blog-single.php"> <span>December 5,
                                                 2021</span></a>
                                     </div>
                                 </div>
@@ -1561,12 +1561,12 @@
                                         <ul>
                                             <li class="pq-post-author"><i class="fa fa-user"></i>admin</li>
                                             <li class="pq-post-comment"> <a
-                                                    href="get-the-exercise-limited-mobility.html"><i
+                                                    href="blog-single.php"><i
                                                         class="fa fa-comments"></i>
                                                     0 Comments</a> </li>
                                         </ul>
                                     </div>
-                                    <h5 class="pq-blog-title"><a href="get-the-exercise-limited-mobility.html">For
+                                    <h5 class="pq-blog-title"><a href="blog-single.php">For
                                             Examination of
                                             kids get Special offers</a></h5>
                                     <div class="pq-blog-info">
@@ -1574,7 +1574,7 @@
                                             readable content
                                             of a page when looking at its layout.</p>
                                     </div>
-                                    <a href="get-the-exercise-limited-mobility.html" class="pq-button pq-button-link">
+                                    <a href="blog-single.php" class="pq-button pq-button-link">
                                         <div class="pq-button-block"> <span class="pq-button-text">Read More</span> <i
                                                 class="ion ion-plus-round"></i> </div>
                                     </a>
@@ -1585,7 +1585,7 @@
                             <div class="pq-blog-post pq-style-1">
                                 <div class="pq-post-media"> <img src="assets/images/blog/7.jpg" class="img-fluid" alt="images">
                                     <div class="pq-post-date">
-                                        <a href="get-the-exercise-limited-mobility.html"> <span>December 5,
+                                        <a href="blog-single.php"> <span>December 5,
                                                 2021</span></a>
                                     </div>
                                 </div>
@@ -1594,12 +1594,12 @@
                                         <ul>
                                             <li class="pq-post-author"><i class="fa fa-user"></i>admin</li>
                                             <li class="pq-post-comment"> <a
-                                                    href="get-the-exercise-limited-mobility.html"><i
+                                                    href="blog-single.php"><i
                                                         class="fa fa-comments"></i>
                                                     0 Comments</a> </li>
                                         </ul>
                                     </div>
-                                    <h5 class="pq-blog-title"><a href="get-the-exercise-limited-mobility.html">Heart
+                                    <h5 class="pq-blog-title"><a href="blog-single.php">Heart
                                             Failure
                                             Treatment: High Blood Pressure</a></h5>
                                     <div class="pq-blog-info">
@@ -1607,7 +1607,7 @@
                                             readable content
                                             of a page when looking at its layout.</p>
                                     </div>
-                                    <a href="get-the-exercise-limited-mobility.html" class="pq-button pq-button-link">
+                                    <a href="blog-single.php" class="pq-button pq-button-link">
                                         <div class="pq-button-block"> <span class="pq-button-text">Read More</span> <i
                                                 class="ion ion-plus-round"></i> </div>
                                     </a>
@@ -1618,7 +1618,7 @@
                             <div class="pq-blog-post pq-style-1">
                                 <div class="pq-post-media"> <img src="assets/images/blog/8.jpg" class="img-fluid" alt="images">
                                     <div class="pq-post-date">
-                                        <a href="get-the-exercise-limited-mobility.html"> <span>December 5,
+                                        <a href="blog-single.php"> <span>December 5,
                                                 2021</span></a>
                                     </div>
                                 </div>
@@ -1627,12 +1627,12 @@
                                         <ul>
                                             <li class="pq-post-author"><i class="fa fa-user"></i>admin</li>
                                             <li class="pq-post-comment"> <a
-                                                    href="get-the-exercise-limited-mobility.html"><i
+                                                    href="blog-single.php"><i
                                                         class="fa fa-comments"></i>
                                                     0 Comments</a> </li>
                                         </ul>
                                     </div>
-                                    <h5 class="pq-blog-title"><a href="get-the-exercise-limited-mobility.html">Hard
+                                    <h5 class="pq-blog-title"><a href="blog-single.php">Hard
                                             content we
                                             decide ourselves a intently</a></h5>
                                     <div class="pq-blog-info">
@@ -1640,7 +1640,7 @@
                                             readable content
                                             of a page when looking at its layout.</p>
                                     </div>
-                                    <a href="get-the-exercise-limited-mobility.html" class="pq-button pq-button-link">
+                                    <a href="blog-single.php" class="pq-button pq-button-link">
                                         <div class="pq-button-block"> <span class="pq-button-text">Read More</span> <i
                                                 class="ion ion-plus-round"></i> </div>
                                     </a>
@@ -1651,7 +1651,7 @@
                             <div class="pq-blog-post pq-style-1">
                                 <div class="pq-post-media"> <img src="assets/images/blog/9.jpg" class="img-fluid" alt="images">
                                     <div class="pq-post-date">
-                                        <a href="get-the-exercise-limited-mobility.html"> <span>December 5,
+                                        <a href="blog-single.php"> <span>December 5,
                                                 2021</span></a>
                                     </div>
                                 </div>
@@ -1660,12 +1660,12 @@
                                         <ul>
                                             <li class="pq-post-author"><i class="fa fa-user"></i>admin</li>
                                             <li class="pq-post-comment"> <a
-                                                    href="get-the-exercise-limited-mobility.html"><i
+                                                    href="blog-single.php"><i
                                                         class="fa fa-comments"></i>
                                                     0 Comments</a> </li>
                                         </ul>
                                     </div>
-                                    <h5 class="pq-blog-title"><a href="get-the-exercise-limited-mobility.html">Is
+                                    <h5 class="pq-blog-title"><a href="blog-single.php">Is
                                             Running Really
                                             Good for the Heart?</a></h5>
                                     <div class="pq-blog-info">
@@ -1673,7 +1673,7 @@
                                             readable content
                                             of a page when looking at its layout.</p>
                                     </div>
-                                    <a href="get-the-exercise-limited-mobility.html" class="pq-button pq-button-link">
+                                    <a href="blog-single.php" class="pq-button pq-button-link">
                                         <div class="pq-button-block"> <span class="pq-button-text">Read More</span> <i
                                                 class="ion ion-plus-round"></i> </div>
                                     </a>
@@ -1767,26 +1767,26 @@
                                 <h4 class="footer-title">Recent Posts</h4>
                                 <div class="pq-footer-recent-post">
                                     <div class="pq-footer-recent-post-media">
-                                        <a href="get-the-exercise-limited-mobility.html"> <img
+                                        <a href="blog-single.php"> <img
                                                 src="assets/images/footer-image/1.jpg" alt=""></a>
                                     </div>
                                     <div class="pq-footer-recent-post-info">
-                                        <a href="get-the-exercise-limited-mobility.html" class="pq-post-date"> <i
+                                        <a href="blog-single.php" class="pq-post-date"> <i
                                                 class="far fa-calendar-alt"></i>December <span>12</span>, 2021 </a>
-                                        <h6><a href="get-the-exercise-limited-mobility.html">Get the Exercise Limited
+                                        <h6><a href="blog-single.php">Get the Exercise Limited
                                                 Mobility</a>
                                         </h6>
                                     </div>
                                 </div>
                                 <div class="pq-footer-recent-post">
                                     <div class="pq-footer-recent-post-media">
-                                        <a href="get-the-exercise-limited-mobility.html"> <img
+                                        <a href="blog-single.php"> <img
                                                 src="assets/images/footer-image/2.jpg" alt=""></a>
                                     </div>
                                     <div class="pq-footer-recent-post-info">
-                                        <a href="get-the-exercise-limited-mobility.html" class="pq-post-date"> <i
+                                        <a href="blog-single.php" class="pq-post-date"> <i
                                                 class="far fa-calendar-alt"></i>December <span>12</span>, 2021 </a>
-                                        <h6><a href="get-the-exercise-limited-mobility.html">Transfusion strategy and
+                                        <h6><a href="blog-single.php">Transfusion strategy and
                                                 heart
                                                 surgery</a></h6>
                                     </div>
