@@ -184,7 +184,7 @@
                      <h2>Contact Us</h2> </div>
                   <div class="pq-breadcrumb-container mt-2">
                      <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index-2.html"><i class="fas fa-home mr-2"></i>Home</a></li>
+                        <li class="breadcrumb-item"><a href="index.php"><i class="fas fa-home mr-2"></i>Home</a></li>
                         <li class="breadcrumb-item active">Contact Us</li>
                      </ol>
                   </div>
@@ -210,9 +210,9 @@
                   </div>
                   <div class="pq-contact-box-info">
                      <h4 class="pq-contact-box-title">
-                              Our Location
+                              Visit our Hospital
                            </h4>
-                     <p class="pq-contact-box-description"> The Queen's Walk, Bishop's, London SE1 7PB, United Kingdom. </p>
+                     <p class="pq-contact-box-description"> Medicate Lab, S5/808B, Oba Adesida Raod, Akure, Ondo State </p>
                   </div>
                </div>
             </div>
@@ -223,10 +223,10 @@
                   </div>
                   <div class="pq-contact-box-info">
                      <h4 class="pq-contact-box-title">
-                              Our Contact
+                              Give us a call
                            </h4>
-                     <p class="pq-contact-box-description"> + (567) 1234-567-8900
-                        <br>+ (567) 1234-567-8901 </p>
+                     <p class="pq-contact-box-description"> +234 8028134942
+                        <br>+234 8144745225 </p>
                   </div>
                </div>
             </div>
@@ -237,7 +237,7 @@
                   </div>
                   <div class="pq-contact-box-info">
                      <h4 class="pq-contact-box-title">
-                              Mail Us
+                              Send an email
                            </h4>
                      <p class="pq-contact-box-description"> info@medicate.com
                         <br>info2@peacefulthemes.com </p>
@@ -297,7 +297,7 @@
          map start-->
    <div class="map pt-0">
       <div class="pq-bg-map">
-         <iframe src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d317893.19730324426!2d-0.1195537!3d51.5032973!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x487604b900d26973%3A0x4291f3172409ea92!2slastminute.com%20London%20Eye%20Riverside%20Building%2C%20County%20Hall%20London%20SE1%207PB%20United%20Kingdom!3m2!1d51.5032973!2d-0.1195537!5e0!3m2!1sen!2sin!4v1652772883319!5m2!1sen!2sin" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.5583187833477!2d5.154494800000003!3d7.290987000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10478fb74b5f3fdb%3A0x24852e5c436419e6!2sRexta%20Technologies!5e0!3m2!1sen!2sng!4v1760489612168!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
    </div>
    <!--=================================
@@ -397,7 +397,7 @@
                            <div class="col-sm-12">
                               <ul class="pq-contact">
                                  <li> <a href="tel:+2348028134942"><i class="fas fa-phone"></i>
-                                    <span> +1800-001-658</span>
+                                    <span>+234 8028134942</span>
                                  </a> </li>
                                  <li> <a href="mailto:info@medicate.com"><i class="fas fa-envelope"></i><span>info@medicate.com</span></a> </li>
                                  <li> <i class="fas fa-map-marker"></i> <span>
@@ -413,7 +413,7 @@
          <div class="pq-copyright-footer">
             <div class="container">
                <div class="row">
-                  <div class="col-md-12 text-center "> <span class="pq-copyright"> Copyright 2022 medicate All Rights Reserved</span> </div>
+                  <div class="col-md-12 text-center "> <span class="pq-copyright"> &copy; 2025 - Medicate. All Rights Reserved.</span> </div>
                </div>
             </div>
          </div>

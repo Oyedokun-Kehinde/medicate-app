@@ -184,7 +184,7 @@
                      <h2>get-the-exercise-limited-mobility</h2> </div>
                   <div class="pq-breadcrumb-container mt-2">
                      <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index-2.html"><i class="fas fa-home mr-2"></i>Home</a></li>
+                        <li class="breadcrumb-item"><a href="index.php"><i class="fas fa-home mr-2"></i>Home</a></li>
                         <li class="breadcrumb-item active">get-the-exercise-limited-mobility</li>
                      </ol>
                   </div>
@@ -213,7 +213,7 @@
                   <div class="pq-blog-contain">
                      <div class="pq-post-meta">
                         <ul>
-                           <li class="pq-post-author"><i class="fa fa-user"></i>Admin</li>
+                           <li class="pq-post-author"><i class="fa fa-user"></i>Medicate Admin</li>
                            <li class="pq-post-tag"><a href="#"><i class="fa fa-comments"></i>2 Comments</a></li>
                         </ul>
                      </div>
@@ -251,7 +251,7 @@
                               <div class="pq-comment-wrap">
                                  <div class="pq-comment-avatar"> <img src="images/blog/user.png" class="" alt=""> </div>
                                  <div class="pq-comment-box">
-                                    <h5 class="title">Admin</h5>
+                                    <h5 class="title">Medicate Admin</h5>
                                     <div class="pq-comment-metadata"> </div>
                                     <!-- .comment-metadata -->
                                     <div class="comment-content">
@@ -267,14 +267,14 @@
                         </div>
                         <!-- .comment-body -->
                         <ol class="children">
-                           <li class="comment byuser comment-author-admin bypostauthor odd alt depth-2">
+                           <li class="comment byuser comment-author-Medicate Admin bypostauthor odd alt depth-2">
                               <div class="comment-body">
                                  <div class="pq-comment-info">
                                     <div class="pq-comment-wrap">
                                        <div class="pq-comment-avatar"> <img src="images/blog/user.png" class="" alt=""> </div>
                                        <div class="pq-comment-box">
                                           <h5 class="title">
-                                                   <a href="index-2.html" rel="external nofollow ugc" class="url">admin</a>                   
+                                                   <a href="index-2.html" rel="external nofollow ugc" class="url">Medicate Admin</a>                   
                                                 </h5>
                                           <div class="pq-comment-metadata"> </div>
                                           <!-- .comment-metadata -->
@@ -284,7 +284,7 @@
                                           <!-- .comment-content -->
                                        </div>
                                        <!-- .comment-author -->
-                                       <div class="reply"> <a rel="nofollow" class="comment-reply-link" href="#" data-commentid="3" data-postid="7401" data-belowelement="div-comment-3" data-respondelement="respond" data-replyto="Reply to admin" aria-label="Reply to admin">Reply</a> </div>
+                                       <div class="reply"> <a rel="nofollow" class="comment-reply-link" href="#" data-commentid="3" data-postid="7401" data-belowelement="div-comment-3" data-respondelement="respond" data-replyto="Reply to Medicate Admin" aria-label="Reply to Medicate Admin">Reply</a> </div>
                                        <!-- .reply -->
                                     </div>
                                  </div>
@@ -507,7 +507,7 @@
                            <div class="col-sm-12">
                               <ul class="pq-contact">
                                  <li> <a href="tel:+2348028134942"><i class="fas fa-phone"></i>
-                                    <span> +1800-001-658</span>
+                                    <span>+234 8028134942</span>
                                  </a> </li>
                                  <li> <a href="mailto:info@medicate.com"><i class="fas fa-envelope"></i><span>info@medicate.com</span></a> </li>
                                  <li> <i class="fas fa-map-marker"></i> <span>
@@ -523,7 +523,7 @@
          <div class="pq-copyright-footer">
             <div class="container">
                <div class="row">
-                  <div class="col-md-12 text-center "> <span class="pq-copyright"> Copyright 2022 medicate All Rights Reserved</span> </div>
+                  <div class="col-md-12 text-center "> <span class="pq-copyright"> &copy; 2025 - Medicate. All Rights Reserved.</span> </div>
                </div>
             </div>
          </div>

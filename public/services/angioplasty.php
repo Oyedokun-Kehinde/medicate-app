@@ -7,39 +7,39 @@
     <title> Angioplasty Service – Medicate </title>
 
         <!-- Main Style CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
     <!-- Favicon Icon -->
-    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <link rel="shortcut icon" href="../assets/images/favicon.ico">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <!-- Fonts and Icons -->
-    <link rel="stylesheet" type="text/css" href="assets/rev/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
-    <link rel="stylesheet" type="text/css" href="assets/rev/fonts/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="../assets/rev/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+    <link rel="stylesheet" type="text/css" href="../assets/rev/fonts/font-awesome/css/font-awesome.css">
     <!-- REVOLUTION STYLE SHEETS -->
-    <link rel="stylesheet" type="text/css" href="assets/rev/css/rs6.css">
+    <link rel="stylesheet" type="text/css" href="../assets/rev/css/rs6.css">
     <!-- Owl Carousel CSS -->
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
     <!-- Progressbar CSS -->
-    <link rel="stylesheet" href="assets/css/progressbar.css">
+    <link rel="stylesheet" href="../assets/css/progressbar.css">
     <!-- Animation CSS -->
-    <link rel="stylesheet" href="assets/css/animations.min.css">
+    <link rel="stylesheet" href="../assets/css/animations.min.css">
     <!-- Magnific Popup CSS -->
-    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+    <link rel="stylesheet" href="../assets/css/magnific-popup.min.css">
     <!-- Icons CSS -->
-    <link rel="stylesheet" href="assets/fonts/font-awesome/css/all.min.css">
-    <link rel="stylesheet" href="assets/fonts/flaticon/flaticon.css">
-    <link rel="stylesheet" href="assets/css/ionicons.min.css">
-    <link rel="stylesheet" href="assets/fonts/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="../assets/fonts/flaticon/flaticon.css">
+    <link rel="stylesheet" href="../assets/css/ionicons.min.css">
+    <link rel="stylesheet" href="../assets/fonts/themify-icons/themify-icons.css">
 
     <!-- Responsive CSS -->
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
 </head>
 
 <body>
     <!--loading start-->
     <div id="pq-loading">
         <div id="pq-loading-center">
-            <img src="assets/images/logo.png" class="img-fluid" alt="loading">
+            <img src="../assets/images/logo.png" class="img-fluid" alt="loading">
         </div>
     </div>
     <!--loading End-->
@@ -84,21 +84,21 @@
                     <div class="col-lg-12">
                         <nav class="navbar navbar-expand-lg navbar-light">
                             <a class="navbar-brand" href="index.php">
-                                <img class="img-fluid logo" src="assets/images/logo.png" alt="medicate">
+                                <img class="img-fluid logo" src="../assets/images/logo.png" alt="medicate">
                             </a>
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <div id="pq-menu-contain" class="pq-menu-contain">
                                     <ul id="pq-main-menu" class="navbar-nav ml-auto">
-                                        <li class="menu-item current-menu-item">
+                                        <li class="menu-item ">
                                             <a href="index.php">Home</a>
                                         </li>
                                         <li class="menu-item ">
                                             <a href="about.php">About Us </a>
                                         </li>
-                                        <li class="menu-item ">
+                                        <li class="menu-item">
                                             <a href="services.php">Services</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
                                             <ul class="sub-menu">
-                                                <li class="menu-item ">
+                                                <li class="menu-item current-menu-item">
                                                     <a href="public/services/angioplasty.php">Angioplasty </a>
                                                 </li>
                                                 <li class="menu-item ">
@@ -177,17 +177,17 @@
 
     <!--=================================
          Banner start-->
-   <div class="pq-breadcrumb" style="background-image:url('images/breadcrumb.jpg');">
+   <div class="pq-breadcrumb" style="background-image:url('../assets/images/breadcrumb.jpg');">
       <div class="container">
          <div class="row align-items-center">
             <div class="col-lg-12">
                <nav aria-label="breadcrumb">
                   <div class="pq-breadcrumb-title">
-                     <h2>Angioplasty services</h2> </div>
+                     <h2>Angioplasty </h2> </div>
                   <div class="pq-breadcrumb-container mt-2">
                      <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index-2.html"><i class="fas fa-home mr-2"></i>Home</a></li>
-                        <li class="breadcrumb-item active">Angioplasty Services</li>
+                        <li class="breadcrumb-item"><a href="index.php"><i class="fas fa-home mr-2"></i>Home</a></li>
+                        <li class="breadcrumb-item active">Angioplasty </li>
                      </ol>
                   </div>
                </nav>
@@ -210,25 +210,25 @@
                   <div class="pq-widget pq-widget-port p-0">
                      <div class="menu-service-menu-container">
                         <ul id="menu-service-menu" class="menu">
-                           <li class=" current-menu-item"> <a href="angioplasty-services.html" aria-current="page">Angioplasty Services</a> </li>
-                           <li><a href="cardiology-services.html">Cardiology Services </a> </li>
-                           <li><a href="dental-services.html">Dental Services</a> </li>
-                           <li><a href="endocrinology-services.html">Endocrinology Services</a> </li>
-                           <li> <a href="eye-care-services.html">Eye Care Services</a> </li>
-                           <li> <a href="nurology-service.html">Neurology Services</a> </li>
-                           <li> <a href="orthopaedics-services.html">Orthopaedics Services</a> </li>
-                           <li> <a href="rmi-services.html">RMI Services</a> </li>
+                           <li class=" current-menu-item"> <a href="angioplasty.php" aria-current="page">Angioplasty Services</a> </li>
+                           <li><a href="cardiology.php">Cardiology Services </a> </li>
+                           <li><a href="dental.php">Dental Services</a> </li>
+                           <li><a href="endocrinology.php">Endocrinology Services</a> </li>
+                           <li> <a href="eye-care.php">Eye Care Services</a> </li>
+                           <li> <a href="neurology.php">Neurology Services</a> </li>
+                           <li> <a href="orthopaedics.php">Orthopaedics Services</a> </li>
+                           <li> <a href="rmi.php">RMI Services</a> </li>
                         </ul>
                      </div>
                   </div>
                </div>
                <div id="media_image">
-                  <a href="contact-us.html"> <img src="images/call-img.jpg" alt="" class="rounded img-fluid"> </a>
+                  <a href="contact-us.html"> <img src="../assets/images/call-img.jpg" alt="" class="rounded img-fluid"> </a>
                </div>
             </div>
             <div class="col-lg-8 ps-3 mt-4 mt-lg-0">
                <div class="pq-menu-content">
-                  <div class="pq-rhs-img text-center"> <img src="images/service-single.jpg" alt="" class="rounded img-fluid"> </div>
+                  <div class="pq-rhs-img text-center"> <img src="../assets/images/service-single.jpg" alt="" class="rounded img-fluid"> </div>
                   <div class="pq-section-title-box pq-section-title-style-2 pt-4">
                      <h4 class="pq-section-title">Professional Medical Service Of Angioplasty</h4>
                      <div class="pq-section-description">
@@ -261,8 +261,8 @@
                         </div>
                      </div>
                      <div class="row mt-4">
-                        <div class="col-lg-6 col-md-12"> <img src="images/services/1.jpg" alt=""> </div>
-                        <div class="col-lg-6 col-md-12 mt-lg-0 mt-4"> <img src="images/services/2.jpg" class="img-fluid" alt=""> </div>
+                        <div class="col-lg-6 col-md-12"> <img src="../assets/images/services/1.jpg" alt=""> </div>
+                        <div class="col-lg-6 col-md-12 mt-lg-0 mt-4"> <img src="../assets/images/services/2.jpg" class="img-fluid" alt=""> </div>
                      </div>
                      <div class="row">
                         <div class="pq-section-title-box pq-section-title-style-2 pt-4">
@@ -327,7 +327,7 @@
    <!--=================================
          all services end-->
 
-   <!--=================================
+ <!--=================================
          our-blog start-->
    <section class="pq-blog  pq-pb-210">
       <div class="container">
@@ -340,7 +340,7 @@
                <div class="owl-carousel owl-theme" data-dots="false" data-nav="false" data-desk_num="3" data-lap_num="3" data-tab_num="2" data-mob_num="1" data-mob_sm="1" data-autoplay="true" data-loop="true" data-margin="30">
                   <div class="item">
                      <div class="pq-blog-post pq-style-1 pq-bg-grey">
-                        <div class="pq-post-media"> <img src="assets/images/blog/1.jpg" class="img-fluid" alt="images">
+                        <div class="pq-post-media"> <img src="../assets/images/blog/1.jpg" class="img-fluid" alt="images">
                            <div class="pq-post-date">
                               <a href="blog-single.php"> <span>December 5, 2021</span></a>
                            </div>
@@ -348,7 +348,7 @@
                         <div class="pq-blog-contain">
                            <div class="pq-post-meta">
                               <ul>
-                                 <li class="pq-post-author"><i class="fa fa-user"></i>admin</li>
+                                 <li class="pq-post-author"><i class="fa fa-user"></i>Medicate Admin</li>
                                  <li class="pq-post-comment"> <a href="blog-single.php"><i class="fa fa-comments"></i>
                                   0 Comments</a> </li>
                               </ul>
@@ -365,7 +365,7 @@
                   </div>
                   <div class="item">
                      <div class="pq-blog-post pq-style-1 pq-bg-grey">
-                        <div class="pq-post-media"> <img src="assets/images/blog/2.jpg" class="img-fluid" alt="images">
+                        <div class="pq-post-media"> <img src="../assets/images/blog/2.jpg" class="img-fluid" alt="images">
                            <div class="pq-post-date">
                               <a href="blog-single.php"> <span>December 5, 2021</span></a>
                            </div>
@@ -373,7 +373,7 @@
                         <div class="pq-blog-contain">
                            <div class="pq-post-meta">
                               <ul>
-                                 <li class="pq-post-author"><i class="fa fa-user"></i>admin</li>
+                                 <li class="pq-post-author"><i class="fa fa-user"></i>Medicate Admin</li>
                                  <li class="pq-post-comment"> <a href="blog-single.php"><i class="fa fa-comments"></i>
                                   0 Comments</a> </li>
                               </ul>
@@ -390,7 +390,7 @@
                   </div>
                   <div class="item">
                      <div class="pq-blog-post pq-style-1 pq-bg-grey">
-                        <div class="pq-post-media"> <img src="assets/images/blog/3.jpg" class="img-fluid" alt="images">
+                        <div class="pq-post-media"> <img src="../assets/images/blog/3.jpg" class="img-fluid" alt="images">
                            <div class="pq-post-date">
                               <a href="blog-single.php"> <span>December 5, 2021</span></a>
                            </div>
@@ -398,7 +398,7 @@
                         <div class="pq-blog-contain">
                            <div class="pq-post-meta">
                               <ul>
-                                 <li class="pq-post-author"><i class="fa fa-user"></i>admin</li>
+                                 <li class="pq-post-author"><i class="fa fa-user"></i>Medicate Admin</li>
                                  <li class="pq-post-comment"> <a href="blog-single.php"><i class="fa fa-comments"></i>
                                   0 Comments</a> </li>
                               </ul>
@@ -415,7 +415,7 @@
                   </div>
                   <div class="item">
                      <div class="pq-blog-post pq-style-1 pq-bg-grey">
-                        <div class="pq-post-media"> <img src="assets/images/blog/4.jpg" class="img-fluid" alt="images">
+                        <div class="pq-post-media"> <img src="../assets/images/blog/4.jpg" class="img-fluid" alt="images">
                            <div class="pq-post-date">
                               <a href="blog-single.php"> <span>December 5, 2021</span></a>
                            </div>
@@ -423,7 +423,7 @@
                         <div class="pq-blog-contain">
                            <div class="pq-post-meta">
                               <ul>
-                                 <li class="pq-post-author"><i class="fa fa-user"></i>admin</li>
+                                 <li class="pq-post-author"><i class="fa fa-user"></i>Medicate Admin</li>
                                  <li class="pq-post-comment"> <a href="blog-single.php"><i class="fa fa-comments"></i>
                                   0 Comments</a> </li>
                               </ul>
@@ -440,7 +440,7 @@
                   </div>
                   <div class="item">
                      <div class="pq-blog-post pq-style-1 pq-bg-grey">
-                        <div class="pq-post-media"> <img src="assets/images/blog/5.jpg" class="img-fluid" alt="images">
+                        <div class="pq-post-media"> <img src="../assets/images/blog/5.jpg" class="img-fluid" alt="images">
                            <div class="pq-post-date">
                               <a href="blog-single.php"> <span>December 5, 2021</span></a>
                            </div>
@@ -448,7 +448,7 @@
                         <div class="pq-blog-contain">
                            <div class="pq-post-meta">
                               <ul>
-                                 <li class="pq-post-author"><i class="fa fa-user"></i>admin</li>
+                                 <li class="pq-post-author"><i class="fa fa-user"></i>Medicate Admin</li>
                                  <li class="pq-post-comment"> <a href="blog-single.php"><i class="fa fa-comments"></i>
                                   0 Comments</a> </li>
                               </ul>
@@ -465,7 +465,7 @@
                   </div>
                   <div class="item">
                      <div class="pq-blog-post pq-style-1 pq-bg-grey">
-                        <div class="pq-post-media"> <img src="assets/images/blog/6.jpg" class="img-fluid" alt="images">
+                        <div class="pq-post-media"> <img src="../assets/images/blog/6.jpg" class="img-fluid" alt="images">
                            <div class="pq-post-date">
                               <a href="blog-single.php"> <span>December 5, 2021</span></a>
                            </div>
@@ -473,7 +473,7 @@
                         <div class="pq-blog-contain">
                            <div class="pq-post-meta">
                               <ul>
-                                 <li class="pq-post-author"><i class="fa fa-user"></i>admin</li>
+                                 <li class="pq-post-author"><i class="fa fa-user"></i>Medicate Admin</li>
                                  <li class="pq-post-comment"> <a href="blog-single.php"><i class="fa fa-comments"></i>
                                   0 Comments</a> </li>
                               </ul>
@@ -490,7 +490,7 @@
                   </div>
                   <div class="item">
                      <div class="pq-blog-post pq-style-1 pq-bg-grey">
-                        <div class="pq-post-media"> <img src="assets/images/blog/7.jpg" class="img-fluid" alt="images">
+                        <div class="pq-post-media"> <img src="../assets/images/blog/7.jpg" class="img-fluid" alt="images">
                            <div class="pq-post-date">
                               <a href="blog-single.php"> <span>December 5, 2021</span></a>
                            </div>
@@ -498,7 +498,7 @@
                         <div class="pq-blog-contain">
                            <div class="pq-post-meta">
                               <ul>
-                                 <li class="pq-post-author"><i class="fa fa-user"></i>admin</li>
+                                 <li class="pq-post-author"><i class="fa fa-user"></i>Medicate Admin</li>
                                  <li class="pq-post-comment"> <a href="blog-single.php"><i class="fa fa-comments"></i>
                                   0 Comments</a> </li>
                               </ul>
@@ -515,7 +515,7 @@
                   </div>
                   <div class="item">
                      <div class="pq-blog-post pq-style-1 pq-bg-grey">
-                        <div class="pq-post-media"> <img src="assets/images/blog/8.jpg" class="img-fluid" alt="images">
+                        <div class="pq-post-media"> <img src="../assets/images/blog/8.jpg" class="img-fluid" alt="images">
                            <div class="pq-post-date">
                               <a href="blog-single.php"> <span>December 5, 2021</span></a>
                            </div>
@@ -523,7 +523,7 @@
                         <div class="pq-blog-contain">
                            <div class="pq-post-meta">
                               <ul>
-                                 <li class="pq-post-author"><i class="fa fa-user"></i>admin</li>
+                                 <li class="pq-post-author"><i class="fa fa-user"></i>Medicate Admin</li>
                                  <li class="pq-post-comment"> <a href="blog-single.php"><i class="fa fa-comments"></i>
                                   0 Comments</a> </li>
                               </ul>
@@ -540,7 +540,7 @@
                   </div>
                   <div class="item">
                      <div class="pq-blog-post pq-style-1 pq-bg-grey">
-                        <div class="pq-post-media"> <img src="assets/images/blog/9.jpg" class="img-fluid" alt="images">
+                        <div class="pq-post-media"> <img src="../assets/images/blog/9.jpg" class="img-fluid" alt="images">
                            <div class="pq-post-date">
                               <a href="blog-single.php"> <span>December 5, 2021</span></a>
                            </div>
@@ -548,7 +548,7 @@
                         <div class="pq-blog-contain">
                            <div class="pq-post-meta">
                               <ul>
-                                 <li class="pq-post-author"><i class="fa fa-user"></i>admin</li>
+                                 <li class="pq-post-author"><i class="fa fa-user"></i>Medicate Admin</li>
                                  <li class="pq-post-comment"> <a href="blog-single.php"><i class="fa fa-comments"></i>
                                   0 Comments</a> </li>
                               </ul>
@@ -583,7 +583,7 @@
                      <div class="pq-subscribe-bg">
                         <div class="row align-items-center">
                            <div class="col-lg-5">
-                              <div class="pq-subscribe-block"> <img src="assets/images/Subscribe.png" class="pq-subscribe-img img-fluid" alt="medicate-subscribe-image">
+                              <div class="pq-subscribe-block"> <img src="../assets/images/Subscribe.png" class="pq-subscribe-img img-fluid" alt="medicate-subscribe-image">
                                  <div class="pq-subscribe-details">
                                     <h5>Latest Updates Subscribe To Our Newsletter</h5> </div>
                               </div>
@@ -607,7 +607,7 @@
             <div class="container">
                <div class="row">
                   <div class="col-xl-3 col-md-6">
-                     <div class="pq-footer-block"> <img src="assets/images/footer_logo.png" class="pq-footer-logo img-fluid" alt="medicate-footer-logo">
+                     <div class="pq-footer-block"> <img src="../assets/images/footer_logo.png" class="pq-footer-logo img-fluid" alt="medicate-footer-logo">
                         <p>It helps designers plan out where the content will sit, the content to be written and approved.</p>
                         <div class="pq-footer-social">
                            <ul>
@@ -643,7 +643,7 @@
                         <h4 class="footer-title">Recent Posts</h4>
                         <div class="pq-footer-recent-post">
                            <div class="pq-footer-recent-post-media">
-                              <a href="blog-single.php"> <img src="assets/images/footer-image/1.jpg" alt=""></a>
+                              <a href="blog-single.php"> <img src="../assets/images/footer-image/1.jpg" alt=""></a>
                            </div>
                            <div class="pq-footer-recent-post-info">
                               <a href="blog-single.php" class="pq-post-date"> <i class="far fa-calendar-alt"></i>December <span>12</span>, 2021 </a>
@@ -651,7 +651,7 @@
                         </div>
                         <div class="pq-footer-recent-post">
                            <div class="pq-footer-recent-post-media">
-                              <a href="blog-single.php"> <img src="assets/images/footer-image/2.jpg" alt=""></a>
+                              <a href="blog-single.php"> <img src="../assets/images/footer-image/2.jpg" alt=""></a>
                            </div>
                            <div class="pq-footer-recent-post-info">
                               <a href="blog-single.php" class="pq-post-date"> <i class="far fa-calendar-alt"></i>December <span>12</span>, 2021 </a>
@@ -666,7 +666,7 @@
                            <div class="col-sm-12">
                               <ul class="pq-contact">
                                  <li> <a href="tel:+2348028134942"><i class="fas fa-phone"></i>
-                                    <span> +1800-001-658</span>
+                                    <span>+234 8028134942</span>
                                  </a> </li>
                                  <li> <a href="mailto:info@medicate.com"><i class="fas fa-envelope"></i><span>info@medicate.com</span></a> </li>
                                  <li> <i class="fas fa-map-marker"></i> <span>
@@ -682,7 +682,7 @@
          <div class="pq-copyright-footer">
             <div class="container">
                <div class="row">
-                  <div class="col-md-12 text-center "> <span class="pq-copyright"> Copyright 2022 medicate All Rights Reserved</span> </div>
+                  <div class="col-md-12 text-center "> <span class="pq-copyright"> &copy; 2025 - Medicate. All Rights Reserved.</span> </div>
                </div>
             </div>
          </div>
@@ -696,18 +696,18 @@
    <!--Back To Top End-->
 
    <!-- JS Files -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/progressbar.js"></script>
-    <script src="assets/js/isotope.pkgd.min.js"></script>
-    <script src="assets/js/jquery.countTo.min.js"></script>
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-    <script src="assets/js/wow.min.js"></script>
-    <script src="assets/rev/js/rbtools.min.js"></script>
-    <script src="assets/rev/js/rs6.min.js"></script>
-    <script src="assets/js/rev-custom.js"></script>
-    <script src="assets/js/custom.js"></script>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/owl.carousel.min.js"></script>
+    <script src="../assets/js/progressbar.js"></script>
+    <script src="../assets/js/isotope.pkgd.min.js"></script>
+    <script src="../assets/js/jquery.countTo.min.js"></script>
+    <script src="../assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="../assets/js/wow.min.js"></script>
+    <script src="../assets/rev/js/rbtools.min.js"></script>
+    <script src="../assets/rev/js/rs6.min.js"></script>
+    <script src="../assets/js/rev-custom.js"></script>
+    <script src="../assets/js/custom.js"></script>
 
     <script>
         jQuery(window).on('load', function (e) {

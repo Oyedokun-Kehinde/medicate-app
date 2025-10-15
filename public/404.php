@@ -65,7 +65,7 @@
                             <ul>
                                 <li>
                                     <a href="tel:+2348028134942"><i class="fas fa-phone"></i>
-                                        <span> +1800-001-658</span>
+                                        <span>+234 8028134942</span>
                                     </a>
                                 </li>
                                 <li>
@@ -334,7 +334,7 @@
                                           <h2> Error 404 </h2> </div>
                                     <div class="pq-breadcrumb-container">
                                           <ol class="breadcrumb">
-                                                <li class="breadcrumb-item"><a href="index-2.html"><i class="fas fa-home mr-2"></i>Home</a></li>
+                                                <li class="breadcrumb-item"><a href="index.php"><i class="fas fa-home mr-2"></i>Home</a></li>
                                                 <li class="breadcrumb-item active">Error 404</li>
                                           </ol>
                                     </div>
@@ -467,7 +467,7 @@
                                                       <div class="col-sm-12">
                                                             <ul class="pq-contact">
                                                                   <li> <a href="tel:+2348028134942"><i class="fas fa-phone"></i>
-                                    <span> +1800-001-658</span>
+                                    <span>+234 8028134942</span>
                                  </a> </li>
                                                                   <li> <a href="mailto:info@medicate.com"><i class="fas fa-envelope"></i><span>info@medicate.com</span></a> </li>
                                                                   <li> <i class="fas fa-map-marker"></i> <span>
@@ -483,7 +483,7 @@
                   <div class="pq-copyright-footer">
                         <div class="container">
                               <div class="row">
-                                    <div class="col-md-12 text-center "> <span class="pq-copyright"> Copyright 2022 medicate All Rights Reserved</span> </div>
+                                    <div class="col-md-12 text-center "> <span class="pq-copyright"> &copy; 2025 - Medicate. All Rights Reserved.</span> </div>
                               </div>
                         </div>
                   </div>

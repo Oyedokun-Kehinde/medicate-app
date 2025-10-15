@@ -185,7 +185,7 @@
                      <h2>Blog </h2> </div>
                   <div class="pq-breadcrumb-container mt-2">
                      <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index-2.html"><i class="fas fa-home mr-2"></i>Home</a></li>
+                        <li class="breadcrumb-item"><a href="index.php"><i class="fas fa-home mr-2"></i>Home</a></li>
                         <li class="breadcrumb-item active">Blog </li>
                      </ol>
                   </div>
@@ -217,7 +217,7 @@
                            <div class="pq-blog-contain">
                               <div class="pq-post-meta">
                                  <ul>
-                                    <li class="pq-post-author"><i class="fa fa-user"></i>admin</li>
+                                    <li class="pq-post-author"><i class="fa fa-user"></i>Medicate Admin</li>
                                     <li class="pq-post-comment"> <a href="blog-single.php"><i class="fa fa-comments"></i>
                                           2 Comments</a> </li>
                                  </ul>
@@ -244,7 +244,7 @@
                            <div class="pq-blog-contain">
                               <div class="pq-post-meta">
                                  <ul>
-                                    <li class="pq-post-author"><i class="fa fa-user"></i>admin</li>
+                                    <li class="pq-post-author"><i class="fa fa-user"></i>Medicate Admin</li>
                                     <li class="pq-post-comment"> <a href="blog-single.php"><i class="fa fa-comments"></i>
                                           1 Comment</a> </li>
                                  </ul>
@@ -271,7 +271,7 @@
                            <div class="pq-blog-contain">
                               <div class="pq-post-meta">
                                  <ul>
-                                    <li class="pq-post-author"><i class="fa fa-user"></i>admin</li>
+                                    <li class="pq-post-author"><i class="fa fa-user"></i>Medicate Admin</li>
                                     <li class="pq-post-comment"> <a href="blog-single.php"><i class="fa fa-comments"></i>
                                           0 Comments</a> </li>
                                  </ul>
@@ -298,7 +298,7 @@
                            <div class="pq-blog-contain">
                               <div class="pq-post-meta">
                                  <ul>
-                                    <li class="pq-post-author"><i class="fa fa-user"></i>admin</li>
+                                    <li class="pq-post-author"><i class="fa fa-user"></i>Medicate Admin</li>
                                     <li class="pq-post-comment"> <a href="blog-single.php"><i class="fa fa-comments"></i>
                                           0 Comments</a> </li>
                                  </ul>
@@ -325,7 +325,7 @@
                            <div class="pq-blog-contain">
                               <div class="pq-post-meta">
                                  <ul>
-                                    <li class="pq-post-author"><i class="fa fa-user"></i>admin</li>
+                                    <li class="pq-post-author"><i class="fa fa-user"></i>Medicate Admin</li>
                                     <li class="pq-post-comment"> <a href="blog-single.php"><i class="fa fa-comments"></i>
                                           0 Comments</a> </li>
                                  </ul>
@@ -352,7 +352,7 @@
                            <div class="pq-blog-contain">
                               <div class="pq-post-meta">
                                  <ul>
-                                    <li class="pq-post-author"><i class="fa fa-user"></i>admin</li>
+                                    <li class="pq-post-author"><i class="fa fa-user"></i>Medicate Admin</li>
                                     <li class="pq-post-comment"> <a href="blog-single.php"><i class="fa fa-comments"></i>
                                           0 Comments</a> </li>
                                  </ul>
@@ -379,7 +379,7 @@
                            <div class="pq-blog-contain">
                               <div class="pq-post-meta">
                                  <ul>
-                                    <li class="pq-post-author"><i class="fa fa-user"></i>admin</li>
+                                    <li class="pq-post-author"><i class="fa fa-user"></i>Medicate Admin</li>
                                     <li class="pq-post-comment"> <a href="blog-single.php"><i class="fa fa-comments"></i>
                                           0 Comments</a> </li>
                                  </ul>
@@ -406,7 +406,7 @@
                            <div class="pq-blog-contain">
                               <div class="pq-post-meta">
                                  <ul>
-                                    <li class="pq-post-author"><i class="fa fa-user"></i>admin</li>
+                                    <li class="pq-post-author"><i class="fa fa-user"></i>Medicate Admin</li>
                                     <li class="pq-post-comment"> <a href="blog-single.php"><i class="fa fa-comments"></i>
                                           0 Comments</a> </li>
                                  </ul>
@@ -433,7 +433,7 @@
                            <div class="pq-blog-contain">
                               <div class="pq-post-meta">
                                  <ul>
-                                    <li class="pq-post-author"><i class="fa fa-user"></i>admin</li>
+                                    <li class="pq-post-author"><i class="fa fa-user"></i>Medicate Admin</li>
                                     <li class="pq-post-comment"> <a href="blog-single.php"><i class="fa fa-comments"></i>
                                           0 Comments</a> </li>
                                  </ul>
@@ -647,7 +647,7 @@
                            <div class="col-sm-12">
                               <ul class="pq-contact">
                                  <li> <a href="tel:+23480281492"><i class="fas fa-phone"></i>
-                                    <span> +1800-001-658</span>
+                                    <span>+234 8028134942</span>
                                  </a> </li>
                                  <li> <a href="mailto:info@medicate.com"><i class="fas fa-envelope"></i><span>info@medicate.com</span></a> </li>
                                  <li> <i class="fas fa-map-marker"></i> <span>
@@ -663,7 +663,7 @@
          <div class="pq-copyright-footer">
             <div class="container">
                <div class="row">
-                  <div class="col-md-12 text-center "> <span class="pq-copyright"> Copyright 2022 medicate All Rights Reserved</span> </div>
+                  <div class="col-md-12 text-center "> <span class="pq-copyright"> &copy; 2025 - Medicate. All Rights Reserved.</span> </div>
                </div>
             </div>
          </div>
