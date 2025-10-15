@@ -227,101 +227,101 @@
                      <div class="grid-sizer pq-col-3"></div>
                      <div class="pq-masonry-item pq-filter-items  ipq-lg-6 30 ">
                         <div class="pq-portfoliobox pq-style-1">
-                           <div class="pq-portfolio-img"> <img src="images/portfolio/slider/1.jpg" class="img-fluid" alt="">
-                              <a href="case-study.php">
+                           <div class="pq-portfolio-img"> <img src="assets/images/portfolio/slider/1.jpg" class="img-fluid" alt="">
+                              <a href=case-study-details.php">
                                  <div class="pq-portfolio-icon"><i class="ion ion-plus-round"></i></div>
                               </a>
                            </div>
                            <div class="pq-portfolio-info"> <span>Clinic</span>
-                              <h5><a href="case-study.php">Home Visit</a></h5> </div>
+                              <h5><a href="case-study-details.php">Home Visit</a></h5> </div>
                         </div>
                      </div>
                      <div class="pq-masonry-item pq-filter-items  ipq-lg-3 36 ">
                         <div class="pq-portfoliobox pq-style-1">
-                           <div class="pq-portfolio-img"> <img src="images/portfolio/slider/2.jpg" class="img-fluid" alt="">
-                              <a href="case-study.php">
+                           <div class="pq-portfolio-img"> <img src="assets/images/portfolio/slider/2.jpg" class="img-fluid" alt="">
+                              <a href="case-study-details.php">
                                  <div class="pq-portfolio-icon"><i class="ion ion-plus-round"></i></div>
                               </a>
                            </div>
                            <div class="pq-portfolio-info"> <span>Family</span>
-                              <h5><a href="case-study.php">Investigations</a></h5> </div>
+                              <h5><a href="case-study-details.php">Investigations</a></h5> </div>
                         </div>
                      </div>
                      <div class="pq-masonry-item pq-filter-items  ipq-lg-3 33 ">
                         <div class="pq-portfoliobox pq-style-1">
-                           <div class="pq-portfolio-img"> <img src="images/portfolio/slider/3.jpg" class="img-fluid" alt="">
-                              <a href="case-study.php">
+                           <div class="pq-portfolio-img"> <img src="assets/images/portfolio/slider/3.jpg" class="img-fluid" alt="">
+                              <a href="case-study-details.php">
                                  <div class="pq-portfolio-icon"><i class="ion ion-plus-round"></i></div>
                               </a>
                            </div>
                            <div class="pq-portfolio-info"> <span>Pediatrics</span>
-                              <h5><a href="case-study.php">Surgical</a></h5> </div>
+                              <h5><a href="case-study-details.php">Surgical</a></h5> </div>
                         </div>
                      </div>
                      <div class="pq-masonry-item pq-filter-items  ipq-lg-6 30  36  32  33  34 ">
                         <div class="pq-portfoliobox pq-style-1">
-                           <div class="pq-portfolio-img"> <img src="images/portfolio/slider/4.jpg" class="img-fluid" alt="">
-                              <a href="case-study.php">
+                           <div class="pq-portfolio-img"> <img src="assets/images/portfolio/slider/4.jpg" class="img-fluid" alt="">
+                              <a href="case-study-details.php">
                                  <div class="pq-portfolio-icon"><i class="ion ion-plus-round"></i></div>
                               </a>
                            </div>
                            <div class="pq-portfolio-info"> <span>Clinic</span>
-                              <h5><a href="case-study.php">Pediatrics Care</a></h5> </div>
+                              <h5><a href="case-study-details.php">Pediatrics Care</a></h5> </div>
                         </div>
                      </div>
                      <div class="pq-masonry-item pq-filter-items  ipq-lg-3 30  36  33 ">
                         <div class="pq-portfoliobox pq-style-1">
-                           <div class="pq-portfolio-img"> <img src="images/portfolio/slider/5.jpg" class="img-fluid" alt="">
-                              <a href="case-study.php">
+                           <div class="pq-portfolio-img"> <img src="assets/images/portfolio/slider/5.jpg" class="img-fluid" alt="">
+                              <a href="case-study-details.php">
                                  <div class="pq-portfolio-icon"><i class="ion ion-plus-round"></i></div>
                               </a>
                            </div>
                            <div class="pq-portfolio-info"> <span>Clinic</span>
-                              <h5><a href="case-study.php">Cardiology</a></h5> </div>
+                              <h5><a href="case-study-details.php">Cardiology</a></h5> </div>
                         </div>
                      </div>
                      <div class="pq-masonry-item pq-filter-items  ipq-lg-3 33  34 ">
                         <div class="pq-portfoliobox pq-style-1">
-                           <div class="pq-portfolio-img"><img src="images/portfolio/slider/6.jpg" class="img-fluid" alt="">
-                              <a href="case-study.php">
+                           <div class="pq-portfolio-img"><img src="assets/images/portfolio/slider/6.jpg" class="img-fluid" alt="">
+                              <a href="case-study-details.php">
                                  <div class="pq-portfolio-icon"><i class="ion ion-plus-round"></i></div>
                               </a>
                            </div>
                            <div class="pq-portfolio-info"> <span>Pediatrics</span>
-                              <h5><a href="case-study.php">Treatments</a></h5> </div>
+                              <h5><a href="case-study-details.php">Treatments</a></h5> </div>
                         </div>
                      </div>
                      <div class="pq-masonry-item pq-filter-items  ipq-lg-6 36  32  34 ">
                         <div class="pq-portfoliobox pq-style-1">
-                           <div class="pq-portfolio-img"><img src="images/portfolio/slider/7.jpg" class="img-fluid" alt="">
-                              <a href="case-study.php">
+                           <div class="pq-portfolio-img"><img src="assets/images/portfolio/slider/7.jpg" class="img-fluid" alt="">
+                              <a href="case-study-details.php">
                                  <div class="pq-portfolio-icon"><i class="ion ion-plus-round"></i></div>
                               </a>
                            </div>
                            <div class="pq-portfolio-info"> <span>Family</span>
-                              <h5><a href="case-study.php">Quality Therapy</a></h5> </div>
+                              <h5><a href="case-study-details.php">Quality Therapy</a></h5> </div>
                         </div>
                      </div>
                      <div class="pq-masonry-item pq-filter-items  ipq-lg-3 32  33  34 ">
                         <div class="pq-portfoliobox pq-style-1">
-                           <div class="pq-portfolio-img"> <img src="images/portfolio/slider/8.jpg" class="img-fluid" alt="">
-                              <a href="case-study.php">
+                           <div class="pq-portfolio-img"> <img src="assets/images/portfolio/slider/8.jpg" class="img-fluid" alt="">
+                              <a href="case-study-details.php">
                                  <div class="pq-portfolio-icon"><i class="ion ion-plus-round"></i></div>
                               </a>
                            </div>
                            <div class="pq-portfolio-info"> <span>Laboratory</span>
-                              <h5><a href="case-study.php">Orthodontics</a></h5> </div>
+                              <h5><a href="case-study-details.php">Orthodontics</a></h5> </div>
                         </div>
                      </div>
                      <div class="pq-masonry-item pq-filter-items  ipq-lg-3 30  36  33  34 ">
                         <div class="pq-portfoliobox pq-style-1">
-                           <div class="pq-portfolio-img"><img src="images/portfolio/slider/9.jpg" class="img-fluid" alt="">
+                           <div class="pq-portfolio-img"><img src="assets/images/portfolio/slider/9.jpg" class="img-fluid" alt="">
                               <a href="case-study.php">
                                  <div class="pq-portfolio-icon"><i class="ion ion-plus-round"></i></div>
                               </a>
                            </div>
                            <div class="pq-portfolio-info"> <span>Clinic</span>
-                              <h5><a href="case-study.php">Management</a></h5> </div>
+                              <h5><a href="case-study-details.php">Management</a></h5> </div>
                         </div>
                      </div>
                   </div>

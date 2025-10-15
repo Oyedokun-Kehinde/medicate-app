@@ -184,13 +184,13 @@
                 <div class="col-lg-12">
                     <nav aria-label="breadcrumb">
                         <div class="pq-breadcrumb-title">
-                            <h2>Case Study </h2>
+                            <h2>Case Study Item </h2>
                         </div>
                         <div class="pq-breadcrumb-container mt-2">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="index.php"><i
                                             class="fas fa-home mr-2"></i>Home</a></li>
-                                <li class="breadcrumb-item active">Case Study </li>
+                                <li class="breadcrumb-item active"> Case Study Item </li>
                             </ol>
                         </div>
                     </nav>
@@ -211,7 +211,7 @@
          <div class="row">
             <div class="col-lg-12">
                <div class="row">
-                  <div class="col-xl-8"> <img class="pq-project-img img-fluid" src="images/portfolio/single-portfolio.jpg" alt=""> </div>
+                  <div class="col-xl-8"> <img class="pq-project-img img-fluid" src="assets/images/portfolio/single-portfolio.jpg" alt=""> </div>
                   <div class="col-xl-4 mt-xl-0">
                      <div class="pq-project-info-container">
                         <div class="pq-portfolio-info-box">
@@ -266,8 +266,8 @@
                               </ul>
                            </div>
                            <p class="mt-xl-3">It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-                           <div class="col-xl-6 "> <img src="images/portfolio/slider/4.jpg" class="img-fluid" alt=""> </div>
-                           <div class="col-xl-6  mt-xl-0 mt-4"> <img src="images/portfolio/slider/5.jpg" class="img-fluid" alt=""> </div>
+                           <div class="col-xl-6 "> <img src="assets/images/portfolio/slider/4.jpg" class="img-fluid" alt=""> </div>
+                           <div class="col-xl-6  mt-xl-0 mt-4"> <img src="assets/images/portfolio/slider/5.jpg" class="img-fluid" alt=""> </div>
                            <div class="widget-container mt-4">
                               <h4 class="heading-title size-default">How Traditional Braces Work</h4> 
                            </div>
@@ -363,7 +363,7 @@
                      <div class="item">
                         <div class="pq-portfoliobox pq-style-1">
                            <div class="pq-portfolio-block">
-                              <div class="pq-portfolio-img  "> <img src="images/portfolio/slider/1.jpg" class="img-fluid" alt="">
+                              <div class="pq-portfolio-img  "> <img src="assets/images/portfolio/slider/1.jpg" class="img-fluid" alt="">
                                  <a href="case-study.php">
                                     <div class="pq-portfolio-icon"><i class="fas fa-plus"></i></div>
                                  </a>
@@ -377,7 +377,7 @@
                      <div class="item">
                         <div class="pq-portfoliobox pq-style-1">
                            <div class="pq-portfolio-block">
-                              <div class="pq-portfolio-img  "> <img src="images/portfolio/slider/2.jpg" class="img-fluid" alt="">
+                              <div class="pq-portfolio-img  "> <img src="assets/images/portfolio/slider/2.jpg" class="img-fluid" alt="">
                                  <a href="case-study.php">
                                     <div class="pq-portfolio-icon"><i class="fas fa-plus"></i></div>
                                  </a>
@@ -393,7 +393,7 @@
                      <div class="item">
                         <div class="pq-portfoliobox pq-style-1">
                            <div class="pq-portfolio-block">
-                              <div class="pq-portfolio-img  "> <img src="images/portfolio/slider/3.jpg" class="img-fluid" alt="">
+                              <div class="pq-portfolio-img  "> <img src="assets/images/portfolio/slider/3.jpg" class="img-fluid" alt="">
                                  <a href="case-study.php">
                                     <div class="pq-portfolio-icon"><i class="fas fa-plus"></i></div>
                                  </a>
@@ -409,7 +409,7 @@
                      <div class="item">
                         <div class="pq-portfoliobox pq-style-1">
                            <div class="pq-portfolio-block">
-                              <div class="pq-portfolio-img  "> <img src="images/portfolio/slider/4.jpg" class="img-fluid" alt="">
+                              <div class="pq-portfolio-img  "> <img src="assets/images/portfolio/slider/4.jpg" class="img-fluid" alt="">
                                  <a href="case-study.php">
                                     <div class="pq-portfolio-icon"><i class="fas fa-plus"></i></div>
                                  </a>
@@ -425,7 +425,7 @@
                      <div class="item">
                         <div class="pq-portfoliobox pq-style-1">
                            <div class="pq-portfolio-block">
-                              <div class="pq-portfolio-img  "> <img src="images/portfolio/slider/5.jpg" class="img-fluid" alt="">
+                              <div class="pq-portfolio-img  "> <img src="assets/images/portfolio/slider/5.jpg" class="img-fluid" alt="">
                                  <a href="case-study.php">
                                     <div class="pq-portfolio-icon"><i class="fas fa-plus"></i></div>
                                  </a>
@@ -441,7 +441,7 @@
                      <div class="item">
                         <div class="pq-portfoliobox pq-style-1">
                            <div class="pq-portfolio-block">
-                              <div class="pq-portfolio-img  "> <img src="images/portfolio/slider/6.jpg" class="img-fluid" alt="">
+                              <div class="pq-portfolio-img  "> <img src="assets/images/portfolio/slider/6.jpg" class="img-fluid" alt="">
                                  <a href="case-study.php">
                                     <div class="pq-portfolio-icon"><i class="fas fa-plus"></i></div>
                                  </a>
@@ -457,7 +457,7 @@
                      <div class="item">
                         <div class="pq-portfoliobox pq-style-1">
                            <div class="pq-portfolio-block">
-                              <div class="pq-portfolio-img  "> <img src="images/portfolio/slider/7.jpg" class="img-fluid" alt="">
+                              <div class="pq-portfolio-img  "> <img src="assets/images/portfolio/slider/7.jpg" class="img-fluid" alt="">
                                  <a href="case-study.php">
                                     <div class="pq-portfolio-icon"><i class="fas fa-plus"></i></div>
                                  </a>
@@ -473,7 +473,7 @@
                      <div class="item">
                         <div class="pq-portfoliobox pq-style-1">
                            <div class="pq-portfolio-block">
-                              <div class="pq-portfolio-img  "> <img src="images/portfolio/slider/8.jpg" class="img-fluid" alt="">
+                              <div class="pq-portfolio-img  "> <img src="assets/images/portfolio/slider/8.jpg" class="img-fluid" alt="">
                                  <a href="case-study.php">
                                     <div class="pq-portfolio-icon"><i class="fas fa-plus"></i></div>
                                  </a>
@@ -489,7 +489,7 @@
                      <div class="item">
                         <div class="pq-portfoliobox pq-style-1">
                            <div class="pq-portfolio-block">
-                              <div class="pq-portfolio-img  "> <img src="images/portfolio/slider/9.jpg" class="img-fluid" alt="">
+                              <div class="pq-portfolio-img  "> <img src="assets/images/portfolio/slider/9.jpg" class="img-fluid" alt="">
                                  <a href="case-study.php">
                                     <div class="pq-portfolio-icon"><i class="fas fa-plus"></i></div>
                                  </a>
@@ -511,7 +511,7 @@
    <!--=================================
          project end
 
-    <!--=================================
+    =================================
           Footer start
    ============================== -->
     <footer id="pq-footer">
