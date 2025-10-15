@@ -380,7 +380,7 @@
                             available, but
                             the majority have suffered alteration in some form </p>
                         <div class="pq-info-call"> <i class="fas fa-phone-alt"></i>
-                            <h4 class="cpq-call-number">987 654 321</h4>
+                            <h4 class="cpq-call-number">+234 8028134942</h4>
                         </div>
                     </div>
                 </div>
@@ -1395,7 +1395,7 @@
                                 <div class="pq-blog-contain">
                                     <div class="pq-post-meta">
                                         <ul>
-                                            <li class="pq-post-author"><i class="fa fa-user"></i>Medicate Admin</li>
+                                            <li class="pq-post-author"><i class="fa fa-user"></i>admin</li>
                                             <li class="pq-post-comment"> <a
                                                     href="blog-single.php"><i
                                                         class="fa fa-comments"></i>
@@ -1428,7 +1428,7 @@
                                 <div class="pq-blog-contain">
                                     <div class="pq-post-meta">
                                         <ul>
-                                            <li class="pq-post-author"><i class="fa fa-user"></i>Medicate Admin</li>
+                                            <li class="pq-post-author"><i class="fa fa-user"></i>admin</li>
                                             <li class="pq-post-comment"> <a
                                                     href="blog-single.php"><i
                                                         class="fa fa-comments"></i>
@@ -1461,7 +1461,7 @@
                                 <div class="pq-blog-contain">
                                     <div class="pq-post-meta">
                                         <ul>
-                                            <li class="pq-post-author"><i class="fa fa-user"></i>Medicate Admin</li>
+                                            <li class="pq-post-author"><i class="fa fa-user"></i>admin</li>
                                             <li class="pq-post-comment"> <a
                                                     href="blog-single.php"><i
                                                         class="fa fa-comments"></i>
@@ -1494,7 +1494,7 @@
                                 <div class="pq-blog-contain">
                                     <div class="pq-post-meta">
                                         <ul>
-                                            <li class="pq-post-author"><i class="fa fa-user"></i>Medicate Admin</li>
+                                            <li class="pq-post-author"><i class="fa fa-user"></i>admin</li>
                                             <li class="pq-post-comment"> <a
                                                     href="blog-single.php"><i
                                                         class="fa fa-comments"></i>
@@ -1527,7 +1527,7 @@
                                 <div class="pq-blog-contain">
                                     <div class="pq-post-meta">
                                         <ul>
-                                            <li class="pq-post-author"><i class="fa fa-user"></i>Medicate Admin</li>
+                                            <li class="pq-post-author"><i class="fa fa-user"></i>admin</li>
                                             <li class="pq-post-comment"> <a
                                                     href="blog-single.php"><i
                                                         class="fa fa-comments"></i>
@@ -1560,7 +1560,7 @@
                                 <div class="pq-blog-contain">
                                     <div class="pq-post-meta">
                                         <ul>
-                                            <li class="pq-post-author"><i class="fa fa-user"></i>Medicate Admin</li>
+                                            <li class="pq-post-author"><i class="fa fa-user"></i>admin</li>
                                             <li class="pq-post-comment"> <a
                                                     href="blog-single.php"><i
                                                         class="fa fa-comments"></i>
@@ -1593,7 +1593,7 @@
                                 <div class="pq-blog-contain">
                                     <div class="pq-post-meta">
                                         <ul>
-                                            <li class="pq-post-author"><i class="fa fa-user"></i>Medicate Admin</li>
+                                            <li class="pq-post-author"><i class="fa fa-user"></i>admin</li>
                                             <li class="pq-post-comment"> <a
                                                     href="blog-single.php"><i
                                                         class="fa fa-comments"></i>
@@ -1626,7 +1626,7 @@
                                 <div class="pq-blog-contain">
                                     <div class="pq-post-meta">
                                         <ul>
-                                            <li class="pq-post-author"><i class="fa fa-user"></i>Medicate Admin</li>
+                                            <li class="pq-post-author"><i class="fa fa-user"></i>admin</li>
                                             <li class="pq-post-comment"> <a
                                                     href="blog-single.php"><i
                                                         class="fa fa-comments"></i>
@@ -1659,7 +1659,7 @@
                                 <div class="pq-blog-contain">
                                     <div class="pq-post-meta">
                                         <ul>
-                                            <li class="pq-post-author"><i class="fa fa-user"></i>Medicate Admin</li>
+                                            <li class="pq-post-author"><i class="fa fa-user"></i>admin</li>
                                             <li class="pq-post-comment"> <a
                                                     href="blog-single.php"><i
                                                         class="fa fa-comments"></i>

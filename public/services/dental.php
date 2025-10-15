@@ -217,7 +217,7 @@
                            <li><a href="endocrinology.php">Endocrinology Services</a> </li>
                            <li> <a href="eye-care.php">Eye Care Services</a> </li>
                            <li> <a href="neurology.php">Neurology Services</a> </li>
-                           <li> <a href="orthopaedic.php">Orthopaedics Services</a> </li>
+                           <li> <a href="orthopaedics.php">Orthopaedics Services</a> </li>
                            <li> <a href="rmi.php">RMI Services</a> </li>
                         </ul>
                      </div>

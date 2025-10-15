@@ -199,7 +199,6 @@
    <!--=================================
          Banner end-->
 
-
    <!--=================================
          all services start-->
    <section class="all-services pq-pb-210">
@@ -210,14 +209,14 @@
                   <div class="pq-widget pq-widget-port p-0">
                      <div class="menu-service-menu-container">
                         <ul id="menu-service-menu" class="menu">
-                           <li> <a href="angioplasty-services.html" aria-current="page">Angioplasty Services</a> </li>
-                           <li class=" current-menu-item"><a href="cardiology-services.html">Cardiology Services </a>
+                           <li> <a href="angioplasty.php" aria-current="page">Angioplasty Services</a> </li>
+                           <li class=" current-menu-item"><a href="cardiology.php">Cardiology Services </a>
                            </li>
                            <li><a href="dental.php">Dental Services</a> </li>
                            <li><a href="endocrinology.php">Endocrinology Services</a> </li>
                            <li> <a href="eye-care.php">Eye Care Services</a> </li>
                            <li> <a href="neurology.php">Neurology Services</a> </li>
-                           <li> <a href="orthopaedic.php">Orthopaedics Services</a> </li>
+                           <li> <a href="orthopaedics.php">Orthopaedics Services</a> </li>
                            <li> <a href="rmi.php">RMI Services</a> </li>
                         </ul>
                      </div>
@@ -356,6 +355,8 @@
    </section>
    <!--=================================
          all services end-->
+
+
 
    <!--=================================
          our-blog start-->
