@@ -134,7 +134,7 @@
                                                             <li class="menu-item ">
                                                                   <a href="specialists.php">Specialists </a>
                                                             </li>
-                                                            <li class="menu-item current-menu-item">
+                                                            <li class="menu-item ">
                                                                   <a href="case-study.php">Case Studies </a>
                                                             </li>
                                                             <li class="menu-item ">
