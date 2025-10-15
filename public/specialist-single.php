@@ -56,12 +56,12 @@
                         <div class="pq-header-contact ">
                             <ul>
                                 <li>
-                                    <a href="tel:+1800001658"><i class="fas fa-phone"></i>
+                                    <a href="tel:+2348028134942"><i class="fas fa-phone"></i>
                                         <span> +234 8028134942</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="mailto:info@peacefulthemes.com"><i
+                                    <a href="mailto:info@medicate.com"><i
                                             class="fas fa-envelope"></i><span>info@medicate.com</span></a>
                                 </li>
                             </ul>

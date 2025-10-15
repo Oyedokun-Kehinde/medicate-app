@@ -64,13 +64,13 @@
                         <div class="pq-header-contact ">
                             <ul>
                                 <li>
-                                    <a href="tel:+1800001658"><i class="fas fa-phone"></i>
+                                    <a href="tel:+2348028134942"><i class="fas fa-phone"></i>
                                         <span> +1800-001-658</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="mailto:info@peacefulthemes.com"><i
-                                            class="fas fa-envelope"></i><span>info@peacefulthemes.com</span></a>
+                                    <a href="mailto:info@medicate.com"><i
+                                            class="fas fa-envelope"></i><span>info@medicate.com</span></a>
                                 </li>
                             </ul>
                         </div>
@@ -243,7 +243,7 @@
                                                     </ul>
                                                 </li>
                                                 <li class="menu-item">
-                                                    <a href="home-visit.html">Projects Details</a>
+                                                    <a href="case-study.php">Projects Details</a>
                                                 </li>
                                             </ul>
                                         </li>
@@ -432,7 +432,7 @@
                                                             <li><a href="doctor-1.html">Doctors 1</a></li>
                                                             <li><a href="faq.html">FAQ</a></li>
                                                             <li><a href="our-doctor.html">Doctors 2</a></li>
-                                                            <li><a href="home-visit.html">Departments</a></li>
+                                                            <li><a href="case-study.php">Departments</a></li>
                                                             <li><a href="make-appoinment.html">Events</a></li>
                                                             <li><a href="our-plan.html">Member</a></li>
                                                       </ul>
@@ -466,10 +466,10 @@
                                                 <div class="row">
                                                       <div class="col-sm-12">
                                                             <ul class="pq-contact">
-                                                                  <li> <a href="tel:+1800001658"><i class="fas fa-phone"></i>
+                                                                  <li> <a href="tel:+2348028134942"><i class="fas fa-phone"></i>
                                     <span> +1800-001-658</span>
                                  </a> </li>
-                                                                  <li> <a href="mailto:info@peacefulthemes.com"><i class="fas fa-envelope"></i><span>info@peacefulthemes.com</span></a> </li>
+                                                                  <li> <a href="mailto:info@medicate.com"><i class="fas fa-envelope"></i><span>info@medicate.com</span></a> </li>
                                                                   <li> <i class="fas fa-map-marker"></i> <span>
                                     Themeforest, Envato HQ 24 Fifth st., Los Angeles, USA                               </span> </li>
                                                             </ul>

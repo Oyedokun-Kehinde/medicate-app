@@ -64,7 +64,7 @@
                         <div class="pq-header-contact ">
                             <ul>
                                 <li>
-                                    <a href="tel:+1800001658"><i class="fas fa-phone"></i>
+                                    <a href="tel:+2348028134942"><i class="fas fa-phone"></i>
                                         <span> +234 8028134942</span>
                                     </a>
                                 </li>
@@ -743,6 +743,7 @@
         </div>
     </section>
     <!--Section service End-->
+
     <!--Section portfolio start-->
     <section class="pq-bg-primary pb-lg-0 pq-bg-img-1 ">
         <div class="container">
@@ -1799,7 +1800,7 @@
                                 <div class="row">
                                     <div class="col-sm-12">
                                         <ul class="pq-contact">
-                                            <li> <a href="tel:+1800001658"><i class="fas fa-phone"></i>
+                                            <li> <a href="tel:+2348028134942"><i class="fas fa-phone"></i>
                                                     <span> +234 8028134942</span>
                                                 </a> </li>
                                             <li> <a href="mailto:info@medicate.com"><i
