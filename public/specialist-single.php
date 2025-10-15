@@ -122,6 +122,10 @@
                                         <li class="menu-item ">
                                             <a href="blog.php">Blog</a>
                                         </li>
+                                         <li class="menu-item ">
+                                            <a href="case-study.php">Case Studies  </a>
+                                        </li>
+                                        <li class="menu-item "></li>
                                         <li class="menu-item ">
                                             <a href="faqs.php">FAQs </a>
                                         </li>

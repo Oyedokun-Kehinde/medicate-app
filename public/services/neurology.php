@@ -45,7 +45,7 @@
    <!--loading End-->
 
    <!--=================================
-      header start-->
+  header start-->
    <header id="pq-header" class="pq-header-default ">
       <div class="pq-top-header">
          <div class="container">
@@ -83,58 +83,62 @@
             <div class="row">
                <div class="col-lg-12">
                   <nav class="navbar navbar-expand-lg navbar-light">
-                     <a class="navbar-brand" href="index.php">
+                     <a class="navbar-brand" href="../index.php">
                         <img class="img-fluid logo" src="../assets/images/logo.png" alt="medicate">
                      </a>
                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <div id="pq-menu-contain" class="pq-menu-contain">
                            <ul id="pq-main-menu" class="navbar-nav ml-auto">
+                              <li class="menu-item ">
+                                 <a href="../index.php">Home</a>
+                              </li>
+                              <li class="menu-item ">
+                                 <a href="../about.php">About Us </a>
+                              </li>
                               <li class="menu-item current-menu-item">
-                                 <a href="index.php">Home</a>
-                              </li>
-                              <li class="menu-item ">
-                                 <a href="about.php">About Us </a>
-                              </li>
-                              <li class="menu-item ">
-                                 <a href="services.php">Services</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
+                                 <a href="../services.php">Services</a><i
+                                    class="fa fa-chevron-down pq-submenu-icon"></i>
                                  <ul class="sub-menu">
                                     <li class="menu-item ">
-                                       <a href="public/services/angioplasty.php">Angioplasty </a>
+                                       <a href="angioplasty.php">Angioplasty </a>
                                     </li>
                                     <li class="menu-item ">
-                                       <a href="/services/cardiology">Cardiology</a>
+                                       <a href="cardiology.php">Cardiology</a>
                                     </li>
                                     <li class="menu-item ">
-                                       <a href="/services/dental.php">Dental </a>
-                                    </li>
-                                    <li class="menu-item ">
-                                       <a href="/services/endocrinology.php">Endocrinology</a>
-                                    </li>
-                                    <li class="menu-item ">
-                                       <a href="/services/eye-care.php">Eye Care </a>
-                                    </li>
-                                    <li class="menu-item current-menu-item">
-                                       <a href="/services/neurology.php">Neurology </a>
-                                    </li>
-                                    <li class="menu-item ">
-                                       <a href="/services/orthopaedics.php">Orthopaedics </a>
+                                       <a href="dental.php">Dental </a>
                                     </li>
                                     <li class="menu-item">
-                                       <a href="/services/rmi.php">RMI </a>
+                                       <a href="endocrinology.php">Endocrinology</a>
+                                    </li>
+                                    <li class="menu-item ">
+                                       <a href="eye-care.php">Eye Care </a>
+                                    </li>
+                                    <li class="menu-item current-menu-item">
+                                       <a href="neurology.php">Neurology </a>
+                                    </li>
+                                    <li class="menu-item ">
+                                       <a href="orthopaedics.php">Orthopaedics </a>
+                                    </li>
+                                    <li class="menu-item">
+                                       <a href="rmi.php">RMI </a>
                                     </li>
                                  </ul>
                               </li>
                               <li class="menu-item ">
-                                 <a href="specialists.php">Specialists </a>
+                                 <a href="../specialists.php">Specialists </a>
                               </li>
                               <li class="menu-item ">
-                                 <a href="blog.php">Blog</a>
+                                 <a href="../blog.php">Blog</a>
                               </li>
                               <li class="menu-item ">
-                                 <a href="faqs.php">FAQs </a>
+                                 <a href="../case-study.php">Case Studies </a>
                               </li>
                               <li class="menu-item ">
-                                 <a href="contact.php">Contact Us</a>
+                                 <a href="../faqs.php">FAQs </a>
+                              </li>
+                              <li class="menu-item ">
+                                 <a href="../contact.php">Contact Us</a>
                               </li>
                            </ul>
                         </div>
@@ -153,7 +157,7 @@
                            </form>
                         </div>
                      </div>
-                     <a href="make-appoinment.html" class="pq-button">
+                     <a href="../consultation.php" class="pq-button">
                         <div class="pq-button-block">
                            <span class="pq-button-text">Consultation </span>
                            <i class="ion ion-plus-round"></i>
@@ -171,6 +175,7 @@
       </div>
    </header>
    <!--Header End -->
+
 
    <!--=================================
          Banner start-->
