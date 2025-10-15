@@ -887,7 +887,7 @@
                                  </a> </li>
                                  <li> <a href="mailto:info@medicate.com"><i class="fas fa-envelope"></i><span>info@medicate.com</span></a> </li>
                                  <li> <i class="fas fa-map-marker"></i> <span>
-                                    Themeforest, Envato HQ 24 Fifth st., Los Angeles, USA                               </span> </li>
+                                    Medicate Lab, S5/808B, Oba Adesida Raod, Akure, Ondo State                               </span> </li>
                               </ul>
                            </div>
                         </div>

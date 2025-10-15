@@ -854,25 +854,25 @@
                                 <h4 class="footer-title">Recent Posts</h4>
                                 <div class="pq-footer-recent-post">
                                     <div class="pq-footer-recent-post-media">
-                                        <a href="get-the-exercise-limited-mobility.html"> <img
+                                        <a href="blog-single.php"> <img
                                                 src="assets/images/footer-image/1.jpg" alt=""></a>
                                     </div>
                                     <div class="pq-footer-recent-post-info">
-                                        <a href="get-the-exercise-limited-mobility.html" class="pq-post-date"> <i
+                                        <a href="blog-single.php" class="pq-post-date"> <i
                                                 class="far fa-calendar-alt"></i>December <span>12</span>, 2021 </a>
-                                        <h6><a href="get-the-exercise-limited-mobility.html">Get the Exercise Limited
+                                        <h6><a href="blog-single.php">Get the Exercise Limited
                                                 Mobility</a></h6>
                                     </div>
                                 </div>
                                 <div class="pq-footer-recent-post">
                                     <div class="pq-footer-recent-post-media">
-                                        <a href="get-the-exercise-limited-mobility.html"> <img
+                                        <a href="blog-single.php"> <img
                                                 src="assets/images/footer-image/2.jpg" alt=""></a>
                                     </div>
                                     <div class="pq-footer-recent-post-info">
-                                        <a href="get-the-exercise-limited-mobility.html" class="pq-post-date"> <i
+                                        <a href="blog-single.php" class="pq-post-date"> <i
                                                 class="far fa-calendar-alt"></i>December <span>12</span>, 2021 </a>
-                                        <h6><a href="get-the-exercise-limited-mobility.html">Transfusion strategy and
+                                        <h6><a href="blog-single.php">Transfusion strategy and
                                                 heart surgery</a></h6>
                                     </div>
                                 </div>
@@ -891,7 +891,7 @@
                                                         class="fas fa-envelope"></i><span>info@medicate.com</span></a>
                                             </li>
                                             <li> <i class="fas fa-map-marker"></i> <span>
-                                                    Themeforest, Envato HQ 24 Fifth st., Los Angeles, USA </span> </li>
+                                                    Medicate Lab, S5/808B, Oba Adesida Raod, Akure, Ondo State </span> </li>
                                         </ul>
                                     </div>
                                 </div>
