@@ -262,7 +262,7 @@
                                                                                     Single</a> </li>
                                                                   </ul>
                                                             </li>
-                                                            <li class="menu-item "> <a href="contact-us.html">Contact
+                                                            <li class="menu-item "> <a href="contact.php">Contact
                                                                         Us</a> </li>
                                                       </ul>
                                                 </div>
@@ -397,7 +397,7 @@
                         <div class="col-xl-7">
                               <h6 class="pq-title">A great place of medical hospital center &amp; health care</h6> </div>
                         <div class="col-xl-5 d-xl-flex justify-content-xl-end align-items-center text-left mt-xl-0 mt-4">
-                              <a class="pq-button pq-button-flat" href="contact-us.html">
+                              <a class="pq-button pq-button-flat" href="contact.php">
                                     <div class="pq-button-block"> <span class="pq-button-text">Contact Us</span> <i class="ion ion-plus-round"></i> </div>
                               </a>
                         </div>
@@ -765,7 +765,7 @@
                                                 <div class="menu-useful-links-container">
                                                       <ul id="menu-useful-links" class="menu">
                                                             <li><a href="about-us.html">About Us</a></li>
-                                                            <li><a href="contact-us.html">Contact Us</a></li>
+                                                            <li><a href="contact.php">Contact Us</a></li>
                                                             <li><a href="our-services.html">Our Services</a></li>
                                                             <li><a href="our-process.html">Our Process</a></li>
                                                             <li><a href="doctor-1.html">Doctors 1</a></li>

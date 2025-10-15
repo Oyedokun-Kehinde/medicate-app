@@ -83,7 +83,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <nav class="navbar navbar-expand-lg navbar-light">
-                            <a class="navbar-brand" href="index.php">
+                            <a class="navbar-brand" href="../public/index.php">
                                 <img class="img-fluid logo" src="../assets/images/logo.png" alt="medicate">
                             </a>
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -99,28 +99,28 @@
                                             <a href="services.php">Services</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
                                             <ul class="sub-menu">
                                                 <li class="menu-item current-menu-item">
-                                                    <a href="public/services/angioplasty.php">Angioplasty </a>
+                                                    <a href="../services/angioplasty.php">Angioplasty </a>
                                                 </li>
                                                 <li class="menu-item ">
-                                                    <a href="/services/cardiology">Cardiology</a>
+                                                    <a href="../services/cardiology.php">Cardiology</a>
                                                 </li>
                                                 <li class="menu-item ">
-                                                    <a href="/services/dental.php">Dental </a>
+                                                    <a href="../services/dental.php">Dental </a>
                                                 </li>
                                                 <li class="menu-item">
-                                                    <a href="/services/endocrinology.php">Endocrinology</a>
+                                                    <a href="../services/endocrinology.php">Endocrinology</a>
                                                 </li>
                                                 <li class="menu-item ">
-                                                    <a href="/services/eye-care.php">Eye Care </a>
+                                                    <a href="../services/eye-care.php">Eye Care </a>
                                                 </li>
                                                 <li class="menu-item ">
-                                                    <a href="/services/neurology.php">Neurology </a>
+                                                    <a href="../services/neurology.php">Neurology </a>
                                                 </li>
                                                 <li class="menu-item ">
-                                                    <a href="/services/orthopaedics.php">Orthopaedics </a>
+                                                    <a href="../services/orthopaedics.php">Orthopaedics </a>
                                                 </li>
                                                 <li class="menu-item">
-                                                    <a href="/services/rmi.php">RMI </a>
+                                                    <a href="../services/rmi.php">RMI </a>
                                                 </li>
                                             </ul>
                                         </li>
@@ -223,7 +223,7 @@
                   </div>
                </div>
                <div id="media_image">
-                  <a href="contact-us.html"> <img src="../assets/images/call-img.jpg" alt="" class="rounded img-fluid"> </a>
+                  <a href="contact.php"> <img src="../assets/images/call-img.jpg" alt="" class="rounded img-fluid"> </a>
                </div>
             </div>
             <div class="col-lg-8 ps-3 mt-4 mt-lg-0">
@@ -625,7 +625,7 @@
                         <div class="menu-useful-links-container">
                            <ul id="menu-useful-links" class="menu">
                               <li><a href="about-us.html">About Us</a></li>
-                              <li><a href="contact-us.html">Contact Us</a></li>
+                              <li><a href="contact.php">Contact Us</a></li>
                               <li><a href="our-services.html">Our Services</a></li>
                               <li><a href="our-process.html">Our Process</a></li>
                               <li><a href="doctor-1.html">Doctors 1</a></li>

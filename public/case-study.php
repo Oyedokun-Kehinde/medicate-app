@@ -202,7 +202,7 @@
                                           Single</a> </li>
                                  </ul>
                               </li>
-                              <li class="menu-item "> <a href="contact-us.html">Contact
+                              <li class="menu-item "> <a href="contact.php">Contact
                                     Us</a> </li>
                            </ul>
                         </div>
@@ -441,7 +441,7 @@
                         <div class="menu-useful-links-container">
                            <ul id="menu-useful-links" class="menu">
                               <li><a href="about-us.html">About Us</a></li>
-                              <li><a href="contact-us.html">Contact Us</a></li>
+                              <li><a href="contact.php">Contact Us</a></li>
                               <li><a href="our-services.html">Our Services</a></li>
                               <li><a href="our-process.html">Our Process</a></li>
                               <li><a href="doctor-1.html">Doctors 1</a></li>
