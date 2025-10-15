@@ -150,7 +150,7 @@
                                     </form>
                                 </div>
                             </div>
-                            <a href="make-appoinment.html" class="pq-button">
+                            <a href="consultation.php" class="pq-button">
                                 <div class="pq-button-block">
                                     <span class="pq-button-text">Consultation </span>
                                     <i class="ion ion-plus-round"></i>

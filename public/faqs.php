@@ -158,7 +158,7 @@
                                     </form>
                                 </div>
                             </div>
-                            <a href="make-appoinment.html" class="pq-button">
+                            <a href="consultation.php" class="pq-button">
                                 <div class="pq-button-block">
                                     <span class="pq-button-text">Consultation </span>
                                     <i class="ion ion-plus-round"></i>
@@ -705,7 +705,7 @@
                               <li><a href="faq.html">FAQ</a></li>
                               <li><a href="our-doctor.html">Doctors 2</a></li>
                               <li><a href="case-study.php">Departments</a></li>
-                              <li><a href="make-appoinment.html">Events</a></li>
+                              <li><a href="consultation.php">Events</a></li>
                               <li><a href="our-plan.html">Member</a></li>
                            </ul>
                         </div>

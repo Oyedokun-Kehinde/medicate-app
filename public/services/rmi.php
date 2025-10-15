@@ -710,7 +710,7 @@
                               <li><a href="faq.html">FAQ</a></li>
                               <li><a href="our-doctor.html">Doctors 2</a></li>
                               <li><a href="case-study.php">Departments</a></li>
-                              <li><a href="make-appoinment.html">Events</a></li>
+                              <li><a href="consultation.php">Events</a></li>
                               <li><a href="our-plan.html">Member</a></li>
                            </ul>
                         </div>
