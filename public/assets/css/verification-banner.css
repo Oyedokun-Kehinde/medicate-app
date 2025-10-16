@@ -1,0 +1,332 @@
+/* ============================================
+   EMAIL VERIFICATION BANNER STYLES
+   ============================================ */
+
+.verification-banner {
+    background: linear-gradient(135deg, #fff3cd 0%, #ffe8a1 100%);
+    border: 2px solid #ffc107;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(255, 193, 7, 0.2);
+    animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.verification-banner-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 25px;
+}
+
+.verification-banner-icon {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    background: #ffc107;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #856404;
+}
+
+.verification-banner-text {
+    flex: 1;
+}
+
+.verification-banner-text h4 {
+    margin: 0 0 5px 0;
+    color: #856404;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.verification-banner-text p {
+    margin: 0;
+    color: #856404;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.verification-banner-actions {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.btn-verify {
+    padding: 10px 20px;
+    background: #ffc107;
+    color: #856404;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-verify:hover {
+    background: #ffb300;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 193, 7, 0.3);
+}
+
+.btn-dismiss {
+    padding: 8px 12px;
+    background: rgba(255, 255, 255, 0.7);
+    color: #856404;
+    border: 1px solid #ffc107;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-dismiss:hover {
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 2px 8px rgba(255, 193, 7, 0.2);
+}
+
+.verification-banner.hidden {
+    display: none;
+}
+
+/* ============================================
+   VERIFICATION MODAL STYLES
+   ============================================ */
+
+.verification-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10000;
+    animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.verification-modal.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.modal-content {
+    position: relative;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    max-width: 450px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    animation: slideUp 0.3s ease-out;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.modal-header {
+    background: linear-gradient(135deg, #0076f5 0%, #13457a 100%);
+    color: white;
+    padding: 25px;
+    border-radius: 12px 12px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header h3 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.modal-close {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+.modal-close:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.modal-body {
+    padding: 30px 25px;
+}
+
+.modal-body p {
+    margin: 0 0 15px 0;
+    color: #666;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.email-highlight {
+    color: #0076f5;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 12px;
+    background: #f5f7fa;
+    border-radius: 6px;
+    text-align: center;
+    display: block;
+    margin: 15px 0;
+}
+
+.modal-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.btn-primary {
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #0076f5 0%, #13457a 100%);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 118, 245, 0.3);
+    color: white;
+    text-decoration: none;
+}
+
+.btn-secondary {
+    padding: 12px 20px;
+    background: #f5f7fa;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.btn-secondary:hover {
+    background: #e8ebf0;
+    color: #333;
+    text-decoration: none;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+@media (max-width: 768px) {
+    .verification-banner-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .verification-banner-actions {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .btn-verify {
+        width: 100%;
+    }
+
+    .modal-content {
+        width: 95%;
+    }
+
+    .modal-header {
+        padding: 20px;
+    }
+
+    .modal-header h3 {
+        font-size: 20px;
+    }
+
+    .modal-body {
+        padding: 20px;
+    }
+
+    .modal-buttons {
+        gap: 10px;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        font-size: 13px;
+        padding: 10px 15px;
+    }
+}

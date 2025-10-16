@@ -26,6 +26,9 @@ try {
         exit;
     }
 
+    // Check if email is verified
+    $isEmailVerified = (bool)$patient['email_verified'];
+
     // Fetch all consultations for this patient
     $stmt = $pdo->prepare("
         SELECT c.*, s.service_name 
@@ -67,6 +70,7 @@ try {
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome/css/all.min.css">
     <link rel="stylesheet" href="assets/css/patient-dashboard.css">
+    <link rel="stylesheet" href="assets/css/verification-banner.css">
 </head>
 <body>
     <div class="dashboard-container">
@@ -114,6 +118,56 @@ try {
                     </div>
                 </div>
             </div>
+
+            <!-- Email Verification Banner -->
+            <?php if (!$isEmailVerified): ?>
+            <div class="verification-banner" id="verificationBanner">
+                <div class="verification-banner-content">
+                    <div class="verification-banner-icon">
+                        <i class="fas fa-exclamation-circle"></i>
+                    </div>
+                    <div class="verification-banner-text">
+                        <h4>Email Not Verified</h4>
+                        <p>Please verify your email address to unlock all features and ensure account security.</p>
+                    </div>
+                    <div class="verification-banner-actions">
+                        <button class="btn-verify" onclick="openVerificationModal()">
+                            <i class="fas fa-check-circle"></i> Verify Now
+                        </button>
+                        <button class="btn-dismiss" onclick="dismissBanner()">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Verification Modal -->
+            <div class="verification-modal" id="verificationModal">
+                <div class="modal-overlay" onclick="closeVerificationModal()"></div>
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>Verify Your Email</h3>
+                        <button class="modal-close" onclick="closeVerificationModal()">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>We've sent a verification code to:</p>
+                        <p class="email-highlight"><?php echo htmlspecialchars($patient['email'] ?? ''); ?></p>
+                        <p>Click the link below to verify your email, or enter the code on the verification page:</p>
+                        
+                        <div class="modal-buttons">
+                            <a href="verify-email.php?email=<?php echo urlencode($patient['email']); ?>" class="btn-primary" target="_blank">
+                                <i class="fas fa-envelope"></i> Go to Verification Page
+                            </a>
+                            <a href="resend-otp.php?email=<?php echo urlencode($patient['email']); ?>" class="btn-secondary">
+                                <i class="fas fa-redo"></i> Resend Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <?php endif; ?>
 
             <!-- Content Area -->
             <div class="content-area">
@@ -328,5 +382,6 @@ try {
 
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/patient-dashboard.js"></script>
+    <script src="assets/js/verification-banner.js"></script>
 </body>
 </html>
