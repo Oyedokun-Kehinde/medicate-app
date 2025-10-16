@@ -555,6 +555,24 @@
                             <p>There are many variations of passages of LoremIpsum available majority.</p>
                         </div>
                     </div>
+                    <div class="pq-about-info-box mt-1">
+                        <div class="pq-about-info-box-icon">
+                            <i aria-hidden="true" class=" flaticon-stethoscope"></i>
+                        </div>
+                        <div class="pq-about-info-box-info">
+                            <h5>infection prevention</h5>
+                            <p>There are many variations of passages of LoremIpsum available majority.</p>
+                        </div>
+                    </div>
+                    <div class="pq-about-info-box mt-1">
+                        <div class="pq-about-info-box-icon">
+                            <i aria-hidden="true" class=" flaticon-stethoscope"></i>
+                        </div>
+                        <div class="pq-about-info-box-info">
+                            <h5>infection prevention</h5>
+                            <p>There are many variations of passages of LoremIpsum available majority.</p>
+                        </div>
+                    </div>
                     <a class="pq-button pq-button-flat mt-4" href="about.php">
                         <div class="pq-button-block"> <span class="pq-button-text">Read More</span> <i
                                 class="ion ion-plus-round"></i> </div>

@@ -219,6 +219,11 @@
                               <li><i aria-hidden="true" class="ion ion-checkmark-round"></i><span>Intervention Success</span></li>
                               <li><i aria-hidden="true" class="ion ion-checkmark-round"></i><span>Quality of Care Services</span></li>
                               <li><i aria-hidden="true" class="ion ion-checkmark-round"></i><span>Client Satisfaction</span></li>
+                              <li><i aria-hidden="true" class="ion ion-checkmark-round"></i><span>Client Satisfaction</span></li>
+                              <li><i aria-hidden="true" class="ion ion-checkmark-round"></i><span>Client Satisfaction</span></li>
+                              <li><i aria-hidden="true" class="ion ion-checkmark-round"></i><span>Patient Experience</span></li>
+
+
                            </ul>
                         </div>
                         <div class="col-lg-6 col-md-6">
@@ -226,6 +231,10 @@
                               <li><i aria-hidden="true" class="ion ion-checkmark-round"></i><span>Happy with Staff</span></li>
                               <li><i aria-hidden="true" class="ion ion-checkmark-round"></i><span>Infection Prevention</span></li>
                               <li><i aria-hidden="true" class="ion ion-checkmark-round"></i><span>Patient Experience</span></li>
+                              <li><i aria-hidden="true" class="ion ion-checkmark-round"></i><span>Patient Experience</span></li>
+                              <li><i aria-hidden="true" class="ion ion-checkmark-round"></i><span>Patient Experience</span></li>
+                              <li><i aria-hidden="true" class="ion ion-checkmark-round"></i><span>Patient Experience</span></li>
+
                            </ul>
                         </div>
                         <div class="col-lg-6 col-md-6 mt-md-5">

@@ -416,8 +416,8 @@
    <!--=================================
          blog-single end-->
    <!--=================================
-
-     Footer start
+   
+          Footer start
    ============================== -->
    <footer id="pq-footer">
       <div class="pq-footer-style-1">
@@ -428,7 +428,7 @@
                      <div class="pq-subscribe-bg">
                         <div class="row align-items-center">
                            <div class="col-lg-5">
-                              <div class="pq-subscribe-block"> <img src="images/Subscribe.png" class="pq-subscribe-img img-fluid" alt="medicate-subscribe-image">
+                              <div class="pq-subscribe-block"> <img src="assets/images/Subscribe.png" class="pq-subscribe-img img-fluid" alt="medicate-subscribe-image">
                                  <div class="pq-subscribe-details">
                                     <h5>Latest Updates Subscribe To Our Newsletter</h5> </div>
                               </div>
@@ -452,7 +452,7 @@
             <div class="container">
                <div class="row">
                   <div class="col-xl-3 col-md-6">
-                     <div class="pq-footer-block"> <img src="images/footer_logo.png" class="pq-footer-logo img-fluid" alt="medicate-footer-logo">
+                     <div class="pq-footer-block"> <img src="assets/images/footer_logo.png" class="pq-footer-logo img-fluid" alt="medicate-footer-logo">
                         <p>It helps designers plan out where the content will sit, the content to be written and approved.</p>
                         <div class="pq-footer-social">
                            <ul>
@@ -488,7 +488,7 @@
                         <h4 class="footer-title">Recent Posts</h4>
                         <div class="pq-footer-recent-post">
                            <div class="pq-footer-recent-post-media">
-                              <a href="blog-single.php"> <img src="images/footer-image/1.jpg" alt=""></a>
+                              <a href="blog-single.php"> <img src="assets/images/footer-image/1.jpg" alt=""></a>
                            </div>
                            <div class="pq-footer-recent-post-info">
                               <a href="blog-single.php" class="pq-post-date"> <i class="far fa-calendar-alt"></i>December <span>12</span>, 2021 </a>
@@ -496,7 +496,7 @@
                         </div>
                         <div class="pq-footer-recent-post">
                            <div class="pq-footer-recent-post-media">
-                              <a href="blog-single.php"> <img src="images/footer-image/2.jpg" alt=""></a>
+                              <a href="blog-single.php"> <img src="assets/images/footer-image/2.jpg" alt=""></a>
                            </div>
                            <div class="pq-footer-recent-post-info">
                               <a href="blog-single.php" class="pq-post-date"> <i class="far fa-calendar-alt"></i>December <span>12</span>, 2021 </a>
@@ -510,7 +510,7 @@
                         <div class="row">
                            <div class="col-sm-12">
                               <ul class="pq-contact">
-                                 <li> <a href="tel:+2348028134942"><i class="fas fa-phone"></i>
+                                 <li> <a href="tel:+23480281492"><i class="fas fa-phone"></i>
                                     <span>+234 8028134942</span>
                                  </a> </li>
                                  <li> <a href="mailto:info@medicate.com"><i class="fas fa-envelope"></i><span>info@medicate.com</span></a> </li>
@@ -539,25 +539,88 @@
       <a class="topbtn" id="top" href="#top"> <i class="ion-ios-arrow-up"></i> </a>
    </div>
    <!--Back To Top End-->
-   <!--jquery js-->
-   <script src="js/jquery.min.js"></script>
-   <!--bootstrap js-->
-   <script src="js/bootstrap.min.js"></script>
-   <!--owl-carousal-->
-   <script src="js/owl.carousel.min.js"></script>
-   <!--progress-bar js-->
-   <script src="js/progressbar.js"></script>
-   <!--isotope js-->
-   <script src="js/isotope.pkgd.min.js"></script>
-   <!--countTo js-->
-   <script src="js/jquery.countTo.min.js"></script>
-   <!--Maginfic-Popup js-->
-   <script src="js/jquery.magnific-popup.min.js"></script>
-   <!-- Animation JS -->
-   <script src="js/wow.min.js"></script>
-   <!--custom js-->
-   <script src="js/custom.js"></script>
+
+   <!-- JS Files -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/progressbar.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/jquery.countTo.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/rev/js/rbtools.min.js"></script>
+    <script src="assets/rev/js/rs6.min.js"></script>
+    <script src="assets/js/rev-custom.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+    <script>
+        jQuery(window).on('load', function (e) {
+            jQuery(".pq-applyform .form-btn").click(function () {
+                var first_name = jQuery('#first-name').val();
+                var doctor_name = jQuery('#doctor-name').val();
+                var disease_name = jQuery('#disease-name').val();
+                var email = jQuery('#e-mail').val();
+
+                var result;
+
+                jQuery('.pq-applyform .pq-message').remove();
+                jQuery('.pq-applyform .pq-thank-you-message').remove();
+
+                if (first_name == '' || first_name == undefined) {
+                    jQuery("<span class='pq-name-error-message pq-message'>Please fill the field</span>").insertAfter('.pq-applyform .name-field');
+                    result = false;
+                }
+                else {
+                    jQuery('.pq-name-error-message').remove();
+                    result = true;
+                }
+
+                if (email == '' || email == undefined) {
+                    jQuery("<span class='pq-email-error-message pq-message'>Please fill the field</span>").insertAfter('.pq-applyform .e-mail-field');
+                    result = false;
+                }
+                else {
+                    jQuery('.pq-email-error-message').remove();
+                    result = true;
+                }
+
+                if (doctor_name == '' || doctor_name == undefined) {
+                    jQuery("<span class='pq-doctor-name-error-message pq-message'>Please fill the field</span>").insertAfter('.pq-applyform .doctor-name-field');
+                    result = false;
+                }
+                else {
+                    jQuery('.pq-doctor-name-error-message').remove();
+                    result = true;
+                }
+
+                if (disease_name == '' || disease_name == undefined) {
+                    jQuery("<span class='pq-disease-name-error-message pq-message'>Please fill the field</span>").insertAfter('.pq-applyform #disease-name');
+                    result = false;
+                }
+                else {
+                    jQuery('.pq-disease-name-error-message').remove();
+                    result = true;
+                }
+
+                if (result == true) {
+                    var email = jQuery("#email").text();
+                    event.preventDefault();
+                    jQuery.ajax({
+                        type: "POST",
+                        url: "mail.php",
+                        data: { 'email': email },
+                        success: function () {
+                            jQuery("<span class='pq-thank-you-message pq-text-white ms-5'> Thank You For Filling The form</span>").insertAfter('.pq-applyform .pq-button');
+                        }
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 
-<script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'},{'ap':'cpbh-mt'},{'server':'sg2plmcpnl492384'},{'dcenter':'sg2'},{'cp_id':'9858662'},{'cp_cache':''},{'cp_cl':'8'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='../../../../img1.wsimg.com/signals/js/clients/scc-c2/scc-c2.min.js'></script>
+<script>'undefined' === typeof _trfq || (window._trfq = []); 'undefined' === typeof _trfd && (window._trfd = []), _trfd.push({ 'tccl.baseHost': 'secureserver.net' }, { 'ap': 'cpbh-mt' }, { 'server': 'sg2plmcpnl492384' }, { 'dcenter': 'sg2' }, { 'cp_id': '9858662' }, { 'cp_cache': '' }, { 'cp_cl': '8' }) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script>
+<script src='../../../../img1.wsimg.com/signals/js/
+      
 </html>

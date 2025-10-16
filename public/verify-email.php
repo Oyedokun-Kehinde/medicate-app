@@ -1,12 +1,48 @@
+<?php
+session_start();
+require_once '../config/database.php';
+$email = $_GET['email'] ?? $_POST['email'] ?? '';
+$error = '';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $otp = $_POST['otp'] ?? '';
+    if (empty($otp) || strlen($otp) !== 6) {
+        $error = 'Please enter a 6-digit code';
+    } else {
+        $stmt = $pdo->prepare("
+            SELECT id, user_type FROM users 
+            WHERE email = ? AND verification_token = ? AND verification_expires_at > NOW()
+        ");
+        $stmt->execute([$email, $otp]);
+        $user = $stmt->fetch();
+
+        if ($user) {
+            $stmt = $pdo->prepare("UPDATE users SET email_verified = 1, verification_token = NULL WHERE email = ?");
+            $stmt->execute([$email]);
+
+            $_SESSION['user_id'] = $user['id'];
+            $redirect = match($user['user_type']) {
+                'doctor' => '/dashboard/doctor/',
+                'admin' => '/dashboard/admin/',
+                default => '/dashboard/patient/'
+            };
+            header("Location: $redirect");
+            exit;
+        } else {
+            $error = 'Invalid or expired code';
+        }
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Register – Medicate</title>
+    <title>Verify Email – Medicate</title>
 
-    <!-- Google Fonts -->
+     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Favicon Icon -->
@@ -115,12 +151,12 @@
                 <div class="col-lg-12">
                     <nav aria-label="breadcrumb">
                         <div class="pq-breadcrumb-title">
-                            <h2>Register</h2>
+                            <h2> Verify </h2>
                         </div>
                         <div class="pq-breadcrumb-container mt-2">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="index.php"><i class="fas fa-home mr-2"></i>Home</a></li>
-                                <li class="breadcrumb-item active">Register</li>
+                                <li class="breadcrumb-item active">Verify </li>
                             </ol>
                         </div>
                     </nav>
@@ -128,100 +164,39 @@
             </div>
         </div>
     </div>
-
-    <!-- Registration Section -->
     <section class="register-section">
         <div class="container">
             <div class="register-wrapper">
                 <div class="register-card">
-                    <div class="register-header">
-                        <h2>Create Your Account</h2>
-                        <p>Join our community of patients and healthcare professionals</p>
+                    <div class="register-header text-center">
+                        <h2>Verify Your Email</h2>
+                        <p>We sent a 6-digit code to <strong><?= htmlspecialchars($email) ?></strong></p>
                     </div>
 
-                    <!-- User Type Tabs -->
-                    <div class="user-type-tabs">
-                        <div class="user-type-tab">
-                            <input type="radio" id="tab-patient" name="user_type" value="patient" checked>
-                            <label for="tab-patient" class="user-type-label">
-                                <span>Patient</span>
-                            </label>
-                        </div>
-                        <div class="user-type-tab">
-                            <input type="radio" id="tab-doctor" name="user_type" value="doctor">
-                            <label for="tab-doctor" class="user-type-label">
-                                <span>Doctor</span>
-                            </label>
-                        </div>
-                    </div>
+                    <?php if ($error): ?>
+                        <div class="alert alert-danger text-center"><?= $error ?></div>
+                    <?php endif; ?>
 
-                    <!-- Registration Form -->
-                    <form id="registerForm" method="POST" action="../controllers/RegisterController.php">
-                        <!-- Hidden user_type field (will be updated by JS) -->
-                        <input type="hidden" name="user_type" id="user_type" value="patient">
-
-                        <!-- Full Name -->
-                        <div class="form-group">
-                            <label for="name" class="form-label">Full Name <span class="required">*</span></label>
-                            <input type="text" name="name" id="name" class="form-control" placeholder="Enter your full name" required>
-                            <div class="error-message"></div>
+                    <form method="POST">
+                        <input type="hidden" name="email" value="<?= htmlspecialchars($email) ?>">
+                        <div class="form-group mb-3">
+                            <label>Verification Code</label>
+                            <input type="text" name="otp" class="form-control text-center" 
+                                   placeholder="Enter 6-digit code" maxlength="6" required>
                         </div>
-
-                        <!-- Email -->
-                        <div class="form-group">
-                            <label for="email" class="form-label">Email Address <span class="required">*</span></label>
-                            <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
-                            <div class="error-message"></div>
-                        </div>
-
-                        <!-- Phone -->
-                        <div class="form-group">
-                            <label for="phone" class="form-label">Phone Number <span class="required">*</span></label>
-                            <input type="tel" name="phone" id="phone" class="form-control" placeholder="8012345678" required>
-                            <div class="error-message"></div>
-                        </div>
-
-                        <!-- Location -->
-                        <div class="form-group">
-                            <label for="location" class="form-label">Location <span class="required">*</span></label>
-                            <input type="text" name="location" id="location" class="form-control" placeholder="e.g., Akure, Ondo State" required>
-                            <div class="error-message"></div>
-                        </div>
-
-                        <!-- Password -->
-                        <div class="form-group">
-                            <label for="password" class="form-label">Password <span class="required">*</span></label>
-                            <input type="password" name="password" id="password" class="form-control" placeholder="Min 8 chars, 1 uppercase, 1 number" required>
-                            <div class="password-strength">
-                                <div class="password-strength-bar" id="password-strength-bar"></div>
-                            </div>
-                            <div class="password-strength-text" id="password-strength-text"></div>
-                            <div class="error-message"></div>
-                        </div>
-
-                        <!-- Confirm Password -->
-                        <div class="form-group">
-                            <label for="confirm_password" class="form-label">Confirm Password <span class="required">*</span></label>
-                            <input type="password" name="confirm_password" id="confirm_password" class="form-control" placeholder="Re-enter your password" required>
-                            <div class="error-message"></div>
-                        </div>
-
-                        <!-- Submit Button -->
-                        <button type="submit" class="submit-btn">
-                            <i class="fas fa-user-plus"></i>
-                            <span>Create Account</span>
+                        <button type="submit" class="pq-button w-100">
+                            <span class="pq-button-text">Verify & Continue</span>
                         </button>
                     </form>
 
-                    <div class="register-footer">
-                        Already have an account? <a href="login.php">Login here</a>
-                    </div>
+                    <p class="text-center mt-3">
+                        Didn’t receive the code? <a href="resend-otp.php?email=<?= urlencode($email) ?>">Resend</a>
+                    </p>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Footer -->
+ <!-- Footer -->
     <footer id="pq-footer">
         <div class="pq-footer-style-1">
             <div class="pq-subscribe align-items-center">

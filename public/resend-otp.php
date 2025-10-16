@@ -1,12 +1,12 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Register – Medicate</title>
+    <title>Verify Email – Medicate</title>
 
-    <!-- Google Fonts -->
+     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Favicon Icon -->
@@ -115,12 +115,12 @@
                 <div class="col-lg-12">
                     <nav aria-label="breadcrumb">
                         <div class="pq-breadcrumb-title">
-                            <h2>Register</h2>
+                            <h2> Verify </h2>
                         </div>
                         <div class="pq-breadcrumb-container mt-2">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="index.php"><i class="fas fa-home mr-2"></i>Home</a></li>
-                                <li class="breadcrumb-item active">Register</li>
+                                <li class="breadcrumb-item active">Verify </li>
                             </ol>
                         </div>
                     </nav>
@@ -129,99 +129,100 @@
         </div>
     </div>
 
-    <!-- Registration Section -->
-    <section class="register-section">
-        <div class="container">
-            <div class="register-wrapper">
-                <div class="register-card">
-                    <div class="register-header">
-                        <h2>Create Your Account</h2>
-                        <p>Join our community of patients and healthcare professionals</p>
-                    </div>
 
-                    <!-- User Type Tabs -->
-                    <div class="user-type-tabs">
-                        <div class="user-type-tab">
-                            <input type="radio" id="tab-patient" name="user_type" value="patient" checked>
-                            <label for="tab-patient" class="user-type-label">
-                                <span>Patient</span>
-                            </label>
-                        </div>
-                        <div class="user-type-tab">
-                            <input type="radio" id="tab-doctor" name="user_type" value="doctor">
-                            <label for="tab-doctor" class="user-type-label">
-                                <span>Doctor</span>
-                            </label>
-                        </div>
-                    </div>
+<?php
+require_once '../config/database.php';
+require_once '../vendor/autoload.php'; // PHPMailer
 
-                    <!-- Registration Form -->
-                    <form id="registerForm" method="POST" action="../controllers/RegisterController.php">
-                        <!-- Hidden user_type field (will be updated by JS) -->
-                        <input type="hidden" name="user_type" id="user_type" value="patient">
+$email = $_GET['email'] ?? '';
+if (empty($email) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    die('Invalid email');
+}
 
-                        <!-- Full Name -->
-                        <div class="form-group">
-                            <label for="name" class="form-label">Full Name <span class="required">*</span></label>
-                            <input type="text" name="name" id="name" class="form-control" placeholder="Enter your full name" required>
-                            <div class="error-message"></div>
-                        </div>
+// Generate new OTP
+$otp = rand(100000, 999999);
+$expires_at = date('Y-m-d H:i:s', strtotime('+1 hour'));
 
-                        <!-- Email -->
-                        <div class="form-group">
-                            <label for="email" class="form-label">Email Address <span class="required">*</span></label>
-                            <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
-                            <div class="error-message"></div>
-                        </div>
+// Update DB
+$stmt = $pdo->prepare("UPDATE users SET verification_token = ?, verification_expires_at = ? WHERE email = ? AND email_verified = 0");
+$stmt->execute([$otp, $expires_at, $email]);
 
-                        <!-- Phone -->
-                        <div class="form-group">
-                            <label for="phone" class="form-label">Phone Number <span class="required">*</span></label>
-                            <input type="tel" name="phone" id="phone" class="form-control" placeholder="8012345678" required>
-                            <div class="error-message"></div>
-                        </div>
+if ($stmt->rowCount() === 0) {
+    die('No pending verification for this email.');
+}
 
-                        <!-- Location -->
-                        <div class="form-group">
-                            <label for="location" class="form-label">Location <span class="required">*</span></label>
-                            <input type="text" name="location" id="location" class="form-control" placeholder="e.g., Akure, Ondo State" required>
-                            <div class="error-message"></div>
-                        </div>
+// Send email
+$mail = new PHPMailer\PHPMailer\PHPMailer(true);
+try {
+    $mail->isSMTP();
+    $mail->Host = 'smtp.gmail.com';
+    $mail->SMTPAuth = true;
+    $mail->Username = 'your-email@gmail.com';      // ← Replace
+    $mail->Password = 'your-app-password';         // ← Replace
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+    $mail->Port = 587;
 
-                        <!-- Password -->
-                        <div class="form-group">
-                            <label for="password" class="form-label">Password <span class="required">*</span></label>
-                            <input type="password" name="password" id="password" class="form-control" placeholder="Min 8 chars, 1 uppercase, 1 number" required>
-                            <div class="password-strength">
-                                <div class="password-strength-bar" id="password-strength-bar"></div>
-                            </div>
-                            <div class="password-strength-text" id="password-strength-text"></div>
-                            <div class="error-message"></div>
-                        </div>
+    $mail->setFrom('noreply@medicate.com', 'Medicate');
+    $mail->addAddress($email);
+    $mail->isHTML(true);
+    $mail->Subject = 'Your Verification Code';
+    $mail->Body = "
+        <h2>Email Verification</h2>
+        <p>Your new code: <strong>$otp</strong></p>
+        <p>Expires in 1 hour.</p>
+    ";
 
-                        <!-- Confirm Password -->
-                        <div class="form-group">
-                            <label for="confirm_password" class="form-label">Confirm Password <span class="required">*</span></label>
-                            <input type="password" name="confirm_password" id="confirm_password" class="form-control" placeholder="Re-enter your password" required>
-                            <div class="error-message"></div>
-                        </div>
+    $mail->send();
+    echo "<div class='text-center mt-5'>";
+    echo "<h3>New code sent!</h3>";
+    echo "<p><a href='verify-email.php?email=" . urlencode($email) . "'>Back to verification</a></p>";
+    echo "</div>";
+} catch (Exception $e) {
+    error_log("Resend OTP email error: " . $mail->ErrorInfo);
+    echo "<div class='text-center mt-5'>";
+    echo "<h3>Failed to send email.</h3>";
+    echo "<p>Please try again later.</p>";
+    echo "</div>";
+}
+?>
 
-                        <!-- Submit Button -->
-                        <button type="submit" class="submit-btn">
-                            <i class="fas fa-user-plus"></i>
-                            <span>Create Account</span>
-                        </button>
-                    </form>
+<?php
+session_start();
+require_once '../config/database.php';
+$email = $_GET['email'] ?? $_POST['email'] ?? '';
+$error = '';
 
-                    <div class="register-footer">
-                        Already have an account? <a href="login.php">Login here</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $otp = $_POST['otp'] ?? '';
+    if (empty($otp) || strlen($otp) !== 6) {
+        $error = 'Please enter a 6-digit code';
+    } else {
+        $stmt = $pdo->prepare("
+            SELECT id, user_type FROM users 
+            WHERE email = ? AND verification_token = ? AND verification_expires_at > NOW()
+        ");
+        $stmt->execute([$email, $otp]);
+        $user = $stmt->fetch();
 
-    <!-- Footer -->
+        if ($user) {
+            $stmt = $pdo->prepare("UPDATE users SET email_verified = 1, verification_token = NULL WHERE email = ?");
+            $stmt->execute([$email]);
+
+            $_SESSION['user_id'] = $user['id'];
+            $redirect = match($user['user_type']) {
+                'doctor' => '/dashboard/doctor/',
+                'admin' => '/dashboard/admin/',
+                default => '/dashboard/patient/'
+            };
+            header("Location: $redirect");
+            exit;
+        } else {
+            $error = 'Invalid or expired code';
+        }
+    }
+}
+?>
+ <!-- Footer -->
     <footer id="pq-footer">
         <div class="pq-footer-style-1">
             <div class="pq-subscribe align-items-center">
