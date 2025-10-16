@@ -7,46 +7,152 @@
     <title>Register – Medicate</title>
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
 
     <!-- Favicon Icon -->
     <link rel="shortcut icon" href="assets/images/favicon.ico">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <!-- Fonts and Icons -->
-    <link rel="stylesheet" type="text/css" href="assets/rev/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
-    <link rel="stylesheet" type="text/css" href="assets/rev/fonts/font-awesome/css/font-awesome.css">
-    <!-- REVOLUTION STYLE SHEETS -->
-    <link rel="stylesheet" type="text/css" href="assets/rev/css/rs6.css">
-    <!-- Owl Carousel CSS -->
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <!-- Progressbar CSS -->
-    <link rel="stylesheet" href="assets/css/progressbar.css">
-    <!-- Animation CSS -->
-    <link rel="stylesheet" href="assets/css/animations.min.css">
-    <!-- Magnific Popup CSS -->
-    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
     <!-- Icons CSS -->
     <link rel="stylesheet" href="assets/fonts/font-awesome/css/all.min.css">
     <link rel="stylesheet" href="assets/fonts/flaticon/flaticon.css">
     <link rel="stylesheet" href="assets/css/ionicons.min.css">
-    <link rel="stylesheet" href="assets/fonts/themify-icons/themify-icons.css">
     <!-- Main Style CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- Registration CSS -->
     <link rel="stylesheet" href="assets/css/register.css">
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <style>
+        .register-wrapper {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .register-card {
+            padding: 40px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .form-group {
+            margin-bottom: 25px;
+            text-align: left;
+        }
+        .form-label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #333;
+        }
+        .required {
+            color: #e74c3c;
+        }
+        .form-control {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+            transition: border-color 0.3s;
+        }
+        .form-control:focus {
+            outline: none;
+            border-color: #007bff;
+            box-shadow: 0 0 0 3px rgba(0,123,255,0.1);
+        }
+        .password-strength {
+            height: 4px;
+            background: #eee;
+            border-radius: 2px;
+            margin-top: 8px;
+            overflow: hidden;
+        }
+        .password-strength-bar {
+            height: 100%;
+            width: 0%;
+            transition: width 0.3s, background-color 0.3s;
+        }
+        .password-strength-text {
+            font-size: 12px;
+            margin-top: 5px;
+            color: #666;
+        }
+        .user-type-tabs {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 30px;
+            justify-content: center;
+        }
+        .user-type-tab input[type="radio"] {
+            display: none;
+        }
+        .user-type-label {
+            padding: 12px 24px;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 600;
+        }
+        .user-type-tab input[type="radio"]:checked + .user-type-label {
+            border-color: #007bff;
+            background: #007bff;
+            color: white;
+        }
+        .submit-btn {
+            width: 100%;
+            padding: 14px;
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        .submit-btn:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,123,255,0.3);
+        }
+        .submit-btn:disabled {
+            opacity: 0.7;
+            cursor: not-allowed;
+        }
+        .register-footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #666;
+        }
+        .register-footer a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .register-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .register-header h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .register-header p {
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
 </head>
 
 <body>
-    <!-- Loading -->
-    <div id="pq-loading">
-        <div id="pq-loading-center">
-            <img src="assets/images/logo.png" class="img-fluid" alt="loading">
-        </div>
-    </div>
-
     <!-- Header -->
     <header id="pq-header" class="pq-header-default">
         <div class="pq-top-header">
@@ -69,43 +175,6 @@
                 </div>
             </div>
         </div>
-
-        <div class="pq-bottom-header pq-has-sticky">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <nav class="navbar navbar-expand-lg navbar-light">
-                            <a class="navbar-brand" href="index.php">
-                                <img class="img-fluid logo" src="assets/images/logo.png" alt="medicate">
-                            </a>
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <div id="pq-menu-contain" class="pq-menu-contain">
-                                    <ul id="pq-main-menu" class="navbar-nav ml-auto">
-                                        <li class="menu-item"><a href="index.php">Home</a></li>
-                                        <li class="menu-item"><a href="about.php">About Us</a></li>
-                                        <li class="menu-item"><a href="services.php">Services</a></li>
-                                        <li class="menu-item"><a href="specialists.php">Specialists</a></li>
-                                        <li class="menu-item"><a href="case-study.php">Case Studies</a></li>
-                                        <li class="menu-item"><a href="blog.php">Blog</a></li>
-                                        <li class="menu-item"><a href="faqs.php">FAQs</a></li>
-                                        <li class="menu-item"><a href="contact.php">Contact Us</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <a href="consultation.php" class="pq-button">
-                                <div class="pq-button-block">
-                                    <span class="pq-button-text">Consultation</span>
-                                    <i class="ion ion-plus-round"></i>
-                                </div>
-                            </a>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
-                                <i class="fas fa-bars"></i>
-                            </button>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </div>
     </header>
 
     <!-- Banner -->
@@ -113,17 +182,9 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-12">
-                    <nav aria-label="breadcrumb">
-                        <div class="pq-breadcrumb-title">
-                            <h2>Register</h2>
-                        </div>
-                        <div class="pq-breadcrumb-container mt-2">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="index.php"><i class="fas fa-home mr-2"></i>Home</a></li>
-                                <li class="breadcrumb-item active">Register</li>
-                            </ol>
-                        </div>
-                    </nav>
+                    <div class="pq-breadcrumb-title">
+                        <h2>Register</h2>
+                    </div>
                 </div>
             </div>
         </div>
@@ -156,57 +217,48 @@
                     </div>
 
                     <!-- Registration Form -->
-                    <form id="registerForm" method="POST" action="../controllers/RegisterController.php">
-                        <!-- Hidden user_type field (will be updated by JS) -->
+                    <form id="registerForm" method="POST" action="../controllers/register-controller.php">
                         <input type="hidden" name="user_type" id="user_type" value="patient">
 
-                        <!-- Full Name -->
                         <div class="form-group">
-                            <label for="name" class="form-label">Full Name <span class="required">*</span></label>
-                            <input type="text" name="name" id="name" class="form-control" placeholder="Enter your full name" required>
-                            <div class="error-message"></div>
+                            <label for="full_name" class="form-label">Full Name <span class="required">*</span></label>
+                            <input type="text" name="full_name" id="full_name" class="form-control"
+                                placeholder="Enter your full name" required>
                         </div>
 
-                        <!-- Email -->
                         <div class="form-group">
                             <label for="email" class="form-label">Email Address <span class="required">*</span></label>
-                            <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
-                            <div class="error-message"></div>
+                            <input type="email" name="email" id="email" class="form-control"
+                                placeholder="Enter your email" required>
                         </div>
 
-                        <!-- Phone -->
                         <div class="form-group">
                             <label for="phone" class="form-label">Phone Number <span class="required">*</span></label>
-                            <input type="tel" name="phone" id="phone" class="form-control" placeholder="8012345678" required>
-                            <div class="error-message"></div>
+                            <input type="tel" name="phone" id="phone" class="form-control" placeholder="08012345678" required>
                         </div>
 
-                        <!-- Location -->
                         <div class="form-group">
                             <label for="location" class="form-label">Location <span class="required">*</span></label>
-                            <input type="text" name="location" id="location" class="form-control" placeholder="e.g., Akure, Ondo State" required>
-                            <div class="error-message"></div>
+                            <input type="text" name="location" id="location" class="form-control"
+                                placeholder="e.g: Akure" required>
                         </div>
 
-                        <!-- Password -->
                         <div class="form-group">
-                            <label for="password" class="form-label">Password <span class="required">*</span></label>
-                            <input type="password" name="password" id="password" class="form-control" placeholder="Min 8 chars, 1 uppercase, 1 number" required>
+                            <label for="password_hash" class="form-label">Password <span class="required">*</span></label>
+                            <input type="password" name="password_hash" id="password_hash" class="form-control"
+                                placeholder="Min 8 chars, 1 uppercase, 1 number" required>
                             <div class="password-strength">
                                 <div class="password-strength-bar" id="password-strength-bar"></div>
                             </div>
                             <div class="password-strength-text" id="password-strength-text"></div>
-                            <div class="error-message"></div>
                         </div>
 
-                        <!-- Confirm Password -->
                         <div class="form-group">
                             <label for="confirm_password" class="form-label">Confirm Password <span class="required">*</span></label>
-                            <input type="password" name="confirm_password" id="confirm_password" class="form-control" placeholder="Re-enter your password" required>
-                            <div class="error-message"></div>
+                            <input type="password" name="confirm_password" id="confirm_password" class="form-control"
+                                placeholder="Re-enter your password" required>
                         </div>
 
-                        <!-- Submit Button -->
                         <button type="submit" class="submit-btn">
                             <i class="fas fa-user-plus"></i>
                             <span>Create Account</span>
@@ -221,159 +273,157 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer id="pq-footer">
-        <div class="pq-footer-style-1">
-            <div class="pq-subscribe align-items-center">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-12">
-                            <div class="pq-subscribe-bg">
-                                <div class="row align-items-center">
-                                    <div class="col-lg-5">
-                                        <div class="pq-subscribe-block">
-                                            <img src="assets/images/Subscribe.png" class="pq-subscribe-img img-fluid" alt="medicate-subscribe-image">
-                                            <div class="pq-subscribe-details">
-                                                <h5>Latest Updates Subscribe To Our Newsletter</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-7 align-self-center">
-                                        <div class="pq-subscribe-from">
-                                            <form class="form">
-                                                <div class="form-fields">
-                                                    <input class="w-100 pq-bg-transparent" type="email" name="EMAIL" placeholder="Enter Your Email" required>
-                                                    <input type="submit" value="Sign up">
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="pq-footer-top">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-3 col-md-6">
-                            <div class="pq-footer-block">
-                                <img src="assets/images/footer_logo.png" class="pq-footer-logo img-fluid" alt="medicate-footer-logo">
-                                <p>It helps designers plan out where the content will sit, the content to be written and approved.</p>
-                                <div class="pq-footer-social">
-                                    <ul>
-                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-md-6">
-                            <div class="pq-footer-block">
-                                <h4 class="footer-title">Quick Links</h4>
-                                <div class="menu-useful-links-container">
-                                    <ul class="menu">
-                                        <li><a href="about.php">About Us</a></li>
-                                        <li><a href="contact.php">Contact Us</a></li>
-                                        <li><a href="services.php">Our Services</a></li>
-                                        <li><a href="specialists.php">Specialists</a></li>
-                                        <li><a href="faqs.php">FAQ</a></li>
-                                        <li><a href="consultation.php">Appointment</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-md-6">
-                            <div class="pq-footer-block">
-                                <h4 class="footer-title">Recent Posts</h4>
-                                <div class="pq-footer-recent-post">
-                                    <div class="pq-footer-recent-post-media">
-                                        <a href="blog-single.php"><img src="assets/images/footer-image/1.jpg" alt=""></a>
-                                    </div>
-                                    <div class="pq-footer-recent-post-info">
-                                        <a href="blog-single.php" class="pq-post-date"><i class="far fa-calendar-alt"></i>December <span>12</span>, 2021</a>
-                                        <h6><a href="blog-single.php">Get the Exercise Limited Mobility</a></h6>
-                                    </div>
-                                </div>
-                                <div class="pq-footer-recent-post">
-                                    <div class="pq-footer-recent-post-media">
-                                        <a href="blog-single.php"><img src="assets/images/footer-image/2.jpg" alt=""></a>
-                                    </div>
-                                    <div class="pq-footer-recent-post-info">
-                                        <a href="blog-single.php" class="pq-post-date"><i class="far fa-calendar-alt"></i>December <span>12</span>, 2021</a>
-                                        <h6><a href="blog-single.php">Transfusion strategy and heart surgery</a></h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-md-6">
-                            <div class="pq-footer-block">
-                                <h4 class="footer-title">Contact Us</h4>
-                                <ul class="pq-contact">
-                                    <li><a href="tel:+2348028134942"><i class="fas fa-phone"></i><span>+234 8028134942</span></a></li>
-                                    <li><a href="mailto:info@medicate.com"><i class="fas fa-envelope"></i><span>info@medicate.com</span></a></li>
-                                    <li><i class="fas fa-map-marker"></i><span>Medicate Lab, S5/808B, Oba Adesida Road, Akure, Ondo State</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="pq-copyright-footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 text-center">
-                            <span class="pq-copyright">Copyright 2025 Medicate All Rights Reserved</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Back To Top -->
-    <div id="back-to-top">
-        <a class="topbtn" id="top" href="#top"><i class="ion-ios-arrow-up"></i></a>
-    </div>
-
     <!-- JS Files -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-    <script src="assets/rev/js/rbtools.min.js"></script>
-    <script src="assets/rev/js/rs6.min.js"></script>
-    <script src="assets/js/custom.js"></script>
-    <script src="assets/js/register.js"></script>
 
-    <!-- AJAX Form Submission -->
+    <!-- Snackbar Function -->
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        window.showSnackbar = function(message, type = 'info') {
+            let snackbarContainer = document.getElementById('snackbar-container');
+            
+            if (!snackbarContainer) {
+                snackbarContainer = document.createElement('div');
+                snackbarContainer.id = 'snackbar-container';
+                snackbarContainer.style.cssText = `
+                    position: fixed;
+                    top: 20px;
+                    right: 20px;
+                    z-index: 9999;
+                    max-width: 400px;
+                `;
+                document.body.appendChild(snackbarContainer);
+            }
+            
+            const snackbar = document.createElement('div');
+            snackbar.className = `snackbar snackbar-${type}`;
+            snackbar.style.cssText = `
+                padding: 16px 24px;
+                margin-bottom: 10px;
+                border-radius: 4px;
+                font-size: 14px;
+                font-weight: 500;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+                animation: slideIn 0.3s ease-out;
+                word-wrap: break-word;
+            `;
+            
+            if (type === 'success') {
+                snackbar.style.backgroundColor = '#27ae60';
+                snackbar.style.color = '#fff';
+            } else if (type === 'error') {
+                snackbar.style.backgroundColor = '#e74c3c';
+                snackbar.style.color = '#fff';
+            } else {
+                snackbar.style.backgroundColor = '#3498db';
+                snackbar.style.color = '#fff';
+            }
+            
+            snackbar.textContent = message;
+            snackbarContainer.appendChild(snackbar);
+            
+            setTimeout(() => {
+                snackbar.style.animation = 'slideOut 0.3s ease-out';
+                setTimeout(() => {
+                    snackbar.remove();
+                }, 300);
+            }, 5000);
+        };
+
+        if (!document.getElementById('snackbar-styles')) {
+            const style = document.createElement('style');
+            style.id = 'snackbar-styles';
+            style.textContent = `
+                @keyframes slideIn {
+                    from {
+                        transform: translateX(400px);
+                        opacity: 0;
+                    }
+                    to {
+                        transform: translateX(0);
+                        opacity: 1;
+                    }
+                }
+                
+                @keyframes slideOut {
+                    from {
+                        transform: translateX(0);
+                        opacity: 1;
+                    }
+                    to {
+                        transform: translateX(400px);
+                        opacity: 0;
+                    }
+                }
+            `;
+            document.head.appendChild(style);
+        }
+    </script>
+
+    <!-- Password Strength Indicator -->
+    <script>
+        document.getElementById('password_hash').addEventListener('input', function() {
+            const password = this.value;
+            const strengthBar = document.getElementById('password-strength-bar');
+            const strengthText = document.getElementById('password-strength-text');
+            
+            let strength = 0;
+            if (password.length >= 8) strength++;
+            if (/[A-Z]/.test(password)) strength++;
+            if (/[0-9]/.test(password)) strength++;
+            if (/[^A-Za-z0-9]/.test(password)) strength++;
+            
+            const strengthPercentage = (strength / 4) * 100;
+            strengthBar.style.width = strengthPercentage + '%';
+            
+            if (strength === 0) {
+                strengthText.textContent = '';
+                strengthBar.style.backgroundColor = '#ccc';
+            } else if (strength === 1) {
+                strengthText.textContent = 'Weak';
+                strengthBar.style.backgroundColor = '#e74c3c';
+            } else if (strength === 2) {
+                strengthText.textContent = 'Fair';
+                strengthBar.style.backgroundColor = '#f39c12';
+            } else if (strength === 3) {
+                strengthText.textContent = 'Good';
+                strengthBar.style.backgroundColor = '#3498db';
+            } else {
+                strengthText.textContent = 'Strong';
+                strengthBar.style.backgroundColor = '#27ae60';
+            }
+        });
+    </script>
+
+    <!-- Form Submission -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
             const form = document.getElementById('registerForm');
             const userTypeRadios = document.querySelectorAll('input[name="user_type"]');
 
-            // Update hidden user_type field when tab changes
             userTypeRadios.forEach(radio => {
-                radio.addEventListener('change', function() {
+                radio.addEventListener('change', function () {
                     document.getElementById('user_type').value = this.value;
                 });
             });
 
-            // Handle form submission via AJAX
-            form.addEventListener('submit', function(e) {
+            form.addEventListener('submit', function (e) {
                 e.preventDefault();
+
+                const password = document.getElementById('password_hash').value;
+                const confirmPassword = document.getElementById('confirm_password').value;
+                
+                if (password !== confirmPassword) {
+                    window.showSnackbar('Passwords do not match', 'error');
+                    return;
+                }
 
                 const formData = new FormData(form);
                 const submitBtn = form.querySelector('.submit-btn');
                 const originalHTML = submitBtn.innerHTML;
 
-                // Disable button and show loading
                 submitBtn.disabled = true;
-                submitBtn.innerHTML = '<i class="fas fa-spinner spinner"></i> Creating Account...';
+                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Creating Account...';
 
                 fetch(form.action, {
                     method: 'POST',
@@ -387,7 +437,7 @@
                     if (data.success) {
                         window.showSnackbar(data.message, 'success');
                         setTimeout(() => {
-                            window.location.href = 'verify-email.php?email=' + encodeURIComponent(formData.get('email'));
+                            window.location.href = 'login.php?registered=1';
                         }, 2000);
                     } else {
                         window.showSnackbar(data.message || 'Registration failed. Please try again.', 'error');
@@ -405,4 +455,5 @@
         });
     </script>
 </body>
+
 </html>
