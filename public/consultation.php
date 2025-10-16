@@ -4,7 +4,7 @@
 <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title> Case Studies – Medicate </title>
+      <title> Consultation – Medicate </title>
 
       <!-- Main Style CSS -->
       <link rel="stylesheet" href="assets/css/style.css">
