@@ -1,8 +1,13 @@
-# public/.htaccess
-
+# .htaccess
 RewriteEngine On
+
+# Preserve query strings
+RewriteCond %{QUERY_STRING} ^(.*)$
 
 # If the requested file or directory doesn't exist, show 404.php
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ 404.php [L]
+RewriteRule ^(.*)$ 404.php?%1 [L,QSA]
+
+# Alternative: Comment out the rewrite rule entirely for testing
+# RewriteEngine Off
