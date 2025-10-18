@@ -82,6 +82,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 'consultations': 'All Consultations',
                 'upcoming': 'Upcoming Consultations',
                 'doctors': 'All Doctors',
+                'patients': 'All Patients',
                 'services': 'Our Services',
                 'profile': 'My Profile'
             };
@@ -187,3 +188,4 @@ document.addEventListener('DOMContentLoaded', function () {
 
     console.log('Doctor Dashboard initialized successfully');
 });
+

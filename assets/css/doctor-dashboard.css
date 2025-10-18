@@ -531,3 +531,128 @@ textarea.form-control { resize: vertical; min-height: 100px; }
 .service-card:hover .service-view-btn i {
     transform: translateX(5px);
 }
+
+/* ============================================
+   PATIENTS GRID & CARDS
+   ============================================ */
+
+.patients-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.patient-card {
+    background: white;
+    border: 2px solid #e8eef7;
+    border-radius: 12px;
+    padding: 20px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.patient-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #14467B 0%, #2490EB 100%);
+}
+
+.patient-card:hover {
+    border-color: #2490EB;
+    box-shadow: 0 8px 20px rgba(20, 70, 123, 0.12);
+    transform: translateY(-4px);
+}
+
+.patient-avatar {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #14467B 0%, #2490EB 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    font-size: 28px;
+    color: white;
+}
+
+.patient-details h5 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #14467B;
+    margin: 10px 0 12px 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.patient-email,
+.patient-phone {
+    font-size: 13px;
+    color: #666;
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.patient-email i,
+.patient-phone i {
+    color: #2490EB;
+    width: 16px;
+}
+
+.patient-stats {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #e8eef7;
+}
+
+.stat-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: linear-gradient(135deg, #14467B 0%, #2490EB 100%);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.stat-badge i {
+    font-size: 13px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .patients-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .patients-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+    
+    .patient-card {
+        padding: 15px;
+    }
+    
+    .patient-details h5 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .patients-grid {
+        grid-template-columns: 1fr;
+    }
+}

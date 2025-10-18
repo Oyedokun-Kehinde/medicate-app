@@ -11,6 +11,14 @@ $user_id = $_SESSION['user_id'];
 $success_msg = $_GET['msg'] ?? null;
 $error_msg = $_GET['error'] ?? null;
 
+// Initialize all variables to prevent undefined errors
+$doctor = [];
+$consultations = [];
+$all_patients = [];
+$all_doctors = [];
+$upcoming_consultations = [];
+$servicesCount = 0;
+
 try {
     // Fetch doctor data
     $stmt = $pdo->prepare("
@@ -22,7 +30,7 @@ try {
         WHERE u.id = ?
     ");
     $stmt->execute([$user_id]);
-    $doctor = $stmt->fetch();
+    $doctor = $stmt->fetch(PDO::FETCH_ASSOC);
 
     if (!$doctor) {
         header('Location: login.php');
@@ -43,33 +51,51 @@ try {
     $stmt->execute();
     $consultations = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
+    // Fetch ALL patients with consultation info
+    $stmt = $pdo->prepare("
+        SELECT DISTINCT
+            u.id as user_id,
+            u.email,
+            COALESCE(pp.full_name, u.email) as patient_name,
+            pp.phone,
+            COUNT(DISTINCT c.id) as total_consultations
+        FROM users u
+        LEFT JOIN patient_profiles pp ON pp.user_id = u.id
+        LEFT JOIN consultations c ON c.patient_id = u.id
+        WHERE u.user_type = 'patient'
+        GROUP BY u.id
+        ORDER BY patient_name ASC
+    ");
+    $stmt->execute();
+    $all_patients = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
     // Services count
     $stmt = $pdo->prepare("SELECT COUNT(*) as count FROM services");
     $stmt->execute();
-    $servicesCount = $stmt->fetch()['count'];
+    $result = $stmt->fetch(PDO::FETCH_ASSOC);
+    $servicesCount = $result['count'] ?? 0;
 
-    /// Fetch ALL doctors with FULL details (including current doctor)
     // Fetch ALL doctors with FULL details (including current doctor)
     $stmt = $pdo->prepare("
-    SELECT 
-        COALESCE(dp.full_name, u.email) as full_name, 
-        COALESCE(dp.specialization, 'General Practice') as specialization, 
-        dp.bio, 
-        dp.phone,
-        u.email, 
-        u.id as user_id,
-        COUNT(DISTINCT c.id) as total_consultations
-    FROM users u
-    LEFT JOIN doctor_profiles dp ON dp.user_id = u.id
-    LEFT JOIN consultations c ON c.doctor_id = u.id AND c.status = 'completed'
-    WHERE u.user_type = 'doctor'
-    GROUP BY u.id
-    ORDER BY full_name
-");
+        SELECT 
+            COALESCE(dp.full_name, u.email) as full_name, 
+            COALESCE(dp.specialization, 'General Practice') as specialization, 
+            dp.bio, 
+            dp.phone,
+            u.email, 
+            u.id as user_id,
+            COUNT(DISTINCT c.id) as total_consultations
+        FROM users u
+        LEFT JOIN doctor_profiles dp ON dp.user_id = u.id
+        LEFT JOIN consultations c ON c.doctor_id = u.id AND c.status = 'completed'
+        WHERE u.user_type = 'doctor'
+        GROUP BY u.id
+        ORDER BY full_name ASC
+    ");
     $stmt->execute();
     $all_doctors = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-    // Fetch upcoming consultations
+    // Fetch upcoming consultations for this doctor
     $stmt = $pdo->prepare("
         SELECT c.*, s.name as service_name, 
                COALESCE(up.full_name, u.email) as patient_name,
@@ -87,17 +113,14 @@ try {
 } catch (PDOException $e) {
     error_log("Doctor Dashboard Error: " . $e->getMessage());
     $error_msg = "Error loading dashboard. Please try again later.";
-    $consultations = [];
-    $doctor = ['full_name' => 'Doctor', 'email' => '', 'specialization' => 'Not specified', 'bio' => '', 'phone' => ''];
-    $servicesCount = 0;
-    $all_doctors = [];
-    $upcoming_consultations = [];
 }
 
-$display_name = htmlspecialchars($doctor['full_name']);
-$email = htmlspecialchars($doctor['email']);
-$specialization = htmlspecialchars($doctor['specialization']);
+// Safe variable assignments with defaults
+$display_name = htmlspecialchars($doctor['full_name'] ?? 'Doctor');
+$email = htmlspecialchars($doctor['email'] ?? '');
+$specialization = htmlspecialchars($doctor['specialization'] ?? 'Not specified');
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -126,6 +149,7 @@ $specialization = htmlspecialchars($doctor['specialization']);
                         Consultations</a></li>
                 <li><a class="nav-link" data-section="upcoming"><i class="fas fa-calendar-day"></i> Upcoming</a></li>
                 <li><a class="nav-link" data-section="doctors"><i class="fas fa-user-md"></i> All Doctors</a></li>
+                <li><a class="nav-link" data-section="patients"><i class="fas fa-users"></i> All Patients</a></li>
                 <li><a class="nav-link" data-section="services"><i class="fas fa-hospital"></i> Our Services</a></li>
                 <li><a class="nav-link" data-section="profile"><i class="fas fa-user-cog"></i> My Profile</a></li>
                 <li><a href="faqs.php"><i class="fas fa-question-circle"></i> FAQs</a></li>
@@ -197,6 +221,11 @@ $specialization = htmlspecialchars($doctor['specialization']);
                             <h3><?php echo count($all_doctors); ?></h3>
                             <p>Doctors in Network</p>
                         </div>
+                        <div class="stat-card">
+    <i class="fas fa-users"></i>
+    <h3><?php echo count($all_patients); ?></h3>
+    <p>Total Patients</p>
+</div>
                         <div class="stat-card">
                             <i class="fas fa-hospital"></i>
                             <h3><?php echo $servicesCount; ?></h3>
@@ -329,52 +358,87 @@ $specialization = htmlspecialchars($doctor['specialization']);
                     </div>
                 </div>
 
-                <!-- ALL DOCTORS (ENHANCED) -->
-                <div id="doctors" class="section">
-                    <div class="card-box">
-                        <div class="card-header"><i class="fas fa-user-md"></i> All Doctors in Network</div>
-                        <div class="card-body">
-                            <?php if (empty($all_doctors)): ?>
-                                <div class="empty-state">
-                                    <i class="fas fa-user-md"></i>
-                                    <h4>No Doctors Found</h4>
-                                    <p>There are no doctors in the system.</p>
-                                </div>
-                            <?php else: ?>
-                                <div class="doctors-grid-enhanced">
-                                    <?php foreach ($all_doctors as $doc): ?>
-                                        <div class="doctor-card-enhanced">
-                                            <div class="doctor-avatar">
-                                                <i class="fas fa-user-md"></i>
-                                            </div>
-                                            <div class="doctor-details">
-                                                <h5><?php echo htmlspecialchars($doc['full_name']); ?></h5>
-                                                <p class="doctor-spec"><i class="fas fa-stethoscope"></i>
-                                                    <?php echo htmlspecialchars($doc['specialization'] ?: 'General Practice'); ?>
-                                                </p>
-                                                <p class="doctor-email"><i class="fas fa-envelope"></i>
-                                                    <?php echo htmlspecialchars($doc['email']); ?></p>
-                                                <?php if (!empty($doc['phone'])): ?>
-                                                    <p class="doctor-phone"><i class="fas fa-phone"></i>
-                                                        <?php echo htmlspecialchars($doc['phone']); ?></p>
-                                                <?php endif; ?>
-                                                <?php if (!empty($doc['bio'])): ?>
-                                                    <p class="doctor-bio"><?php echo htmlspecialchars($doc['bio']); ?></p>
-                                                <?php endif; ?>
-                                                <div class="doctor-stats">
-                                                    <span class="stat-badge">
-                                                        <i class="fas fa-check-circle"></i>
-                                                        <?php echo $doc['total_consultations']; ?> Completed
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    <?php endforeach; ?>
-                                </div>
-                            <?php endif; ?>
-                        </div>
-                    </div>
+<!-- ALL DOCTORS -->
+<div id="doctors" class="section">
+    <div class="card-box">
+        <div class="card-header"><i class="fas fa-user-md"></i> All Doctors in Network</div>
+        <div class="card-body">
+            <?php if (empty($all_doctors)): ?>
+                <div class="empty-state">
+                    <i class="fas fa-user-md"></i>
+                    <h4>No Doctors Found</h4>
+                    <p>There are no doctors in the system.</p>
                 </div>
+            <?php else: ?>
+                <div class="doctors-grid-enhanced">
+                    <?php foreach ($all_doctors as $doc): ?>
+                        <div class="doctor-card-enhanced">
+                            <div class="doctor-avatar">
+                                <i class="fas fa-user-md"></i>
+                            </div>
+                            <div class="doctor-details">
+                                <h5><?php echo htmlspecialchars($doc['full_name']); ?></h5>
+                                <p class="doctor-spec"><i class="fas fa-stethoscope"></i> <?php echo htmlspecialchars($doc['specialization'] ?: 'General Practice'); ?></p>
+                                <p class="doctor-email"><i class="fas fa-envelope"></i> <?php echo htmlspecialchars($doc['email']); ?></p>
+                                <?php if (!empty($doc['phone'])): ?>
+                                    <p class="doctor-phone"><i class="fas fa-phone"></i> <?php echo htmlspecialchars($doc['phone']); ?></p>
+                                <?php endif; ?>
+                                <?php if (!empty($doc['bio'])): ?>
+                                    <p class="doctor-bio"><?php echo htmlspecialchars($doc['bio']); ?></p>
+                                <?php endif; ?>
+                                <div class="doctor-stats">
+                                    <span class="stat-badge">
+                                        <i class="fas fa-check-circle"></i> <?php echo $doc['total_consultations']; ?> Completed
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+            <?php endif; ?>
+        </div>
+    </div>
+</div>
+
+
+                <!-- ALL PATIENTS -->
+<div id="patients" class="section">
+    <div class="card-box">
+        <div class="card-header"><i class="fas fa-users"></i> All Patients</div>
+        <div class="card-body">
+            <?php if (empty($all_patients)): ?>
+                <div class="empty-state">
+                    <i class="fas fa-users"></i>
+                    <h4>No Patients Found</h4>
+                    <p>There are no patients in the system.</p>
+                </div>
+            <?php else: ?>
+                <div class="patients-grid">
+                    <?php foreach ($all_patients as $patient): ?>
+                        <div class="patient-card">
+                            <div class="patient-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="patient-details">
+                                <h5><?php echo htmlspecialchars($patient['patient_name']); ?></h5>
+                                <p class="patient-email"><i class="fas fa-envelope"></i> <?php echo htmlspecialchars($patient['email']); ?></p>
+                                <?php if (!empty($patient['phone'])): ?>
+                                    <p class="patient-phone"><i class="fas fa-phone"></i> <?php echo htmlspecialchars($patient['phone']); ?></p>
+                                <?php endif; ?>
+                                <div class="patient-stats">
+                                    <span class="stat-badge">
+                                        <i class="fas fa-calendar-check"></i> <?php echo $patient['total_consultations']; ?> Consultation<?php echo $patient['total_consultations'] !== 1 ? 's' : ''; ?>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+            <?php endif; ?>
+        </div>
+    </div>
+</div>
+
 
                 <!-- SERVICES TAB -->
                 <div id="services" class="section">
