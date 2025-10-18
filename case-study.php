@@ -1,3 +1,9 @@
+<?php
+session_start();
+require_once 'config/helpers.php';
+$getStartedUrl = getGetStartedUrl();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 

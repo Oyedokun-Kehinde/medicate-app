@@ -1,3 +1,9 @@
+<?php
+session_start();
+require_once 'config/helpers.php';
+$getStartedUrl = getGetStartedUrl();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -157,12 +163,14 @@
                                 </form>
                             </div>
                         </div>
+                        
                         <a href="consultation.php" class="pq-button">
                             <div class="pq-button-block">
                                 <span class="pq-button-text">Consultation </span>
                                 <i class="ion ion-plus-round"></i>
                             </div>
                         </a>
+                        
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
