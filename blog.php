@@ -1,45 +1,65 @@
 <?php
 session_start();
-require_once 'config/helpers.php';
 require_once 'config/database.php';
+require_once 'config/helpers.php';
 
 $getStartedUrl = getGetStartedUrl();
+$getStartedButtonText = getGetStartedButtonText();
 
 // Get page number
-$page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
-$per_page = 9;
+$page = isset($_GET['page']) ? max(1, (int)$_GET['page']) : 1;
+$per_page = 6;
 $offset = ($page - 1) * $per_page;
 
+$blogs = [];
+$recent_posts = [];
+$total_pages = 0;
+$error = null;
+
 try {
-    // Fetch published blogs
+    // Fetch published blogs with pagination
     $stmt = $pdo->prepare("
         SELECT 
             bp.id, bp.title, bp.slug, bp.excerpt, bp.featured_image, 
-            bp.created_at,
-            dp.full_name as doctor_name,
+            bp.created_at, bp.content,
+            COALESCE(dp.full_name, u.email) as doctor_name,
             (SELECT COUNT(*) FROM blog_comments WHERE blog_post_id = bp.id) as comment_count
         FROM blog_posts bp
         JOIN users u ON bp.doctor_id = u.id
         LEFT JOIN doctor_profiles dp ON u.id = dp.user_id
         WHERE bp.status = 'published'
         ORDER BY bp.created_at DESC
-        LIMIT ? OFFSET ?
+        LIMIT :limit OFFSET :offset
     ");
-    $stmt->execute([$per_page, $offset]);
+    
+    $stmt->bindValue(':limit', $per_page, PDO::PARAM_INT);
+    $stmt->bindValue(':offset', $offset, PDO::PARAM_INT);
+    $stmt->execute();
     $blogs = $stmt->fetchAll(PDO::FETCH_ASSOC);
     
     // Get total count
     $stmt = $pdo->prepare("SELECT COUNT(*) as count FROM blog_posts WHERE status = 'published'");
     $stmt->execute();
-    $total = $stmt->fetch(PDO::FETCH_ASSOC)['count'];
-    $total_pages = ceil($total / $per_page);
+    $result = $stmt->fetch(PDO::FETCH_ASSOC);
+    $total = $result['count'] ?? 0;
+    $total_pages = $total > 0 ? ceil($total / $per_page) : 1;
+    
+    // Fetch recent posts for sidebar
+    $stmt = $pdo->prepare("
+        SELECT bp.id, bp.title, bp.featured_image, bp.created_at
+        FROM blog_posts bp
+        WHERE bp.status = 'published'
+        ORDER BY bp.created_at DESC
+        LIMIT 4
+    ");
+    $stmt->execute();
+    $recent_posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
     
 } catch (Exception $e) {
-    $blogs = [];
-    $total_pages = 0;
+    error_log("Blog error: " . $e->getMessage());
+    $error = "Error loading blog posts. Please try again later.";
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -51,144 +71,20 @@ try {
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome/css/all.min.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
-    <style>
-        .blog-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: 30px;
-            margin: 40px 0;
-        }
 
-        .blog-card {
-            background: #fff;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .blog-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.2);
-        }
-
-        .blog-image {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        }
-
-        .blog-content {
-            padding: 20px;
-        }
-
-        .blog-meta {
-            font-size: 12px;
-            color: #999;
-            margin-bottom: 10px;
-        }
-
-        .blog-doctor {
-            color: #667eea;
-            font-weight: 600;
-        }
-
-        .blog-title {
-            font-size: 18px;
-            font-weight: 700;
-            margin: 10px 0;
-            color: #333;
-            line-height: 1.4;
-        }
-
-        .blog-title a {
-            color: #333;
-            text-decoration: none;
-        }
-
-        .blog-title a:hover {
-            color: #667eea;
-        }
-
-        .blog-excerpt {
-            font-size: 14px;
-            color: #666;
-            line-height: 1.6;
-            margin: 15px 0;
-            height: 60px;
-            overflow: hidden;
-        }
-
-        .blog-footer {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding-top: 15px;
-            border-top: 1px solid #eee;
-        }
-
-        .blog-comments {
-            font-size: 13px;
-            color: #999;
-        }
-
-        .blog-read-more {
-            color: #667eea;
-            font-weight: 600;
-            text-decoration: none;
-            font-size: 13px;
-        }
-
-        .blog-read-more:hover {
-            color: #764ba2;
-        }
-
-        .pagination-custom {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin: 40px 0;
-        }
-
-        .pagination-custom a,
-        .pagination-custom span {
-            padding: 8px 12px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            text-decoration: none;
-            color: #667eea;
-            transition: all 0.3s ease;
-        }
-
-        .pagination-custom a:hover {
-            background: #667eea;
-            color: white;
-            border-color: #667eea;
-        }
-
-        .pagination-custom .active {
-            background: #667eea;
-            color: white;
-            border-color: #667eea;
-        }
-
-        .no-blogs {
-            text-align: center;
-            padding: 60px 20px;
-            color: #999;
-        }
-
-        .no-blogs i {
-            font-size: 64px;
-            margin-bottom: 20px;
-            opacity: 0.5;
-        }
-    </style>
 </head>
 <body>
-    <!-- Header -->
-    <header id="pq-header" class="pq-header-default">
+    <div id="pq-loading">
+        <div id="pq-loading-center">
+            <img src="assets/images/logo.png" class="img-fluid" alt="loading" style="max-width: 100px;">
+        </div>
+    </div>
+
+
+
+<!--=================================
+  header start-->
+    <header id="pq-header" class="pq-header-default ">
         <div class="pq-top-header">
             <div class="container">
                 <div class="row flex-row-reverse">
@@ -203,10 +99,17 @@ try {
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="pq-header-contact">
+                        <div class="pq-header-contact ">
                             <ul>
-                                <li><a href="tel:+2348028134942"><i class="fas fa-phone"></i> +234 8028134942</a></li>
-                                <li><a href="mailto:info@medicate.com"><i class="fas fa-envelope"></i>info@medicate.com</a></li>
+                                <li>
+                                    <a href="tel:+2348028134942"><i class="fas fa-phone"></i>
+                                        <span> +234 8028134942</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:info@medicate.com"><i
+                                            class="fas fa-envelope"></i><span>info@medicate.com</span></a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -222,14 +125,75 @@ try {
                                 <img class="img-fluid logo" src="assets/images/logo.png" alt="medicate">
                             </a>
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul id="pq-main-menu" class="navbar-nav ml-auto">
-                                    <li class="menu-item"><a href="index.php">Home</a></li>
-                                    <li class="menu-item"><a href="about.php">About Us</a></li>
-                                    <li class="menu-item"><a href="services.php">Services</a></li>
-                                    <li class="menu-item"><a href="specialists.php">Specialists</a></li>
-                                    <li class="menu-item"><a href="blog.php">Blog</a></li>
-                                    <li class="menu-item"><a href="contact.php">Contact Us</a></li>
-                                </ul>
+                                <div id="pq-menu-contain" class="pq-menu-contain">
+                                    <ul id="pq-main-menu" class="navbar-nav ml-auto">
+                                        <li class="menu-item current-menu-item">
+                                            <a href="index.php">Home</a>
+                                        </li>
+                                        <li class="menu-item ">
+                                            <a href="about.php">About Us </a>
+                                        </li>
+                                        <li class="menu-item ">
+                                            <a href="services.php">Services</a><i
+                                                class="fa fa-chevron-down pq-submenu-icon"></i>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item ">
+                                                    <a href="services/angioplasty.php">Angioplasty </a>
+                                                </li>
+                                                <li class="menu-item ">
+                                                    <a href="services/cardiology.php">Cardiology</a>
+                                                </li>
+                                                <li class="menu-item ">
+                                                    <a href="services/dental.php">Dental </a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="services/endocrinology.php">Endocrinology</a>
+                                                </li>
+                                                <li class="menu-item ">
+                                                    <a href="services/eye-care.php">Eye Care </a>
+                                                </li>
+                                                <li class="menu-item ">
+                                                    <a href="services/neurology.php">Neurology </a>
+                                                </li>
+                                                <li class="menu-item ">
+                                                    <a href="services/orthopaedics.php">Orthopaedics </a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="services/rmi.php">RMI </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item ">
+                                            <a href="specialists.php">Specialists </a>
+                                        </li>
+                                        <li class="menu-item ">
+                                            <a href="case-study.php">Case Studies </a>
+                                        </li>
+                                        <li class="menu-item ">
+                                            <a href="blog.php">Blog</a>
+                                        </li>
+                                        <li class="menu-item ">
+                                            <a href="faqs.php">FAQs </a>
+                                        </li>
+                                        <li class="menu-item ">
+                                            <a href="contact.php">Contact Us</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="pq-menu-search-block">
+                                <a href="javascript:void(0)" id="pq-seacrh-btn"><i class="ti-search"></i></a>
+                                <div class="pq-search-form">
+                                    <form role="search" method="get" class="search-form" action="search-results.php">
+                                        <label>
+                                            <span class="screen-reader-text"> Search for:</span>
+                                            <input type="search" class="search-field" placeholder="Enter a search term"
+                                                value="" name="s">
+                                        </label>
+                                        <button type="submit" class="search-submit"><span
+                                                class="screen-reader-text">Search</span></button>
+                                    </form>
+                                </div>
                             </div>
                             <a href="<?php echo $getStartedUrl; ?>" class="pq-button pq-cta-button">
                                 <div class="pq-button-block">
@@ -237,7 +201,9 @@ try {
                                     <i class="ion ion-plus-round"></i>
                                 </div>
                             </a>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
                                 <i class="fas fa-bars"></i>
                             </button>
                         </nav>
@@ -246,16 +212,15 @@ try {
             </div>
         </div>
     </header>
+    <!--Header End -->
 
     <!-- Breadcrumb -->
-    <div class="pq-breadcrumb" style="background-image:url('assets/images/breadcrumb.jpg');">
+    <div class="pq-breadcrumb" style="background-image: url('assets/images/breadcrumb.jpg');">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-12">
                     <nav aria-label="breadcrumb">
-                        <div class="pq-breadcrumb-title">
-                            <h2>Our Blog</h2>
-                        </div>
+                        <div class="pq-breadcrumb-title"><h2>Our Blog</h2></div>
                         <div class="pq-breadcrumb-container mt-2">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="index.php"><i class="fas fa-home mr-2"></i>Home</a></li>
@@ -269,128 +234,315 @@ try {
     </div>
 
     <!-- Blog Section -->
-    <section class="pq-pb-210" style="padding: 60px 0;">
+    <section class="blog" style="padding: 90px 0;">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="pq-section pq-style-1 text-center">
-                        <span class="pq-section-sub-title">Health & Wellness</span>
-                        <h5 class="pq-section-title">Latest Articles from Our Experts</h5>
-                    </div>
-                </div>
-            </div>
+                <!-- Main Content -->
+                <div class="col-lg-8">
+                    <?php if ($error): ?>
+                        <div class="alert alert-danger">
+                            <i class="fas fa-exclamation-circle"></i> <?php echo htmlspecialchars($error); ?>
+                        </div>
+                    <?php endif; ?>
 
-            <?php if (empty($blogs)): ?>
-                <div class="no-blogs">
-                    <i class="fas fa-blog"></i>
-                    <h4>No Blog Posts Yet</h4>
-                    <p>Check back soon for expert health insights from our medical professionals.</p>
-                </div>
-            <?php else: ?>
-                <div class="blog-grid">
-                    <?php foreach ($blogs as $blog): ?>
-                        <div class="blog-card">
-                            <?php if (!empty($blog['featured_image'])): ?>
-                                <img src="<?php echo htmlspecialchars($blog['featured_image']); ?>" alt="<?php echo htmlspecialchars($blog['title']); ?>" class="blog-image">
-                            <?php else: ?>
-                                <div class="blog-image"></div>
-                            <?php endif; ?>
-                            
-                            <div class="blog-content">
-                                <div class="blog-meta">
-                                    <span class="blog-doctor"><?php echo htmlspecialchars($blog['doctor_name'] ?? 'Dr. Medicate'); ?></span> • 
-                                    <?php echo date('M d, Y', strtotime($blog['created_at'])); ?>
+                    <?php if (empty($blogs)): ?>
+                        <div class="pq-blog-post" style="text-align: center; padding: 60px 30px;">
+                            <i class="fas fa-blog" style="font-size: 64px; opacity: 0.3; color: var(--primary-color);"></i>
+                            <h4 style="margin-top: 20px;">No Blog Posts Yet</h4>
+                            <p>Check back soon for expert health insights from our doctors.</p>
+                        </div>
+                    <?php else: ?>
+                        <?php foreach ($blogs as $blog): ?>
+                            <div class="pq-blog-post">
+                                <div class="pq-post-media">
+                                    <?php if (!empty($blog['featured_image']) && file_exists($blog['featured_image'])): ?>
+                                        <img src="<?php echo htmlspecialchars($blog['featured_image']); ?>" 
+                                             alt="<?php echo htmlspecialchars($blog['title']); ?>">
+                                    <?php else: ?>
+                                        <img src="assets/images/blog/default-blog.jpg" 
+                                             alt="<?php echo htmlspecialchars($blog['title']); ?>"
+                                             onerror="this.src='https://via.placeholder.com/800x400/2490eb/ffffff?text=Medicate+Health+Blog'">
+                                    <?php endif; ?>
+                                    <div class="pq-post-date">
+                                        <a href="blog-single.php?id=<?php echo (int)$blog['id']; ?>">
+                                            <?php echo date('M d, Y', strtotime($blog['created_at'])); ?>
+                                        </a>
+                                    </div>
                                 </div>
                                 
-                                <h3 class="blog-title">
-                                    <a href="blog-single.php?id=<?php echo $blog['id']; ?>">
-                                        <?php echo htmlspecialchars(substr($blog['title'], 0, 60)); ?>
-                                    </a>
-                                </h3>
-                                
-                                <p class="blog-excerpt">
-                                    <?php echo htmlspecialchars(substr($blog['excerpt'] ?? $blog['title'], 0, 100)) . '...'; ?>
-                                </p>
-                                
-                                <div class="blog-footer">
-                                    <span class="blog-comments">
-                                        <i class="fas fa-comment"></i> <?php echo $blog['comment_count']; ?> Comments
-                                    </span>
-                                    <a href="blog-single.php?id=<?php echo $blog['id']; ?>" class="blog-read-more">
-                                        Read More →
+                                <div class="pq-blog-contain">
+                                    <div class="pq-post-meta">
+                                        <ul>
+                                            <li>
+                                                <i class="fas fa-user-md"></i>
+                                                <a href="#"><?php echo htmlspecialchars($blog['doctor_name']); ?></a>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-comments"></i>
+                                                <a href="blog-single.php?id=<?php echo (int)$blog['id']; ?>#comments">
+                                                    <?php echo (int)$blog['comment_count']; ?> Comments
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <h5 class="pq-blog-title">
+                                        <a href="blog-single.php?id=<?php echo (int)$blog['id']; ?>">
+                                            <?php echo htmlspecialchars($blog['title']); ?>
+                                        </a>
+                                    </h5>
+                                    
+                                    <p>
+                                        <?php 
+                                        $excerpt = $blog['excerpt'] ?: strip_tags($blog['content']);
+                                        echo htmlspecialchars(substr($excerpt, 0, 200)); 
+                                        if (strlen($excerpt) > 200) echo '...';
+                                        ?>
+                                    </p>
+                                    
+                                    <a class="pq-button pq-button-link" href="blog-single.php?id=<?php echo (int)$blog['id']; ?>">
+                                        <div class="pq-button-block">
+                                            <span class="pq-button-text">Read More</span>
+                                            <i class="ion ion-ios-arrow-right"></i>
+                                        </div>
                                     </a>
                                 </div>
                             </div>
-                        </div>
-                    <?php endforeach; ?>
+                        <?php endforeach; ?>
+
+                        <?php if ($total_pages > 1): ?>
+                            <div class="pq-pagination">
+                                <ul class="page-numbers">
+                                    <?php if ($page > 1): ?>
+                                        <li><a class="page-numbers" href="blog.php?page=<?php echo $page - 1; ?>">
+                                            <i class="fas fa-angle-left"></i>
+                                        </a></li>
+                                    <?php endif; ?>
+                                    
+                                    <?php for ($i = max(1, $page - 2); $i <= min($total_pages, $page + 2); $i++): ?>
+                                        <li>
+                                            <?php if ($i == $page): ?>
+                                                <span class="page-numbers current"><?php echo $i; ?></span>
+                                            <?php else: ?>
+                                                <a class="page-numbers" href="blog.php?page=<?php echo $i; ?>"><?php echo $i; ?></a>
+                                            <?php endif; ?>
+                                        </li>
+                                    <?php endfor; ?>
+                                    
+                                    <?php if ($page < $total_pages): ?>
+                                        <li><a class="page-numbers" href="blog.php?page=<?php echo $page + 1; ?>">
+                                            <i class="fas fa-angle-right"></i>
+                                        </a></li>
+                                    <?php endif; ?>
+                                </ul>
+                            </div>
+                        <?php endif; ?>
+                    <?php endif; ?>
                 </div>
 
-                <!-- Pagination -->
-                <?php if ($total_pages > 1): ?>
-                    <div class="pagination-custom">
-                        <?php if ($page > 1): ?>
-                            <a href="blog.php?page=1">« First</a>
-                            <a href="blog.php?page=<?php echo $page - 1; ?>">‹ Previous</a>
-                        <?php endif; ?>
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+                    <div class="sidebar pq-widget-area">
+                        
+                        <!-- Search Widget -->
+                        <div class="pq-widget pq-widget_search">
+                            <h2 class="pq-widget-title">Search</h2>
+                            <form class="search-form" method="get" action="blog.php">
+                                <label>
+                                    <input type="search" class="search-field" placeholder="Search..." name="s">
+                                </label>
+                                <button type="submit" class="search-submit">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </form>
+                        </div>
 
-                        <?php for ($i = 1; $i <= $total_pages; $i++): ?>
-                            <?php if ($i == $page): ?>
-                                <span class="active"><?php echo $i; ?></span>
+                        <!-- Recent Posts Widget -->
+                        <div class="pq-widget">
+                            <h2 class="pq-widget-title">Recent Posts</h2>
+                            <?php if (!empty($recent_posts)): ?>
+                                <?php foreach ($recent_posts as $recent): ?>
+                                    <div class="pq-footer-recent-post">
+                                        <div class="pq-footer-recent-post-media">
+                                            <?php if (!empty($recent['featured_image']) && file_exists($recent['featured_image'])): ?>
+                                                <img src="<?php echo htmlspecialchars($recent['featured_image']); ?>" 
+                                                     alt="<?php echo htmlspecialchars($recent['title']); ?>">
+                                            <?php else: ?>
+                                                <img src="https://via.placeholder.com/80x80/2490eb/ffffff?text=Blog" 
+                                                     alt="<?php echo htmlspecialchars($recent['title']); ?>">
+                                            <?php endif; ?>
+                                        </div>
+                                        <div class="pq-footer-recent-post-info">
+                                            <span class="pq-post-date">
+                                                <i class="fas fa-calendar-alt"></i>
+                                                <?php echo date('M d, Y', strtotime($recent['created_at'])); ?>
+                                            </span>
+                                            <h6>
+                                                <a href="blog-single.php?id=<?php echo (int)$recent['id']; ?>">
+                                                    <?php echo htmlspecialchars(substr($recent['title'], 0, 50)); ?>
+                                                    <?php if (strlen($recent['title']) > 50) echo '...'; ?>
+                                                </a>
+                                            </h6>
+                                        </div>
+                                    </div>
+                                <?php endforeach; ?>
                             <?php else: ?>
-                                <a href="blog.php?page=<?php echo $i; ?>"><?php echo $i; ?></a>
+                                <p>No recent posts available.</p>
                             <?php endif; ?>
-                        <?php endfor; ?>
+                        </div>
 
-                        <?php if ($page < $total_pages): ?>
-                            <a href="blog.php?page=<?php echo $page + 1; ?>">Next ›</a>
-                            <a href="blog.php?page=<?php echo $total_pages; ?>">Last »</a>
-                        <?php endif; ?>
+                        <!-- Categories Widget -->
+                        <div class="pq-widget pq-widget_categories">
+                            <h2 class="pq-widget-title">Categories</h2>
+                            <ul>
+                                <li><a href="blog.php?category=health"><i class="fas fa-angle-right"></i> Health Tips</a></li>
+                                <li><a href="blog.php?category=medical"><i class="fas fa-angle-right"></i> Medical News</a></li>
+                                <li><a href="blog.php?category=wellness"><i class="fas fa-angle-right"></i> Wellness</a></li>
+                                <li><a href="blog.php?category=prevention"><i class="fas fa-angle-right"></i> Prevention</a></li>
+                                <li><a href="blog.php?category=treatment"><i class="fas fa-angle-right"></i> Treatment</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Tags Widget -->
+                        <div class="pq-widget pq-widget_tag_cloud">
+                            <h2 class="pq-widget-title">Tags</h2>
+                            <div class="tagcloud">
+                                <a href="blog.php?tag=health" class="tag-cloud-link">Health</a>
+                                <a href="blog.php?tag=medical" class="tag-cloud-link">Medical</a>
+                                <a href="blog.php?tag=wellness" class="tag-cloud-link">Wellness</a>
+                                <a href="blog.php?tag=doctor" class="tag-cloud-link">Doctor</a>
+                                <a href="blog.php?tag=treatment" class="tag-cloud-link">Treatment</a>
+                                <a href="blog.php?tag=prevention" class="tag-cloud-link">Prevention</a>
+                                <a href="blog.php?tag=care" class="tag-cloud-link">Care</a>
+                                <a href="blog.php?tag=tips" class="tag-cloud-link">Tips</a>
+                            </div>
+                        </div>
+
                     </div>
-                <?php endif; ?>
-            <?php endif; ?>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Footer -->
+<!--=================================
+          Footer start
+   ============================== -->
     <footer id="pq-footer">
         <div class="pq-footer-style-1">
+            <div class="pq-subscribe align-items-center">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-12">
+                            <div class="pq-subscribe-bg">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-5">
+                                        <div class="pq-subscribe-block"> <img src="assets/images/Subscribe.png"
+                                                class="pq-subscribe-img img-fluid" alt="medicate-subscribe-image">
+                                            <div class="pq-subscribe-details">
+                                                <h5>Latest Updates Subscribe To Our Newsletter</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7 align-self-center">
+                                        <div class="pq-subscribe-from">
+                                            <form id="form" class="form">
+                                                <div class="form-fields">
+                                                    <input class="w-100 pq-bg-transparent" type="email" name="EMAIL"
+                                                        placeholder="Enter Your Email" required="">
+                                                    <input class="" type="submit" value="Sign up">
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="pq-footer-top">
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-3 col-md-6">
-                            <div class="pq-footer-block">
-                                <img src="assets/images/footer_logo.png" class="pq-footer-logo img-fluid" alt="medicate-footer-logo">
-                                <p>Providing quality healthcare solutions.</p>
+                            <div class="pq-footer-block"> <img src="assets/images/footer_logo.png"
+                                    class="pq-footer-logo img-fluid" alt="medicate-footer-logo">
+                                <p>It helps designers plan out where the content will sit, the content to be written and
+                                    approved.</p>
+                                <div class="pq-footer-social">
+                                    <ul>
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-md-6">
+                        <div class="col-xl-3  col-md-6">
                             <div class="pq-footer-block">
-                                <h4 class="footer-title">Quick Links</h4>
-                                <ul>
-                                    <li><a href="index.php">Home</a></li>
-                                    <li><a href="about.php">About Us</a></li>
-                                    <li><a href="services.php">Services</a></li>
-                                    <li><a href="blog.php">Blog</a></li>
-                                </ul>
+                                <h4 class="footer-title">Our Courses</h4>
+                                <div class="menu-useful-links-container">
+                                    <ul id="menu-useful-links" class="menu">
+                                        <li><a href="about-us.html">About Us</a></li>
+                                        <li><a href="contact.php">Contact Us</a></li>
+                                        <li><a href="services.php">Our Services</a></li>
+                                        <li><a href="our-process.html">Our Process</a></li>
+                                        <li><a href="doctor-1.html">Services</a></li>
+                                        <li><a href="faq.html">FAQ</a></li>
+                                        <li><a href="our-doctor.html">FAQs</a></li>
+                                        <li><a href="case-study.php">Departments</a></li>
+                                        <li><a href="consultation.php">Events</a></li>
+                                        <li><a href="our-plan.html">Member</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-md-6">
+                        <div class="col-xl-3  col-md-6">
                             <div class="pq-footer-block">
-                                <h4 class="footer-title">Contact</h4>
-                                <ul>
-                                    <li><a href="tel:+2348028134942"><i class="fas fa-phone"></i> +234 8028134942</a></li>
-                                    <li><a href="mailto:info@medicate.com"><i class="fas fa-envelope"></i>info@medicate.com</a></li>
-                                </ul>
+                                <h4 class="footer-title">Recent Posts</h4>
+                                <div class="pq-footer-recent-post">
+                                    <div class="pq-footer-recent-post-media">
+                                        <a href="blog-single.php"> <img
+                                                src="assets/images/footer-image/1.jpg" alt=""></a>
+                                    </div>
+                                    <div class="pq-footer-recent-post-info">
+                                        <a href="blog-single.php" class="pq-post-date"> <i
+                                                class="far fa-calendar-alt"></i>December <span>12</span>, 2021 </a>
+                                        <h6><a href="blog-single.php">Get the Exercise Limited
+                                                Mobility</a></h6>
+                                    </div>
+                                </div>
+                                <div class="pq-footer-recent-post">
+                                    <div class="pq-footer-recent-post-media">
+                                        <a href="blog-single.php"> <img
+                                                src="assets/images/footer-image/2.jpg" alt=""></a>
+                                    </div>
+                                    <div class="pq-footer-recent-post-info">
+                                        <a href="blog-single.php" class="pq-post-date"> <i
+                                                class="far fa-calendar-alt"></i>December <span>12</span>, 2021 </a>
+                                        <h6><a href="blog-single.php">Transfusion strategy and
+                                                heart surgery</a></h6>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-md-6">
+                        <div class="col-xl-3  col-md-6">
                             <div class="pq-footer-block">
-                                <h4 class="footer-title">Follow Us</h4>
-                                <ul style="display: flex; gap: 15px;">
-                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                </ul>
+                                <h4 class="footer-title">Contact Us</h4>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <ul class="pq-contact">
+                                            <li> <a href="tel:+2348028134942"><i class="fas fa-phone"></i>
+                                                    <span>+234 8028134942</span>
+                                                </a> </li>
+                                            <li> <a href="mailto:info@medicate.com"><i
+                                                        class="fas fa-envelope"></i><span>info@medicate.com</span></a>
+                                            </li>
+                                            <li> <i class="fas fa-map-marker"></i> <span>
+                                                    Medicate Lab, S5/808B, Oba Adesida Road, Akure, Ondo State </span> </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -399,16 +551,101 @@ try {
             <div class="pq-copyright-footer">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-12 text-center">
-                            <span class="pq-copyright">&copy; 2025 - Medicate. All Rights Reserved.</span>
-                        </div>
+                        <div class="col-md-12 text-center "> <span class="pq-copyright"> Copyright 2022 medicate All
+                                Rights Reserved</span> </div>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
+    <!--Footer End-->
+    <!--Back To Top start-->
+    <div id="back-to-top">
+        <a class="topbtn" id="top" href="#top"> <i class="ion-ios-arrow-up"></i> </a>
+    </div>
+    <!--Back To Top End-->
 
+    <!-- JS Files -->
     <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/progressbar.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/jquery.countTo.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/rev/js/rbtools.min.js"></script>
+    <script src="assets/rev/js/rs6.min.js"></script>
+    <script src="assets/js/rev-custom.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+    <script>
+        jQuery(window).on('load', function (e) {
+            jQuery(".pq-applyform .form-btn").click(function () {
+                var first_name = jQuery('#first-name').val();
+                var doctor_name = jQuery('#doctor-name').val();
+                var disease_name = jQuery('#disease-name').val();
+                var email = jQuery('#e-mail').val();
+
+                var result;
+
+                jQuery('.pq-applyform .pq-message').remove();
+                jQuery('.pq-applyform .pq-thank-you-message').remove();
+
+                if (first_name == '' || first_name == undefined) {
+                    jQuery("<span class='pq-name-error-message pq-message'>Please fill the field</span>").insertAfter('.pq-applyform .name-field');
+                    result = false;
+                }
+                else {
+                    jQuery('.pq-name-error-message').remove();
+                    result = true;
+                }
+
+                if (email == '' || email == undefined) {
+                    jQuery("<span class='pq-email-error-message pq-message'>Please fill the field</span>").insertAfter('.pq-applyform .e-mail-field');
+                    result = false;
+                }
+                else {
+                    jQuery('.pq-email-error-message').remove();
+                    result = true;
+                }
+
+                if (doctor_name == '' || doctor_name == undefined) {
+                    jQuery("<span class='pq-doctor-name-error-message pq-message'>Please fill the field</span>").insertAfter('.pq-applyform .doctor-name-field');
+                    result = false;
+                }
+                else {
+                    jQuery('.pq-doctor-name-error-message').remove();
+                    result = true;
+                }
+
+                if (disease_name == '' || disease_name == undefined) {
+                    jQuery("<span class='pq-disease-name-error-message pq-message'>Please fill the field</span>").insertAfter('.pq-applyform #disease-name');
+                    result = false;
+                }
+                else {
+                    jQuery('.pq-disease-name-error-message').remove();
+                    result = true;
+                }
+
+                if (result == true) {
+                    var email = jQuery("#email").text();
+                    event.preventDefault();
+                    jQuery.ajax({
+                        type: "POST",
+                        url: "mail.php",
+                        data: { 'email': email },
+                        success: function () {
+                            jQuery("<span class='pq-thank-you-message pq-text-white ms-5'> Thank You For Filling The form</span>").insertAfter('.pq-applyform .pq-button');
+                        }
+                    });
+                }
+            });
+        });
+    </script>
 </body>
+
+<script>'undefined' === typeof _trfq || (window._trfq = []); 'undefined' === typeof _trfd && (window._trfd = []), _trfd.push({ 'tccl.baseHost': 'secureserver.net' }, { 'ap': 'cpbh-mt' }, { 'server': 'sg2plmcpnl492384' }, { 'dcenter': 'sg2' }, { 'cp_id': '9858662' }, { 'cp_cache': '' }, { 'cp_cl': '8' })  </script>
+<script src='../../../../img1.wsimg.com/signals/js/
+      
 </html>

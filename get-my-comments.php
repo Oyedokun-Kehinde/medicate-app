@@ -1,17 +1,15 @@
 <?php
-// FILE: get-my-comments.php
-// Fetches comments posted by logged-in user
-
 session_start();
 require_once 'config/database.php';
 
-header('Content-Type: application/json');
-
-if (!isset($_SESSION['user_id'])) {
-    http_response_code(403);
+// Check if user is logged in as patient
+if (!isset($_SESSION['user_id']) || $_SESSION['user_type'] !== 'patient') {
+    http_response_code(401);
     echo json_encode(['success' => false, 'error' => 'Unauthorized']);
     exit;
 }
+
+$user_id = $_SESSION['user_id'];
 
 try {
     $stmt = $pdo->prepare("
@@ -23,7 +21,7 @@ try {
         WHERE bc.user_id = ?
         ORDER BY bc.created_at DESC
     ");
-    $stmt->execute([$_SESSION['user_id']]);
+    $stmt->execute([$user_id]);
     $comments = $stmt->fetchAll(PDO::FETCH_ASSOC);
     
     echo json_encode([
@@ -32,10 +30,6 @@ try {
     ]);
     
 } catch (Exception $e) {
-    http_response_code(500);
-    echo json_encode([
-        'success' => false,
-        'error' => 'Error fetching comments: ' . $e->getMessage()
-    ]);
+    echo json_encode(['success' => false, 'error' => $e->getMessage()]);
 }
 ?>

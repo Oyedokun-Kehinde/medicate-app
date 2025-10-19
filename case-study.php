@@ -363,6 +363,8 @@ $getStartedUrl = getGetStartedUrl();
     <!--=================================
          porfolio end
      ================================= -->
+
+
     <!--=================================
           Footer start
    ============================== -->
@@ -424,11 +426,11 @@ $getStartedUrl = getGetStartedUrl();
                                     <ul id="menu-useful-links" class="menu">
                                         <li><a href="about-us.html">About Us</a></li>
                                         <li><a href="contact.php">Contact Us</a></li>
-                                        <li><a href="our-services.html">Our Services</a></li>
+                                        <li><a href="services.php">Our Services</a></li>
                                         <li><a href="our-process.html">Our Process</a></li>
-                                        <li><a href="doctor-1.html">Doctors 1</a></li>
+                                        <li><a href="doctor-1.html">Services</a></li>
                                         <li><a href="faq.html">FAQ</a></li>
-                                        <li><a href="our-doctor.html">Doctors 2</a></li>
+                                        <li><a href="our-doctor.html">FAQs</a></li>
                                         <li><a href="case-study.php">Departments</a></li>
                                         <li><a href="consultation.php">Events</a></li>
                                         <li><a href="our-plan.html">Member</a></li>
@@ -499,6 +501,8 @@ $getStartedUrl = getGetStartedUrl();
         </div>
     </footer>
     <!--Footer End-->
+
+
     <!--Back To Top start-->
     <div id="back-to-top">
         <a class="topbtn" id="top" href="#top"> <i class="ion-ios-arrow-up"></i> </a>

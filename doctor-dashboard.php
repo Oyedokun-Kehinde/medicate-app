@@ -147,15 +147,25 @@ $specialization = htmlspecialchars($doctor['specialization'] ?? 'Not specified')
                 </li>
                 <li><a class="nav-link" data-section="consultations"><i class="fas fa-calendar-check"></i> All
                         Consultations</a></li>
-                <li><a class="nav-link" data-section="upcoming"><i class="fas fa-calendar-day"></i> Upcoming</a></li>
-                <li><a class="nav-link" data-section="doctors"><i class="fas fa-user-md"></i> All Doctors</a></li>
-                <li><a class="nav-link" data-section="patients"><i class="fas fa-users"></i> All Patients</a></li>
-                <li><a class="nav-link" data-section="services"><i class="fas fa-hospital"></i> Our Services</a></li>
-                <li><a class="nav-link" data-section="blogs"><i class="fas fa-blog"></i> My Blogs</a></li>
-                <li> <a class="nav-link" data-section="profile"><i class="fas fa-user-cog"></i> My Profile</a> </li>
+                <li>
+                    <a class="nav-link" data-section="upcoming"><i class="fas fa-calendar-day"></i> Upcoming</a></li>
+                <li>
+                    <a class="nav-link" data-section="doctors"><i class="fas fa-user-md"></i> All Doctors</a></li>
+                <li>
+                    <a class="nav-link" data-section="patients"><i class="fas fa-users"></i> All Patients</a>
+                </li>
+                <li>
+                    <a class="nav-link" data-section="services"><i class="fas fa-hospital"></i> Our Services</a></li>
+                <li>
+                    <a class="nav-link" data-section="blogs"><i class="fas fa-blog"></i> My Blogs</a>
+                </li>
+                <li>
+                    <a href="blog.php"><i class="fas fa-blog"></i> Blogs </a>
+                </li>
+                <li> 
+                    <a class="nav-link" data-section="profile"> <i class="fas fa-user-cog"></i> My Profile</a> </li>
                 <li><a href="faqs.php"><i class="fas fa-question-circle"></i> FAQs</a></li>
                 <li><a href="contact.php"><i class="fas fa-phone"></i> Contact Us</a></li>
-                <li><a href="blog.php"><i class="fas fa-blog"></i> Blog</a></li>
             </ul>
             <div class="sidebar-footer">
                 <div class="user-info">

@@ -22,19 +22,26 @@ try {
     $specialization = trim($_POST['specialization'] ?? '');
     $phone = trim($_POST['phone'] ?? '');
     $bio = trim($_POST['bio'] ?? '');
-
-    if (empty($full_name)) throw new Exception('Full name is required.');
-    if (empty($email) || !filter_var($email, FILTER_VALIDATE_EMAIL)) throw new Exception('Valid email is required.');
-
+    
+    if (empty($full_name)) {
+        throw new Exception('Full name is required.');
+    }
+    
+    if (empty($email) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        throw new Exception('Valid email is required.');
+    }
+    
     // Check if email is already taken by another user
     $stmt = $pdo->prepare("SELECT id FROM users WHERE email = ? AND id != ?");
     $stmt->execute([$email, $user_id]);
-    if ($stmt->fetch()) throw new Exception('Email already in use.');
-
+    if ($stmt->fetch()) {
+        throw new Exception('Email already in use.');
+    }
+    
     // Update users table
     $stmt = $pdo->prepare("UPDATE users SET email = ? WHERE id = ?");
     $stmt->execute([$email, $user_id]);
-
+    
     // Update doctor_profiles with proper error handling
     $stmt = $pdo->prepare("
         INSERT INTO doctor_profiles (user_id, full_name, specialization, phone, bio)
@@ -46,9 +53,9 @@ try {
             bio = VALUES(bio)
     ");
     $stmt->execute([$user_id, $full_name, $specialization, $phone, $bio]);
-
+    
     $success = 'Profile updated successfully!';
-
+    
 } catch (Exception $e) {
     $error = $e->getMessage();
 } catch (PDOException $e) {

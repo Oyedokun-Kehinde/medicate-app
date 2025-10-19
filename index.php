@@ -72,7 +72,8 @@ try {
         </div>
     </div>
     <!--loading End-->
-    <!--=================================
+
+<!--=================================
   header start-->
     <header id="pq-header" class="pq-header-default ">
         <div class="pq-top-header">
@@ -186,11 +187,11 @@ try {
                                 </div>
                             </div>
                             <a href="<?php echo $getStartedUrl; ?>" class="pq-button pq-cta-button">
-    <div class="pq-button-block">
-        <span class="pq-button-text"><?php echo getGetStartedButtonText(); ?></span>
-        <i class="ion ion-plus-round"></i>
-    </div>
-</a>
+                                <div class="pq-button-block">
+                                    <span class="pq-button-text"><?php echo getGetStartedButtonText(); ?></span>
+                                    <i class="ion ion-plus-round"></i>
+                                </div>
+                            </a>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                 aria-expanded="false" aria-label="Toggle navigation">
@@ -203,6 +204,7 @@ try {
         </div>
     </header>
     <!--Header End -->
+    
 
     <!-- START Home 1 REVOLUTION SLIDER 6.5.19 
 
@@ -1426,319 +1428,80 @@ try {
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="pq-section pq-style-1 text-center"> <span class="pq-section-sub-title">our blog</span>
+                    <div class="pq-section pq-style-1 text-center">
+                        <span class="pq-section-sub-title">our blog</span>
                         <h5 class="pq-section-title">See Our Latest Blog</h5>
                     </div>
                 </div>
                 <div class="col-lg-12">
-                    <div class="owl-carousel owl-theme" data-dots="false" data-nav="false" data-desk_num="3"
-                        data-lap_num="2" data-tab_num="2" data-mob_num="1" data-mob_sm="1" data-autoplay="true"
-                        data-loop="true" data-margin="30">
-                        <div class="item">
-                            <div class="pq-blog-post pq-style-1">
-                                <div class="pq-post-media"> <img src="assets/images/blog/1.jpg" class="img-fluid"
-                                        alt="images">
-                                    <div class="pq-post-date">
-                                        <a href="blog-single.php"> <span>December 5,
-                                                2021</span></a>
-                                    </div>
-                                </div>
-                                <div class="pq-blog-contain">
-                                    <div class="pq-post-meta">
-                                        <ul>
-                                            <li class="pq-post-author"><i class="fa fa-user"></i>admin</li>
-                                            <li class="pq-post-comment"> <a href="blog-single.php"><i
-                                                        class="fa fa-comments"></i>
-                                                    0 Comments</a> </li>
-                                        </ul>
-                                    </div>
-                                    <h5 class="pq-blog-title"><a href="blog-single.php">Get the
-                                            Exercise
-                                            Limited Mobility</a></h5>
-                                    <div class="pq-blog-info">
-                                        <p>It is a long established fact that a reader will be distracted by the
-                                            readable content
-                                            of a page when looking at its layout.</p>
-                                    </div>
-                                    <a href="blog-single.php" class="pq-button pq-button-link">
-                                        <div class="pq-button-block"> <span class="pq-button-text">Read More</span> <i
-                                                class="ion ion-plus-round"></i> </div>
-                                    </a>
-                                </div>
-                            </div>
+                    <?php if (empty($home_blogs)): ?>
+                        <div style="text-align: center; padding: 40px; color: #999;">
+                            <p>No blog posts available yet. Check back soon!</p>
                         </div>
-                        <div class="item">
-                            <div class="pq-blog-post pq-style-1">
-                                <div class="pq-post-media"> <img src="assets/images/blog/2.jpg" class="img-fluid"
-                                        alt="images">
-                                    <div class="pq-post-date">
-                                        <a href="blog-single.php"> <span>December 5,
-                                                2021</span></a>
+                    <?php else: ?>
+                        <div class="owl-carousel owl-theme" data-dots="false" data-nav="false" data-desk_num="3"
+                            data-lap_num="2" data-tab_num="2" data-mob_num="1" data-mob_sm="1" data-autoplay="true"
+                            data-loop="true" data-margin="30">
+                            <?php foreach ($home_blogs as $blog): ?>
+                                <div class="item">
+                                    <div class="pq-blog-post pq-style-1">
+                                        <div class="pq-post-media">
+                                            <?php if (!empty($blog['featured_image'])): ?>
+                                                <img src="<?php echo htmlspecialchars($blog['featured_image']); ?>"
+                                                    class="img-fluid" alt="<?php echo htmlspecialchars($blog['title']); ?>">
+                                            <?php else: ?>
+                                                <div
+                                                    style="width: 100%; height: 250px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                                                </div>
+                                            <?php endif; ?>
+                                            <div class="pq-post-date">
+                                                <a href="blog-single.php?id=<?php echo $blog['id']; ?>">
+                                                    <span><?php echo date('F d, Y', strtotime($blog['created_at'])); ?></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="pq-blog-contain">
+                                            <div class="pq-post-meta">
+                                                <ul>
+                                                    <li class="pq-post-author">
+                                                        <i
+                                                            class="fa fa-user"></i><?php echo htmlspecialchars($blog['doctor_name'] ?? 'Dr. Medicate'); ?>
+                                                    </li>
+                                                    <li class="pq-post-comment">
+                                                        <a href="blog-single.php?id=<?php echo $blog['id']; ?>">
+                                                            <i class="fa fa-comments"></i><?php echo $blog['comment_count']; ?>
+                                                            Comments
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <h5 class="pq-blog-title">
+                                                <a href="blog-single.php?id=<?php echo $blog['id']; ?>">
+                                                    <?php echo htmlspecialchars(substr($blog['title'], 0, 50)); ?>
+                                                </a>
+                                            </h5>
+                                            <div class="pq-blog-info">
+                                                <p><?php echo htmlspecialchars(substr($blog['excerpt'] ?? $blog['title'], 0, 100)) . '...'; ?>
+                                                </p>
+                                            </div>
+                                            <a href="blog-single.php?id=<?php echo $blog['id']; ?>"
+                                                class="pq-button pq-button-link">
+                                                <div class="pq-button-block">
+                                                    <span class="pq-button-text">Read More</span>
+                                                    <i class="ion ion-plus-round"></i>
+                                                </div>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="pq-blog-contain">
-                                    <div class="pq-post-meta">
-                                        <ul>
-                                            <li class="pq-post-author"><i class="fa fa-user"></i>admin</li>
-                                            <li class="pq-post-comment"> <a href="blog-single.php"><i
-                                                        class="fa fa-comments"></i>
-                                                    0 Comments</a> </li>
-                                        </ul>
-                                    </div>
-                                    <h5 class="pq-blog-title"><a href="blog-single.php">Transfusion
-                                            strategy and heart surgery</a></h5>
-                                    <div class="pq-blog-info">
-                                        <p>It is a long established fact that a reader will be distracted by the
-                                            readable content
-                                            of a page when looking at its layout.</p>
-                                    </div>
-                                    <a href="blog-single.php" class="pq-button pq-button-link">
-                                        <div class="pq-button-block"> <span class="pq-button-text">Read More</span> <i
-                                                class="ion ion-plus-round"></i> </div>
-                                    </a>
-                                </div>
-                            </div>
+                            <?php endforeach; ?>
                         </div>
-                        <div class="item">
-                            <div class="pq-blog-post pq-style-1">
-                                <div class="pq-post-media"> <img src="assets/images/blog/3.jpg" class="img-fluid"
-                                        alt="images">
-                                    <div class="pq-post-date">
-                                        <a href="blog-single.php"> <span>December 5,
-                                                2021</span></a>
-                                    </div>
-                                </div>
-                                <div class="pq-blog-contain">
-                                    <div class="pq-post-meta">
-                                        <ul>
-                                            <li class="pq-post-author"><i class="fa fa-user"></i>admin</li>
-                                            <li class="pq-post-comment"> <a href="blog-single.php"><i
-                                                        class="fa fa-comments"></i>
-                                                    0 Comments</a> </li>
-                                        </ul>
-                                    </div>
-                                    <h5 class="pq-blog-title"><a href="blog-single.php">Latest
-                                            Equipment
-                                            for the Heart Treatment</a></h5>
-                                    <div class="pq-blog-info">
-                                        <p>It is a long established fact that a reader will be distracted by the
-                                            readable content
-                                            of a page when looking at its layout.</p>
-                                    </div>
-                                    <a href="blog-single.php" class="pq-button pq-button-link">
-                                        <div class="pq-button-block"> <span class="pq-button-text">Read More</span> <i
-                                                class="ion ion-plus-round"></i> </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="pq-blog-post pq-style-1">
-                                <div class="pq-post-media"> <img src="assets/images/blog/4.jpg" class="img-fluid"
-                                        alt="images">
-                                    <div class="pq-post-date">
-                                        <a href="blog-single.php"> <span>December 5,
-                                                2021</span></a>
-                                    </div>
-                                </div>
-                                <div class="pq-blog-contain">
-                                    <div class="pq-post-meta">
-                                        <ul>
-                                            <li class="pq-post-author"><i class="fa fa-user"></i>admin</li>
-                                            <li class="pq-post-comment"> <a href="blog-single.php"><i
-                                                        class="fa fa-comments"></i>
-                                                    0 Comments</a> </li>
-                                        </ul>
-                                    </div>
-                                    <h5 class="pq-blog-title"><a href="blog-single.php">What is
-                                            Future of
-                                            Blood Pressure Monitoring?</a></h5>
-                                    <div class="pq-blog-info">
-                                        <p>It is a long established fact that a reader will be distracted by the
-                                            readable content
-                                            of a page when looking at its layout.</p>
-                                    </div>
-                                    <a href="blog-single.php" class="pq-button pq-button-link">
-                                        <div class="pq-button-block"> <span class="pq-button-text">Read More</span> <i
-                                                class="ion ion-plus-round"></i> </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="pq-blog-post pq-style-1">
-                                <div class="pq-post-media"> <img src="assets/images/blog/5.jpg" class="img-fluid"
-                                        alt="images">
-                                    <div class="pq-post-date">
-                                        <a href="blog-single.php"> <span>December 5,
-                                                2021</span></a>
-                                    </div>
-                                </div>
-                                <div class="pq-blog-contain">
-                                    <div class="pq-post-meta">
-                                        <ul>
-                                            <li class="pq-post-author"><i class="fa fa-user"></i>admin</li>
-                                            <li class="pq-post-comment"> <a href="blog-single.php"><i
-                                                        class="fa fa-comments"></i>
-                                                    0 Comments</a> </li>
-                                        </ul>
-                                    </div>
-                                    <h5 class="pq-blog-title"><a href="blog-single.php">Goals
-                                            Setting the
-                                            people Heart is Healthy</a></h5>
-                                    <div class="pq-blog-info">
-                                        <p>It is a long established fact that a reader will be distracted by the
-                                            readable content
-                                            of a page when looking at its layout.</p>
-                                    </div>
-                                    <a href="blog-single.php" class="pq-button pq-button-link">
-                                        <div class="pq-button-block"> <span class="pq-button-text">Read More</span> <i
-                                                class="ion ion-plus-round"></i> </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="pq-blog-post pq-style-1">
-                                <div class="pq-post-media"> <img src="assets/images/blog/6.jpg" class="img-fluid"
-                                        alt="images">
-                                    <div class="pq-post-date">
-                                        <a href="blog-single.php"> <span>December 5,
-                                                2021</span></a>
-                                    </div>
-                                </div>
-                                <div class="pq-blog-contain">
-                                    <div class="pq-post-meta">
-                                        <ul>
-                                            <li class="pq-post-author"><i class="fa fa-user"></i>admin</li>
-                                            <li class="pq-post-comment"> <a href="blog-single.php"><i
-                                                        class="fa fa-comments"></i>
-                                                    0 Comments</a> </li>
-                                        </ul>
-                                    </div>
-                                    <h5 class="pq-blog-title"><a href="blog-single.php">For
-                                            Examination of
-                                            kids get Special offers</a></h5>
-                                    <div class="pq-blog-info">
-                                        <p>It is a long established fact that a reader will be distracted by the
-                                            readable content
-                                            of a page when looking at its layout.</p>
-                                    </div>
-                                    <a href="blog-single.php" class="pq-button pq-button-link">
-                                        <div class="pq-button-block"> <span class="pq-button-text">Read More</span> <i
-                                                class="ion ion-plus-round"></i> </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="pq-blog-post pq-style-1">
-                                <div class="pq-post-media"> <img src="assets/images/blog/7.jpg" class="img-fluid"
-                                        alt="images">
-                                    <div class="pq-post-date">
-                                        <a href="blog-single.php"> <span>December 5,
-                                                2021</span></a>
-                                    </div>
-                                </div>
-                                <div class="pq-blog-contain">
-                                    <div class="pq-post-meta">
-                                        <ul>
-                                            <li class="pq-post-author"><i class="fa fa-user"></i>admin</li>
-                                            <li class="pq-post-comment"> <a href="blog-single.php"><i
-                                                        class="fa fa-comments"></i>
-                                                    0 Comments</a> </li>
-                                        </ul>
-                                    </div>
-                                    <h5 class="pq-blog-title"><a href="blog-single.php">Heart
-                                            Failure
-                                            Treatment: High Blood Pressure</a></h5>
-                                    <div class="pq-blog-info">
-                                        <p>It is a long established fact that a reader will be distracted by the
-                                            readable content
-                                            of a page when looking at its layout.</p>
-                                    </div>
-                                    <a href="blog-single.php" class="pq-button pq-button-link">
-                                        <div class="pq-button-block"> <span class="pq-button-text">Read More</span> <i
-                                                class="ion ion-plus-round"></i> </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="pq-blog-post pq-style-1">
-                                <div class="pq-post-media"> <img src="assets/images/blog/8.jpg" class="img-fluid"
-                                        alt="images">
-                                    <div class="pq-post-date">
-                                        <a href="blog-single.php"> <span>December 5,
-                                                2021</span></a>
-                                    </div>
-                                </div>
-                                <div class="pq-blog-contain">
-                                    <div class="pq-post-meta">
-                                        <ul>
-                                            <li class="pq-post-author"><i class="fa fa-user"></i>admin</li>
-                                            <li class="pq-post-comment"> <a href="blog-single.php"><i
-                                                        class="fa fa-comments"></i>
-                                                    0 Comments</a> </li>
-                                        </ul>
-                                    </div>
-                                    <h5 class="pq-blog-title"><a href="blog-single.php">Hard
-                                            content we
-                                            decide ourselves a intently</a></h5>
-                                    <div class="pq-blog-info">
-                                        <p>It is a long established fact that a reader will be distracted by the
-                                            readable content
-                                            of a page when looking at its layout.</p>
-                                    </div>
-                                    <a href="blog-single.php" class="pq-button pq-button-link">
-                                        <div class="pq-button-block"> <span class="pq-button-text">Read More</span> <i
-                                                class="ion ion-plus-round"></i> </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="pq-blog-post pq-style-1">
-                                <div class="pq-post-media"> <img src="assets/images/blog/9.jpg" class="img-fluid"
-                                        alt="images">
-                                    <div class="pq-post-date">
-                                        <a href="blog-single.php"> <span>December 5,
-                                                2021</span></a>
-                                    </div>
-                                </div>
-                                <div class="pq-blog-contain">
-                                    <div class="pq-post-meta">
-                                        <ul>
-                                            <li class="pq-post-author"><i class="fa fa-user"></i>admin</li>
-                                            <li class="pq-post-comment"> <a href="blog-single.php"><i
-                                                        class="fa fa-comments"></i>
-                                                    0 Comments</a> </li>
-                                        </ul>
-                                    </div>
-                                    <h5 class="pq-blog-title"><a href="blog-single.php">Is
-                                            Running Really
-                                            Good for the Heart?</a></h5>
-                                    <div class="pq-blog-info">
-                                        <p>It is a long established fact that a reader will be distracted by the
-                                            readable content
-                                            of a page when looking at its layout.</p>
-                                    </div>
-                                    <a href="blog-single.php" class="pq-button pq-button-link">
-                                        <div class="pq-button-block"> <span class="pq-button-text">Read More</span> <i
-                                                class="ion ion-plus-round"></i> </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>
     </section>
     <!--Section blog End-->
-
-
-    
 
     <!-- =========================
      Footer start
@@ -1806,9 +1569,9 @@ try {
                                         <li><a href="contact.php">Contact Us</a></li>
                                         <li><a href="services.php">Our Services</a></li>
                                         <li><a href="our-process.html">Our Process</a></li>
-                                        <li><a href="specialists.php">Doctors 1</a></li>
+                                        <li><a href="specialists.php">Services</a></li>
                                         <li><a href="faq.php">FAQ</a></li>
-                                        <li><a href="our-doctor.html">Doctors 2</a></li>
+                                        <li><a href="our-doctor.html">FAQs</a></li>
                                         <li><a href="case-study.php">Departments</a></li>
                                         <li><a href="consultation.php">Appointment </a></li>
                                     </ul>
