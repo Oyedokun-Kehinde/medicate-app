@@ -1832,7 +1832,7 @@ $getStartedUrl = getGetStartedUrl();
                                                         class="fas fa-envelope"></i><span>info@medicate.com</span></a>
                                             </li>
                                             <li> <i class="fas fa-map-marker"></i> <span>
-                                                    Medicate Lab, S5/808B, Oba Adesida Raod, Akure, Ondo State </span>
+                                                    Medicate Lab, S5/808B, Oba Adesida Road, Akure, Ondo State </span>
                                             </li>
                                         </ul>
                                     </div>

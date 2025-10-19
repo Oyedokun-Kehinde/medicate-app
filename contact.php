@@ -221,7 +221,7 @@ $getStartedUrl = getGetStartedUrl();
                      <h4 class="pq-contact-box-title">
                         Visit our Hospital
                      </h4>
-                     <p class="pq-contact-box-description"> Medicate Lab, S5/808B, Oba Adesida Raod, Akure, Ondo State
+                     <p class="pq-contact-box-description"> Medicate Lab, S5/808B, Oba Adesida Road, Akure, Ondo State
                      </p>
                   </div>
                </div>
@@ -440,7 +440,7 @@ $getStartedUrl = getGetStartedUrl();
                                  <li> <a href="mailto:info@medicate.com"><i
                                           class="fas fa-envelope"></i><span>info@medicate.com</span></a> </li>
                                  <li> <i class="fas fa-map-marker"></i> <span>
-                                       Medicate Lab, S5/808B, Oba Adesida Raod, Akure, Ondo State </span> </li>
+                                       Medicate Lab, S5/808B, Oba Adesida Road, Akure, Ondo State </span> </li>
                               </ul>
                            </div>
                         </div>
