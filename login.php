@@ -1,6 +1,7 @@
 <?php
 require_once 'config/session.php';
 require_once 'classes/User.php';
+require_once 'config/helpers.php';
 
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
@@ -161,12 +162,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                     </ul>
                                 </div>
                             </div>
-                            <a href="login.php" class="pq-button">
-                                <div class="pq-button-block">
-                                    <span class="pq-button-text">Consultation</span>
-                                    <i class="ion ion-plus-round"></i>
-                                </div>
-                            </a>
+                           <a href="<?php echo $getStartedUrl; ?>" class="pq-button">
+    <div class="pq-button-block">
+        <span class="pq-button-text"><?php echo getGetStartedButtonText(); ?></span>
+        <i class="ion ion-plus-round"></i>
+    </div>
+</a>
+
+                            
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                 aria-expanded="false" aria-label="Toggle navigation">

@@ -1,9 +1,9 @@
 
 /*
-Template: Medicate – Health & Medical HTML Template
-Author: peacefulqode.com
+Template: Medicate – Hospital Management System built with Bootsrap, jQuery, JavaScript, Vanilla PHP and MySQL.
+Author: medicate.com
 Version: 1.2
-Design and Developed by: PeacefulQode
+Design and Developed by: Medicate
 
 */
 

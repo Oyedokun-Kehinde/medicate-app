@@ -1,3 +1,9 @@
+<?php
+session_start();
+require_once '../config/helpers.php';  // Note: ../ to go up one level
+$getStartedUrl = getGetStartedUrl();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -146,7 +152,7 @@
                      <div class="pq-menu-search-block">
                         <a href="javascript:void(0)" id="pq-seacrh-btn"><i class="ti-search"></i></a>
                         <div class="pq-search-form">
-                           <form role="search" method="get" class="search-form" action="">
+                           <form role="search" method="get" class="search-form" action="search-results.php">
                               <label>
                                  <span class="screen-reader-text"> Search for:</span>
                                  <input type="search" class="search-field" placeholder="Enter a search term" value=""
@@ -157,9 +163,9 @@
                            </form>
                         </div>
                      </div>
-                     <a href="../consultation.php" class="pq-button">
+                     <a href="<?php echo $getStartedUrl; ?>" class="pq-button pq-cta-button">
                         <div class="pq-button-block">
-                           <span class="pq-button-text">Consultation </span>
+                           <span class="pq-button-text"><?php echo getGetStartedButtonText(); ?></span>
                            <i class="ion ion-plus-round"></i>
                         </div>
                      </a>
@@ -859,7 +865,7 @@
    </script>
 </body>
 
-<script>'undefined' === typeof _trfq || (window._trfq = []); 'undefined' === typeof _trfd && (window._trfd = []), _trfd.push({ 'tccl.baseHost': 'secureserver.net' }, { 'ap': 'cpbh-mt' }, { 'server': 'sg2plmcpnl492384' }, { 'dcenter': 'sg2' }, { 'cp_id': '9858662' }, { 'cp_cache': '' }, { 'cp_cl': '8' }) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script>
+<script>'undefined' === typeof _trfq || (window._trfq = []); 'undefined' === typeof _trfd && (window._trfd = []), _trfd.push({ 'tccl.baseHost': 'secureserver.net' }, { 'ap': 'cpbh-mt' }, { 'server': 'sg2plmcpnl492384' }, { 'dcenter': 'sg2' }, { 'cp_id': '9858662' }, { 'cp_cache': '' }, { 'cp_cl': '8' })  </script>
 <script src='../../../../img1.wsimg.com/signals/js/
       
 </html>

@@ -1,6 +1,7 @@
 <?php
 require_once 'config/session.php';
 require_once 'classes/User.php';
+require_once 'config/helpers.php';
 
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
@@ -20,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } else {
         $user = new User();
         $result = $user->register($email, $password, $user_type);
-        
+
         if ($result['success']) {
             $msg = urlencode('Registration successful! You can now log in.');
             header("Location: login.php?msg=$msg");
@@ -133,9 +134,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                     </ul>
                                 </div>
                             </div>
-                            <a href="login.php" class="pq-button">
+                            <a href="<?php echo $getStartedUrl; ?>" class="pq-button">
                                 <div class="pq-button-block">
-                                    <span class="pq-button-text">Consultation</span>
+                                    <span class="pq-button-text"><?php echo getGetStartedButtonText(); ?></span>
                                     <i class="ion ion-plus-round"></i>
                                 </div>
                             </a>

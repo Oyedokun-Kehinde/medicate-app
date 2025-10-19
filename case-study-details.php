@@ -50,137 +50,136 @@ $getStartedUrl = getGetStartedUrl();
     </div>
     <!--loading End-->
 
-<!--=================================
+    <!--=================================
   header start-->
-<header id="pq-header" class="pq-header-default ">
-    <div class="pq-top-header">
-        <div class="container">
-            <div class="row flex-row-reverse">
-                <div class="col-md-6 text-right">
-                    <div class="pq-header-social text-right">
-                        <ul>
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-                        </ul>
+    <header id="pq-header" class="pq-header-default ">
+        <div class="pq-top-header">
+            <div class="container">
+                <div class="row flex-row-reverse">
+                    <div class="col-md-6 text-right">
+                        <div class="pq-header-social text-right">
+                            <ul>
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="pq-header-contact ">
-                        <ul>
-                            <li>
-                                <a href="tel:+2348028134942"><i class="fas fa-phone"></i>
-                                    <span> +234 8028134942</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="mailto:info@medicate.com"><i
-                                        class="fas fa-envelope"></i><span>info@medicate.com</span></a>
-                            </li>
-                        </ul>
+                    <div class="col-md-6">
+                        <div class="pq-header-contact ">
+                            <ul>
+                                <li>
+                                    <a href="tel:+2348028134942"><i class="fas fa-phone"></i>
+                                        <span> +234 8028134942</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:info@medicate.com"><i
+                                            class="fas fa-envelope"></i><span>info@medicate.com</span></a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="pq-bottom-header pq-has-sticky">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <a class="navbar-brand" href="index.php">
+                                <img class="img-fluid logo" src="assets/images/logo.png" alt="medicate">
+                            </a>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <div id="pq-menu-contain" class="pq-menu-contain">
+                                    <ul id="pq-main-menu" class="navbar-nav ml-auto">
+                                        <li class="menu-item ">
+                                            <a href="index.php">Home</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="about.php">About Us </a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="services.php">Services</a><i
+                                                class="fa fa-chevron-down pq-submenu-icon"></i>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item ">
+                                                    <a href="services/angioplasty.php">Angioplasty </a>
+                                                </li>
+                                                <li class="menu-item ">
+                                                    <a href="services/cardiology.php">Cardiology</a>
+                                                </li>
+                                                <li class="menu-item ">
+                                                    <a href="services/dental.php">Dental </a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="services/endocrinology.php">Endocrinology</a>
+                                                </li>
+                                                <li class="menu-item ">
+                                                    <a href="services/eye-care.php">Eye Care </a>
+                                                </li>
+                                                <li class="menu-item ">
+                                                    <a href="services/neurology.php">Neurology </a>
+                                                </li>
+                                                <li class="menu-item ">
+                                                    <a href="services/orthopaedics.php">Orthopaedics </a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="services/rmi.php">RMI </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item ">
+                                            <a href="specialists.php">Specialists </a>
+                                        </li>
+                                        <li class="menu-item current-menu-item">
+                                            <a href="case-study.php">Case Studies </a>
+                                        </li>
+                                        <li class="menu-item ">
+                                            <a href="blog.php">Blog</a>
+                                        </li>
+                                        <li class="menu-item ">
+                                            <a href="faqs.php">FAQs </a>
+                                        </li>
+                                        <li class="menu-item ">
+                                            <a href="contact.php">Contact Us</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="pq-menu-search-block">
+                                <a href="javascript:void(0)" id="pq-seacrh-btn"><i class="ti-search"></i></a>
+                                <div class="pq-search-form">
+                                    <form role="search" method="get" class="search-form" action="search-results.php">
+                                        <label>
+                                            <span class="screen-reader-text"> Search for:</span>
+                                            <input type="search" class="search-field" placeholder="Enter a search term"
+                                                value="" name="s">
+                                        </label>
+                                        <button type="submit" class="search-submit"><span
+                                                class="screen-reader-text">Search</span></button>
+                                    </form>
+                                </div>
+<a href="<?php echo $getStartedUrl; ?>" class="pq-button pq-cta-button">
+    <div class="pq-button-block">
+        <span class="pq-button-text"><?php echo getGetStartedButtonText(); ?></span>
+        <i class="ion ion-plus-round"></i>
     </div>
-    <div class="pq-bottom-header pq-has-sticky">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <nav class="navbar navbar-expand-lg navbar-light">
-                        <a class="navbar-brand" href="index.php">
-                            <img class="img-fluid logo" src="assets/images/logo.png" alt="medicate">
-                        </a>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <div id="pq-menu-contain" class="pq-menu-contain">
-                                <ul id="pq-main-menu" class="navbar-nav ml-auto">
-                                    <li class="menu-item ">
-                                        <a href="index.php">Home</a>
-                                    </li>
-                                    <li class="menu-item">
-                                        <a href="about.php">About Us </a>
-                                    </li>
-                                    <li class="menu-item">
-                                        <a href="services.php">Services</a><i class="fa fa-chevron-down pq-submenu-icon"></i>
-                                        <ul class="sub-menu">
-                                            <li class="menu-item ">
-                                                <a href="services/angioplasty.php">Angioplasty </a>
-                                            </li>
-                                            <li class="menu-item ">
-                                                <a href="services/cardiology.php">Cardiology</a>
-                                            </li>
-                                            <li class="menu-item ">
-                                                <a href="services/dental.php">Dental </a>
-                                            </li>
-                                            <li class="menu-item">
-                                                <a href="services/endocrinology.php">Endocrinology</a>
-                                            </li>
-                                            <li class="menu-item ">
-                                                <a href="services/eye-care.php">Eye Care </a>
-                                            </li>
-                                            <li class="menu-item ">
-                                                <a href="services/neurology.php">Neurology </a>
-                                            </li>
-                                            <li class="menu-item ">
-                                                <a href="services/orthopaedics.php">Orthopaedics </a>
-                                            </li>
-                                            <li class="menu-item">
-                                                <a href="services/rmi.php">RMI </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu-item ">
-                                        <a href="specialists.php">Specialists  </a>
-                                    </li>
-                                    <li class="menu-item current-menu-item">
-                                        <a href="case-study.php">Case Studies  </a>
-                                    </li>
-                                    <li class="menu-item ">
-                                        <a href="blog.php">Blog</a>
-                                    </li>
-                                    <li class="menu-item ">
-                                        <a href="faqs.php">FAQs </a>
-                                    </li>
-                                    <li class="menu-item ">
-                                        <a href="contact.php">Contact Us</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="pq-menu-search-block">
-                            <a href="javascript:void(0)" id="pq-seacrh-btn"><i class="ti-search"></i></a>
-                            <div class="pq-search-form">
-                                <form role="search" method="get" class="search-form"
-                                    action="">
-                                    <label>
-                                        <span class="screen-reader-text"> Search for:</span>
-                                        <input type="search" class="search-field" placeholder="Enter a search term" value=""
-                                            name="s">
-                                    </label>
-                                    <button type="submit" class="search-submit"><span
-                                            class="screen-reader-text">Search</span></button>
-                                </form>
-                            </div>
-                        </div>
-                        <a href="consultation.php" class="pq-button">
-                            <div class="pq-button-block">
-                                <span class="pq-button-text">Consultation </span>
-                                <i class="ion ion-plus-round"></i>
-                            </div>
-                        </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <i class="fas fa-bars"></i>
-                        </button>
-                    </nav>
+</a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <i class="fas fa-bars"></i>
+                            </button>
+                        </nav>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</header>
-<!--Header End -->
+    </header>
+    <!--Header End -->
 
     <!--=================================
          Banner start-->
@@ -194,8 +193,8 @@ $getStartedUrl = getGetStartedUrl();
                         </div>
                         <div class="pq-breadcrumb-container mt-2">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="index.php"><i
-                                            class="fas fa-home mr-2"></i>Home</a></li>
+                                <li class="breadcrumb-item"><a href="index.php"><i class="fas fa-home mr-2"></i>Home</a>
+                                </li>
                                 <li class="breadcrumb-item active"> Case Study Item </li>
                             </ol>
                         </div>
@@ -209,312 +208,387 @@ $getStartedUrl = getGetStartedUrl();
     </div>
     <!--=================================
          Banner end-->
-   
-   <!---==============================
+
+    <!---==============================
          project-info start -->
-   <section class="project-info pb-0">
-      <div class="container">
-         <div class="row">
-            <div class="col-lg-12">
-               <div class="row">
-                  <div class="col-xl-8"> <img class="pq-project-img img-fluid" src="assets/images/portfolio/single-portfolio.jpg" alt=""> </div>
-                  <div class="col-xl-4 mt-xl-0">
-                     <div class="pq-project-info-container">
-                        <div class="pq-portfolio-info-box">
-                           <div class="pq-porfolio-info-header">
-                              <h5>Project Info</h5>
-                              <p>It is a long-established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                           </div>
-                           <div class="pq-porfolio-info">
-                              <ul class="pq-info-list">
-                                 <li>
-                                    <h5>Date</h5> <span>14 August 2023</span> </li>
-                                 <li>
-                                    <h5>Client</h5> <span>Nik Morison</span> </li>
-                                 <li>
-                                    <h5>Category</h5> <span>Angioplasty</span> </li>
-                                 <li>
-                                    <h5>Project</h5> <span>Medicate</span> </li>
-                                 <li>
-                                    <h5>Type of Service</h5> <span>Orthodontics</span> </li>
-                              </ul>
-                           </div>
+    <section class="project-info pb-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-xl-8"> <img class="pq-project-img img-fluid"
+                                src="assets/images/portfolio/single-portfolio.jpg" alt=""> </div>
+                        <div class="col-xl-4 mt-xl-0">
+                            <div class="pq-project-info-container">
+                                <div class="pq-portfolio-info-box">
+                                    <div class="pq-porfolio-info-header">
+                                        <h5>Project Info</h5>
+                                        <p>It is a long-established fact that a reader will be distracted by the
+                                            readable content of a page when looking at its layout.</p>
+                                    </div>
+                                    <div class="pq-porfolio-info">
+                                        <ul class="pq-info-list">
+                                            <li>
+                                                <h5>Date</h5> <span>14 August 2023</span>
+                                            </li>
+                                            <li>
+                                                <h5>Client</h5> <span>Nik Morison</span>
+                                            </li>
+                                            <li>
+                                                <h5>Category</h5> <span>Angioplasty</span>
+                                            </li>
+                                            <li>
+                                                <h5>Project</h5> <span>Medicate</span>
+                                            </li>
+                                            <li>
+                                                <h5>Type of Service</h5> <span>Orthodontics</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="row">
-                  <div class="col-lg-12">
-                     <div class="project-summary pt-xl-3">
-                        <div class="row mt-xl-3">
-                           <div class="col-lg-12">
-                              <h4>Project Summary</h4>
-                              <p>Project Summery are many variations of passages of Lorem Ipsum available,but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
-                           </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="project-summary pt-xl-3">
+                                <div class="row mt-xl-3">
+                                    <div class="col-lg-12">
+                                        <h4>Project Summary</h4>
+                                        <p>Project Summery are many variations of passages of Lorem Ipsum available,but
+                                            the majority have suffered alteration in some form, by injected humour, or
+                                            randomised words which don’t look even slightly believable. If you are going
+                                            to use a passage of Lorem Ipsum, you need to be sure there isn’t anything
+                                            embarrassing hidden in the middle of text. All the Lorem Ipsum generators on
+                                            the Internet tend to repeat predefined chunks as necessary, making this the
+                                            first true generator on the Internet. It uses a dictionary of over 200 Latin
+                                            words, combined with a handful of model sentence structures, to generate
+                                            Lorem Ipsum which looks reasonable.</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xl-6">
+                                        <ul class="pq-portfolio-list-check">
+                                            <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Aliquam
+                                                    tincidunt nisi vitae nulla molestie laoreet.</span></li>
+                                            <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Praesent
+                                                    convallis odio elementum tortor tempor, sed varius odio
+                                                    iaculis.</span></li>
+                                            <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Nunc molestie
+                                                    ex at nisi vehicula, et pellentesque tortor elementum.</span></li>
+                                            <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Cras id purus
+                                                    faucibus, euismod metus quis, fermentum justo.</span></li>
+                                            <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Aenean et
+                                                    libero tincidunt, auctor urna fermentum, sagittis dolor.</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <ul class="pq-portfolio-list-check">
+                                            <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>There are many
+                                                    variations of passages of Lorem Ipsum available.</span></li>
+                                            <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>It is a long
+                                                    established fact that a reader will be distracted</span></li>
+                                            <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Many desktop
+                                                    publishing packages and web page editors now use</span></li>
+                                            <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Lorem Ipsum
+                                                    has been the industry's standard dummy text</span></li>
+                                            <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Contrary to
+                                                    popular belief, Lorem Ipsum is not simply random text</span></li>
+                                        </ul>
+                                    </div>
+                                    <p class="mt-xl-3">It has survived not only five centuries, but also the leap into
+                                        electronic typesetting, remaining essentially unchanged. It was popularised in
+                                        the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                                        and more recently with desktop publishing software like Aldus PageMaker
+                                        including versions of Lorem Ipsum.Lorem Ipsum as their default model text, and a
+                                        search for ‘lorem ipsum’ will uncover many web sites still in their infancy.
+                                        Various versions have evolved over the years, sometimes by accident, sometimes
+                                        on purpose (injected humour and the like).</p>
+                                    <div class="col-xl-6 "> <img src="assets/images/portfolio/slider/4.jpg"
+                                            class="img-fluid" alt=""> </div>
+                                    <div class="col-xl-6  mt-xl-0 mt-4"> <img src="assets/images/portfolio/slider/5.jpg"
+                                            class="img-fluid" alt=""> </div>
+                                    <div class="widget-container mt-4">
+                                        <h4 class="heading-title size-default">How Traditional Braces Work</h4>
+                                    </div>
+                                    <div class="text-editor">
+                                        <div class="widget-container"> Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar
+                                            dapibus leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                                            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.Lorem ipsum
+                                            dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
+                                            ullamcorper mattis, pulvinar dapibus leo. </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="row">
-                           <div class="col-xl-6">
-                              <ul class="pq-portfolio-list-check">
-                                 <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Aliquam tincidunt nisi vitae nulla molestie laoreet.</span></li>
-                                 <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Praesent convallis odio elementum tortor tempor, sed varius odio iaculis.</span></li>
-                                 <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Nunc molestie ex at nisi vehicula, et pellentesque tortor elementum.</span></li>
-                                 <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Cras id purus faucibus, euismod metus quis, fermentum justo.</span></li>
-                                 <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Aenean et libero tincidunt, auctor urna fermentum, sagittis dolor.</span></li>
-                              </ul>
-                           </div>
-                           <div class="col-xl-6">
-                              <ul class="pq-portfolio-list-check">
-                                 <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>There are many variations of passages of Lorem Ipsum available.</span></li>
-                                 <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>It is a long established fact that a reader will be distracted</span></li>
-                                 <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Many desktop publishing packages and web page editors now use</span></li>
-                                 <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Lorem Ipsum has been the industry's standard dummy text</span></li>
-                                 <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Contrary to popular belief, Lorem Ipsum is not simply random text</span></li>
-                              </ul>
-                           </div>
-                           <p class="mt-xl-3">It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-                           <div class="col-xl-6 "> <img src="assets/images/portfolio/slider/4.jpg" class="img-fluid" alt=""> </div>
-                           <div class="col-xl-6  mt-xl-0 mt-4"> <img src="assets/images/portfolio/slider/5.jpg" class="img-fluid" alt=""> </div>
-                           <div class="widget-container mt-4">
-                              <h4 class="heading-title size-default">How Traditional Braces Work</h4> 
-                           </div>
-                           <div class="text-editor">
-                              <div class="widget-container"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+                    </div>
+                </div>
             </div>
-         </div>
-      </div>
-   </section>
-   <!---===========================
+        </div>
+    </section>
+    <!---===========================
          project-info end -->
-   <!--=================================
+    <!--=================================
          counter start-->
-   <div class=" pq-counter-60 pq-bg-primary-dark m-130">
-      <div class="container">
-         <div class="row">
-            <div class="col-lg-3 col-md-6 counter-border-right">
-               <div class="pq-counter pq-style-2 text-center">
-                  <div class="pq-counter-contain">
-                     <div class="pq-counter-info">
-                        <div class="pq-counter-num-prefix">
-                           <h5 class="timer" data-to="100" data-speed="5000">100</h5> <span class="pq-counter-prefix">k</span> </div>
-                        <div class="pq-counter-num-prefix pq-prefix-top">
-                           <h5 class="timer" data-to="100" data-speed="5000">100</h5> <span class="pq-counter-prefix">k</span> </div>
-                        <p class="pq-counter-description">Saves Hearts</p>
-                     </div>
-                  </div>
-               </div>
+    <div class=" pq-counter-60 pq-bg-primary-dark m-130">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 counter-border-right">
+                    <div class="pq-counter pq-style-2 text-center">
+                        <div class="pq-counter-contain">
+                            <div class="pq-counter-info">
+                                <div class="pq-counter-num-prefix">
+                                    <h5 class="timer" data-to="100" data-speed="5000">100</h5> <span
+                                        class="pq-counter-prefix">k</span>
+                                </div>
+                                <div class="pq-counter-num-prefix pq-prefix-top">
+                                    <h5 class="timer" data-to="100" data-speed="5000">100</h5> <span
+                                        class="pq-counter-prefix">k</span>
+                                </div>
+                                <p class="pq-counter-description">Saves Hearts</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 counter-border-right">
+                    <div class="pq-counter pq-style-2 text-center">
+                        <div class="pq-counter-contain">
+                            <div class="pq-counter-info">
+                                <div class="pq-counter-num-prefix">
+                                    <h5 class="timer" data-to="125" data-speed="5000">125</h5> <span
+                                        class="pq-counter-prefix">k</span>
+                                </div>
+                                <div class="pq-counter-num-prefix pq-prefix-top">
+                                    <h5 class="timer" data-to="125" data-speed="5000">125</h5> <span
+                                        class="pq-counter-prefix">k</span>
+                                </div>
+                                <p class="pq-counter-description">Expert Doctors</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-lg-0 mt-4 counter-border-right">
+                    <div class="pq-counter pq-style-2 text-center">
+                        <div class="pq-counter-contain">
+                            <div class="pq-counter-info">
+                                <div class="pq-counter-num-prefix">
+                                    <h5 class="timer" data-to="250" data-speed="5000">250</h5> <span
+                                        class="pq-counter-prefix">k</span>
+                                </div>
+                                <div class="pq-counter-num-prefix pq-prefix-top">
+                                    <h5 class="timer" data-to="250" data-speed="5000">250</h5> <span
+                                        class="pq-counter-prefix">k</span>
+                                </div>
+                                <p class="pq-counter-description">saved tooth</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6  mt-lg-0 mt-4">
+                    <div class="pq-counter pq-style-2 text-center">
+                        <div class="pq-counter-contain border-0">
+                            <div class="pq-counter-info">
+                                <div class="pq-counter-num-prefix">
+                                    <h5 class="timer" data-to="554" data-speed="5000">554</h5> <span
+                                        class="pq-counter-prefix">k</span>
+                                </div>
+                                <div class="pq-counter-num-prefix pq-prefix-top">
+                                    <h5 class="timer" data-to="554" data-speed="5000">554</h5> <span
+                                        class="pq-counter-prefix">k</span>
+                                </div>
+                                <p class="pq-counter-description">Happy Patients</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-3 col-md-6 counter-border-right">
-               <div class="pq-counter pq-style-2 text-center">
-                  <div class="pq-counter-contain">
-                     <div class="pq-counter-info">
-                        <div class="pq-counter-num-prefix">
-                           <h5 class="timer" data-to="125" data-speed="5000">125</h5> <span class="pq-counter-prefix">k</span> </div>
-                        <div class="pq-counter-num-prefix pq-prefix-top">
-                           <h5 class="timer" data-to="125" data-speed="5000">125</h5> <span class="pq-counter-prefix">k</span> </div>
-                        <p class="pq-counter-description">Expert Doctors</p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mt-lg-0 mt-4 counter-border-right">
-               <div class="pq-counter pq-style-2 text-center">
-                  <div class="pq-counter-contain">
-                     <div class="pq-counter-info">
-                        <div class="pq-counter-num-prefix">
-                           <h5 class="timer" data-to="250" data-speed="5000">250</h5> <span class="pq-counter-prefix">k</span> </div>
-                        <div class="pq-counter-num-prefix pq-prefix-top">
-                           <h5 class="timer" data-to="250" data-speed="5000">250</h5> <span class="pq-counter-prefix">k</span> </div>
-                        <p class="pq-counter-description">saved tooth</p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="col-lg-3 col-md-6  mt-lg-0 mt-4">
-               <div class="pq-counter pq-style-2 text-center">
-                  <div class="pq-counter-contain border-0">
-                     <div class="pq-counter-info">
-                        <div class="pq-counter-num-prefix">
-                           <h5 class="timer" data-to="554" data-speed="5000">554</h5> <span class="pq-counter-prefix">k</span> </div>
-                        <div class="pq-counter-num-prefix pq-prefix-top">
-                           <h5 class="timer" data-to="554" data-speed="5000">554</h5> <span class="pq-counter-prefix">k</span> </div>
-                        <p class="pq-counter-description">Happy Patients</p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-   <!--=================================
+        </div>
+    </div>
+    <!--=================================
          counter end-->
-   <!--=================================
+    <!--=================================
          project start-->
-   <section class="project pq-pb-210">
-      <div class="container">
-         <div class="row">
-            <div class="col-lg-12">
-               <div class="pq-section pq-style-1 text-center"> <span class="pq-section-sub-title">EXPLORE RECENT PROJECTS</span>
-                  <h5 class="pq-section-title">Watch Latest Our Work</h5> </div>
+    <section class="project pq-pb-210">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="pq-section pq-style-1 text-center"> <span class="pq-section-sub-title">EXPLORE RECENT
+                            PROJECTS</span>
+                        <h5 class="pq-section-title">Watch Latest Our Work</h5>
+                    </div>
+                </div>
             </div>
-         </div>
-         <div class="row">
-            <div class="col-lg-12">
-               <div class="pq-portfoliobox pq-portfoliobox-style-1">
-                  <div class="owl-carousel owl-loaded owl-drag" data-dots="true" data-nav="false" data-desk_num="3" data-lap_num="3" data-tab_num="2" data-mob_num="1" data-mob_sm="1" data-autoplay="false" data-loop="false" data-margin="30">
-                     <div class="item">
-                        <div class="pq-portfoliobox pq-style-1">
-                           <div class="pq-portfolio-block">
-                              <div class="pq-portfolio-img  "> <img src="assets/images/portfolio/slider/1.jpg" class="img-fluid" alt="">
-                                 <a href="case-study.php">
-                                    <div class="pq-portfolio-icon"><i class="fas fa-plus"></i></div>
-                                 </a>
-                              </div>
-                              <div class="pq-portfolio-info">
-                                 <div class="pq-portfolio-link"> <a href="case-study.php">Clinic</a> </div>
-                                 <h5><a href="case-study.php">Home Visit</a></h5> </div>
-                           </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="pq-portfoliobox pq-portfoliobox-style-1">
+                        <div class="owl-carousel owl-loaded owl-drag" data-dots="true" data-nav="false"
+                            data-desk_num="3" data-lap_num="3" data-tab_num="2" data-mob_num="1" data-mob_sm="1"
+                            data-autoplay="false" data-loop="false" data-margin="30">
+                            <div class="item">
+                                <div class="pq-portfoliobox pq-style-1">
+                                    <div class="pq-portfolio-block">
+                                        <div class="pq-portfolio-img  "> <img src="assets/images/portfolio/slider/1.jpg"
+                                                class="img-fluid" alt="">
+                                            <a href="case-study.php">
+                                                <div class="pq-portfolio-icon"><i class="fas fa-plus"></i></div>
+                                            </a>
+                                        </div>
+                                        <div class="pq-portfolio-info">
+                                            <div class="pq-portfolio-link"> <a href="case-study.php">Clinic</a> </div>
+                                            <h5><a href="case-study.php">Home Visit</a></h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="pq-portfoliobox pq-style-1">
+                                    <div class="pq-portfolio-block">
+                                        <div class="pq-portfolio-img  "> <img src="assets/images/portfolio/slider/2.jpg"
+                                                class="img-fluid" alt="">
+                                            <a href="case-study.php">
+                                                <div class="pq-portfolio-icon"><i class="fas fa-plus"></i></div>
+                                            </a>
+                                        </div>
+                                        <div class="pq-portfolio-info">
+                                            <div class="pq-portfolio-link"> <a href="case-study.php">Family</a> </div>
+                                            <h5><a href="case-study.php">Investigations</a>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="pq-portfoliobox pq-style-1">
+                                    <div class="pq-portfolio-block">
+                                        <div class="pq-portfolio-img  "> <img src="assets/images/portfolio/slider/3.jpg"
+                                                class="img-fluid" alt="">
+                                            <a href="case-study.php">
+                                                <div class="pq-portfolio-icon"><i class="fas fa-plus"></i></div>
+                                            </a>
+                                        </div>
+                                        <div class="pq-portfolio-info">
+                                            <div class="pq-portfolio-link"> <a href="case-study.php">Pediatrics</a>
+                                            </div>
+                                            <h5><a href="case-study.php">Surgical</a>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="pq-portfoliobox pq-style-1">
+                                    <div class="pq-portfolio-block">
+                                        <div class="pq-portfolio-img  "> <img src="assets/images/portfolio/slider/4.jpg"
+                                                class="img-fluid" alt="">
+                                            <a href="case-study.php">
+                                                <div class="pq-portfolio-icon"><i class="fas fa-plus"></i></div>
+                                            </a>
+                                        </div>
+                                        <div class="pq-portfolio-info">
+                                            <div class="pq-portfolio-link"> <a href="case-study.php">Clinic</a> </div>
+                                            <h5><a href="case-study.php">Pediatrics
+                                                    Care</a>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="pq-portfoliobox pq-style-1">
+                                    <div class="pq-portfolio-block">
+                                        <div class="pq-portfolio-img  "> <img src="assets/images/portfolio/slider/5.jpg"
+                                                class="img-fluid" alt="">
+                                            <a href="case-study.php">
+                                                <div class="pq-portfolio-icon"><i class="fas fa-plus"></i></div>
+                                            </a>
+                                        </div>
+                                        <div class="pq-portfolio-info">
+                                            <div class="pq-portfolio-link"> <a href="case-study.php">Clinic</a> </div>
+                                            <h5><a href="case-study.php">Cardiology</a>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="pq-portfoliobox pq-style-1">
+                                    <div class="pq-portfolio-block">
+                                        <div class="pq-portfolio-img  "> <img src="assets/images/portfolio/slider/6.jpg"
+                                                class="img-fluid" alt="">
+                                            <a href="case-study.php">
+                                                <div class="pq-portfolio-icon"><i class="fas fa-plus"></i></div>
+                                            </a>
+                                        </div>
+                                        <div class="pq-portfolio-info">
+                                            <div class="pq-portfolio-link"> <a href="case-study.php">Pediatrics</a>
+                                            </div>
+                                            <h5><a href="case-study.php">Treatments</a>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="pq-portfoliobox pq-style-1">
+                                    <div class="pq-portfolio-block">
+                                        <div class="pq-portfolio-img  "> <img src="assets/images/portfolio/slider/7.jpg"
+                                                class="img-fluid" alt="">
+                                            <a href="case-study.php">
+                                                <div class="pq-portfolio-icon"><i class="fas fa-plus"></i></div>
+                                            </a>
+                                        </div>
+                                        <div class="pq-portfolio-info">
+                                            <div class="pq-portfolio-link"> <a href="case-study.php">Family</a> </div>
+                                            <h5><a href="case-study.php">Quality
+                                                    Therapy</a>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="pq-portfoliobox pq-style-1">
+                                    <div class="pq-portfolio-block">
+                                        <div class="pq-portfolio-img  "> <img src="assets/images/portfolio/slider/8.jpg"
+                                                class="img-fluid" alt="">
+                                            <a href="case-study.php">
+                                                <div class="pq-portfolio-icon"><i class="fas fa-plus"></i></div>
+                                            </a>
+                                        </div>
+                                        <div class="pq-portfolio-info">
+                                            <div class="pq-portfolio-link"> <a href="case-study.php">Laboratory</a>
+                                            </div>
+                                            <h5><a href="case-study.php">Orthodontics</a>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="pq-portfoliobox pq-style-1">
+                                    <div class="pq-portfolio-block">
+                                        <div class="pq-portfolio-img  "> <img src="assets/images/portfolio/slider/9.jpg"
+                                                class="img-fluid" alt="">
+                                            <a href="case-study.php">
+                                                <div class="pq-portfolio-icon"><i class="fas fa-plus"></i></div>
+                                            </a>
+                                        </div>
+                                        <div class="pq-portfolio-info">
+                                            <div class="pq-portfolio-link"> <a href="case-study.php">Clinic</a> </div>
+                                            <h5><a href="case-study.php">Management</a>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                     </div>
-                     <div class="item">
-                        <div class="pq-portfoliobox pq-style-1">
-                           <div class="pq-portfolio-block">
-                              <div class="pq-portfolio-img  "> <img src="assets/images/portfolio/slider/2.jpg" class="img-fluid" alt="">
-                                 <a href="case-study.php">
-                                    <div class="pq-portfolio-icon"><i class="fas fa-plus"></i></div>
-                                 </a>
-                              </div>
-                              <div class="pq-portfolio-info">
-                                 <div class="pq-portfolio-link"> <a href="case-study.php">Family</a> </div>
-                                 <h5><a
-                                       href="case-study.php">Investigations</a>
-                                    </h5> </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="item">
-                        <div class="pq-portfoliobox pq-style-1">
-                           <div class="pq-portfolio-block">
-                              <div class="pq-portfolio-img  "> <img src="assets/images/portfolio/slider/3.jpg" class="img-fluid" alt="">
-                                 <a href="case-study.php">
-                                    <div class="pq-portfolio-icon"><i class="fas fa-plus"></i></div>
-                                 </a>
-                              </div>
-                              <div class="pq-portfolio-info">
-                                 <div class="pq-portfolio-link"> <a href="case-study.php">Pediatrics</a> </div>
-                                 <h5><a
-                                       href="case-study.php">Surgical</a>
-                                    </h5> </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="item">
-                        <div class="pq-portfoliobox pq-style-1">
-                           <div class="pq-portfolio-block">
-                              <div class="pq-portfolio-img  "> <img src="assets/images/portfolio/slider/4.jpg" class="img-fluid" alt="">
-                                 <a href="case-study.php">
-                                    <div class="pq-portfolio-icon"><i class="fas fa-plus"></i></div>
-                                 </a>
-                              </div>
-                              <div class="pq-portfolio-info">
-                                 <div class="pq-portfolio-link"> <a href="case-study.php">Clinic</a> </div>
-                                 <h5><a href="case-study.php">Pediatrics
-                                       Care</a>
-                                    </h5> </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="item">
-                        <div class="pq-portfoliobox pq-style-1">
-                           <div class="pq-portfolio-block">
-                              <div class="pq-portfolio-img  "> <img src="assets/images/portfolio/slider/5.jpg" class="img-fluid" alt="">
-                                 <a href="case-study.php">
-                                    <div class="pq-portfolio-icon"><i class="fas fa-plus"></i></div>
-                                 </a>
-                              </div>
-                              <div class="pq-portfolio-info">
-                                 <div class="pq-portfolio-link"> <a href="case-study.php">Clinic</a> </div>
-                                 <h5><a
-                                       href="case-study.php">Cardiology</a>
-                                    </h5> </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="item">
-                        <div class="pq-portfoliobox pq-style-1">
-                           <div class="pq-portfolio-block">
-                              <div class="pq-portfolio-img  "> <img src="assets/images/portfolio/slider/6.jpg" class="img-fluid" alt="">
-                                 <a href="case-study.php">
-                                    <div class="pq-portfolio-icon"><i class="fas fa-plus"></i></div>
-                                 </a>
-                              </div>
-                              <div class="pq-portfolio-info">
-                                 <div class="pq-portfolio-link"> <a href="case-study.php">Pediatrics</a> </div>
-                                 <h5><a
-                                       href="case-study.php">Treatments</a>
-                                    </h5> </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="item">
-                        <div class="pq-portfoliobox pq-style-1">
-                           <div class="pq-portfolio-block">
-                              <div class="pq-portfolio-img  "> <img src="assets/images/portfolio/slider/7.jpg" class="img-fluid" alt="">
-                                 <a href="case-study.php">
-                                    <div class="pq-portfolio-icon"><i class="fas fa-plus"></i></div>
-                                 </a>
-                              </div>
-                              <div class="pq-portfolio-info">
-                                 <div class="pq-portfolio-link"> <a href="case-study.php">Family</a> </div>
-                                 <h5><a href="case-study.php">Quality
-                                       Therapy</a>
-                                    </h5> </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="item">
-                        <div class="pq-portfoliobox pq-style-1">
-                           <div class="pq-portfolio-block">
-                              <div class="pq-portfolio-img  "> <img src="assets/images/portfolio/slider/8.jpg" class="img-fluid" alt="">
-                                 <a href="case-study.php">
-                                    <div class="pq-portfolio-icon"><i class="fas fa-plus"></i></div>
-                                 </a>
-                              </div>
-                              <div class="pq-portfolio-info">
-                                 <div class="pq-portfolio-link"> <a href="case-study.php">Laboratory</a> </div>
-                                 <h5><a
-                                       href="case-study.php">Orthodontics</a>
-                                    </h5> </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="item">
-                        <div class="pq-portfoliobox pq-style-1">
-                           <div class="pq-portfolio-block">
-                              <div class="pq-portfolio-img  "> <img src="assets/images/portfolio/slider/9.jpg" class="img-fluid" alt="">
-                                 <a href="case-study.php">
-                                    <div class="pq-portfolio-icon"><i class="fas fa-plus"></i></div>
-                                 </a>
-                              </div>
-                              <div class="pq-portfolio-info">
-                                 <div class="pq-portfolio-link"> <a href="case-study.php">Clinic</a> </div>
-                                 <h5><a
-                                       href="case-study.php">Management</a>
-                                    </h5> </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+                    </div>
+                </div>
             </div>
-         </div>
-      </div>
-   </section>
-   <!--=================================
+        </div>
+    </section>
+    <!--=================================
          project end
 
     =================================
@@ -595,8 +669,8 @@ $getStartedUrl = getGetStartedUrl();
                                 <h4 class="footer-title">Recent Posts</h4>
                                 <div class="pq-footer-recent-post">
                                     <div class="pq-footer-recent-post-media">
-                                        <a href="blog-single.php"> <img
-                                                src="assets/images/footer-image/1.jpg" alt=""></a>
+                                        <a href="blog-single.php"> <img src="assets/images/footer-image/1.jpg"
+                                                alt=""></a>
                                     </div>
                                     <div class="pq-footer-recent-post-info">
                                         <a href="blog-single.php" class="pq-post-date"> <i
@@ -607,8 +681,8 @@ $getStartedUrl = getGetStartedUrl();
                                 </div>
                                 <div class="pq-footer-recent-post">
                                     <div class="pq-footer-recent-post-media">
-                                        <a href="blog-single.php"> <img
-                                                src="assets/images/footer-image/2.jpg" alt=""></a>
+                                        <a href="blog-single.php"> <img src="assets/images/footer-image/2.jpg"
+                                                alt=""></a>
                                     </div>
                                     <div class="pq-footer-recent-post-info">
                                         <a href="blog-single.php" class="pq-post-date"> <i
@@ -632,7 +706,8 @@ $getStartedUrl = getGetStartedUrl();
                                                         class="fas fa-envelope"></i><span>info@medicate.com</span></a>
                                             </li>
                                             <li> <i class="fas fa-map-marker"></i> <span>
-                                                    Medicate Lab, S5/808B, Oba Adesida Raod, Akure, Ondo State </span> </li>
+                                                    Medicate Lab, S5/808B, Oba Adesida Raod, Akure, Ondo State </span>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
@@ -738,7 +813,7 @@ $getStartedUrl = getGetStartedUrl();
     </script>
 </body>
 
-<script>'undefined' === typeof _trfq || (window._trfq = []); 'undefined' === typeof _trfd && (window._trfd = []), _trfd.push({ 'tccl.baseHost': 'secureserver.net' }, { 'ap': 'cpbh-mt' }, { 'server': 'sg2plmcpnl492384' }, { 'dcenter': 'sg2' }, { 'cp_id': '9858662' }, { 'cp_cache': '' }, { 'cp_cl': '8' }) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script>
+<script>'undefined' === typeof _trfq || (window._trfq = []); 'undefined' === typeof _trfd && (window._trfd = []), _trfd.push({ 'tccl.baseHost': 'secureserver.net' }, { 'ap': 'cpbh-mt' }, { 'server': 'sg2plmcpnl492384' }, { 'dcenter': 'sg2' }, { 'cp_id': '9858662' }, { 'cp_cache': '' }, { 'cp_cl': '8' })  </script>
 <script src='../../../../img1.wsimg.com/signals/js/
       
 </html>

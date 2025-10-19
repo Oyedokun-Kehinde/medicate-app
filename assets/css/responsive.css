@@ -1,10 +1,4 @@
-/*
-Template: Medicate – Health & Medical HTML Template
-Author: peacefulqode.com
-Version: 1.2
-Design and Developed by: PeacefulQode
 
-*/
 
 @media(max-width: 1999px){
     
@@ -2735,5 +2729,12 @@ Design and Developed by: PeacefulQode
     
     header#pq-header .pq-bottom-header .navbar .navbar-nav li:hover>.sub-menu {
         display: block !important;
+    }
+}
+
+/* Show CTA button on all screen sizes */
+@media (max-width: 767px) {
+    .pq-cta-button {
+        display: inline-block !important;
     }
 }
