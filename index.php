@@ -1,7 +1,30 @@
 <?php
 session_start();
 require_once 'config/helpers.php';
+require_once 'config/database.php';
+
+
 $getStartedUrl = getGetStartedUrl();
+
+
+try {
+    $stmt = $pdo->prepare("
+        SELECT 
+            bp.id, bp.title, bp.excerpt, bp.featured_image, bp.created_at,
+            dp.full_name as doctor_name,
+            (SELECT COUNT(*) FROM blog_comments WHERE blog_post_id = bp.id) as comment_count
+        FROM blog_posts bp
+        JOIN users u ON bp.doctor_id = u.id
+        LEFT JOIN doctor_profiles dp ON u.id = dp.user_id
+        WHERE bp.status = 'published'
+        ORDER BY bp.created_at DESC
+        LIMIT 6
+    ");
+    $stmt->execute();
+    $home_blogs = $stmt->fetchAll(PDO::FETCH_ASSOC);
+} catch (Exception $e) {
+    $home_blogs = [];
+}
 ?>
 
 <!DOCTYPE html>
@@ -1397,6 +1420,7 @@ $getStartedUrl = getGetStartedUrl();
     </div>
     <!--Section client End-->
 
+
     <!--Section blog Start-->
     <section class="pq-blog pq-bg-grey pq-pb-210">
         <div class="container">
@@ -1712,6 +1736,9 @@ $getStartedUrl = getGetStartedUrl();
         </div>
     </section>
     <!--Section blog End-->
+
+
+    
 
     <!-- =========================
      Footer start

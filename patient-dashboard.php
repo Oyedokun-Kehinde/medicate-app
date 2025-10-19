@@ -49,10 +49,10 @@ try {
 
     // Separate upcoming consultations (confirmed status + future/today date)
     $today = date('Y-m-d');
-    $upcoming = array_filter($appointments, function($apt) use ($today) {
-        return $apt['status'] === 'confirmed' && 
-               !empty($apt['consultation_date']) && 
-               $apt['consultation_date'] >= $today;
+    $upcoming = array_filter($appointments, function ($apt) use ($today) {
+        return $apt['status'] === 'confirmed' &&
+            !empty($apt['consultation_date']) &&
+            $apt['consultation_date'] >= $today;
     });
 
     // Stats
@@ -71,9 +71,16 @@ try {
     $error_msg = "Error loading dashboard.";
     $appointments = [];
     $upcoming = [];
-    $patient = ['full_name' => '', 'email' => '', 'phone' => '', 'address' => '', 
-                'blood_group' => '', 'emergency_contact_phone' => '', 
-                'medical_history' => '', 'allergies' => ''];
+    $patient = [
+        'full_name' => '',
+        'email' => '',
+        'phone' => '',
+        'address' => '',
+        'blood_group' => '',
+        'emergency_contact_phone' => '',
+        'medical_history' => '',
+        'allergies' => ''
+    ];
     $totalAppointments = 0;
     $completedCount = 0;
     $pendingCount = 0;
@@ -86,6 +93,7 @@ $email = $patient['email'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -95,6 +103,7 @@ $email = $patient['email'];
     <link rel="stylesheet" href="assets/fonts/font-awesome/css/all.min.css">
     <link rel="stylesheet" href="assets/css/patient-dashboard.css">
 </head>
+
 <body>
     <div class="dashboard-container">
         <!-- SIDEBAR (keep your existing sidebar) -->
@@ -105,10 +114,14 @@ $email = $patient['email'];
                 </a>
             </div>
             <ul class="sidebar-menu">
-                <li><a class="nav-link active" data-section="dashboard"><i class="fas fa-chart-line"></i> Dashboard</a></li>
-                <li><a class="nav-link" data-section="appointments"><i class="fas fa-calendar-check"></i> My Consultations</a></li>
+                <li><a class="nav-link active" data-section="dashboard"><i class="fas fa-chart-line"></i> Dashboard</a>
+                </li>
+                <li><a class="nav-link" data-section="appointments"><i class="fas fa-calendar-check"></i> My
+                        Consultations</a></li>
                 <li><a class="nav-link" data-section="upcoming"><i class="fas fa-calendar-day"></i> Upcoming</a></li>
-                <li><a class="nav-link" data-section="consultation"><i class="fas fa-stethoscope"></i> Request Consultation</a></li>
+                <li><a class="nav-link" data-section="consultation"><i class="fas fa-stethoscope"></i> Request
+                        Consultation</a></li>
+                <li><a class="nav-link" data-section="mycomments"><i class="fas fa-comments"></i> My Comments</a></li>
                 <li><a class="nav-link" data-section="profile"><i class="fas fa-user-circle"></i> My Profile</a></li>
                 <li><a href="faqs.php"><i class="fas fa-question-circle"></i> FAQs</a></li>
                 <li><a href="contact.php"><i class="fas fa-phone"></i> Contact Us</a></li>
@@ -187,21 +200,24 @@ $email = $patient['email'];
                         <div class="card-box">
                             <div class="card-header"><i class="fas fa-stethoscope"></i> Quick Consultation</div>
                             <div class="card-body">
-                                <p style="margin-bottom: 20px; color: #666;">Request a consultation with healthcare professionals.</p>
+                                <p style="margin-bottom: 20px; color: #666;">Request a consultation with healthcare
+                                    professionals.</p>
                                 <a class="btn-primary nav-link-btn" data-section="consultation">Request Now</a>
                             </div>
                         </div>
                         <div class="card-box">
                             <div class="card-header"><i class="fas fa-user-circle"></i> Update Profile</div>
                             <div class="card-body">
-                                <p style="margin-bottom: 20px; color: #666;">Keep your profile information up to date.</p>
+                                <p style="margin-bottom: 20px; color: #666;">Keep your profile information up to date.
+                                </p>
                                 <a class="btn-primary nav-link-btn" data-section="profile">Edit Profile</a>
                             </div>
                         </div>
                         <div class="card-box">
                             <div class="card-header"><i class="fas fa-heart"></i> Health Tips</div>
                             <div class="card-body">
-                                <p style="margin-bottom: 20px; color: #666;">Stay informed with our latest health articles.</p>
+                                <p style="margin-bottom: 20px; color: #666;">Stay informed with our latest health
+                                    articles.</p>
                                 <a href="blog.php" class="btn-primary">Read Articles</a>
                             </div>
                         </div>
@@ -217,30 +233,33 @@ $email = $patient['email'];
                                 <div class="empty-state">
                                     <i class="fas fa-calendar"></i>
                                     <h4>No Consultations Yet</h4>
-                                    <p>You haven't requested any consultations yet. <a class="nav-link-btn" data-section="consultation">Request one now</a></p>
+                                    <p>You haven't requested any consultations yet. <a class="nav-link-btn"
+                                            data-section="consultation">Request one now</a></p>
                                 </div>
                             <?php else: ?>
                                 <?php foreach ($appointments as $apt): ?>
                                     <div class="appointment-item">
                                         <h4><?php echo htmlspecialchars($apt['service_name'] ?? 'Service'); ?></h4>
-                                        
+
                                         <!-- PATIENT INFO (Your name & email) -->
-                                        <p><strong>Patient:</strong> <?php echo htmlspecialchars($display_name); ?> (<?php echo htmlspecialchars($email); ?>)</p>
-                                        
+                                        <p><strong>Patient:</strong> <?php echo htmlspecialchars($display_name); ?>
+                                            (<?php echo htmlspecialchars($email); ?>)</p>
+
                                         <!-- DOCTOR INFO (Shows when accepted) -->
                                         <?php if (!empty($apt['doctor_name'])): ?>
                                             <p><strong>Doctor:</strong> <?php echo htmlspecialchars($apt['doctor_name']); ?>
-                                            <?php if (!empty($apt['doctor_specialization'])): ?>
-                                                - <?php echo htmlspecialchars($apt['doctor_specialization']); ?>
-                                            <?php endif; ?>
+                                                <?php if (!empty($apt['doctor_specialization'])): ?>
+                                                    - <?php echo htmlspecialchars($apt['doctor_specialization']); ?>
+                                                <?php endif; ?>
                                             </p>
                                             <?php if (!empty($apt['doctor_email'])): ?>
-                                                <p><strong>Doctor Email:</strong> <?php echo htmlspecialchars($apt['doctor_email']); ?></p>
+                                                <p><strong>Doctor Email:</strong> <?php echo htmlspecialchars($apt['doctor_email']); ?>
+                                                </p>
                                             <?php endif; ?>
                                         <?php else: ?>
                                             <p><strong>Doctor:</strong> <em>Not yet assigned</em></p>
                                         <?php endif; ?>
-                                        
+
                                         <p><strong>Date:</strong>
                                             <?php
                                             if (!empty($apt['consultation_date'])) {
@@ -253,7 +272,8 @@ $email = $patient['email'];
                                             }
                                             ?>
                                         </p>
-                                        <p><strong>Notes:</strong> <?php echo htmlspecialchars($apt['notes'] ?? 'No notes'); ?></p>
+                                        <p><strong>Notes:</strong> <?php echo htmlspecialchars($apt['notes'] ?? 'No notes'); ?>
+                                        </p>
                                         <span class="appointment-status status-<?php echo $apt['status']; ?>">
                                             <?php echo ucfirst($apt['status']); ?>
                                         </span>
@@ -279,19 +299,19 @@ $email = $patient['email'];
                                 <?php foreach ($upcoming as $apt): ?>
                                     <div class="appointment-item status-confirmed">
                                         <h4><?php echo htmlspecialchars($apt['service_name'] ?? 'Service'); ?></h4>
-                                        
+
                                         <!-- Doctor Info -->
                                         <?php if (!empty($apt['doctor_name'])): ?>
                                             <p><strong>Doctor:</strong> <?php echo htmlspecialchars($apt['doctor_name']); ?>
-                                            <?php if (!empty($apt['doctor_specialization'])): ?>
-                                                - <?php echo htmlspecialchars($apt['doctor_specialization']); ?>
-                                            <?php endif; ?>
+                                                <?php if (!empty($apt['doctor_specialization'])): ?>
+                                                    - <?php echo htmlspecialchars($apt['doctor_specialization']); ?>
+                                                <?php endif; ?>
                                             </p>
                                             <?php if (!empty($apt['doctor_email'])): ?>
                                                 <p><strong>Contact:</strong> <?php echo htmlspecialchars($apt['doctor_email']); ?></p>
                                             <?php endif; ?>
                                         <?php endif; ?>
-                                        
+
                                         <p><strong>Date:</strong>
                                             <?php
                                             echo date('F d, Y', strtotime($apt['consultation_date']));
@@ -300,7 +320,8 @@ $email = $patient['email'];
                                             }
                                             ?>
                                         </p>
-                                        <p><strong>Notes:</strong> <?php echo htmlspecialchars($apt['notes'] ?? 'No notes'); ?></p>
+                                        <p><strong>Notes:</strong> <?php echo htmlspecialchars($apt['notes'] ?? 'No notes'); ?>
+                                        </p>
                                         <span class="appointment-status status-confirmed">Confirmed</span>
                                     </div>
                                 <?php endforeach; ?>
@@ -317,7 +338,8 @@ $email = $patient['email'];
                             <form id="consultationForm" method="POST" action="process-consultation.php">
                                 <div class="form-row">
                                     <div class="form-group">
-                                        <label class="form-label">Service Type <span style="color: red;">*</span></label>
+                                        <label class="form-label">Service Type <span
+                                                style="color: red;">*</span></label>
                                         <select name="service_id" class="form-control" required>
                                             <option value="">Select a service</option>
                                             <?php
@@ -326,11 +348,11 @@ $email = $patient['email'];
                                                 $stmt->execute();
                                                 $services = $stmt->fetchAll(PDO::FETCH_ASSOC);
                                                 foreach ($services as $service):
-                                            ?>
-                                                <option value="<?php echo $service['id']; ?>">
-                                                    <?php echo htmlspecialchars($service['name']); ?>
-                                                </option>
-                                            <?php endforeach;
+                                                    ?>
+                                                    <option value="<?php echo $service['id']; ?>">
+                                                        <?php echo htmlspecialchars($service['name']); ?>
+                                                    </option>
+                                                <?php endforeach;
                                             } catch (PDOException $e) {
                                                 echo '<option value="">Error loading services</option>';
                                             }
@@ -340,15 +362,18 @@ $email = $patient['email'];
                                 </div>
                                 <div class="form-group">
                                     <label class="form-label">Preferred Date <span style="color: red;">*</span></label>
-                                    <input type="date" name="consultation_date" class="form-control" min="<?= date('Y-m-d') ?>" required>
+                                    <input type="date" name="consultation_date" class="form-control"
+                                        min="<?= date('Y-m-d') ?>" required>
                                 </div>
                                 <div class="form-group">
                                     <label class="form-label">Preferred Time (Optional)</label>
                                     <input type="time" name="consultation_time" class="form-control">
                                 </div>
                                 <div class="form-group">
-                                    <label class="form-label">Consultation Notes <span style="color: red;">*</span></label>
-                                    <textarea name="notes" class="form-control" rows="5" placeholder="Describe your medical concern..." required></textarea>
+                                    <label class="form-label">Consultation Notes <span
+                                            style="color: red;">*</span></label>
+                                    <textarea name="notes" class="form-control" rows="5"
+                                        placeholder="Describe your medical concern..." required></textarea>
                                 </div>
                                 <div style="display: flex; gap: 10px;">
                                     <button type="submit" class="btn-primary">Submit Request</button>
@@ -359,6 +384,198 @@ $email = $patient['email'];
                     </div>
                 </div>
 
+                <!-- Add this section to patient-dashboard.php -->
+                <!-- MY COMMENTS SECTION -->
+                <div id="mycomments" class="section">
+                    <div class="card-box">
+                        <div class="card-header">
+                            <i class="fas fa-comments"></i> My Blog Comments
+                        </div>
+                        <div class="card-body">
+                            <div id="myCommentsList"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <style>
+                    .comment-card {
+                        padding: 20px;
+                        margin-bottom: 15px;
+                        border-left: 4px solid #667eea;
+                        background: #f9f9f9;
+                        border-radius: 4px;
+                    }
+
+                    .comment-card-title {
+                        font-size: 16px;
+                        font-weight: 600;
+                        color: #667eea;
+                        margin-bottom: 8px;
+                    }
+
+                    .comment-card-title a {
+                        color: #667eea;
+                        text-decoration: none;
+                    }
+
+                    .comment-card-title a:hover {
+                        text-decoration: underline;
+                    }
+
+                    .comment-meta-info {
+                        font-size: 12px;
+                        color: #999;
+                        margin-bottom: 12px;
+                    }
+
+                    .comment-body {
+                        color: #333;
+                        line-height: 1.6;
+                        margin: 10px 0;
+                    }
+
+                    .comment-actions {
+                        display: flex;
+                        gap: 10px;
+                        margin-top: 12px;
+                    }
+
+                    .btn-delete-comment {
+                        font-size: 12px;
+                        padding: 6px 12px;
+                        background: #f8d7da;
+                        color: #721c24;
+                        border: none;
+                        border-radius: 3px;
+                        cursor: pointer;
+                    }
+
+                    .btn-delete-comment:hover {
+                        background: #f5c6cb;
+                    }
+
+                    .btn-view-post {
+                        font-size: 12px;
+                        padding: 6px 12px;
+                        background: #d1ecf1;
+                        color: #0c5460;
+                        border: none;
+                        border-radius: 3px;
+                        cursor: pointer;
+                        text-decoration: none;
+                        display: inline-block;
+                    }
+
+                    .btn-view-post:hover {
+                        background: #bee5eb;
+                    }
+
+                    .empty-state {
+                        text-align: center;
+                        padding: 40px 20px;
+                        color: #999;
+                    }
+
+                    .empty-state i {
+                        font-size: 48px;
+                        opacity: 0.3;
+                        display: block;
+                        margin-bottom: 15px;
+                    }
+                </style>
+
+                <script>
+                    // Load patient's comments when section is clicked
+                    document.addEventListener('click', function (e) {
+                        if (e.target.matches('a[data-section="mycomments"]') ||
+                            (e.target.parentElement && e.target.parentElement.matches('a[data-section="mycomments"]'))) {
+                            loadMyComments();
+                        }
+                    });
+
+                    function loadMyComments() {
+                        fetch('get-my-comments.php')
+                            .then(response => response.json())
+                            .then(data => {
+                                const commentsList = document.getElementById('myCommentsList');
+
+                                if (data.success && data.comments.length > 0) {
+                                    let html = '';
+                                    data.comments.forEach(comment => {
+                                        html += `
+                        <div class="comment-card">
+                            <div class="comment-card-title">
+                                <a href="blog-single.php?id=${comment.blog_post_id}" target="_blank">
+                                    ${escapeHtml(comment.blog_title)}
+                                </a>
+                            </div>
+                            <div class="comment-meta-info">
+                                Posted on: ${new Date(comment.created_at).toLocaleDateString()} at ${new Date(comment.created_at).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
+                            </div>
+                            <div class="comment-body">
+                                ${escapeHtml(comment.comment_text)}
+                            </div>
+                            <div class="comment-actions">
+                                <a href="blog-single.php?id=${comment.blog_post_id}" class="btn-view-post" target="_blank">
+                                    <i class="fas fa-eye"></i> View Post
+                                </a>
+                                <button class="btn-delete-comment" onclick="deleteComment(${comment.id})">
+                                    <i class="fas fa-trash"></i> Delete
+                                </button>
+                            </div>
+                        </div>
+                    `;
+                                    });
+                                    commentsList.innerHTML = html;
+                                } else {
+                                    commentsList.innerHTML = `
+                    <div class="empty-state">
+                        <i class="fas fa-comments"></i>
+                        <h4>No Comments Yet</h4>
+                        <p>Visit the blog and share your thoughts on posts.</p>
+                    </div>
+                `;
+                                }
+                            })
+                            .catch(error => {
+                                console.error('Error loading comments:', error);
+                                document.getElementById('myCommentsList').innerHTML = '<p style="color: red;">Error loading comments</p>';
+                            });
+                    }
+
+                    function deleteComment(commentId) {
+                        if (confirm('Are you sure you want to delete this comment?')) {
+                            fetch('delete-comment.php', {
+                                method: 'POST',
+                                headers: {
+                                    'Content-Type': 'application/x-www-form-urlencoded',
+                                },
+                                body: 'comment_id=' + commentId
+                            })
+                                .then(response => response.json())
+                                .then(data => {
+                                    if (data.success) {
+                                        alert('Comment deleted');
+                                        loadMyComments();
+                                    } else {
+                                        alert('Error deleting comment: ' + data.error);
+                                    }
+                                })
+                                .catch(error => console.error('Error:', error));
+                        }
+                    }
+
+                    function escapeHtml(text) {
+                        const map = {
+                            '&': '&amp;',
+                            '<': '&lt;',
+                            '>': '&gt;',
+                            '"': '&quot;',
+                            "'": '&#039;'
+                        };
+                        return text.replace(/[&<>"']/g, m => map[m]);
+                    }
+                </script>
                 <!-- PROFILE SECTION (Keep your existing profile form) -->
                 <div id="profile" class="section">
                     <div class="card-box">
@@ -369,7 +586,8 @@ $email = $patient['email'];
                                     <div class="form-group">
                                         <label class="form-label">Full Name</label>
                                         <input type="text" name="full_name" class="form-control"
-                                            value="<?php echo htmlspecialchars($patient['full_name'] ?? ''); ?>" required>
+                                            value="<?php echo htmlspecialchars($patient['full_name'] ?? ''); ?>"
+                                            required>
                                     </div>
                                     <div class="form-group">
                                         <label class="form-label">Email Address</label>
@@ -398,7 +616,7 @@ $email = $patient['email'];
                                             $blood_groups = ['O+', 'O-', 'A+', 'A-', 'B+', 'B-', 'AB+', 'AB-'];
                                             foreach ($blood_groups as $bg):
                                                 $selected = (isset($patient['blood_group']) && $patient['blood_group'] === $bg) ? 'selected' : '';
-                                            ?>
+                                                ?>
                                                 <option value="<?php echo $bg; ?>" <?php echo $selected; ?>>
                                                     <?php echo $bg; ?>
                                                 </option>
@@ -423,7 +641,8 @@ $email = $patient['email'];
                                 </div>
                                 <div style="display: flex; gap: 10px;">
                                     <button type="submit" class="btn-primary">Save Changes</button>
-                                    <button type="button" class="btn-secondary" onclick="window.location.reload()">Cancel</button>
+                                    <button type="button" class="btn-secondary"
+                                        onclick="window.location.reload()">Cancel</button>
                                 </div>
                             </form>
                         </div>
@@ -437,4 +656,5 @@ $email = $patient['email'];
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/patient-dashboard.js"></script>
 </body>
+
 </html>

@@ -869,7 +869,7 @@ Blog Sidebar
   margin-bottom: 45px;
   display: inline-block;
   width: 100%;
-  float: left;
+  /* float: left; */
   position: relative;
   padding: 30px;
   background: var(--grey-color);
@@ -1235,7 +1235,7 @@ Blog Sidebar
   font-size: 14px;
   color: var(--primary-color);
   line-height: 1;
-  float: left;
+  /* float: left; */
   display: inline-block;
   width: 100%;
   margin: 5px 0;
@@ -1265,8 +1265,8 @@ ul.pq-block-rss .pq-block-rss__item-title a {
   padding-left: 20px;
 }
 
-.pq-widget.pq-widget_nav_menu ul li .sub-menu li a,
-.pq-widget ul.menu li .sub-menu li a {}
+/* .pq-widget.pq-widget_nav_menu ul li .sub-menu li a, */
+/* .pq-widget ul.menu li .sub-menu li a {} */
 
 .pq-widget.pq-widget_nav_menu ul li a,
 .pq-widget ul.menu li a {
@@ -1285,7 +1285,7 @@ ul.pq-block-rss .pq-block-rss__item-title a {
   background: var(--white-color);
   margin: 0 10px 10px 0;
   display: inline-block;
-  float: left;
+  /* float: left; */
   color: var(--dark-color);
   padding: 5px 15px;
   -webkit-border-radius: 3px;
@@ -1313,7 +1313,7 @@ ul.pq-block-rss .pq-block-rss__item-title a {
   background: var(--white-color);
   margin: 0 10px 10px 0;
   display: inline-block;
-  float: left;
+  /* float: left; */
   color: var(--dark-color);
   padding: 5px 15px;
   border: 1px solid var(--white-color);
@@ -1502,7 +1502,7 @@ Blog
 
 .pq-blog-post .pq-post-meta ul li {
   list-style: none;
-  float: left;
+  /* float: left; */
   display: inline-block;
   margin-right: 20px;
   letter-spacing: 0.04em;
@@ -1721,7 +1721,7 @@ header#pq-header .pq-top-header .pq-header-contact ul li {
   color: var(--white-color);
   border-left: 1px solid rgba(255, 255, 255, 0.1);
   padding: 10px 20px;
-  float: left;
+  /* float: left; */
 }
 
 header#pq-header .pq-top-header .pq-header-contact ul li:last-child {
@@ -1757,7 +1757,7 @@ header#pq-header .pq-top-header .pq-header-social ul {
 header#pq-header .pq-top-header .pq-header-social ul li {
   list-style: none;
   display: inline-block;
-  float: left;
+  /* float: left; */
   border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -1807,7 +1807,7 @@ header#pq-header .pq-bottom-header .navbar .navbar-nav {
 header#pq-header .pq-bottom-header .navbar .navbar-nav li {
   position: relative;
   display: inline-block;
-  float: left;
+  /* float: left; */
   margin-right: 30px;
   color: var(--dark-color);
   line-height: 90px;
@@ -2321,7 +2321,7 @@ header#pq-header.pq-header-style-4 .pq-header-top-wrapper .pq-top-info-content .
 header#pq-header.pq-header-style-4 .pq-header-top-wrapper .pq-top-info-content .pq-header-info-box.address p { 
   display: -webkit-box; 
   overflow: hidden; 
-  -webkit-line-clamp: 1; 
+  /* -webkit-line-clamp: 1;  */
   -webkit-box-orient: vertical; 
 }
 
@@ -2849,7 +2849,7 @@ Footer
 footer#pq-footer {
   display: inline-block;
   width: 100%;
-  float: left;
+  /* float: left; */
   position: relative;
 }
 
@@ -4354,7 +4354,7 @@ Progressbar
 .pq-progressbar-style-1 .pq-progressbar-content {
   padding-bottom: 20px;
   display: inline-block;
-  float: left;
+  /* float: left; */
   width: 100%;
 }
 
@@ -4393,7 +4393,7 @@ Progressbar
   width: 100%;
   padding: 0;
   background: var(--primary-dark-color);
-  float: left;
+  /* float: left; */
   margin-top: 5px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -4403,7 +4403,7 @@ Progressbar
 .pq-progressbar-style-1 .pq-progress-bar span {
   display: inline-block;
   background: var(--primary-color);
-  float: left;
+  /* float: left; */
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
@@ -4479,7 +4479,7 @@ isotope Portfolio
 .pq-grid {
   display: inline-block;
   width: 100%;
-  float: left;
+  /* float: left; */
 }
 
 .pq-grid:after {
@@ -4549,7 +4549,7 @@ Portfolio Slider
   overflow: hidden;
   display: inline-block;
   width: 100%;
-  float: left;
+  /* float: left; */
   transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
@@ -6347,11 +6347,11 @@ Process Step
 
 
 /*================================================
-working Table or navigation Tabel
+Navigation Menu
 ================================================*/
 .pq-navigation-tab .nav-tabs {
   margin: 0 0 45px 0;
-  float: left;
+  /* float: left; */
   padding: 0;
   display: inline-block;
   width: 100%;

@@ -189,3 +189,149 @@ document.addEventListener('DOMContentLoaded', function () {
     console.log('Doctor Dashboard initialized successfully');
 });
 
+
+// Add this to doctor-dashboard.js or create as blog-functions.js
+
+// Blog Management
+document.getElementById('createBlogBtn').addEventListener('click', function() {
+    document.getElementById('blogFormModal').style.display = 'block';
+    document.getElementById('blogForm').reset();
+});
+
+document.querySelector('.close-modal').addEventListener('click', function() {
+    document.getElementById('blogFormModal').style.display = 'none';
+});
+
+document.getElementById('cancelBlogBtn').addEventListener('click', function() {
+    document.getElementById('blogFormModal').style.display = 'none';
+});
+
+// Close modal when clicking outside
+window.addEventListener('click', function(e) {
+    const modal = document.getElementById('blogFormModal');
+    if (e.target === modal) {
+        modal.style.display = 'none';
+    }
+});
+
+// Submit blog form
+document.getElementById('blogForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const formData = new FormData(this);
+    const messageDiv = document.getElementById('blogFormMessage');
+    
+    fetch('process-create-blog.php', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => {
+        if (response.ok) {
+            messageDiv.className = 'alert success';
+            messageDiv.textContent = 'Blog post published! Redirecting...';
+            messageDiv.style.display = 'block';
+            
+            setTimeout(() => {
+                location.reload();
+            }, 2000);
+        } else {
+            messageDiv.className = 'alert error';
+            messageDiv.textContent = 'Error publishing post. Please try again.';
+            messageDiv.style.display = 'block';
+        }
+    })
+    .catch(error => {
+        messageDiv.className = 'alert error';
+        messageDiv.textContent = 'Error: ' + error.message;
+        messageDiv.style.display = 'block';
+    });
+});
+
+// Load doctor's blogs when blogs section is clicked
+document.addEventListener('click', function(e) {
+    if (e.target.matches('a[data-section="blogs"]') || 
+        (e.target.parentElement && e.target.parentElement.matches('a[data-section="blogs"]'))) {
+        loadMyBlogs();
+    }
+});
+
+function loadMyBlogs() {
+    fetch('get-blogs.php?action=my_blogs')
+        .then(response => response.json())
+        .then(data => {
+            const blogsList = document.getElementById('blogsList');
+            
+            if (data.success && data.blogs.length > 0) {
+                let html = '';
+                data.blogs.forEach(blog => {
+                    html += `
+                        <div class="blog-item">
+                            <div style="display: flex; justify-content: space-between; align-items: start;">
+                                <div style="flex: 1;">
+                                    <h4>${escapeHtml(blog.title)}</h4>
+                                    <div class="blog-meta">
+                                        Published: ${new Date(blog.created_at).toLocaleDateString()}
+                                        ${blog.updated_at !== blog.created_at ? ` • Updated: ${new Date(blog.updated_at).toLocaleDateString()}` : ''}
+                                    </div>
+                                    <p style="color: #666; margin: 8px 0;">
+                                        ${blog.excerpt ? escapeHtml(blog.excerpt) : 'No excerpt provided'}
+                                    </p>
+                                </div>
+                                <span class="blog-status ${blog.status}">${blog.status.toUpperCase()}</span>
+                            </div>
+                            <div class="blog-actions">
+                                <button class="btn btn-sm btn-primary" onclick="editBlog(${blog.id})">Edit</button>
+                                <button class="btn btn-sm btn-danger" onclick="deleteBlog(${blog.id})">Delete</button>
+                                <a href="blog-single.php?id=${blog.id}" class="btn btn-sm btn-outline-primary" target="_blank">View</a>
+                            </div>
+                        </div>
+                    `;
+                });
+                blogsList.innerHTML = html;
+            } else {
+                blogsList.innerHTML = '<p style="text-align: center; color: #999;">No blog posts yet. Create your first post!</p>';
+            }
+        })
+        .catch(error => {
+            console.error('Error loading blogs:', error);
+            document.getElementById('blogsList').innerHTML = '<p style="color: red;">Error loading blogs</p>';
+        });
+}
+
+function editBlog(blogId) {
+    alert('Edit functionality coming soon');
+    // TODO: Implement edit functionality
+}
+
+function deleteBlog(blogId) {
+    if (confirm('Are you sure you want to delete this blog post?')) {
+        fetch('delete-blog.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: 'blog_id=' + blogId
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                alert('Blog post deleted');
+                loadMyBlogs();
+            } else {
+                alert('Error deleting blog: ' + data.error);
+            }
+        })
+        .catch(error => console.error('Error:', error));
+    }
+}
+
+function escapeHtml(text) {
+    const map = {
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&quot;',
+        "'": '&#039;'
+    };
+    return text.replace(/[&<>"']/g, m => map[m]);
+}

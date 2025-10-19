@@ -151,7 +151,8 @@ $specialization = htmlspecialchars($doctor['specialization'] ?? 'Not specified')
                 <li><a class="nav-link" data-section="doctors"><i class="fas fa-user-md"></i> All Doctors</a></li>
                 <li><a class="nav-link" data-section="patients"><i class="fas fa-users"></i> All Patients</a></li>
                 <li><a class="nav-link" data-section="services"><i class="fas fa-hospital"></i> Our Services</a></li>
-                <li><a class="nav-link" data-section="profile"><i class="fas fa-user-cog"></i> My Profile</a></li>
+                <li><a class="nav-link" data-section="blogs"><i class="fas fa-blog"></i> My Blogs</a></li>
+                <li> <a class="nav-link" data-section="profile"><i class="fas fa-user-cog"></i> My Profile</a> </li>
                 <li><a href="faqs.php"><i class="fas fa-question-circle"></i> FAQs</a></li>
                 <li><a href="contact.php"><i class="fas fa-phone"></i> Contact Us</a></li>
                 <li><a href="blog.php"><i class="fas fa-blog"></i> Blog</a></li>
@@ -222,10 +223,10 @@ $specialization = htmlspecialchars($doctor['specialization'] ?? 'Not specified')
                             <p>Doctors in Network</p>
                         </div>
                         <div class="stat-card">
-    <i class="fas fa-users"></i>
-    <h3><?php echo count($all_patients); ?></h3>
-    <p>Total Patients</p>
-</div>
+                            <i class="fas fa-users"></i>
+                            <h3><?php echo count($all_patients); ?></h3>
+                            <p>Total Patients</p>
+                        </div>
                         <div class="stat-card">
                             <i class="fas fa-hospital"></i>
                             <h3><?php echo $servicesCount; ?></h3>
@@ -358,86 +359,95 @@ $specialization = htmlspecialchars($doctor['specialization'] ?? 'Not specified')
                     </div>
                 </div>
 
-<!-- ALL DOCTORS -->
-<div id="doctors" class="section">
-    <div class="card-box">
-        <div class="card-header"><i class="fas fa-user-md"></i> All Doctors in Network</div>
-        <div class="card-body">
-            <?php if (empty($all_doctors)): ?>
-                <div class="empty-state">
-                    <i class="fas fa-user-md"></i>
-                    <h4>No Doctors Found</h4>
-                    <p>There are no doctors in the system.</p>
-                </div>
-            <?php else: ?>
-                <div class="doctors-grid-enhanced">
-                    <?php foreach ($all_doctors as $doc): ?>
-                        <div class="doctor-card-enhanced">
-                            <div class="doctor-avatar">
-                                <i class="fas fa-user-md"></i>
-                            </div>
-                            <div class="doctor-details">
-                                <h5><?php echo htmlspecialchars($doc['full_name']); ?></h5>
-                                <p class="doctor-spec"><i class="fas fa-stethoscope"></i> <?php echo htmlspecialchars($doc['specialization'] ?: 'General Practice'); ?></p>
-                                <p class="doctor-email"><i class="fas fa-envelope"></i> <?php echo htmlspecialchars($doc['email']); ?></p>
-                                <?php if (!empty($doc['phone'])): ?>
-                                    <p class="doctor-phone"><i class="fas fa-phone"></i> <?php echo htmlspecialchars($doc['phone']); ?></p>
-                                <?php endif; ?>
-                                <?php if (!empty($doc['bio'])): ?>
-                                    <p class="doctor-bio"><?php echo htmlspecialchars($doc['bio']); ?></p>
-                                <?php endif; ?>
-                                <div class="doctor-stats">
-                                    <span class="stat-badge">
-                                        <i class="fas fa-check-circle"></i> <?php echo $doc['total_consultations']; ?> Completed
-                                    </span>
+                <!-- ALL DOCTORS -->
+                <div id="doctors" class="section">
+                    <div class="card-box">
+                        <div class="card-header"><i class="fas fa-user-md"></i> All Doctors in Network</div>
+                        <div class="card-body">
+                            <?php if (empty($all_doctors)): ?>
+                                <div class="empty-state">
+                                    <i class="fas fa-user-md"></i>
+                                    <h4>No Doctors Found</h4>
+                                    <p>There are no doctors in the system.</p>
                                 </div>
-                            </div>
+                            <?php else: ?>
+                                <div class="doctors-grid-enhanced">
+                                    <?php foreach ($all_doctors as $doc): ?>
+                                        <div class="doctor-card-enhanced">
+                                            <div class="doctor-avatar">
+                                                <i class="fas fa-user-md"></i>
+                                            </div>
+                                            <div class="doctor-details">
+                                                <h5><?php echo htmlspecialchars($doc['full_name']); ?></h5>
+                                                <p class="doctor-spec"><i class="fas fa-stethoscope"></i>
+                                                    <?php echo htmlspecialchars($doc['specialization'] ?: 'General Practice'); ?>
+                                                </p>
+                                                <p class="doctor-email"><i class="fas fa-envelope"></i>
+                                                    <?php echo htmlspecialchars($doc['email']); ?></p>
+                                                <?php if (!empty($doc['phone'])): ?>
+                                                    <p class="doctor-phone"><i class="fas fa-phone"></i>
+                                                        <?php echo htmlspecialchars($doc['phone']); ?></p>
+                                                <?php endif; ?>
+                                                <?php if (!empty($doc['bio'])): ?>
+                                                    <p class="doctor-bio"><?php echo htmlspecialchars($doc['bio']); ?></p>
+                                                <?php endif; ?>
+                                                <div class="doctor-stats">
+                                                    <span class="stat-badge">
+                                                        <i class="fas fa-check-circle"></i>
+                                                        <?php echo $doc['total_consultations']; ?> Completed
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <?php endforeach; ?>
+                                </div>
+                            <?php endif; ?>
                         </div>
-                    <?php endforeach; ?>
+                    </div>
                 </div>
-            <?php endif; ?>
-        </div>
-    </div>
-</div>
 
 
                 <!-- ALL PATIENTS -->
-<div id="patients" class="section">
-    <div class="card-box">
-        <div class="card-header"><i class="fas fa-users"></i> All Patients</div>
-        <div class="card-body">
-            <?php if (empty($all_patients)): ?>
-                <div class="empty-state">
-                    <i class="fas fa-users"></i>
-                    <h4>No Patients Found</h4>
-                    <p>There are no patients in the system.</p>
-                </div>
-            <?php else: ?>
-                <div class="patients-grid">
-                    <?php foreach ($all_patients as $patient): ?>
-                        <div class="patient-card">
-                            <div class="patient-avatar">
-                                <i class="fas fa-user"></i>
-                            </div>
-                            <div class="patient-details">
-                                <h5><?php echo htmlspecialchars($patient['patient_name']); ?></h5>
-                                <p class="patient-email"><i class="fas fa-envelope"></i> <?php echo htmlspecialchars($patient['email']); ?></p>
-                                <?php if (!empty($patient['phone'])): ?>
-                                    <p class="patient-phone"><i class="fas fa-phone"></i> <?php echo htmlspecialchars($patient['phone']); ?></p>
-                                <?php endif; ?>
-                                <div class="patient-stats">
-                                    <span class="stat-badge">
-                                        <i class="fas fa-calendar-check"></i> <?php echo $patient['total_consultations']; ?> Consultation<?php echo $patient['total_consultations'] !== 1 ? 's' : ''; ?>
-                                    </span>
+                <div id="patients" class="section">
+                    <div class="card-box">
+                        <div class="card-header"><i class="fas fa-users"></i> All Patients</div>
+                        <div class="card-body">
+                            <?php if (empty($all_patients)): ?>
+                                <div class="empty-state">
+                                    <i class="fas fa-users"></i>
+                                    <h4>No Patients Found</h4>
+                                    <p>There are no patients in the system.</p>
                                 </div>
-                            </div>
+                            <?php else: ?>
+                                <div class="patients-grid">
+                                    <?php foreach ($all_patients as $patient): ?>
+                                        <div class="patient-card">
+                                            <div class="patient-avatar">
+                                                <i class="fas fa-user"></i>
+                                            </div>
+                                            <div class="patient-details">
+                                                <h5><?php echo htmlspecialchars($patient['patient_name']); ?></h5>
+                                                <p class="patient-email"><i class="fas fa-envelope"></i>
+                                                    <?php echo htmlspecialchars($patient['email']); ?></p>
+                                                <?php if (!empty($patient['phone'])): ?>
+                                                    <p class="patient-phone"><i class="fas fa-phone"></i>
+                                                        <?php echo htmlspecialchars($patient['phone']); ?></p>
+                                                <?php endif; ?>
+                                                <div class="patient-stats">
+                                                    <span class="stat-badge">
+                                                        <i class="fas fa-calendar-check"></i>
+                                                        <?php echo $patient['total_consultations']; ?>
+                                                        Consultation<?php echo $patient['total_consultations'] !== 1 ? 's' : ''; ?>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <?php endforeach; ?>
+                                </div>
+                            <?php endif; ?>
                         </div>
-                    <?php endforeach; ?>
+                    </div>
                 </div>
-            <?php endif; ?>
-        </div>
-    </div>
-</div>
 
 
                 <!-- SERVICES TAB -->
@@ -609,7 +619,189 @@ $specialization = htmlspecialchars($doctor['specialization'] ?? 'Not specified')
                         </div>
                     </div>
                 </div>
+                <!-- Add this section to doctor-dashboard.php -->
+                <!-- BLOG SECTION FOR DOCTOR -->
+                <div id="blogs" class="section">
+                    <div class="card-box">
+                        <div class="card-header">
+                            <i class="fas fa-blog"></i> My Blog Posts
+                            <button class="btn-primary" id="createBlogBtn" style="float: right; padding: 8px 15px;">
+                                <i class="fas fa-plus"></i> New Post
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <div id="blogsList"></div>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- BLOG CREATE/EDIT FORM MODAL -->
+                <div id="blogFormModal" class="modal" style="display: none;">
+                    <div class="modal-content" style="max-width: 900px;">
+                        <div class="modal-header">
+                            <h2>Create Blog Post</h2>
+                            <span class="close-modal">&times;</span>
+                        </div>
+                        <form id="blogForm" enctype="multipart/form-data">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label class="form-label">Post Title *</label>
+                                    <input type="text" name="title" id="blogTitle" class="form-control"
+                                        placeholder="Enter post title" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label class="form-label">Featured Image</label>
+                                    <input type="file" name="featured_image" id="blogImage" class="form-control"
+                                        accept="image/*">
+                                    <small>Recommended size: 1200x600px, Max 5MB</small>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label class="form-label">Excerpt (Summary)</label>
+                                    <textarea name="excerpt" id="blogExcerpt" class="form-control" rows="3"
+                                        placeholder="Brief summary of your post"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label class="form-label">Content *</label>
+                                    <textarea name="content" id="blogContent" class="form-control" rows="10"
+                                        placeholder="Write your blog content here..." required></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label class="form-label">Status</label>
+                                    <select name="status" id="blogStatus" class="form-control">
+                                        <option value="published">Publish Now</option>
+                                        <option value="draft">Save as Draft</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div style="display: flex; gap: 10px; margin-top: 20px;">
+                                <button type="submit" class="btn-primary">Publish Post</button>
+                                <button type="button" class="btn-secondary" id="cancelBlogBtn">Cancel</button>
+                            </div>
+
+                            <div id="blogFormMessage" class="alert" style="display: none; margin-top: 15px;"></div>
+                        </form>
+                    </div>
+                </div>
+
+                <style>
+                    .modal {
+                        position: fixed;
+                        z-index: 1000;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgba(0, 0, 0, 0.5);
+                        overflow: auto;
+                    }
+
+                    .modal-content {
+                        background-color: #fff;
+                        margin: 5% auto;
+                        padding: 30px;
+                        border-radius: 8px;
+                        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+                    }
+
+                    .modal-header {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-bottom: 20px;
+                        padding-bottom: 15px;
+                        border-bottom: 1px solid #e0e0e0;
+                    }
+
+                    .modal-header h2 {
+                        margin: 0;
+                        color: #333;
+                    }
+
+                    .close-modal {
+                        font-size: 28px;
+                        font-weight: bold;
+                        color: #aaa;
+                        cursor: pointer;
+                    }
+
+                    .close-modal:hover {
+                        color: #000;
+                    }
+
+                    .blog-item {
+                        padding: 15px;
+                        margin-bottom: 15px;
+                        border-left: 4px solid #667eea;
+                        background: #f9f9f9;
+                        border-radius: 4px;
+                    }
+
+                    .blog-item h4 {
+                        margin: 0 0 10px 0;
+                        color: #333;
+                    }
+
+                    .blog-meta {
+                        font-size: 13px;
+                        color: #999;
+                        margin-bottom: 10px;
+                    }
+
+                    .blog-actions {
+                        display: flex;
+                        gap: 10px;
+                        margin-top: 10px;
+                    }
+
+                    .blog-status {
+                        display: inline-block;
+                        padding: 4px 12px;
+                        border-radius: 12px;
+                        font-size: 12px;
+                        font-weight: bold;
+                    }
+
+                    .blog-status.published {
+                        background: #d4edda;
+                        color: #155724;
+                    }
+
+                    .blog-status.draft {
+                        background: #fff3cd;
+                        color: #856404;
+                    }
+
+                    .alert {
+                        padding: 12px 15px;
+                        border-radius: 4px;
+                        margin: 0;
+                    }
+
+                    .alert.success {
+                        background: #d4edda;
+                        color: #155724;
+                        border: 1px solid #c3e6cb;
+                    }
+
+                    .alert.error {
+                        background: #f8d7da;
+                        color: #721c24;
+                        border: 1px solid #f5c6cb;
+                    }
+                </style>
 
                 <!-- PROFILE -->
                 <div id="profile" class="section">
