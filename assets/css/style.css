@@ -1810,7 +1810,7 @@ header#pq-header .pq-bottom-header .navbar .navbar-nav li {
   /* float: left; */
   margin-right: 30px;
   color: var(--dark-color);
-  line-height: 90px;
+  line-height: 20px;
   font-weight: 400;
   font-family: var(--title-fonts);
 }

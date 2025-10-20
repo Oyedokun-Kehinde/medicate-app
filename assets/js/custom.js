@@ -473,3 +473,30 @@
    });
 
 })(jQuery);
+
+/*==================================================
+[ Mobile Menu Toggle Fix ]
+==================================================*/
+jQuery(document).ready(function($) {
+   // Ensure Bootstrap collapse works
+   $('.navbar-toggler').on('click', function(e) {
+      var target = $(this).data('bs-target') || $(this).attr('data-target');
+      if(target) {
+         e.preventDefault();
+         $(target).toggleClass('show');
+      }
+   });
+   
+   // Close menu when clicking outside
+   $(document).on('click', function(e) {
+      if (!$(e.target).closest('.navbar').length) {
+         $('.navbar-collapse').removeClass('show');
+      }
+   });
+   
+   // Handle submenu toggles on mobile
+   $('.navbar-nav .menu-item-has-children > i').on('click', function(e) {
+      e.stopPropagation();
+      $(this).siblings('.sub-menu').slideToggle();
+   });
+});
