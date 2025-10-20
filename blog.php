@@ -76,7 +76,7 @@ try {
 <body>
     <div id="pq-loading">
         <div id="pq-loading-center">
-            <img src="assets/images/logo.png" class="img-fluid" alt="loading" style="max-width: 100px;">
+            <img src="assets/images/logo.png" class="img-fluid" alt="loading">
         </div>
     </div>
 
@@ -127,7 +127,7 @@ try {
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <div id="pq-menu-contain" class="pq-menu-contain">
                                     <ul id="pq-main-menu" class="navbar-nav ml-auto">
-                                        <li class="menu-item current-menu-item">
+                                        <li class="menu-item ">
                                             <a href="index.php">Home</a>
                                         </li>
                                         <li class="menu-item ">
@@ -169,7 +169,7 @@ try {
                                         <li class="menu-item ">
                                             <a href="case-study.php">Case Studies </a>
                                         </li>
-                                        <li class="menu-item ">
+                                        <li class="menu-item current-menu-item">
                                             <a href="blog.php">Blog</a>
                                         </li>
                                         <li class="menu-item ">
