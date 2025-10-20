@@ -11,7 +11,7 @@ function isLoggedIn() {
     return isset($_SESSION['user_id']);
 }
 
-// Prevent logged-in users from accessing login/register pages
+// Prevents logged-in users from accessing login/register pages
 function preventLogin() {
     if (isLoggedIn()) {
         // User is already logged in, redirect to dashboard
