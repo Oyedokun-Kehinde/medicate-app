@@ -190,7 +190,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <div class="col-lg-12">
                     <nav aria-label="breadcrumb">
                         <div class="pq-breadcrumb-title">
-                            <h2>Login</h2>
+                            <h2 text-align-left>Login</h2>
                         </div>
                         <div class="pq-breadcrumb-container mt-2">
                             <ol class="breadcrumb">

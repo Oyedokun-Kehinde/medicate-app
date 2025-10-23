@@ -295,7 +295,7 @@ $getStartedUrl = getGetStartedUrl();
                   <div class="pq-fancy-box-info left">
                      <h5 class="pq-fancy-box-title">Cardiology</h5>
                      <p class="pq-fancybox-description">There are many variations of pas of Lorem Ipsum availab.There are many variations of pas of Lorem Ipsum availab.</p>
-                     <a class="pq-button pq-button-link" href="../public/services/cardiology.php">
+                     <a class="pq-button pq-button-link" href="../services/cardiology.php">
                         <div class="pq-button-block"> <span class="pq-button-text"> View Service </span> <i class="ion ion-plus-round"></i> </div>
                      </a>
                   </div>
@@ -308,7 +308,7 @@ $getStartedUrl = getGetStartedUrl();
                   <div class="pq-fancy-box-info left">
                      <h5 class="pq-fancy-box-title">Endocrinology</h5>
                      <p class="pq-fancybox-description">There are many variations of pas of Lorem Ipsum availab.There are many variations of pas of Lorem Ipsum availab.</p>
-                     <a class="pq-button pq-button-link" href="../public/services/endocrinology.php">
+                     <a class="pq-button pq-button-link" href="../services/endocrinology.php">
                         <div class="pq-button-block"> <span class="pq-button-text">View Service</span> <i class="ion ion-plus-round"></i> </div>
                      </a>
                   </div>
@@ -321,7 +321,7 @@ $getStartedUrl = getGetStartedUrl();
                   <div class="pq-fancy-box-info left">
                      <h5 class="pq-fancy-box-title">Angioplasty</h5>
                      <p class="pq-fancybox-description">There are many variations of pas of Lorem Ipsum availab.There are many variations of pas of Lorem Ipsum availab.</p>
-                     <a class="pq-button pq-button-link" href="../public/services/angioplasty.php">
+                     <a class="pq-button pq-button-link" href="../services/angioplasty.php">
                         <div class="pq-button-block"> <span class="pq-button-text"> View Service </span> <i class="ion ion-plus-round"></i> </div>
                      </a>
                   </div>
@@ -334,7 +334,7 @@ $getStartedUrl = getGetStartedUrl();
                   <div class="pq-fancy-box-info left">
                      <h5 class="pq-fancy-box-title">Eye Care</h5>
                      <p class="pq-fancybox-description">There are many variations of pas of Lorem Ipsum availab.There are many variations of pas of Lorem Ipsum availab.</p>
-                     <a class="pq-button pq-button-link" href="../public/services/eye-care.php">
+                     <a class="pq-button pq-button-link" href="../services/eye-care.php">
                         <div class="pq-button-block"> <span class="pq-button-text">View Service</span> <i class="ion ion-plus-round"></i> </div>
                      </a>
                   </div>
@@ -347,7 +347,7 @@ $getStartedUrl = getGetStartedUrl();
                   <div class="pq-fancy-box-info left">
                      <h5 class="pq-fancy-box-title">Neurology</h5>
                      <p class="pq-fancybox-description">There are many variations of pas of Lorem Ipsum availab.There are many variations of pas of Lorem Ipsum availab.</p>
-                     <a class="pq-button pq-button-link" href="../public/services/neurology.php">
+                     <a class="pq-button pq-button-link" href="../services/neurology.php">
                         <div class="pq-button-block"> <span class="pq-button-text">View Service</span> <i class="ion ion-plus-round"></i> </div>
                      </a>
                   </div>
@@ -360,7 +360,7 @@ $getStartedUrl = getGetStartedUrl();
                   <div class="pq-fancy-box-info left">
                      <h5 class="pq-fancy-box-title">Orthopaedics</h5>
                      <p class="pq-fancybox-description">There are many variations of pas of Lorem Ipsum availab.There are many variations of pas of Lorem Ipsum availab.</p>
-                     <a class="pq-button pq-button-link" href="../public/services/orthopaedics.php">
+                     <a class="pq-button pq-button-link" href="../services/orthopaedics.php">
                         <div class="pq-button-block"> <span class="pq-button-text">View Service</span> <i class="ion ion-plus-round"></i> </div>
                      </a>
                   </div>

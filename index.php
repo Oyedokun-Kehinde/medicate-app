@@ -73,7 +73,7 @@ try {
     </div>
     <!--loading End-->
 
-<!--=================================
+    <!--=================================
   header start-->
     <header id="pq-header" class="pq-header-default ">
         <div class="pq-top-header">
@@ -227,19 +227,25 @@ try {
                         data-dim="w:654px,565px,436px,268px;h:auto,auto,45px,27px;" data-vbility="t,t,t,f"
                         data-frame_0="x:50,39,22px,13px;y:0,0,0px,0px;"
                         data-frame_1="x:0,0,0px,0px;y:0,0,0px,0px;st:1100;sp:1000;sR:1100;"
-                        data-frame_999="o:0;st:w;sR:6900;" style="z-index:11;font-family:'Quicksand';">It is a long
-                        established fact that a reader will be distracted by the readable content of a page when looking
-                        at its layout.
+                        data-frame_999="o:0;st:w;sR:6900;" style="z-index:11;font-family:'Quicksand';">Medicate brings
+                        patients and doctors together in one seamless platform — where booking consultations, managing
+                        care, and sharing updates happens in just a few clicks.
                     </rs-layer>
                     <!--
                   -->
                     <rs-layer id="slider-24-slide-84-layer-1" data-type="text" data-color="#2490eb" data-rsp_ch="on"
                         data-xy="xo:41px,38px,38px,39px;y:m;yo:-197px,-154px,-121px,-78px;"
-                        data-text="w:normal;s:14,14,14,13;l:22,22,26,21;fw:600;" data-dim="w:auto,auto,auto,144px;"
-                        data-frame_0="x:50,39,29,17;" data-frame_1="st:600;sp:1000;sR:600;"
-                        data-frame_999="o:0;st:w;sR:7400;"
-                        style="z-index:9;font-family:'Quicksand';text-transform:uppercase;">Passion for caring
+                        data-text="w:normal;s:14,14,14,13;l:22,22,26,21;fw:600;" data-frame_0="x:50,39,29,17;"
+                        data-frame_1="st:600;sp:1000;sR:600;" data-frame_999="o:0;st:w;sR:7400;" style="z-index:9;
+           font-family:'Quicksand';
+           text-transform:uppercase;
+           background-color:#d3e9fb;
+           padding:6px 10px;
+           border-radius:4px;
+           display:inline-block;">
+                        Modern Healthcare, Human Touch
                     </rs-layer>
+
                     <!--
                   -->
                     <rs-layer id="slider-24-slide-84-layer-2" data-type="text" data-color="#18100f" data-rsp_ch="on"
@@ -247,8 +253,9 @@ try {
                         data-text="w:normal;s:64,48,42,22;l:72,56,50,30;fw:600;"
                         data-border="boc:#14457b;bow:1px,1px,1px,1px;" data-frame_0="x:50,39,29,17;"
                         data-frame_1="st:900;sp:1000;sR:900;" data-frame_999="o:0;st:w;sR:7100;"
-                        style="z-index:10;font-family:'Quicksand';text-transform:capitalize;">Genuine commitment<br>
-                        to your health
+                        style="z-index:10;font-family:'Quicksand';text-transform:capitalize;">Experience Smarter Care
+                        <br>
+                        Through Digital Connection
                     </rs-layer>
                     <!--
                   -->
@@ -269,7 +276,7 @@ try {
                         data-frame_1="st:1300;sp:1000;sR:1300;" data-frame_999="o:0;st:w;sR:6700;"
                         data-frame_hover="bgc:#14457b;bor:3px,3px,3px,3px;bos:solid;sp:100;bri:120%;"
                         style="z-index:12;background-color:#2490eb;font-family:'Quicksand';text-transform:uppercase;"><span
-                            class="text">About Us </span><i class="ion ion-plus-round"></i>
+                            class="text">GET STARTED </span><i class="ion ion-plus-round"></i>
                     </a>
                     <!--
                   -->
@@ -286,17 +293,25 @@ try {
                         data-dim="w:654px,565px,436px,268px;h:auto,auto,45px,27px;" data-vbility="t,t,t,f"
                         data-frame_0="x:50,39,22px,13px;y:0,0,0px,0px;"
                         data-frame_1="x:0,0,0px,0px;y:0,0,0px,0px;st:1700;sp:1000;" data-frame_999="o:0;st:w;sR:6370;"
-                        style="z-index:11;font-family:'Quicksand';">It is a long established fact that a reader will be
-                        distracted by the readable content of a page when looking at its layout.
+                        style="z-index:11;font-family:'Quicksand';"> Whether you’re seeking trusted medical advice or
+                        managing patient consultations, Medicate helps you stay organized, informed, and connected —
+                        anytime, anywhere.
                     </rs-layer>
                     <!--
                   -->
                     <rs-layer id="slider-24-slide-85-layer-1" data-type="text" data-color="#2490eb" data-rsp_ch="on"
                         data-xy="xo:41px,38px,38px,37px;y:m;yo:-197px,-154px,-121px,-75px;"
                         data-text="w:normal;s:14,14,14,13;l:22,22,26,21;fw:600;" data-frame_0="x:50,39,29,17;"
-                        data-frame_1="st:1100;sp:1000;sR:1100;" data-frame_999="o:0;st:w;sR:6900;"
-                        style="z-index:9;font-family:'Quicksand';text-transform:uppercase;">Great Experience In Bulding
+                        data-frame_1="st:1100;sp:1000;sR:1100;" data-frame_999="o:0;st:w;sR:6900;" style="z-index:9;
+                         font-family:'Quicksand';
+                        text-transform:uppercase;
+                        background-color:#d3e9fb;
+                        padding:6px 10px;
+                        border-radius:4px;
+                        display:inline-block;">
+                        Empowering Doctors to Deliver, Patients to Access
                     </rs-layer>
+
                     <!--
                   -->
                     <rs-layer id="slider-24-slide-85-layer-2" data-type="text" data-color="#18100f" data-rsp_ch="on"
@@ -304,9 +319,9 @@ try {
                         data-text="w:normal;s:64,48,42,22;l:72,56,50,30;fw:600;"
                         data-border="boc:#14457b;bow:1px,1px,1px,1px;" data-frame_0="x:50,39,29,17;"
                         data-frame_1="st:1400;sp:1000;sR:1400;" data-frame_999="o:0;st:w;sR:6600;"
-                        style="z-index:10;font-family:'Quicksand';text-transform:capitalize;">Orthopaedic Treatment
+                        style="z-index:10;font-family:'Quicksand';text-transform:capitalize;">Empowering Doctors to
                         <br>
-                        Accute Pain
+                        Deliver, Patients to Access
                     </rs-layer>
                     <!--
                   -->
@@ -327,7 +342,7 @@ try {
                         data-frame_1="st:1900;sp:1000;sR:1800;" data-frame_999="o:0;st:w;sR:6200;"
                         data-frame_hover="bgc:#14457b;bor:3px,3px,3px,3px;bos:solid;sp:100;bri:120%;"
                         style="z-index:12;background-color:#2490eb;font-family:'Quicksand';text-transform:uppercase;"><span
-                            class="text">Our Services </span><i class="ion ion-plus-round"></i>
+                            class="text">GET STARTED  </span><i class="ion ion-plus-round"></i>
                     </a>
                     <!--
                   -->
@@ -344,17 +359,23 @@ try {
                         data-dim="w:654px,565px,436px,268px;h:auto,auto,45px,27px;" data-vbility="t,t,t,f"
                         data-frame_0="x:50,39,22px,13px;y:0,0,0px,0px;"
                         data-frame_1="x:0,0,0px,0px;y:0,0,0px,0px;st:1700;sp:1000;" data-frame_999="o:0;st:w;sR:6370;"
-                        style="z-index:11;font-family:'Quicksand';">It is a long established fact that a reader will be
-                        distracted by the readable content of a page when looking at its layout.
+                        style="z-index:11;font-family:'Quicksand';"> From online consultations to personalized insights, Medicate gives you control of your healthcare experience — built on trust, accessibility, and security.
                     </rs-layer>
                     <!--
                   -->
                     <rs-layer id="slider-24-slide-86-layer-1" data-type="text" data-color="#2490eb" data-rsp_ch="on"
                         data-xy="xo:41px,38px,38px,37px;y:m;yo:-197px,-154px,-121px,-81px;"
                         data-text="w:normal;s:14,14,14,13;l:22,22,26,21;fw:600;" data-frame_0="x:50,39,29,17;"
-                        data-frame_1="st:1100;sp:1000;sR:1100;" data-frame_999="o:0;st:w;sR:6900;"
-                        style="z-index:9;font-family:'Quicksand';text-transform:uppercase;">higher level of care
+                        data-frame_1="st:1100;sp:1000;sR:1100;" data-frame_999="o:0;st:w;sR:6900;" style="z-index:9;
+           font-family:'Quicksand';
+           text-transform:uppercase;
+           background-color:#d3e9fb;
+           padding:6px 10px;
+           border-radius:4px;
+           display:inline-block;">
+                        Secure. Smart. Simple.
                     </rs-layer>
+
                     <!--
                   -->
                     <rs-layer id="slider-24-slide-86-layer-2" data-type="text" data-color="#18100f" data-rsp_ch="on"
@@ -362,8 +383,8 @@ try {
                         data-text="w:normal;s:64,48,42,22;l:72,56,50,30;fw:600;"
                         data-border="boc:#14457b;bow:1px,1px,1px,1px;" data-frame_0="x:50,39,29,17;"
                         data-frame_1="st:1400;sp:1000;sR:1400;" data-frame_999="o:0;st:w;sR:6600;"
-                        style="z-index:10;font-family:'Quicksand';text-transform:capitalize;">Setting standards<br>
-                        in physiotherapy
+                        style="z-index:10;font-family:'Quicksand';text-transform:capitalize;"> Manage Your Health <br>
+                        the Modern Way
                     </rs-layer>
                     <!--
                   -->
@@ -384,7 +405,7 @@ try {
                         data-frame_1="st:1900;sp:1000;sR:1800;" data-frame_999="o:0;st:w;sR:6200;"
                         data-frame_hover="bgc:#14457b;bor:3px,3px,3px,3px;bos:solid;sp:100;bri:120%;"
                         style="z-index:12;background-color:#2490eb;font-family:'Quicksand';text-transform:uppercase;"><span
-                            class="text">Read More</span><i class="ion ion-plus-round"></i>
+                            class="text"> EXPLORE SERVICES </span><i class="ion ion-plus-round"></i>
                     </a>
                     <!--
                   -->
@@ -408,10 +429,8 @@ try {
                     <div class="pq-info-box pq-style-1">
                         <div class="pq-info-box-right-icon"> <i class=" flaticon-medical-doctor"></i> </div>
                         <div class="pq-info-box-icon"><i class=" flaticon-medical-doctor"></i></div>
-                        <h5 class="pq-info-title">Emergency Cases</h5>
-                        <p class="pq-infobox-description">There are many variations of passages of Lorem Ipsum
-                            available, but
-                            the majority have suffered alteration in some form </p>
+                        <h5 class="pq-info-title"> Emergency? We’re Just a Call Away</h5>
+                        <p class="pq-infobox-description">In medical emergencies, every second matters. Our team of qualified professionals is always available to provide immediate guidance and care — anytime, any day. </p>
                         <div class="pq-info-call"> <i class="fas fa-phone-alt"></i>
                             <h4 class="cpq-call-number">+234 8028134942</h4>
                         </div>
@@ -421,12 +440,10 @@ try {
                     <div class="pq-info-box pq-style-2">
                         <div class="pq-info-box-right-icon"> <i class=" flaticon-doctor"></i> </div>
                         <div class="pq-info-box-icon"><i class=" flaticon-doctor"></i></div>
-                        <h5 class="pq-info-title">Book An Appointment </h5>
-                        <p class="pq-infobox-description">There are many variations of passages of Lorem Ipsum
-                            available, but
-                            the majority have suffered alteration in some form </p>
+                        <h5 class="pq-info-title">Schedule Your Consultation with Ease </h5>
+                        <p class="pq-infobox-description">Take control of your health journey. Book a consultation with a certified doctor in just a few clicks — no queues, no stress, just care when you need it most. </p>
                         <a class="pq-button pq-button-flat" href="consultation.php">
-                            <div class="pq-button-block"> <span class="pq-button-text">Timetable</span> <i
+                            <div class="pq-button-block"> <span class="pq-button-text">Book Appointment </span> <i
                                     class="ion ion-plus-round"></i> </div>
                         </a>
                     </div>
@@ -435,25 +452,26 @@ try {
                     <div class="pq-info-box pq-style-3">
                         <div class="pq-info-box-right-icon"> <i class=" flaticon-care"></i> </div>
                         <div class="pq-info-box-icon"><i class=" flaticon-medical-history"></i></div>
-                        <h5 class="pq-info-title">Opening Hours</h5>
+                        <h5 class="pq-info-title">Our Clinic Hours</h5>
+                        <p class="pq-infobox-description"> Visit us during our working hours or connect online for remote consultations. </p>
                         <div class="pq-info-hours">
                             <div class="pq-info-hours-row">
                                 <ul class="pq-list-info">
                                     <li>
                                         <div class="pq-info-hours-title"> Monday - Friday </div>
-                                        <div class="pq-info-hours-content"> 8:00 - 7:00 PM </div>
+                                        <div class="pq-info-hours-content"> 8:00am - 10:00pm </div>
                                     </li>
                                     <li>
                                         <div class="pq-info-hours-title"> Saturday </div>
-                                        <div class="pq-info-hours-content"> 6:00 - 5:00 PM </div>
+                                        <div class="pq-info-hours-content"> 9:00am - 6:00pm </div>
                                     </li>
                                     <li>
                                         <div class="pq-info-hours-title"> Sunday </div>
-                                        <div class="pq-info-hours-content"> 9:00 - 4:00 PM </div>
+                                        <div class="pq-info-hours-content"> 2:00pm - 4:00pm </div>
                                     </li>
                                     <li>
-                                        <div class="pq-info-hours-title"> Emergency </div>
-                                        <div class="pq-info-hours-content"> 24HRS 7Days </div>
+                                        <div class="pq-info-hours-title"> Public Holidays </div>
+                                        <div class="pq-info-hours-content"> 9:00am - 6:00pm </div>
                                     </li>
                                 </ul>
                             </div>
@@ -473,8 +491,7 @@ try {
                         alt="home">
                 </div>
                 <div class="col-lg-6 align-self-center mt-lg-0 mt-4">
-                    <div class="pq-section pq-style-1 text-left"> <span class="pq-section-sub-title">What About
-                            Us</span>
+                    <div class="pq-section pq-style-1 text-left"> <span class="pq-section-sub-title">who we are </span>
                         <h5 class="pq-section-title">The Heart and Science of Medicate test</h5>
                         <p class="pq-section-description">It is a long established fact that a reader will be distracted
                             by at
@@ -496,7 +513,7 @@ try {
                                 Appointment</span></li>
                     </ul>
                     <a class="pq-button pq-button-flat mt-3" href="about.php">
-                        <div class="pq-button-block"> <span class="pq-button-text">Read More</span> <i
+                        <div class="pq-button-block"> <span class="pq-button-text">Learn More</span> <i
                                 class="ion ion-plus-round"></i> </div>
                     </a>
                 </div>
@@ -574,12 +591,11 @@ try {
         <div class="container">
             <div class="row ">
                 <div class="col-lg-6 col-md-12 col-xl-5 pb-lg-0 pb-5">
-                    <div class="pq-section pq-style-1 text-left mb-4"> <span class="pq-section-sub-title">About
-                            Us</span>
-                        <h5 class="pq-section-title">Joining Hands with Techno Easement</h5>
-                        <p class="pq-section-description">Lorem Ipsum is simply dummy text of the printing and
-                            typesetting
-                            industry. Lorem Ipsum has been the industry's standard dummy text&nbsp;</p>
+                    <div class="pq-section pq-style-1 text-left mb-4"> <span class="pq-section-sub-title">WHO WE ARE
+ </span>
+                        <h5 class="pq-section-title">Committed to Excellence in Healthcare
+</h5>
+                        <p class="pq-section-description">Medicate is a trusted healthcare platform dedicated to connecting patients with qualified medical professionals. Since our inception, we’ve prioritized compassionate care, advanced medical solutions, and seamless digital experiences to ensure every patient receives timely, accurate, and personalized attention.&nbsp;</p>
                     </div>
                     <div class="pq-about-info-box mt-1">
                         <div class="pq-about-info-box-icon">
@@ -668,6 +684,7 @@ try {
         </div>
     </section>
     <!--Section about End-->
+
     <!--Section service start-->
     <section class="service">
         <div class="container">
@@ -685,7 +702,7 @@ try {
                             <h5 class="pq-fancy-box-title">Angioplasty</h5>
                             <p class="pq-fancybox-description">There are many variations of pas of Lorem Ipsum availab.
                             </p>
-                            <a class="pq-button pq-button-link" href="../public/services/angioplasty.php">
+                            <a class="pq-button pq-button-link" href="services/angioplasty.php">
                                 <div class="pq-button-block"> <span class="pq-button-text">Read More</span> <i
                                         class="ion ion-plus-round"></i> </div>
                             </a>
@@ -699,7 +716,7 @@ try {
                             <h5 class="pq-fancy-box-title">Cardiology</h5>
                             <p class="pq-fancybox-description">There are many variations of pas of Lorem Ipsum availab.
                             </p>
-                            <a class="pq-button pq-button-link" href="../public/services/cardiology.php">
+                            <a class="pq-button pq-button-link" href="services/cardiology.php">
                                 <div class="pq-button-block"> <span class="pq-button-text">Read More</span> <i
                                         class="ion ion-plus-round"></i> </div>
                             </a>
@@ -713,7 +730,7 @@ try {
                             <h5 class="pq-fancy-box-title">Dental</h5>
                             <p class="pq-fancybox-description">There are many variations of pas of Lorem Ipsum availab.
                             </p>
-                            <a class="pq-button pq-button-link" href="../public/services/dental.php">
+                            <a class="pq-button pq-button-link" href="services/dental.php">
                                 <div class="pq-button-block"> <span class="pq-button-text">Read More</span> <i
                                         class="ion ion-plus-round"></i> </div>
                             </a>
@@ -727,7 +744,7 @@ try {
                             <h5 class="pq-fancy-box-title">Endocrinology</h5>
                             <p class="pq-fancybox-description">There are many variations of pas of Lorem Ipsum availab.
                             </p>
-                            <a class="pq-button pq-button-link" href="../public/services/endocrinology.php">
+                            <a class="pq-button pq-button-link" href="services/endocrinology.php">
                                 <div class="pq-button-block"> <span class="pq-button-text">Read More</span> <i
                                         class="ion ion-plus-round"></i> </div>
                             </a>
@@ -741,7 +758,7 @@ try {
                             <h5 class="pq-fancy-box-title">Eye Care</h5>
                             <p class="pq-fancybox-description">There are many variations of pas of Lorem Ipsum availab.
                             </p>
-                            <a class="pq-button pq-button-link" href="../public/services/eye-care.php">
+                            <a class="pq-button pq-button-link" href="services/eye-care.php">
                                 <div class="pq-button-block"> <span class="pq-button-text">Read More</span> <i
                                         class="ion ion-plus-round"></i> </div>
                             </a>
@@ -755,7 +772,7 @@ try {
                             <h5 class="pq-fancy-box-title">Neurology</h5>
                             <p class="pq-fancybox-description">There are many variations of pas of Lorem Ipsum availab.
                             </p>
-                            <a class="pq-button pq-button-link" href="../public/services/neurology.php">
+                            <a class="pq-button pq-button-link" href="services/neurology.php">
                                 <div class="pq-button-block"> <span class="pq-button-text">Read More</span> <i
                                         class="ion ion-plus-round"></i> </div>
                             </a>
@@ -769,7 +786,7 @@ try {
                             <h5 class="pq-fancy-box-title">Orthopaedics</h5>
                             <p class="pq-fancybox-description">There are many variations of pas of Lorem Ipsum availab.
                             </p>
-                            <a class="pq-button pq-button-link" href="../public/services/orthopaedics.php">
+                            <a class="pq-button pq-button-link" href="services/orthopaedics.php">
                                 <div class="pq-button-block"> <span class="pq-button-text">Read More</span> <i
                                         class="ion ion-plus-round"></i> </div>
                             </a>
@@ -792,8 +809,7 @@ try {
                 </div>
             </div>
         </div>
-    </section>
-    <!--Section service End-->
+    </section><!--Section service End-->
 
     <!--Section portfolio start-->
     <section class="pq-bg-primary pb-lg-0 pq-bg-img-1 ">
