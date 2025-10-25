@@ -3,9 +3,7 @@ session_start();
 require_once 'config/helpers.php';
 require_once 'config/database.php';
 
-
 $getStartedUrl = getGetStartedUrl();
-
 
 try {
     $stmt = $pdo->prepare("
@@ -498,16 +496,13 @@ try {
                             its layout. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                     </div>
                     <ul class="pq-list-check pq-text-dark mt-3 mb-4">
-                        <li><i aria-hidden="true" class="ion ion-checkmark-round"></i><span>Comprehensive Inpatient
-                                Services</span></li>
-                        <li><i aria-hidden="true" class="ion ion-checkmark-round"></i><span>Medical And Surgical
-                                Services</span></li>
-                        <li><i aria-hidden="true" class="ion ion-checkmark-round"></i><span>Outpatient Services</span>
+                        <li><i aria-hidden="true" class="ion ion-checkmark-round"></i><span>24/7 Access to Certified Medical Professionals </span></li>
+                        <li><i aria-hidden="true" class="ion ion-checkmark-round"></i><span> Secure & Confidential Patient Consultations </span></li>
+                        <li><i aria-hidden="true" class="ion ion-checkmark-round"></i><span>Specialized Care Across 8 Medical Disciplines </span>
                         </li>
-                        <li><i aria-hidden="true" class="ion ion-checkmark-round"></i><span>Medicine & instrument</span>
+                        <li><i aria-hidden="true" class="ion ion-checkmark-round"></i><span> Real-Time Appointment Booking & Management </span>
                         </li>
-                        <li><i aria-hidden="true" class="ion ion-checkmark-round"></i><span>Specialised Support
-                                Service</span>
+                        <li><i aria-hidden="true" class="ion ion-checkmark-round"></i><span>Comprehensive Patient Health Records </span>
                         </li>
                         <li><i aria-hidden="true" class="ion ion-checkmark-round"></i><span>Instant Operation &
                                 Appointment</span></li>
