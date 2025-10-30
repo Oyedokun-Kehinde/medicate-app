@@ -1,5 +1,3 @@
-// Merged doctor-dashboard.js - Combines all dashboard functionality
-
 // Track if we're in edit mode
 let currentEditingBlogId = null;
 
@@ -11,10 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     setInterval(updateClock, 1000);
 });
 
-// ============================================
 // SIDEBAR & SECTION NAVIGATION
-// ============================================
-
 function initializeSidebar() {
     const navLinks = document.querySelectorAll('.nav-link');
     
@@ -59,10 +54,8 @@ function initializeSidebar() {
     });
 }
 
-// ============================================
-// BLOG SYSTEM
-// ============================================
 
+// BLOG SYSTEM
 function initializeBlogSystem() {
     const createBlogBtn = document.getElementById('createBlogBtn');
     const blogFormModal = document.getElementById('blogFormModal');

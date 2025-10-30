@@ -629,7 +629,7 @@ $specialization = htmlspecialchars($doctor['specialization'] ?? 'Not specified')
                         </div>
                     </div>
                 </div>
-                <!-- Add this section to doctor-dashboard.php -->
+  
                 <!-- BLOG SECTION FOR DOCTOR -->
                 <div id="blogs" class="section">
                     <div class="card-box">
@@ -858,11 +858,7 @@ $specialization = htmlspecialchars($doctor['specialization'] ?? 'Not specified')
                     </div>
                 </div>
             </div>
-
-
-
-
-        </div>
+    </div>
     </div>
 
     <div id="snackbar"></div>
