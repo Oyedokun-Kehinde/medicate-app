@@ -1,10 +1,9 @@
 <?php
 // FILE: contact-handler.php
-// Save this in your root directory
-
 session_start();
 require_once 'config/database.php';
 
+//API Endpoint for Contact Form Submissions
 header('Content-Type: application/json');
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {

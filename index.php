@@ -1,5 +1,9 @@
 <?php
+
+//Create a new session
 session_start();
+
+//Import required PHP Files 
 require_once 'config/helpers.php';
 require_once 'config/database.php';
 

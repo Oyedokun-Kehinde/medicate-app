@@ -660,7 +660,8 @@ $specialization = htmlspecialchars($doctor['specialization'] ?? 'Not specified')
                                         placeholder="Enter post title" required>
                                 </div>
                             </div>
-
+                        
+                            <!-- Blog Image  -->
                             <div class="form-row">
                                 <div class="form-group">
                                     <label class="form-label">Featured Image</label>

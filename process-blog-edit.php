@@ -2,9 +2,11 @@
 session_start();
 require_once 'config/database.php';
 
-// CRITICAL: Check if user is doctor
+// Check if user is doctor
 if (!isset($_SESSION['user_id']) || $_SESSION['user_type'] !== 'doctor') {
     http_response_code(401);
+    
+    //API Endpoint for modifying blogs by Doctors
     header('Content-Type: application/json');
     echo json_encode(['success' => false, 'error' => 'Unauthorized']);
     exit;
@@ -71,7 +73,7 @@ try {
     
     $featured_image = $blog['featured_image']; // Keep existing if not replacing
     
-    // Handle featured image replacement
+    // Handle featured image replacement by upload
     if (isset($_FILES['featured_image']) && $_FILES['featured_image']['error'] === UPLOAD_ERR_OK) {
         $file = $_FILES['featured_image'];
         

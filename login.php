@@ -1,4 +1,6 @@
 <?php
+
+//Import required PHP Files
 require_once 'config/session.php';
 require_once 'classes/User.php';
 require_once 'config/helpers.php';
@@ -7,6 +9,7 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
+//Check if user is logged in
 if (isLoggedIn()) {
     $type = getUserType();
     if ($type === 'patient') {
