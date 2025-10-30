@@ -32,6 +32,7 @@ try {
         LIMIT :limit OFFSET :offset
     ");
     
+    //Prepared Statements for Additional Security
     $stmt->bindValue(':limit', $per_page, PDO::PARAM_INT);
     $stmt->bindValue(':offset', $offset, PDO::PARAM_INT);
     $stmt->execute();

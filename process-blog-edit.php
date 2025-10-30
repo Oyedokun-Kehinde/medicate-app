@@ -71,7 +71,8 @@ try {
         throw new Exception('Invalid status');
     }
     
-    $featured_image = $blog['featured_image']; // Keep existing if not replacing
+    // Get existing featured image
+    $featured_image = $blog['featured_image'];
     
     // Handle featured image replacement by upload
     if (isset($_FILES['featured_image']) && $_FILES['featured_image']['error'] === UPLOAD_ERR_OK) {

@@ -9,11 +9,13 @@ error_reporting(E_ALL);
 
 preventLogin();
 
+//Check if form is submitted
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = trim($_POST['email'] ?? '');
     $password = $_POST['password'] ?? '';
     $user_type = $_POST['user_type'] ?? '';
-
+    
+    // Validate input
     if (!in_array($user_type, ['patient', 'doctor'])) {
         $error = urlencode('Please select a valid account type.');
         header("Location: register.php?error=$error");
@@ -225,6 +227,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/register.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/progressbar.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/jquery.countTo.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/rev/js/rbtools.min.js"></script>
+    <script src="assets/rev/js/rs6.min.js"></script>
+
+
 
     <!-- Preloader Script -->
     <script>

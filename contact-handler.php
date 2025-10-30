@@ -40,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
     
     try {
-        // Insert into database
+        // Insert into database table, Implement PDO and Prepared Statement for extra layer of security
         $stmt = $pdo->prepare("
             INSERT INTO contact_messages (name, email, subject, message, created_at)
             VALUES (?, ?, ?, ?, NOW())
@@ -55,7 +55,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $emailBody = "Name: $name\nEmail: $email\nSubject: $subject\n\nMessage:\n$message";
             $headers = "From: $email";
             
-            // Uncomment to enable email sending
+            // Eenable email sending
             // mail($to, $emailSubject, $emailBody, $headers);
             
             echo json_encode([

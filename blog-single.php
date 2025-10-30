@@ -515,43 +515,7 @@ try {
         </div>
     </div>
 
-    <!--=================================
-        Footer start-->
-    <footer id="pq-footer">
-        <div class="pq-footer-style-1">
-            <!-- Newsletter Section -->
-            <div class="pq-subscribe align-items-center">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-12">
-                            <div class="pq-subscribe-bg">
-                                <div class="row align-items-center">
-                                    <div class="col-lg-5">
-                                        <div class="pq-subscribe-block">
-                                            <img src="assets/images/Subscribe.png" class="pq-subscribe-img img-fluid" alt="medicate-subscribe-image">
-                                            <div class="pq-subscribe-details">
-                                                <h5>Latest Updates Subscribe To Our Newsletter</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-7 align-self-center">
-                                        <div class="pq-subscribe-from">
-                                            <form id="form" class="form">
-                                                <div class="form-fields">
-                                                    <input class="w-100 pq-bg-transparent" type="email" name="EMAIL" placeholder="Enter Your Email" required="">
-                                                    <input class="" type="submit" value="Sign up">
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-                <!--=================================
+<!--=================================
           Footer start
    ============================== -->
     <footer id="pq-footer">

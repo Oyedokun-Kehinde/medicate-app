@@ -1,5 +1,4 @@
 <?php
-// classes/User.php
 
 require_once __DIR__ . '/../config/database.php';
 
@@ -11,7 +10,7 @@ class User {
         $this->pdo = $pdo;
     }
 
-    // Register a new user (patient or doctor) - AUTO VERIFIED
+    // Register a new user (patient or doctor)
     public function register($email, $password, $user_type) {
         // Validate input
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -32,10 +31,10 @@ class User {
         // Hash password
         $hashedPassword = password_hash($password, PASSWORD_BCRYPT);
 
-        // Generate verification code (no longer used, but kept for potential future use)
+        // Generate verification code
         $verificationCode = rand(100000, 999999);
 
-        // Insert into users table - AUTO SET is_verified = 1
+        // Insert into users table with verification code
         $stmt = $this->pdo->prepare("
             INSERT INTO users (email, password, user_type, verification_code, is_verified) 
             VALUES (?, ?, ?, ?, 1)
@@ -45,11 +44,12 @@ class User {
         if ($result) {
             $userId = $this->pdo->lastInsertId();
 
-            // Create empty profile
+            // Create empty profile 
             if ($user_type === 'patient') {
                 $this->pdo->prepare("INSERT INTO patient_profiles (user_id, full_name) VALUES (?, '')")
                          ->execute([$userId]);
             } else {
+                // Create empty doctor profile
                 $this->pdo->prepare("INSERT INTO doctor_profiles (user_id, full_name) VALUES (?, '')")
                          ->execute([$userId]);
             }
@@ -64,7 +64,7 @@ class User {
         }
     }
 
-    // Login user
+    //  Login a user
     public function login($email, $password) {
         $stmt = $this->pdo->prepare("SELECT id, password, user_type, is_verified FROM users WHERE email = ?");
         $stmt->execute([$email]);
@@ -86,7 +86,7 @@ class User {
         }
     }
 
-    // Mark user as verified (kept for compatibility, but users are already verified on registration)
+   // Verify a user
     public function verifyUser($userId) {
         $stmt = $this->pdo->prepare("UPDATE users SET is_verified = 1 WHERE id = ?");
         return $stmt->execute([$userId]);

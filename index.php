@@ -3,7 +3,7 @@
 //Create a new session
 session_start();
 
-//Import required PHP Files 
+//Import required PHP config Files 
 require_once 'config/helpers.php';
 require_once 'config/database.php';
 
@@ -67,7 +67,7 @@ try {
 </head>
 
 <body>
-    <!--loading start-->
+    <!--Preloader start-->
     <div id="pq-loading">
         <div id="pq-loading-center">
             <img src="assets/images/logo.png" class="img-fluid" alt="loading">

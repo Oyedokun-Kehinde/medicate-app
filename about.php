@@ -4,9 +4,7 @@ require_once 'config/helpers.php';
 require_once 'config/database.php';
 $getStartedUrl = getGetStartedUrl();
 
-// This replaces the static blog section in index.php
-// Replace the entire "Section blog Start" section with this code
-
+// Fetch published blogs - 6 posts for carousel
 try {
     $stmt = $pdo->prepare("
         SELECT 
@@ -20,6 +18,7 @@ try {
         ORDER BY bp.created_at DESC
         LIMIT 6
     ");
+    //Implement PDO Security during database fetch
     $stmt->execute();
     $home_blogs = $stmt->fetchAll(PDO::FETCH_ASSOC);
 } catch (Exception $e) {

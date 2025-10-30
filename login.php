@@ -20,8 +20,10 @@ if (isLoggedIn()) {
     exit();
 }
 
+//Check if form is submitted
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = trim($_POST['email'] ?? '');
+    // $password = trim($_POST['password'] ?? '');
     $password = $_POST['password'] ?? '';
 
     $user = new User();
@@ -243,9 +245,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div id="snackbar"></div>
 
     <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="assets/js/jquery.min.js"></script> -->
+    <!-- <script src="assets/js/bootstrap.bundle.min.js"></script> -->
     <script src="assets/js/login.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/rev/js/rbtools.min.js"></script>
+   
 
     <!-- Preloader Script -->
     <script>

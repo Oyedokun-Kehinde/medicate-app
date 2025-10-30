@@ -2,15 +2,15 @@
 session_start();
 require_once 'config/database.php';
 
-// CRITICAL: Check if user is doctor
+// Check if user is doctor
 if (!isset($_SESSION['user_id']) || $_SESSION['user_type'] !== 'doctor') {
     http_response_code(401);
     header('Content-Type: application/json');
-    echo json_encode(['success' => false, 'error' => 'Unauthorized - must be logged in as doctor']);
+    echo json_encode(['success' => false, 'error' => 'Unauthorized. You must be logged in as doctor']);
     exit;
 }
 
-// CRITICAL: Must be POST request
+// Submit Blog as a POST request
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     http_response_code(405);
     header('Content-Type: application/json');
@@ -77,6 +77,7 @@ try {
         $mime_type = finfo_file($finfo, $file['tmp_name']);
         finfo_close($finfo);
         
+        // Validate allowed MIME types
         $allowed_mimes = ['image/jpeg', 'image/png', 'image/gif', 'image/webp'];
         if (!in_array($mime_type, $allowed_mimes)) {
             throw new Exception('Invalid image type. Only JPEG, PNG, GIF, and WebP allowed');
@@ -90,7 +91,7 @@ try {
             }
         }
         
-        // Generate unique filename
+        // Generate a unique filename
         $file_extension = pathinfo($file['name'], PATHINFO_EXTENSION);
         $filename = 'blog_' . time() . '_' . bin2hex(random_bytes(4)) . '.' . strtolower($file_extension);
         $upload_path = $upload_dir . '/' . $filename;
