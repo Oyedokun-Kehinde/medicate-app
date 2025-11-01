@@ -229,8 +229,8 @@ $getStartedUrl = getGetStartedUrl();
                             <div class="pq-service-img"><img src="assets/images/services/1.jpg" class="img-fluid"
                                     alt="servicebox"></div>
                             <div class="pq-service-box-info">
-                                <div class="pq-info-text"> <span class="pq-service-sub-title">Medical Surgery </span>
-                                    <a href="eye-care-services.html">
+                                <div class="pq-info-text"> <span class="pq-service-sub-title">Medical Ophthalmology</span>
+                                    <a href="services/eye-care.php">
                                         <h5 class="pq-service-title">Eye Care Services</h5>
                                     </a>
                                 </div>
@@ -245,8 +245,8 @@ $getStartedUrl = getGetStartedUrl();
                             <div class="pq-service-img"><img src="assets/images/services/2.jpg" class="img-fluid"
                                     alt="servicebox"></div>
                             <div class="pq-service-box-info">
-                                <div class="pq-info-text"> <span class="pq-service-sub-title">Medical Therapy </span>
-                                    <a href="cardiology-services.html">
+                                <div class="pq-info-text"> <span class="pq-service-sub-title">Cardiovascular Care</span>
+                                    <a href="services/cardiology.php">
                                         <h5 class="pq-service-title">Cardiology Services</h5>
                                     </a>
                                 </div>
@@ -261,8 +261,8 @@ $getStartedUrl = getGetStartedUrl();
                             <div class="pq-service-img"><img src="assets/images/services/3.jpg" class="img-fluid"
                                     alt="servicebox"></div>
                             <div class="pq-service-box-info">
-                                <div class="pq-info-text"> <span class="pq-service-sub-title">Medical Pediatrics</span>
-                                    <a href="dental-services.html">
+                                <div class="pq-info-text"> <span class="pq-service-sub-title">Oral Health Care</span>
+                                    <a href="services/dental.php">
                                         <h5 class="pq-service-title">Dental Services</h5>
                                     </a>
                                 </div>
@@ -294,8 +294,8 @@ $getStartedUrl = getGetStartedUrl();
                   <div class="pq-fancy-box-icon"> <i class=" flaticon-heartbeat"></i> </div>
                   <div class="pq-fancy-box-info left">
                      <h5 class="pq-fancy-box-title">Cardiology</h5>
-                     <p class="pq-fancybox-description">There are many variations of pas of Lorem Ipsum availab.There are many variations of pas of Lorem Ipsum availab.</p>
-                     <a class="pq-button pq-button-link" href="../services/cardiology.php">
+                     <p class="pq-fancybox-description">Comprehensive heart health services including diagnosis, treatment, and management of cardiovascular conditions with state-of-the-art technology and experienced cardiologists.</p>
+                     <a class="pq-button pq-button-link" href="services/cardiology.php">
                         <div class="pq-button-block"> <span class="pq-button-text"> View Service </span> <i class="ion ion-plus-round"></i> </div>
                      </a>
                   </div>
@@ -307,8 +307,8 @@ $getStartedUrl = getGetStartedUrl();
                   <div class="pq-fancy-box-icon"><i class=" flaticon-first-aid-box"></i></div>
                   <div class="pq-fancy-box-info left">
                      <h5 class="pq-fancy-box-title">Endocrinology</h5>
-                     <p class="pq-fancybox-description">There are many variations of pas of Lorem Ipsum availab.There are many variations of pas of Lorem Ipsum availab.</p>
-                     <a class="pq-button pq-button-link" href="../services/endocrinology.php">
+                     <p class="pq-fancybox-description">Specialized care for hormonal and metabolic disorders including diabetes, thyroid conditions, and endocrine system imbalances with personalized treatment plans.</p>
+                     <a class="pq-button pq-button-link" href="services/endocrinology.php">
                         <div class="pq-button-block"> <span class="pq-button-text">View Service</span> <i class="ion ion-plus-round"></i> </div>
                      </a>
                   </div>
@@ -320,8 +320,8 @@ $getStartedUrl = getGetStartedUrl();
                   <div class="pq-fancy-box-icon"> <i class="flaticon-healthcare"></i> </div>
                   <div class="pq-fancy-box-info left">
                      <h5 class="pq-fancy-box-title">Angioplasty</h5>
-                     <p class="pq-fancybox-description">There are many variations of pas of Lorem Ipsum availab.There are many variations of pas of Lorem Ipsum availab.</p>
-                     <a class="pq-button pq-button-link" href="../services/angioplasty.php">
+                     <p class="pq-fancybox-description">Advanced minimally invasive procedures to restore blood flow in blocked arteries, performed by certified interventional cardiologists using cutting-edge techniques.</p>
+                     <a class="pq-button pq-button-link" href="services/angioplasty.php">
                         <div class="pq-button-block"> <span class="pq-button-text"> View Service </span> <i class="ion ion-plus-round"></i> </div>
                      </a>
                   </div>
@@ -333,8 +333,8 @@ $getStartedUrl = getGetStartedUrl();
                   <div class="pq-fancy-box-icon"> <i class="  flaticon-ct-scan"></i> </div>
                   <div class="pq-fancy-box-info left">
                      <h5 class="pq-fancy-box-title">Eye Care</h5>
-                     <p class="pq-fancybox-description">There are many variations of pas of Lorem Ipsum availab.There are many variations of pas of Lorem Ipsum availab.</p>
-                     <a class="pq-button pq-button-link" href="../services/eye-care.php">
+                     <p class="pq-fancybox-description">Complete eye care services from routine examinations to advanced surgical procedures, treating cataracts, glaucoma, and retinal disorders with precision.</p>
+                     <a class="pq-button pq-button-link" href="services/eye-care.php">
                         <div class="pq-button-block"> <span class="pq-button-text">View Service</span> <i class="ion ion-plus-round"></i> </div>
                      </a>
                   </div>
@@ -346,8 +346,8 @@ $getStartedUrl = getGetStartedUrl();
                   <div class="pq-fancy-box-icon"> <i class=" flaticon-x-ray-1"></i> </div>
                   <div class="pq-fancy-box-info left">
                      <h5 class="pq-fancy-box-title">Neurology</h5>
-                     <p class="pq-fancybox-description">There are many variations of pas of Lorem Ipsum availab.There are many variations of pas of Lorem Ipsum availab.</p>
-                     <a class="pq-button pq-button-link" href="../services/neurology.php">
+                     <p class="pq-fancybox-description">Expert neurological care for brain and nervous system disorders including epilepsy, stroke, Parkinson's disease, and migraines with comprehensive diagnostic services.</p>
+                     <a class="pq-button pq-button-link" href="services/neurology.php">
                         <div class="pq-button-block"> <span class="pq-button-text">View Service</span> <i class="ion ion-plus-round"></i> </div>
                      </a>
                   </div>
@@ -359,8 +359,8 @@ $getStartedUrl = getGetStartedUrl();
                   <div class="pq-fancy-box-icon"> <i class="flaticon-health-insurance"></i> </div>
                   <div class="pq-fancy-box-info left">
                      <h5 class="pq-fancy-box-title">Orthopaedics</h5>
-                     <p class="pq-fancybox-description">There are many variations of pas of Lorem Ipsum availab.There are many variations of pas of Lorem Ipsum availab.</p>
-                     <a class="pq-button pq-button-link" href="../services/orthopaedics.php">
+                     <p class="pq-fancybox-description">Comprehensive bone and joint care including sports injuries, fractures, arthritis treatment, and joint replacement surgery with rehabilitation support.</p>
+                     <a class="pq-button pq-button-link" href="services/orthopaedics.php">
                         <div class="pq-button-block"> <span class="pq-button-text">View Service</span> <i class="ion ion-plus-round"></i> </div>
                      </a>
                   </div>
@@ -393,9 +393,9 @@ $getStartedUrl = getGetStartedUrl();
                             <div class="pq-process-number"> <span>01</span> </div>
                         </div>
                         <div class="pq-process-step-info">
-                            <h5 class="pq-process-title">Emergency Care</h5> <span class="pq-process-sub-title"></span>
+                            <h5 class="pq-process-title">Book Consultation</h5>
                             <div class="pq-process-description">
-                                <p>There are many variations of passages Lorem Ipsum available</p>
+                                <p>Schedule your appointment online or call us. Choose your preferred date, time, and specialist.</p>
                             </div>
                         </div>
                     </div>
@@ -409,9 +409,9 @@ $getStartedUrl = getGetStartedUrl();
                             <div class="pq-process-number"> <span>02</span> </div>
                         </div>
                         <div class="pq-process-step-info">
-                            <h5 class="pq-process-title">Emergency Care</h5> <span class="pq-process-sub-title"></span>
+                            <h5 class="pq-process-title">Medical Assessment</h5>
                             <div class="pq-process-description">
-                                <p>There are many variations of passages Lorem Ipsum available</p>
+                                <p>Our medical team reviews your case and prepares for your consultation with relevant specialists.</p>
                             </div>
                         </div>
                     </div>
@@ -425,9 +425,9 @@ $getStartedUrl = getGetStartedUrl();
                             <div class="pq-process-number"> <span>03</span> </div>
                         </div>
                         <div class="pq-process-step-info">
-                            <h5 class="pq-process-title">Emergency Care</h5> <span class="pq-process-sub-title"></span>
+                            <h5 class="pq-process-title">Consultation & Diagnosis</h5>
                             <div class="pq-process-description">
-                                <p>There are many variations of passages Lorem Ipsum available</p>
+                                <p>Meet with our expert doctors for comprehensive examination and accurate diagnosis of your condition.</p>
                             </div>
                         </div>
                     </div>
@@ -441,9 +441,9 @@ $getStartedUrl = getGetStartedUrl();
                             <div class="pq-process-number"> <span>04</span> </div>
                         </div>
                         <div class="pq-process-step-info">
-                            <h5 class="pq-process-title">Emergency Care</h5> <span class="pq-process-sub-title"></span>
+                            <h5 class="pq-process-title">Treatment & Follow-up</h5>
                             <div class="pq-process-description">
-                                <p>There are many variations of passages Lorem Ipsum available</p>
+                                <p>Receive personalized treatment plan and ongoing care with scheduled follow-ups for optimal recovery.</p>
                             </div>
                         </div>
                     </div>
@@ -659,8 +659,7 @@ $getStartedUrl = getGetStartedUrl();
                         <div class="col-xl-3 col-md-6">
                             <div class="pq-footer-block"> <img src="assets/images/footer_logo.png"
                                     class="pq-footer-logo img-fluid" alt="medicate-footer-logo">
-                                <p>It helps designers plan out where the content will sit, the content to be written and
-                                    approved.</p>
+                                <p>Medicate provides comprehensive healthcare services with cutting-edge technology and compassionate care. Your health and wellness are our top priorities.</p>
                                 <div class="pq-footer-social">
                                     <ul>
                                         <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -673,19 +672,19 @@ $getStartedUrl = getGetStartedUrl();
                         </div>
                         <div class="col-xl-3  col-md-6">
                             <div class="pq-footer-block">
-                                <h4 class="footer-title">Our Courses</h4>
+                                <h4 class="footer-title">Quick Links</h4>
                                 <div class="menu-useful-links-container">
                                     <ul id="menu-useful-links" class="menu">
-                                        <li><a href="about-us.html">About Us</a></li>
-                                        <li><a href="contact.php">Contact Us</a></li>
+                                        <li><a href="about.php">About Us</a></li>
                                         <li><a href="services.php">Our Services</a></li>
-                                        <li><a href="our-process.html">Our Process</a></li>
-                                        <li><a href="doctor-1.html">Services</a></li>
-                                        <li><a href="faq.html">FAQ</a></li>
-                                        <li><a href="our-doctor.html">FAQs</a></li>
-                                        <li><a href="case-study.php">Departments</a></li>
-                                        <li><a href="consultation.php">Events</a></li>
-                                        <li><a href="our-plan.html">Member</a></li>
+                                        <li><a href="specialists.php">Our Specialists</a></li>
+                                        <li><a href="case-study.php">Case Studies</a></li>
+                                        <li><a href="blog.php">Health Blog</a></li>
+                                        <li><a href="faqs.php">FAQs</a></li>
+                                        <li><a href="consultation.php">Book Consultation</a></li>
+                                        <li><a href="contact.php">Contact Us</a></li>
+                                        <li><a href="login.php">Patient Portal</a></li>
+                                        <li><a href="register.php">Register</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -699,22 +698,22 @@ $getStartedUrl = getGetStartedUrl();
                                                 src="assets/images/footer-image/1.jpg" alt=""></a>
                                     </div>
                                     <div class="pq-footer-recent-post-info">
-                                        <a href="blog-single.php" class="pq-post-date"> <i
-                                                class="far fa-calendar-alt"></i>December <span>12</span>, 2021 </a>
-                                        <h6><a href="blog-single.php">Get the Exercise Limited
-                                                Mobility</a></h6>
+                                        <a href="blog.php" class="pq-post-date"> <i
+                                                class="far fa-calendar-alt"></i>Health Tips </a>
+                                        <h6><a href="blog.php">Managing Diabetes Through
+                                                Diet and Exercise</a></h6>
                                     </div>
                                 </div>
                                 <div class="pq-footer-recent-post">
                                     <div class="pq-footer-recent-post-media">
-                                        <a href="blog-single.php"> <img
+                                        <a href="blog.php"> <img
                                                 src="assets/images/footer-image/2.jpg" alt=""></a>
                                     </div>
                                     <div class="pq-footer-recent-post-info">
-                                        <a href="blog-single.php" class="pq-post-date"> <i
-                                                class="far fa-calendar-alt"></i>December <span>12</span>, 2021 </a>
-                                        <h6><a href="blog-single.php">Transfusion strategy and
-                                                heart surgery</a></h6>
+                                        <a href="blog.php" class="pq-post-date"> <i
+                                                class="far fa-calendar-alt"></i>Medical Insights </a>
+                                        <h6><a href="blog.php">Understanding Heart Health
+                                                and Prevention</a></h6>
                                     </div>
                                 </div>
                             </div>
@@ -744,8 +743,7 @@ $getStartedUrl = getGetStartedUrl();
             <div class="pq-copyright-footer">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-12 text-center "> <span class="pq-copyright"> Copyright 2022 medicate All
-                                Rights Reserved</span> </div>
+                        <div class="col-md-12 text-center "> <span class="pq-copyright"> Copyright © 2025 Medicate Healthcare. All Rights Reserved | Designed with care for your health</span> </div>
                     </div>
                 </div>
             </div>

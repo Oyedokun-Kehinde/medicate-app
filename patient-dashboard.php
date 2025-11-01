@@ -119,6 +119,10 @@ $email = $patient['email'];
                 <li><a class="nav-link" data-section="appointments"><i class="fas fa-calendar-check"></i> My
                         Consultations</a></li>
                 <li><a class="nav-link" data-section="upcoming"><i class="fas fa-calendar-day"></i> Upcoming</a></li>
+                <li><a href="appointments-dashboard.php"><i class="fas fa-calendar-alt"></i> Appointments Manager</a></li>
+                <li><a href="patient-health-dashboard.php"><i class="fas fa-heartbeat"></i> Health Dashboard</a></li>
+                <li><a href="medical-records.php"><i class="fas fa-folder-open"></i> Medical Records</a></li>
+                <li><a href="notifications.php"><i class="fas fa-bell"></i> Notifications</a></li>
                 <li><a class="nav-link" data-section="consultation"><i class="fas fa-stethoscope"></i> Request
                         Consultation</a></li>
                 <li><a class="nav-link" data-section="mycomments"><i class="fas fa-comments"></i> My Comments</a></li>
@@ -156,13 +160,19 @@ $email = $patient['email'];
 
             <!-- ALERTS -->
             <?php if ($success_msg): ?>
-                <div class="alert alert-success" style="margin: 20px 30px 0 30px;">
+                <div class="alert alert-success alert-dismissible fade show" style="margin: 20px 30px 0 30px;">
                     <i class="fas fa-check-circle"></i> <?php echo htmlspecialchars($success_msg); ?>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
             <?php endif; ?>
             <?php if ($error_msg): ?>
-                <div class="alert alert-danger" style="margin: 20px 30px 0 30px;">
+                <div class="alert alert-danger alert-dismissible fade show" style="margin: 20px 30px 0 30px;">
                     <i class="fas fa-exclamation-circle"></i> <?php echo htmlspecialchars($error_msg); ?>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
             <?php endif; ?>
 
@@ -655,6 +665,23 @@ $email = $patient['email'];
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/patient-dashboard.js"></script>
+    
+    <script>
+        // Auto-dismiss alerts after 5 seconds
+        $(document).ready(function() {
+            setTimeout(function() {
+                $('.alert').fadeOut('slow', function() {
+                    $(this).remove();
+                });
+            }, 5000);
+            
+            // Clean up URL parameters after page load to prevent message persistence
+            if (window.location.search.includes('msg=') || window.location.search.includes('error=')) {
+                const url = window.location.protocol + "//" + window.location.host + window.location.pathname;
+                window.history.replaceState({}, document.title, url);
+            }
+        });
+    </script>
 </body>
 
 </html>

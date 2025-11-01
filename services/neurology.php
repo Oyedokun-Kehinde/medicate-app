@@ -271,49 +271,34 @@ try {
                   <div class="pq-rhs-img text-center"> <img src="../assets/images/service-single.jpg" alt=""
                         class="rounded img-fluid"> </div>
                   <div class="pq-section-title-box pq-section-title-style-2 pt-4">
-                     <h4 class="pq-section-title">Professional Medical Service Of Neurology</h4>
+                     <h4 class="pq-section-title">Professional Neurology Services</h4>
                      <div class="pq-section-description">
-                        <p>Medicate is a long established fact that a reader will be distracted by the readable content
-                           of a page when looking at its layout. Lorem Ipsum is simply dummy text of the printing and
-                           typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since </p>
+                        <p>Our neurology department provides expert diagnosis and treatment for disorders of the brain, spinal cord, and nervous system. Our board-certified neurologists utilize advanced neuroimaging and diagnostic techniques to treat conditions including epilepsy, stroke, Parkinson's disease, Alzheimer's, multiple sclerosis, and migraines with personalized treatment plans.</p>
                      </div>
                   </div>
                   <div class="row">
                      <div class="col-lg-6">
                         <ul class="pq-portfolio-list-check">
-                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Aliquam tincidunt nisi vitae
-                                 nulla molestie</span></li>
-                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Praesent convallis odio
-                                 elementum tortor.</span></li>
-                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Nunc molestie ex at nisi
-                                 vehicula pellentesque.</span></li>
-                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Cras id purus faucibus, euismod
-                                 metus.</span></li>
-                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Aenean et libero tincidunt,
-                                 auctor urna.</span></li>
+                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Electroencephalogram (EEG) Testing</span></li>
+                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Brain MRI and CT Imaging</span></li>
+                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Stroke Prevention and Treatment</span></li>
+                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Epilepsy Management and Monitoring</span></li>
+                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Movement Disorder Treatment</span></li>
                         </ul>
                      </div>
                      <div class="col-lg-6 p-lg-0">
                         <ul class="pq-portfolio-list-check">
-                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>There are many variations of
-                                 passages of Lorem</span></li>
-                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Ipsum available, but the
-                                 majority have suffered.</span></li>
-                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Alteration in some form, by
-                                 injected humour.</span></li>
-                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Randomised words which don't
-                                 look.</span></li>
-                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Slightly believable. If you are
-                                 going..</span></li>
+                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Migraine and Headache Treatment</span></li>
+                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Multiple Sclerosis Care Programs</span></li>
+                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Neuromuscular Disorder Diagnosis</span></li>
+                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Memory Disorder Evaluation</span></li>
+                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Sleep Disorder Diagnostics</span></li>
                         </ul>
                      </div>
                      <div class="row">
                         <div class="pq-section-title-box pq-section-title-style-2 pt-2">
-                           <h4 class="pq-section-title">Advantage Neurology Care</h4>
-                           <div class="pq-section-description"> Medicate is a long established fact that a reader will
-                              be distracted by the readable content of a page when looking at its layout. Lorem Ipsum is
-                              simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                              industry's standard dummy text ever since </div>
+                           <h4 class="pq-section-title">Why Choose Our Neurology Services</h4>
+                           <div class="pq-section-description">Our neurology team provides compassionate, evidence-based care using the latest neurological advances. We offer comprehensive neurological testing, advanced imaging, specialized treatment for complex neurological disorders, and multidisciplinary care coordination for optimal patient outcomes and improved quality of life.</div>
                         </div>
                      </div>
                      <div class="row mt-4">
@@ -324,64 +309,58 @@ try {
                      </div>
                      <div class="row">
                         <div class="pq-section-title-box pq-section-title-style-2 pt-4">
-                           <h4 class="pq-section-title">Health Tips & Info</h4>
+                           <h4 class="pq-section-title">Neurology FAQs</h4>
                            <div class="pq-section-description">
-                              <p>Medicate is a long established fact that a reader will be distracted by the readable
-                                 content of a page when looking at its layout. Lorem Ipsum is simply dummy text of the
-                                 printing and typesetting industry. </p>
+                              <p>Answers to common questions about neurological conditions and our comprehensive neurology services. Our specialists are dedicated to helping you understand and manage neurological health.</p>
                            </div>
                         </div>
                         <div class="pq-accordion-block ">
                            <div class="pq-accordion-box  1">
                               <div class="pq-ad-title">
                                  <h6 class="ad-title-text">
-                                    Where can I go to provide a sample for testing?
+                                    What neurological conditions do you treat?
                                     <i aria-hidden="true" class="ion ion-ios-arrow-down active"></i><i
                                        aria-hidden="true" class="ion ion-ios-arrow-up inactive"></i>
                                  </h6>
                               </div>
                               <div class="pq-accordion-details" style="display: none;">
-                                 <p class="pq-detail-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                                    elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. </p>
+                                 <p class="pq-detail-text">We treat epilepsy, stroke, Parkinson's disease, Alzheimer's and dementia, multiple sclerosis, migraines and headaches, neuropathy, tremors, dizziness, memory problems, sleep disorders, and other neurological conditions affecting the brain and nervous system.</p>
                               </div>
                            </div>
                            <div class="pq-accordion-box   2">
                               <div class="pq-ad-title">
                                  <h6 class="ad-title-text">
-                                    What happens to my sample once I have provided it?
+                                    When should I see a neurologist?
                                     <i aria-hidden="true" class="ion ion-ios-arrow-down active"></i><i
                                        aria-hidden="true" class="ion ion-ios-arrow-up inactive"></i>
                                  </h6>
                               </div>
                               <div class="pq-accordion-details" style="display: none;">
-                                 <p class="pq-detail-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                                    elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. </p>
+                                 <p class="pq-detail-text">See a neurologist for persistent headaches, seizures, numbness or tingling, memory problems, movement disorders, balance issues, chronic pain, vision problems, or if your primary care doctor recommends neurological evaluation for unexplained symptoms.</p>
                               </div>
                            </div>
                            <div class="pq-accordion-box   3 ">
                               <div class="pq-ad-title">
                                  <h6 class="ad-title-text">
-                                    What will laboratory testing cost me?
+                                    What tests do neurologists perform?
                                     <i aria-hidden="true" class="ion ion-ios-arrow-down active"></i><i
                                        aria-hidden="true" class="ion ion-ios-arrow-up inactive"></i>
                                  </h6>
                               </div>
                               <div class="pq-accordion-details" style="display: block;">
-                                 <p class="pq-detail-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                                    elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. </p>
+                                 <p class="pq-detail-text">We perform EEG (brain wave testing), EMG (muscle and nerve testing), MRI and CT brain scans, lumbar puncture, nerve conduction studies, evoked potentials, and neuropsychological testing to accurately diagnose and monitor neurological conditions.</p>
                               </div>
                            </div>
                            <div class="pq-accordion-box   4 ">
                               <div class="pq-ad-title">
                                  <h6 class="ad-title-text">
-                                    Using Innovative Technology
+                                    How is stroke treated in your facility?
                                     <i aria-hidden="true" class="ion ion-ios-arrow-down active"></i><i
                                        aria-hidden="true" class="ion ion-ios-arrow-up inactive"></i>
                                  </h6>
                               </div>
                               <div class="pq-accordion-details" style="display: block;">
-                                 <p class="pq-detail-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                                    elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. </p>
+                                 <p class="pq-detail-text">We provide rapid stroke evaluation with advanced imaging, clot-busting medications (tPA), mechanical thrombectomy for large vessel occlusions, comprehensive stroke rehabilitation, and preventive care to reduce future stroke risk through medication and lifestyle modifications.</p>
                               </div>
                            </div>
                         </div>

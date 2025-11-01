@@ -5,7 +5,6 @@ require_once 'config/database.php';
 
 $getStartedUrl = getGetStartedUrl();
 
-
 ?>
 
 <!DOCTYPE html>

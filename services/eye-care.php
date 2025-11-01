@@ -271,49 +271,34 @@ try {
                   <div class="pq-rhs-img text-center"> <img src="../assets/images/service-single.jpg" alt=""
                         class="rounded img-fluid"> </div>
                   <div class="pq-section-title-box pq-section-title-style-2 pt-4">
-                     <h4 class="pq-section-title">Professional Medical Service Of Cardiology</h4>
+                     <h4 class="pq-section-title">Professional Eye Care Services</h4>
                      <div class="pq-section-description">
-                        <p>Medicate is a long established fact that a reader will be distracted by the readable content
-                           of a page when looking at its layout. Lorem Ipsum is simply dummy text of the printing and
-                           typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since </p>
+                        <p>Our ophthalmology department provides comprehensive eye care services from routine eye exams to advanced surgical procedures. Our experienced ophthalmologists and optometrists utilize cutting-edge diagnostic equipment to diagnose and treat cataracts, glaucoma, macular degeneration, diabetic retinopathy, and other vision-threatening conditions with precision and care.</p>
                      </div>
                   </div>
                   <div class="row">
                      <div class="col-lg-6">
                         <ul class="pq-portfolio-list-check">
-                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Aliquam tincidunt nisi vitae
-                                 nulla molestie</span></li>
-                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Praesent convallis odio
-                                 elementum tortor.</span></li>
-                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Nunc molestie ex at nisi
-                                 vehicula pellentesque.</span></li>
-                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Cras id purus faucibus, euismod
-                                 metus.</span></li>
-                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Aenean et libero tincidunt,
-                                 auctor urna.</span></li>
+                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Comprehensive Eye Examinations</span></li>
+                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Cataract Surgery and Treatment</span></li>
+                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Glaucoma Diagnosis and Management</span></li>
+                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Retinal Disease Treatment</span></li>
+                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>LASIK and Refractive Surgery</span></li>
                         </ul>
                      </div>
                      <div class="col-lg-6 p-lg-0">
                         <ul class="pq-portfolio-list-check">
-                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>There are many variations of
-                                 passages of Lorem</span></li>
-                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Ipsum available, but the
-                                 majority have suffered.</span></li>
-                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Alteration in some form, by
-                                 injected humour.</span></li>
-                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Randomised words which don't
-                                 look.</span></li>
-                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Slightly believable. If you are
-                                 going..</span></li>
+                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Diabetic Eye Disease Management</span></li>
+                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Contact Lens Fitting and Care</span></li>
+                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Pediatric Eye Care</span></li>
+                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Dry Eye Treatment</span></li>
+                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Emergency Eye Care Services</span></li>
                         </ul>
                      </div>
                      <div class="row">
                         <div class="pq-section-title-box pq-section-title-style-2 pt-2">
-                           <h4 class="pq-section-title">Advantage Dental Care</h4>
-                           <div class="pq-section-description"> Medicate is a long established fact that a reader will
-                              be distracted by the readable content of a page when looking at its layout. Lorem Ipsum is
-                              simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                              industry’s standard dummy text ever since </div>
+                           <h4 class="pq-section-title">Why Choose Our Eye Care Services</h4>
+                           <div class="pq-section-description">Our eye care center features the latest diagnostic technology including OCT imaging, visual field testing, and fundus photography. We provide personalized care for all ages, from pediatric vision screening to senior eye health management, ensuring optimal vision and eye health for life.</div>
                         </div>
                      </div>
                      <div class="row mt-4">
@@ -324,64 +309,58 @@ try {
                      </div>
                      <div class="row">
                         <div class="pq-section-title-box pq-section-title-style-2 pt-4">
-                           <h4 class="pq-section-title">Health Tips & Info</h4>
+                           <h4 class="pq-section-title">Eye Care FAQs</h4>
                            <div class="pq-section-description">
-                              <p>Medicate is a long established fact that a reader will be distracted by the readable
-                                 content of a page when looking at its layout. Lorem Ipsum is simply dummy text of the
-                                 printing and typesetting industry. </p>
+                              <p>Important information about eye health and our comprehensive ophthalmology services. Protect your vision with expert care from our dedicated eye specialists.</p>
                            </div>
                         </div>
                         <div class="pq-accordion-block ">
                            <div class="pq-accordion-box  1">
                               <div class="pq-ad-title">
                                  <h6 class="ad-title-text">
-                                    Where can I go to provide a sample for testing?
+                                    How often should I have an eye exam?
                                     <i aria-hidden="true" class="ion ion-ios-arrow-down active"></i><i
                                        aria-hidden="true" class="ion ion-ios-arrow-up inactive"></i>
                                  </h6>
                               </div>
                               <div class="pq-accordion-details" style="display: none;">
-                                 <p class="pq-detail-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                                    elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. </p>
+                                 <p class="pq-detail-text">Adults should have comprehensive eye exams every 1-2 years, or annually if over 60 or at risk for eye disease. Children need exams at 6 months, 3 years, before first grade, and annually thereafter. Those with diabetes or family history of eye disease need more frequent monitoring.</p>
                               </div>
                            </div>
                            <div class="pq-accordion-box   2">
                               <div class="pq-ad-title">
                                  <h6 class="ad-title-text">
-                                    What happens to my sample once I have provided it?
+                                    What are the symptoms of cataracts?
                                     <i aria-hidden="true" class="ion ion-ios-arrow-down active"></i><i
                                        aria-hidden="true" class="ion ion-ios-arrow-up inactive"></i>
                                  </h6>
                               </div>
                               <div class="pq-accordion-details" style="display: none;">
-                                 <p class="pq-detail-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                                    elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. </p>
+                                 <p class="pq-detail-text">Cataract symptoms include cloudy or blurry vision, faded colors, glare sensitivity, poor night vision, double vision in one eye, and frequent prescription changes. Cataracts develop gradually and can be successfully treated with modern surgical techniques when they interfere with daily activities.</p>
                               </div>
                            </div>
                            <div class="pq-accordion-box   3 ">
                               <div class="pq-ad-title">
                                  <h6 class="ad-title-text">
-                                    What will laboratory testing cost me?
+                                    What is glaucoma and how is it treated?
                                     <i aria-hidden="true" class="ion ion-ios-arrow-down active"></i><i
                                        aria-hidden="true" class="ion ion-ios-arrow-up inactive"></i>
                                  </h6>
                               </div>
                               <div class="pq-accordion-details" style="display: block;">
-                                 <p class="pq-detail-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                                    elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. </p>
+                                 <p class="pq-detail-text">Glaucoma is increased eye pressure that damages the optic nerve, potentially causing vision loss. Treatment includes prescription eye drops, laser procedures, or surgery to lower eye pressure. Early detection through regular eye exams is crucial as vision loss from glaucoma cannot be reversed.</p>
                               </div>
                            </div>
                            <div class="pq-accordion-box   4 ">
                               <div class="pq-ad-title">
                                  <h6 class="ad-title-text">
-                                    Using Innovative Technology
+                                    Am I a candidate for LASIK surgery?
                                     <i aria-hidden="true" class="ion ion-ios-arrow-down active"></i><i
                                        aria-hidden="true" class="ion ion-ios-arrow-up inactive"></i>
                                  </h6>
                               </div>
                               <div class="pq-accordion-details" style="display: block;">
-                                 <p class="pq-detail-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                                    elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. </p>
+                                 <p class="pq-detail-text">Good LASIK candidates are over 18, have stable vision for at least one year, healthy eyes without diseases, adequate corneal thickness, and realistic expectations. A comprehensive evaluation will determine your eligibility for LASIK or alternative vision correction procedures.</p>
                               </div>
                            </div>
                         </div>

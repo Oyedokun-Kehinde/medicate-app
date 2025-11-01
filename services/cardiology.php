@@ -271,49 +271,34 @@ try {
                   <div class="pq-rhs-img text-center"> <img src="../assets/images/service-single.jpg" alt=""
                         class="rounded img-fluid"> </div>
                   <div class="pq-section-title-box pq-section-title-style-2 pt-4">
-                     <h4 class="pq-section-title">Professional Medical Service Of Cardiology</h4>
+                     <h4 class="pq-section-title">Professional Cardiology Services</h4>
                      <div class="pq-section-description">
-                        <p>Medicate is a long established fact that a reader will be distracted by the readable content
-                           of a page when looking at its layout. Lorem Ipsum is simply dummy text of the printing and
-                           typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since </p>
+                        <p>Our cardiology department offers comprehensive cardiovascular care utilizing advanced diagnostic tools and treatment methods. Our board-certified cardiologists specialize in preventing, diagnosing, and treating heart conditions including coronary artery disease, heart failure, arrhythmias, and valvular heart disease with evidence-based medicine and compassionate care.</p>
                      </div>
                   </div>
                   <div class="row">
                      <div class="col-lg-6">
                         <ul class="pq-portfolio-list-check">
-                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Aliquam tincidunt nisi vitae
-                                 nulla molestie</span></li>
-                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Praesent convallis odio
-                                 elementum tortor.</span></li>
-                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Nunc molestie ex at nisi
-                                 vehicula pellentesque.</span></li>
-                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Cras id purus faucibus, euismod
-                                 metus.</span></li>
-                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Aenean et libero tincidunt,
-                                 auctor urna.</span></li>
+                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Echocardiography and Stress Testing</span></li>
+                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Electrocardiogram (ECG/EKG) Monitoring</span></li>
+                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Cardiac Catheterization Procedures</span></li>
+                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Heart Failure Management Programs</span></li>
+                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Preventive Cardiology and Risk Assessment</span></li>
                         </ul>
                      </div>
                      <div class="col-lg-6 p-lg-0">
                         <ul class="pq-portfolio-list-check">
-                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>There are many variations of
-                                 passages of Lorem</span></li>
-                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Ipsum available, but the
-                                 majority have suffered.</span></li>
-                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Alteration in some form, by
-                                 injected humour.</span></li>
-                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Randomised words which don't
-                                 look.</span></li>
-                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Slightly believable. If you are
-                                 going..</span></li>
+                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Arrhythmia Diagnosis and Treatment</span></li>
+                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Hypertension Management Programs</span></li>
+                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Cholesterol and Lipid Management</span></li>
+                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Coronary Angioplasty and Stenting</span></li>
+                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Pacemaker and Defibrillator Implantation</span></li>
                         </ul>
                      </div>
                      <div class="row">
                         <div class="pq-section-title-box pq-section-title-style-2 pt-2">
-                           <h4 class="pq-section-title">Advantage Dental Care</h4>
-                           <div class="pq-section-description"> Medicate is a long established fact that a reader will
-                              be distracted by the readable content of a page when looking at its layout. Lorem Ipsum is
-                              simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                              industry’s standard dummy text ever since </div>
+                           <h4 class="pq-section-title">Why Choose Our Cardiology Services</h4>
+                           <div class="pq-section-description">Our cardiology team combines cutting-edge technology with decades of clinical experience. We offer personalized treatment plans, 24/7 emergency cardiac care, and comprehensive rehabilitation programs. Our state-of-the-art cardiac catheterization lab and non-invasive testing facilities ensure accurate diagnosis and effective treatment for all cardiovascular conditions.</div>
                         </div>
                      </div>
                      <div class="row mt-4">
@@ -324,64 +309,58 @@ try {
                      </div>
                      <div class="row">
                         <div class="pq-section-title-box pq-section-title-style-2 pt-4">
-                           <h4 class="pq-section-title">Health Tips & Info</h4>
+                           <h4 class="pq-section-title">Cardiology FAQs</h4>
                            <div class="pq-section-description">
-                              <p>Medicate is a long established fact that a reader will be distracted by the readable
-                                 content of a page when looking at its layout. Lorem Ipsum is simply dummy text of the
-                                 printing and typesetting industry. </p>
+                              <p>Common questions about our cardiology services and heart health. Our specialists are here to provide clear answers and expert guidance for your cardiovascular wellness.</p>
                            </div>
                         </div>
                         <div class="pq-accordion-block ">
                            <div class="pq-accordion-box  1">
                               <div class="pq-ad-title">
                                  <h6 class="ad-title-text">
-                                    Where can I go to provide a sample for testing?
+                                    What conditions do cardiologists treat?
                                     <i aria-hidden="true" class="ion ion-ios-arrow-down active"></i><i
                                        aria-hidden="true" class="ion ion-ios-arrow-up inactive"></i>
                                  </h6>
                               </div>
                               <div class="pq-accordion-details" style="display: none;">
-                                 <p class="pq-detail-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                                    elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. </p>
+                                 <p class="pq-detail-text">We treat coronary artery disease, heart failure, arrhythmias, valvular heart disease, congenital heart defects, hypertension, high cholesterol, and other cardiovascular conditions. Our team provides both medical management and interventional procedures.</p>
                               </div>
                            </div>
                            <div class="pq-accordion-box   2">
                               <div class="pq-ad-title">
                                  <h6 class="ad-title-text">
-                                    What happens to my sample once I have provided it?
+                                    When should I see a cardiologist?
                                     <i aria-hidden="true" class="ion ion-ios-arrow-down active"></i><i
                                        aria-hidden="true" class="ion ion-ios-arrow-up inactive"></i>
                                  </h6>
                               </div>
                               <div class="pq-accordion-details" style="display: none;">
-                                 <p class="pq-detail-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                                    elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. </p>
+                                 <p class="pq-detail-text">See a cardiologist if you experience chest pain, shortness of breath, irregular heartbeat, high blood pressure, family history of heart disease, or if your primary care physician recommends a cardiac evaluation. Early detection is key to preventing serious conditions.</p>
                               </div>
                            </div>
                            <div class="pq-accordion-box   3 ">
                               <div class="pq-ad-title">
                                  <h6 class="ad-title-text">
-                                    What will laboratory testing cost me?
+                                    What tests are used to diagnose heart conditions?
                                     <i aria-hidden="true" class="ion ion-ios-arrow-down active"></i><i
                                        aria-hidden="true" class="ion ion-ios-arrow-up inactive"></i>
                                  </h6>
                               </div>
                               <div class="pq-accordion-details" style="display: block;">
-                                 <p class="pq-detail-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                                    elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. </p>
+                                 <p class="pq-detail-text">We use ECG/EKG, echocardiography, stress tests, Holter monitoring, cardiac CT and MRI scans, coronary angiography, and blood tests to diagnose heart conditions. Your cardiologist will recommend the appropriate tests based on your symptoms and medical history.</p>
                               </div>
                            </div>
                            <div class="pq-accordion-box   4 ">
                               <div class="pq-ad-title">
                                  <h6 class="ad-title-text">
-                                    Using Innovative Technology
+                                    How can I prevent heart disease?
                                     <i aria-hidden="true" class="ion ion-ios-arrow-down active"></i><i
                                        aria-hidden="true" class="ion ion-ios-arrow-up inactive"></i>
                                  </h6>
                               </div>
                               <div class="pq-accordion-details" style="display: block;">
-                                 <p class="pq-detail-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                                    elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. </p>
+                                 <p class="pq-detail-text">Maintain a healthy diet low in saturated fats, exercise regularly (30 minutes daily), avoid smoking, limit alcohol, manage stress, control blood pressure and cholesterol, maintain healthy weight, and get regular check-ups. Our preventive cardiology program can help you develop a personalized plan.</p>
                               </div>
                            </div>
                         </div>

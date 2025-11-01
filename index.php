@@ -494,10 +494,8 @@ try {
                 </div>
                 <div class="col-lg-6 align-self-center mt-lg-0 mt-4">
                     <div class="pq-section pq-style-1 text-left"> <span class="pq-section-sub-title">who we are </span>
-                        <h5 class="pq-section-title">The Heart and Science of Medicate test</h5>
-                        <p class="pq-section-description">It is a long established fact that a reader will be distracted
-                            by at
-                            its layout. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <h5 class="pq-section-title">The Heart and Science of Medicate</h5>
+                        <p class="pq-section-description">Medicate combines cutting-edge medical technology with compassionate healthcare delivery. Our platform bridges the gap between patients and specialized medical professionals, providing accessible, quality healthcare services across multiple specialties with a commitment to excellence and patient-centered care.</p>
                     </div>
                     <ul class="pq-list-check pq-text-dark mt-3 mb-4">
                         <li><i aria-hidden="true" class="ion ion-checkmark-round"></i><span>24/7 Access to Certified Medical Professionals </span></li>
@@ -537,8 +535,8 @@ try {
                                     alt="servicebox">
                             </div>
                             <div class="pq-service-box-info">
-                                <div class="pq-info-text"> <span class="pq-service-sub-title">Medical Surgery </span>
-                                    <a href="/services/eye-care.php">
+                                <div class="pq-info-text"> <span class="pq-service-sub-title">Medical Ophthalmology</span>
+                                    <a href="services/eye-care.php">
                                         <h5 class="pq-service-title">Eye Care Services</h5>
                                     </a>
                                 </div>
@@ -554,8 +552,8 @@ try {
                                     alt="servicebox">
                             </div>
                             <div class="pq-service-box-info">
-                                <div class="pq-info-text"> <span class="pq-service-sub-title">Medical Therapy </span>
-                                    <a href="/services/cardiology.php">
+                                <div class="pq-info-text"> <span class="pq-service-sub-title">Cardiovascular Care</span>
+                                    <a href="services/cardiology.php">
                                         <h5 class="pq-service-title">Cardiology Services</h5>
                                     </a>
                                 </div>
@@ -571,8 +569,8 @@ try {
                                     alt="servicebox">
                             </div>
                             <div class="pq-service-box-info">
-                                <div class="pq-info-text"> <span class="pq-service-sub-title">Medical Pediatrics</span>
-                                    <a href="/services/dental.php">
+                                <div class="pq-info-text"> <span class="pq-service-sub-title">Oral Health Care</span>
+                                    <a href="services/dental.php">
                                         <h5 class="pq-service-title">Dental Services</h5>
                                     </a>
                                 </div>
@@ -601,8 +599,8 @@ try {
                             <i aria-hidden="true" class=" flaticon-stethoscope"></i>
                         </div>
                         <div class="pq-about-info-box-info">
-                            <h5>infection prevention</h5>
-                            <p>There are many variations of passages of LoremIpsum available majority.</p>
+                            <h5>Expert Medical Team</h5>
+                            <p>Our board-certified physicians and specialists bring years of experience across diverse medical fields to provide you with the highest standard of care.</p>
                         </div>
                     </div>
                     <div class="pq-about-info-box mt-1">
@@ -610,8 +608,8 @@ try {
                             <i aria-hidden="true" class=" flaticon-stethoscope"></i>
                         </div>
                         <div class="pq-about-info-box-info">
-                            <h5>infection prevention</h5>
-                            <p>There are many variations of passages of LoremIpsum available majority.</p>
+                            <h5>Advanced Technology</h5>
+                            <p>State-of-the-art medical equipment and digital health solutions ensure accurate diagnoses and effective treatments for all our patients.</p>
                         </div>
                     </div>
                     <div class="pq-about-info-box mt-1">
@@ -619,8 +617,8 @@ try {
                             <i aria-hidden="true" class=" flaticon-stethoscope"></i>
                         </div>
                         <div class="pq-about-info-box-info">
-                            <h5>infection prevention</h5>
-                            <p>There are many variations of passages of LoremIpsum available majority.</p>
+                            <h5>Patient-Centered Care</h5>
+                            <p>We prioritize your comfort, privacy, and wellbeing with personalized treatment plans designed around your unique health needs and goals.</p>
                         </div>
                     </div>
                     <a class="pq-button pq-button-flat mt-4" href="about.php">

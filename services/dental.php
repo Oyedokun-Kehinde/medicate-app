@@ -273,49 +273,34 @@ try {
                   <div class="pq-rhs-img text-center"> <img src="../assets/images/service-single.jpg" alt=""
                         class="rounded img-fluid"> </div>
                   <div class="pq-section-title-box pq-section-title-style-2 pt-4">
-                     <h4 class="pq-section-title">Professional Medical Service Of Cardiology</h4>
+                     <h4 class="pq-section-title">Professional Dental Services</h4>
                      <div class="pq-section-description">
-                        <p>Medicate is a long established fact that a reader will be distracted by the readable content
-                           of a page when looking at its layout. Lorem Ipsum is simply dummy text of the printing and
-                           typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since </p>
+                        <p>Our comprehensive dental care services focus on preventive, restorative, and cosmetic dentistry. Our experienced dentists and hygienists provide gentle, patient-centered care using the latest technology to ensure healthy smiles for the whole family, from routine cleanings to advanced dental procedures.</p>
                      </div>
                   </div>
                   <div class="row">
                      <div class="col-lg-6">
                         <ul class="pq-portfolio-list-check">
-                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Aliquam tincidunt nisi vitae
-                                 nulla molestie</span></li>
-                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Praesent convallis odio
-                                 elementum tortor.</span></li>
-                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Nunc molestie ex at nisi
-                                 vehicula pellentesque.</span></li>
-                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Cras id purus faucibus, euismod
-                                 metus.</span></li>
-                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Aenean et libero tincidunt,
-                                 auctor urna.</span></li>
+                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Preventive Care and Cleanings</span></li>
+                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Teeth Whitening and Cosmetic Dentistry</span></li>
+                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Dental Implants and Restorations</span></li>
+                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Root Canal Treatment</span></li>
+                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Orthodontic Consultations</span></li>
                         </ul>
                      </div>
                      <div class="col-lg-6 p-lg-0">
                         <ul class="pq-portfolio-list-check">
-                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>There are many variations of
-                                 passages of Lorem</span></li>
-                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Ipsum available, but the
-                                 majority have suffered.</span></li>
-                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Alteration in some form, by
-                                 injected humour.</span></li>
-                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Randomised words which don't
-                                 look.</span></li>
-                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Slightly believable. If you are
-                                 going..</span></li>
+                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Crown and Bridge Work</span></li>
+                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Dentures and Partial Dentures</span></li>
+                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Gum Disease Treatment</span></li>
+                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Emergency Dental Care</span></li>
+                           <li><i aria-hidden="true" class="ion ion-checkmark"></i><span>Pediatric Dentistry</span></li>
                         </ul>
                      </div>
                      <div class="row">
                         <div class="pq-section-title-box pq-section-title-style-2 pt-2">
-                           <h4 class="pq-section-title">Advantage Dental Care</h4>
-                           <div class="pq-section-description"> Medicate is a long established fact that a reader will
-                              be distracted by the readable content of a page when looking at its layout. Lorem Ipsum is
-                              simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                              industry’s standard dummy text ever since </div>
+                           <h4 class="pq-section-title">Why Choose Our Dental Services</h4>
+                           <div class="pq-section-description">Our modern dental practice offers comprehensive care in a comfortable, welcoming environment. We use digital X-rays, laser dentistry, and pain-free anesthesia techniques. Our focus on preventive care helps you maintain optimal oral health while our cosmetic services create beautiful, confident smiles.</div>
                         </div>
                      </div>
                      <div class="row mt-4">
@@ -326,64 +311,58 @@ try {
                      </div>
                      <div class="row">
                         <div class="pq-section-title-box pq-section-title-style-2 pt-4">
-                           <h4 class="pq-section-title">Health Tips & Info</h4>
+                           <h4 class="pq-section-title">Dental Care FAQs</h4>
                            <div class="pq-section-description">
-                              <p>Medicate is a long established fact that a reader will be distracted by the readable
-                                 content of a page when looking at its layout. Lorem Ipsum is simply dummy text of the
-                                 printing and typesetting industry. </p>
+                              <p>Common questions about dental health and our comprehensive dentistry services. We're committed to educating patients about proper oral care and treatment options.</p>
                            </div>
                         </div>
                         <div class="pq-accordion-block ">
                            <div class="pq-accordion-box  1">
                               <div class="pq-ad-title">
                                  <h6 class="ad-title-text">
-                                    Where can I go to provide a sample for testing?
+                                    How often should I visit the dentist?
                                     <i aria-hidden="true" class="ion ion-ios-arrow-down active"></i><i
                                        aria-hidden="true" class="ion ion-ios-arrow-up inactive"></i>
                                  </h6>
                               </div>
                               <div class="pq-accordion-details" style="display: none;">
-                                 <p class="pq-detail-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                                    elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. </p>
+                                 <p class="pq-detail-text">We recommend dental check-ups and professional cleanings every six months for optimal oral health. However, some patients with gum disease or other conditions may need more frequent visits. Regular visits help prevent cavities, gum disease, and detect oral health issues early.</p>
                               </div>
                            </div>
                            <div class="pq-accordion-box   2">
                               <div class="pq-ad-title">
                                  <h6 class="ad-title-text">
-                                    What happens to my sample once I have provided it?
+                                    Are dental X-rays safe?
                                     <i aria-hidden="true" class="ion ion-ios-arrow-down active"></i><i
                                        aria-hidden="true" class="ion ion-ios-arrow-up inactive"></i>
                                  </h6>
                               </div>
                               <div class="pq-accordion-details" style="display: none;">
-                                 <p class="pq-detail-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                                    elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. </p>
+                                 <p class="pq-detail-text">Yes, dental X-rays are very safe. We use modern digital X-ray technology that reduces radiation exposure by up to 90% compared to traditional film X-rays. We also use protective lead aprons and only take necessary X-rays to monitor your oral health effectively.</p>
                               </div>
                            </div>
                            <div class="pq-accordion-box   3 ">
                               <div class="pq-ad-title">
                                  <h6 class="ad-title-text">
-                                    What will laboratory testing cost me?
+                                    What can I do about tooth sensitivity?
                                     <i aria-hidden="true" class="ion ion-ios-arrow-down active"></i><i
                                        aria-hidden="true" class="ion ion-ios-arrow-up inactive"></i>
                                  </h6>
                               </div>
                               <div class="pq-accordion-details" style="display: block;">
-                                 <p class="pq-detail-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                                    elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. </p>
+                                 <p class="pq-detail-text">Tooth sensitivity can result from enamel erosion, gum recession, or cavities. Use desensitizing toothpaste, avoid acidic foods, and maintain good oral hygiene. If sensitivity persists, we can apply fluoride treatments, dental sealants, or recommend other procedures to reduce discomfort.</p>
                               </div>
                            </div>
                            <div class="pq-accordion-box   4 ">
                               <div class="pq-ad-title">
                                  <h6 class="ad-title-text">
-                                    Using Innovative Technology
+                                    What are dental implants?
                                     <i aria-hidden="true" class="ion ion-ios-arrow-down active"></i><i
                                        aria-hidden="true" class="ion ion-ios-arrow-up inactive"></i>
                                  </h6>
                               </div>
                               <div class="pq-accordion-details" style="display: block;">
-                                 <p class="pq-detail-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                                    elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. </p>
+                                 <p class="pq-detail-text">Dental implants are titanium posts surgically placed in your jawbone to replace missing teeth. They provide a strong foundation for permanent or removable replacement teeth that look, feel, and function like natural teeth. Implants help preserve jawbone and facial structure.</p>
                               </div>
                            </div>
                         </div>
