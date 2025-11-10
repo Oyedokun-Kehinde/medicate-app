@@ -14,6 +14,12 @@ $getStartedUrl = getGetStartedUrl();
 
     <!-- Main Style CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
     <!-- Favicon Icon -->
     <link rel="shortcut icon" href="assets/images/favicon.ico">
     <!-- Bootstrap CSS -->
@@ -164,11 +170,11 @@ $getStartedUrl = getGetStartedUrl();
                                 </div>
                             </div>
                             <a href="<?php echo $getStartedUrl; ?>" class="pq-button pq-cta-button">
-    <div class="pq-button-block">
-        <span class="pq-button-text"><?php echo getGetStartedButtonText(); ?></span>
-        <i class="ion ion-plus-round"></i>
-    </div>
-</a>
+                                <div class="pq-button-block">
+                                    <span class="pq-button-text"><?php echo getGetStartedButtonText(); ?></span>
+                                    <i class="ion ion-plus-round"></i>
+                                </div>
+                            </a>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                 aria-expanded="false" aria-label="Toggle navigation">

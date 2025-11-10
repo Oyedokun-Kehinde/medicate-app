@@ -39,6 +39,11 @@ $getStartedUrl = getGetStartedUrl();
 
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="assets/css/responsive.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -162,17 +167,17 @@ $getStartedUrl = getGetStartedUrl();
                                                 class="screen-reader-text">Search</span></button>
                                     </form>
                                 </div>
-<a href="<?php echo $getStartedUrl; ?>" class="pq-button pq-cta-button">
-    <div class="pq-button-block">
-        <span class="pq-button-text"><?php echo getGetStartedButtonText(); ?></span>
-        <i class="ion ion-plus-round"></i>
-    </div>
-</a>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                                <i class="fas fa-bars"></i>
-                            </button>
+                                <a href="<?php echo $getStartedUrl; ?>" class="pq-button pq-cta-button">
+                                    <div class="pq-button-block">
+                                        <span class="pq-button-text"><?php echo getGetStartedButtonText(); ?></span>
+                                        <i class="ion ion-plus-round"></i>
+                                    </div>
+                                </a>
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <i class="fas fa-bars"></i>
+                                </button>
                         </nav>
                     </div>
                 </div>

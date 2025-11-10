@@ -42,8 +42,16 @@ $getStartedUrl = getGetStartedUrl();
 
    <!-- Responsive CSS -->
    <link rel="stylesheet" href="assets/css/responsive.css">
+   
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+
 </head>
 
+
+ 
 <body>
    <!--loading start-->
    <div id="pq-loading">

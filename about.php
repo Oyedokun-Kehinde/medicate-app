@@ -6,7 +6,7 @@ $getStartedUrl = getGetStartedUrl();
 
 // Fetch published blogs - 6 posts for carousel
 try {
-    $stmt = $pdo->prepare("
+   $stmt = $pdo->prepare("
         SELECT 
             bp.id, bp.title, bp.excerpt, bp.featured_image, bp.created_at,
             dp.full_name as doctor_name,
@@ -18,12 +18,12 @@ try {
         ORDER BY bp.created_at DESC
         LIMIT 6
     ");
-    //Implement PDO Security during database fetch
-    $stmt->execute();
-    $home_blogs = $stmt->fetchAll(PDO::FETCH_ASSOC);
+   //Implement PDO Security during database fetch
+   $stmt->execute();
+   $home_blogs = $stmt->fetchAll(PDO::FETCH_ASSOC);
 } catch (Exception $e) {
-    error_log("Blog fetch error: " . $e->getMessage());
-    $home_blogs = [];
+   error_log("Blog fetch error: " . $e->getMessage());
+   $home_blogs = [];
 }
 ?>
 
@@ -37,6 +37,12 @@ try {
 
    <!-- Main Style CSS -->
    <link rel="stylesheet" href="assets/css/style.css">
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+
    <!-- Favicon Icon -->
    <link rel="shortcut icon" href="assets/images/favicon.ico">
    <!-- Bootstrap CSS -->
@@ -660,77 +666,82 @@ try {
          our-step end-->
 
    <!--Section blog Start-->
-<section class="pq-blog pq-bg-grey pq-pb-210">
-    <div class="container">
-        <div class="row">
+   <section class="pq-blog pq-bg-grey pq-pb-210">
+      <div class="container">
+         <div class="row">
             <div class="col-lg-12">
-                <div class="pq-section pq-style-1 text-center">
-                    <span class="pq-section-sub-title">our blog</span>
-                    <h5 class="pq-section-title">See Our Latest Blog</h5>
-                </div>
+               <div class="pq-section pq-style-1 text-center">
+                  <span class="pq-section-sub-title">our blog</span>
+                  <h5 class="pq-section-title">See Our Latest Blog</h5>
+               </div>
             </div>
             <div class="col-lg-12">
-                <?php if (empty($home_blogs)): ?>
-                    <div style="text-align: center; padding: 40px; color: #999;">
-                        <p>No blog posts available yet. Check back soon!</p>
-                    </div>
-                <?php else: ?>
-                    <div class="owl-carousel owl-theme" data-dots="false" data-nav="false" data-desk_num="3"
-                        data-lap_num="2" data-tab_num="2" data-mob_num="1" data-mob_sm="1" data-autoplay="true"
-                        data-loop="true" data-margin="30">
-                        <?php foreach ($home_blogs as $blog): ?>
-                            <div class="item">
-                                <div class="pq-blog-post pq-style-1">
-                                    <div class="pq-post-media">
-                                        <?php if (!empty($blog['featured_image'])): ?>
-                                            <img src="<?php echo htmlspecialchars($blog['featured_image']); ?>" class="img-fluid" alt="<?php echo htmlspecialchars($blog['title']); ?>">
-                                        <?php else: ?>
-                                            <div style="width: 100%; height: 250px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
-                                        <?php endif; ?>
-                                        <div class="pq-post-date">
-                                            <a href="blog-single.php?id=<?php echo $blog['id']; ?>">
-                                                <span><?php echo date('F d, Y', strtotime($blog['created_at'])); ?></span>
-                                            </a>
-                                        </div>
+               <?php if (empty($home_blogs)): ?>
+                  <div style="text-align: center; padding: 40px; color: #999;">
+                     <p>No blog posts available yet. Check back soon!</p>
+                  </div>
+               <?php else: ?>
+                  <div class="owl-carousel owl-theme" data-dots="false" data-nav="false" data-desk_num="3" data-lap_num="2"
+                     data-tab_num="2" data-mob_num="1" data-mob_sm="1" data-autoplay="true" data-loop="true"
+                     data-margin="30">
+                     <?php foreach ($home_blogs as $blog): ?>
+                        <div class="item">
+                           <div class="pq-blog-post pq-style-1">
+                              <div class="pq-post-media">
+                                 <?php if (!empty($blog['featured_image'])): ?>
+                                    <img src="<?php echo htmlspecialchars($blog['featured_image']); ?>" class="img-fluid"
+                                       alt="<?php echo htmlspecialchars($blog['title']); ?>">
+                                 <?php else: ?>
+                                    <div
+                                       style="width: 100%; height: 250px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
                                     </div>
-                                    <div class="pq-blog-contain">
-                                        <div class="pq-post-meta">
-                                            <ul>
-                                                <li class="pq-post-author">
-                                                    <i class="fa fa-user"></i><?php echo htmlspecialchars($blog['doctor_name'] ?? 'Dr. Medicate'); ?>
-                                                </li>
-                                                <li class="pq-post-comment">
-                                                    <a href="blog-single.php?id=<?php echo $blog['id']; ?>">
-                                                        <i class="fa fa-comments"></i><?php echo $blog['comment_count']; ?> Comments
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <h5 class="pq-blog-title">
-                                            <a href="blog-single.php?id=<?php echo $blog['id']; ?>">
-                                                <?php echo htmlspecialchars(substr($blog['title'], 0, 50)); ?>
-                                            </a>
-                                        </h5>
-                                        <div class="pq-blog-info">
-                                            <p><?php echo htmlspecialchars(substr($blog['excerpt'] ?? $blog['title'], 0, 100)) . '...'; ?></p>
-                                        </div>
-                                        <a href="blog-single.php?id=<?php echo $blog['id']; ?>" class="pq-button pq-button-link">
-                                            <div class="pq-button-block">
-                                                <span class="pq-button-text">Read More</span>
-                                                <i class="ion ion-plus-round"></i>
-                                            </div>
-                                        </a>
+                                 <?php endif; ?>
+                                 <div class="pq-post-date">
+                                    <a href="blog-single.php?id=<?php echo $blog['id']; ?>">
+                                       <span><?php echo date('F d, Y', strtotime($blog['created_at'])); ?></span>
+                                    </a>
+                                 </div>
+                              </div>
+                              <div class="pq-blog-contain">
+                                 <div class="pq-post-meta">
+                                    <ul>
+                                       <li class="pq-post-author">
+                                          <i
+                                             class="fa fa-user"></i><?php echo htmlspecialchars($blog['doctor_name'] ?? 'Dr. Medicate'); ?>
+                                       </li>
+                                       <li class="pq-post-comment">
+                                          <a href="blog-single.php?id=<?php echo $blog['id']; ?>">
+                                             <i class="fa fa-comments"></i><?php echo $blog['comment_count']; ?> Comments
+                                          </a>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <h5 class="pq-blog-title">
+                                    <a href="blog-single.php?id=<?php echo $blog['id']; ?>">
+                                       <?php echo htmlspecialchars(substr($blog['title'], 0, 50)); ?>
+                                    </a>
+                                 </h5>
+                                 <div class="pq-blog-info">
+                                    <p><?php echo htmlspecialchars(substr($blog['excerpt'] ?? $blog['title'], 0, 100)) . '...'; ?>
+                                    </p>
+                                 </div>
+                                 <a href="blog-single.php?id=<?php echo $blog['id']; ?>" class="pq-button pq-button-link">
+                                    <div class="pq-button-block">
+                                       <span class="pq-button-text">Read More</span>
+                                       <i class="ion ion-plus-round"></i>
                                     </div>
-                                </div>
-                            </div>
-                        <?php endforeach; ?>
-                    </div>
-                <?php endif; ?>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     <?php endforeach; ?>
+                  </div>
+               <?php endif; ?>
             </div>
-        </div>
-    </div>
-</section>
-<!--Section blog End-->
+         </div>
+      </div>
+   </section>
+   <!--Section blog End-->
 
    <!--=================================
           Footer start
